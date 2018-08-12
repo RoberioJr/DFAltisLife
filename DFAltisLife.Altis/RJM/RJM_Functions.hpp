@@ -37,6 +37,9 @@ class RJM_Scripts {
 	    file = "RJM\Scripts\Assaltos";
 		class pAssalto {};
 		class sAssaltoMSG {};
+		class roubarJoalheria {};
+		class roubarAgencia {};
+		class roubarJoalheria {};
 	};
 	
 	class AutoSave {

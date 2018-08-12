@@ -1,10 +1,8 @@
 /*
-file: fn_robATM.sqf
-Author: MrKraken
-Made from MrKrakens bare-bones shop robbing tutorial on www.altisliferpg.com forums
-Description:
-Executes the rob shob action!
-Idea developed by PEpwnzya v1.0
+
+    Author: MrKraken
+    Edits: RobérioJR
+	
 */
 private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_pos"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has the action attached to it is _this. ,0, is the index of object, ObjNull is the default should there be nothing in the parameter or it's broken
@@ -13,7 +11,7 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alrig
 _action = [_this,2] call BIS_fnc_param;//Action name
 
 if(side _robber != civilian) exitWith { hint "Você Não Pode Roubar Essa Joalheria!" };
-if(_robber distance _shop > 4) exitWith { hint "Você Precisa Estar A 4 Metros Para Assaltar!" };
+if(_robber distance _shop > 5) exitWith { hint "Você Precisa Estar A 4 Metros Para Assaltar!" };
 
 if !(_kassa) then { _kassa = 90000; };
 if (_rip) exitWith { hint "O Assalto Já Está Acontecendo!" };
@@ -24,7 +22,7 @@ if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith {"Você Não Tem 
 if (_kassa == 0) exitWith { hint "Não Tem Dinheiro No Caixa!!" };
 
 _rip = true;
-_kassa = 600000 + round(random 600000);
+_kassa = 200000 + round(random 100000);
 _shop removeAction _action;
 //_shop switchMove "AmovPercMstpSsurWnonDnon";
 
@@ -32,7 +30,7 @@ hint "Um Alarme Foi Ativado, A Policia Já Deve Estar A Caminho!";
 [[1,format["ALARME! - Joalheria: %1 Está Sendo Assaltada!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 
 _cops = (west countSide playableUnits);
-if(_cops < 5) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hint "Não Tem Policiais Suficientes Para Roubar Essa Joalheria!";};
+if(_cops < 5) exitWith{hint "Não Tem Policiais Suficientes Para Roubar Essa Joalheria!";};
 disableSerialization;
 6 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
