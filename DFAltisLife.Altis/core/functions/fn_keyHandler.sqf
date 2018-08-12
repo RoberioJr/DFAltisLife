@@ -94,8 +94,8 @@ switch (_code) do {
     /* Alterações RobérioJR */
 	
 	//FPSBOOST
-	case 67: {
-	    [] Call RJM_fnc_FpsBoost;
+	case 207: {
+	    [] call RJM_fnc_FpsBoost;
 	};
 
 	//Menu De Equipamentos Para Os Admins F7

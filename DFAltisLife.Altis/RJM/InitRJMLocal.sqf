@@ -41,9 +41,6 @@
   /* Marcadores */
    [] Spawn RJM_fnc_Marcador;
    
-  /* SafeZones */
-   [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
-   
   /* Ferramentas ADM */
    [] execVM "RJM\Scripts\MenuAdminRJ\loop.sqf";
    

@@ -27,3 +27,6 @@
         [] execVM "RJM\Scripts\BarraDeStatus\StatusBarSimples.sqf";
 	};
  };
+ 
+   /* SafeZones */
+   [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
