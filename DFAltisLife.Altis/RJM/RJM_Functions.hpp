@@ -29,7 +29,6 @@ class RJM_Scripts {
 		class Marcador {};
 		class LoopSide {};
 		class RemoverNeblina {};
-		class roubarJoalheria {}
 		class FpsBoost {};
 	};		
 	
