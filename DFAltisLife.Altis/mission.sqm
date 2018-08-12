@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=1090;
+	toggles=1218;
 	class ItemIDProvider
 	{
 		nextID=6360;
@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={13739.736,46.911167,18904.66};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		dir[]={0.81200415,-0.53669024,0.2293877};
+		up[]={0.51647884,0.84377837,0.14590323};
+		aside[]={0.27185676,5.9517333e-008,-0.96234059};
 	};
 };
 binarizationWanted=0;
@@ -504,24 +504,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -536,6 +518,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -21785,8 +21785,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8440.2461,49.745098,12761.084};
-						angles[]={0,6.2655797,0};
+						position[]={8440.2461,49.744907,12761.084};
+						angles[]={0,6.2655749,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -21798,7 +21798,7 @@ class Mission
 					};
 					id=1032;
 					type="C_man_1";
-					atlOffset=0.12896729;
+					atlOffset=0.12877655;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21820,7 +21820,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item83
@@ -92864,7 +92902,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Lsd"",life_fnc_processAction,""lsd"",0,false,false,"""",' life_inv_lsd > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""lsd"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""lsd"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""lsd"",0,false,false,"""",' !license_civ_lsd && playerSide isEqualTo civilian '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Process_Lsd"",life_fnc_processAction,""lsd"",0,false,false,"""",' life_inv_lsdUnprocessed > 0 && !life_is_processing && !life_action_inUse']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""lsd"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""lsd"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""lsd"",0,false,false,"""",' !license_civ_lsd && playerSide isEqualTo civilian '];";
 						disableSimulation=1;
 					};
 					id=6339;
