@@ -27,7 +27,7 @@ _rip = true;
 _kassa = 300000 + round(random 100000);
 _shop removeAction _action;
 
- [1,format["000 ALERTA:\n\nAgência: %1 Está Sendo Roubado Por %2",_shop,_robber, name _robber]] remoteExec ["life_fnc_broadcast",west]
+ [1,format["000 ALERTA:\n\nAgência: %1 Está Sendo Roubado Por %2",_shop,_robber, name _robber]] remoteExec ["life_fnc_broadcast",west];
 
 
 disableSerialization;
