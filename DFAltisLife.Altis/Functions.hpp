@@ -32,30 +32,6 @@ class zipties {
 class Life_Client_Core {
     tag = "life";
 
-  /* RADIORJ */
-  /*
-    class RadioRJ {
-	    file = "rj\RadioRJ";
-	    class radio {};
-		class radioSom {};
-    };
-	
-	class Joalheria {
-		file = "rj\Variados\Joalheria";
-		class roubarJoalheria {};
-	};
-	
-    class autosave {
-        file = "rj\derleon\autosave";
-        class autoSaveInv {};
-    };
-
-    class Assaltos {
-        file = "rj\assaltos";
-        class pAssalto {};
-        class sAssaltoMSG {};
-    }; */
-	
     class Master_Directory {
         file = "core";
         class initCiv {};

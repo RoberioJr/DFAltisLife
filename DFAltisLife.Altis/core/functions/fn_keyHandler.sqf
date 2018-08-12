@@ -189,12 +189,12 @@ switch (_code) do {
     };
 	*/
 
-	//Assalto By: Casperento (TAB) Edit: RJ
+	//Assalto TAB
 	case 15: {
             if !(isPlayer cursorTarget) exitWith {};
             if ((time - life_action_delay) < 1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             if (cursorTarget distance player < 300 && {(isPlayer cursorTarget)}) then {
-                [] call life_fnc_pAssalto;
+                [] call RJM_fnc_pAssalto;
             } else {
             hint "Você precisa estar a 300m de distância de seu alvo!";
         };
