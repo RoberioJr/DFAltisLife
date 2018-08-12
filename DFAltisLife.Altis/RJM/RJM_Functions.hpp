@@ -38,7 +38,7 @@ class RJM_Scripts {
 		class sAssaltoMSG {};
 		class roubarJoalheria {};
 		class roubarAgencia {};
-		class roubarJoalheria {};
+		class roubarLoterica {};
 	};
 	
 	class AutoSave {
