@@ -5,30 +5,30 @@
    /* Cidades */
    
   /* Kavala */
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szkav.sqf";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szkav.sqf";
  
   /* Athira */
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szath.sqf";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szath.sqf";
  
  /* Pyrgos */
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szpyr.sqf";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szpyr.sqf";
  
  /* Sofia */
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szsof.sqf";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szsof.sqf";
  
    /* Rebeldes */
  
  /* Norte, Sul e Central */
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szreb1.sqf"; //N
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szreb2.sqf"; //S
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szreb3.sqf"; //C
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szreb1.sqf"; //N
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szreb2.sqf"; //S
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szreb3.sqf"; //C
  
    /* Outros */
    
   /* Hospital Do Aero Porto */
- [] ExecVM "RJ\Scripts\SafeZones\Zonas\szhsp.sqf";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szhsp.sqf";
  
- diag_log "RJ: SafeZones Definidas e Inicilizadas :)";
+ diag_log "RJM: SafeZones Definidas e Inicilizadas :)";
  
  
 

@@ -44,5 +44,8 @@
   /* Ferramentas ADM */
    [] execVM "RJM\Scripts\MenuAdminRJ\loop.sqf";
    
+  /* SafeZones */
+   [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
+   
   systemchat "Scripts RJM Inicializadas *o*...";
   
