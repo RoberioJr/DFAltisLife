@@ -154,12 +154,13 @@ switch (_code) do {
 	case 61: {
 		if(vehicle player isEqualTo player) then {
 			if(RJ_DelayTerminado) then {
-			        [5] Spawn RJM_fnc_DelayRJ;
-				    player playActionNow "gestureHiC";
-				    [player,"aipaipara",40,1] remoteExecCall ["life_fnc_say3D",0];
-			    } else {hint "Espere Um Momento Virar Viado Novamente";};
+			    [5] Spawn RJM_fnc_DelayRJ;
+				player playActionNow "gestureHiC";
+				[player,"aipaipara",40,1] remoteExecCall ["life_fnc_say3D",0];
+			 } else { 
+			    hint "Espere Um Momento Virar Viado Novamente"; 
 			};
-		};
+	    };
 	};
 
 	/*
