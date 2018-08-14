@@ -67,42 +67,35 @@ class CfgSpawnPoints {
                 displayName = "Kavala";
                 spawnMarker = "cop_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "call life_coplevel < 11";
+                conditions = "call life_coplevel >= 1";
             };
 
             class Athira {
                 displayName = "Athira";
                 spawnMarker = "cop_spawn_3";
                 icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
-                conditions = "call life_coplevel < 11";
+                conditions = "call life_coplevel >= 1";
             };
 
             class Pyrgos {
                 displayName = "Pyrgos";
                 spawnMarker = "cop_spawn_2";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "call life_coplevel < 11";
+                conditions = "call life_coplevel >= 1";
             };
 
             class HW {
                 displayName = "Sofia";
                 spawnMarker = "cop_spawn_5";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "call life_coplevel < 11";
+                conditions = "call life_coplevel >= 1";
             };
 			
 			class PostoCOP {
 			    displayName = "Posto Avançado Rodopoli";
 				spawnMarker = "postocop1";
 				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "";
-			};
-			
-			class BopeKav {
-				displayName = "BOPE";
-				spawnMarker = "spawnbope_centro";
-				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "call life_coplevel >= 11";
+                conditions = "call life_coplevel >= 1";
 			};
         };
 

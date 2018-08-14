@@ -12,11 +12,16 @@ if ((lbCurSel 2005) isEqualTo -1) exitWith {hint localize "STR_ISTR_SelectItemFi
 _item = CONTROL_DATA(2005);
 
 switch (true) do {
+    /* Efeitos Das Drogas By: RobérioJR */
+    case (_item in ["marijuana","cocaineProcessed","tabacoProcessed","lsdProcessed","ecstasyProcessed","metanfetaminaProcessed","loloProcessed","morfinaProcessed","heroinProcessed"]): {
+	    [_item] spawn RJM_fnc_EfeitosItems;
+	};
+
     case (_item in ["waterBottle","coffee","redgull"]): {
         if ([false,_item,1] call life_fnc_handleInv) then {
             life_thirst = 100;
 			/* SOM 3D EDIT RJ */
-			[player,"beber",15,1] remoteExec ["life_fnc_say3D",0];
+			[player,"beber",25,1] remoteExec ["life_fnc_say3D",0];
             if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
             if (_item isEqualTo "redgull" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
                 [] spawn {
@@ -85,7 +90,7 @@ switch (true) do {
                 _val = M_CONFIG(getNumber,"VirtualItems",_item,"edible");
                 _sum = life_hunger + _val;
 				/* SOM 3D EDIT RJ */
-				[player,"comer",15,1] remoteExec ["life_fnc_say3D",0];
+				[player,"comer",25,1] remoteExec ["life_fnc_say3D",0];
                 switch (true) do {
                     case (_val < 0 && _sum < 1): {life_hunger = 5;}; //This adds the ability to set the entry edible to a negative value and decrease the hunger without death
                     case (_sum > 100): {life_hunger = 100;};

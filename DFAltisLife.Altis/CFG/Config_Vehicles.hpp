@@ -202,11 +202,8 @@ class LifeCfgVehicles {
 		price = 1000000;
 		textures[] = {
 			{ "Policia", "cop", {
-				"textures\veh\cop\pm\hellcatpm.paa"
-			}, "call life_coplevel < 11" },
-			{ "BOPE", "cop", {
-				"textures\veh\cop\hellbope.paa"
-			}, "call life_coplevel >= 11" },
+				"textures\veh\cop\hellcatpm.paa"
+			}, "call life_coplevel >= 1" },
 			{ "Rebelde", "reb", {
 				"\A3\air_f_epb\Heli_Light_03\data\Heli_Light_03_base_INDP_CO.paa"
 			}, "" }
@@ -288,10 +285,6 @@ class LifeCfgVehicles {
 		conditions = "";
 		price = 150000;
 		textures[] = {
-			{ "BOPE", "cop", {
-				"textures\veh\cop\qilinbope.paa",
-				"textures\veh\cop\qilinbope2.paa"
-			}, "call life_coplevel > 10" },
 			{ "Rebelde", "reb", {
 				"\a3\soft_f_exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
 				"\a3\soft_f_exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa"
@@ -685,11 +678,8 @@ class LifeCfgVehicles {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" }*/
 			{ "Policia", "cop", {
-				"textures\veh\cop\pm\offroadpm.paa"
+				"textures\veh\cop\offroadpm.paa"
 			}, "call life_coplevel < 11" },
-			{ "BOPE", "cop", {
-				"textures\veh\cop\bopeoffroad.paa"
-			}, "call life_coplevel >= 11" },
 			{ "SAMU", "med", {
 				"textures\veh\med\offroadmed.paa"
 			}, "" }
@@ -742,11 +732,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" },*/
 			{ "Policia", "cop", {
-                "textures\veh\cop\pm\hatchbackpm.paa"
-            }, "call life_coplevel < 11" },
+                "textures\veh\cop\hatchbackpm.paa"
+            }, "call life_coplevel < 11" }
+			/*
 			{ "BOPE - Provisório", "cop", {
                 "\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_BASE09_CO.paa"
-            }, "call life_coplevel > 10" }
+            }, "call life_coplevel > 10" }*/
         };
     };
 
@@ -881,11 +872,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
             }, "" },*/
 			{ "Policia", "cop", {
-                "textures\veh\cop\pm\suvpm.paa"
-            }, "call life_coplevel < 11" },
-			{ "BOPE", "cop", {
-                "textures\veh\cop\suvbope.paa"
-            }, "call life_coplevel > 10" }
+                "textures\veh\cop\suvpm.paa"
+            }, "call life_coplevel < 11" }
         };
     };
 
@@ -926,14 +914,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 				"\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa",
 				"\a3\soft_f\MRAP_01\Data\MRAP_01_adds_CO.paa"
 			}, "" },
-			{ "BOPE", "cop", {
-				"textures\veh\cop\bopehunter.paa",
-				"textures\veh\cop\bopehunter2.paa"
-			}, "call life_coplevel > 10" },
 			{ "Policia Militar", "cop", {
-				"textures\veh\cop\pm\hunterpm.paa",
-				"textures\veh\cop\pm\hunterpm2.paa"
-			}, "call life_coplevel < 11" }
+				"textures\veh\cop\hunterpm.paa",
+				"textures\veh\cop\hunterpm2.paa"
+			}, "call life_coplevel >= 1" }
         };
     };
 
@@ -963,11 +947,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
             }, "" },*/
 			{ "Policia", "cop", {
-				"textures\veh\cop\pm\mh9pm.paa"
-			}, "call life_coplevel < 11" },
-			{ "BOPE", "cop", {
-				"textures\veh\cop\mh9.paa"
-			}, "call life_coplevel >= 11" },
+				"textures\veh\cop\mh9pm.paa"
+			}, "call life_coplevel >= 1" },
 			{ "SAMU", "med", {
 				"textures\veh\med\mh9med.paa"
 			}, "" },
@@ -1026,7 +1007,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
         price = 750000;
         textures[] = {
-            { "BOPE", "cop", {
+            { "PM", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa"
             }, "" },
             { "White / Blue", "civ", {

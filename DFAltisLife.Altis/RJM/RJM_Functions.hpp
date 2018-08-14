@@ -41,6 +41,19 @@ class RJM_Scripts {
 		class roubarLoterica {};
 	};
 	
+	class EfeitosDrogas {
+		file = "RJM\Scripts\EfeitosDasDrogas";
+		class EfeitosItems {};
+		class Maconha {};
+		class Cocaina {};
+		class LSD {};
+		class Cigarro {};
+		class Metafetamina {};
+		class Ecstasy {}
+		class Lolo {};
+		class Morfina {};
+	};
+	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};

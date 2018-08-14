@@ -6555,8 +6555,7 @@
             <Portuguese>Metanfetamina não Refinada</Portuguese>
         </Key>
 		<Key ID="STR_Item_LoloU">
-            <Original>Lolo Leaf</Original>
-            <Portuguese>Lóló não Refinado</Portuguese>
+            <Original>Lóló não Refinado</Original>
         </Key>
 		<Key ID="STR_Item_MorfinaU">
             <Original>Morfina Leaf</Original>
@@ -6576,7 +6575,7 @@
             <Portuguese>Metanfetamina Refinada</Portuguese>
         </Key>
 		<Key ID="STR_Item_LoloP">
-            <Portuguese>Lóló Refinado</Portuguese>
+            <Original>Lóló</Original>
         </Key>
 		<Key ID="STR_Item_MorfinaP">
             <Portuguese>Morfina Refinada</Portuguese>
@@ -6594,47 +6593,38 @@
             <Portuguese>Treinamento de Ecstasy</Portuguese>
         </Key>
 		<Key ID="STR_License_Lolo">
-            <Original>Lóló Training</Original>
-            <Portuguese>Treinamento de Lóló</Portuguese>
+            <Original>Processamento de Lóló</Original>
         </Key>
 		<Key ID="STR_License_Morfina">
-            <Original>Morfina Training</Original>
-            <Portuguese>Treinamento de Morfina</Portuguese>
+            <Original>Processamento Morfina</Original>
         </Key>
 		<Key ID="STR_Process_Lsd">
-            <Original>Processing LSD Leaves</Original>
-            <Portuguese>Processando LSD</Portuguese>
+            <Original>Processamento LSD</Original>
         </Key>
 		<Key ID="STR_Process_Ecstasy">
-            <Original>Processing Ecstasy Leaves</Original>
-            <Portuguese>Processando Ecstasy</Portuguese>
+            <Original>Processamento Ecstasy</Original>
         </Key>
 		<Key ID="STR_Process_Metanfetamina">
-            <Original>Processing Metanfetamina Leaves</Original>
-            <Portuguese>Processando Metanfetamina</Portuguese>
+            <Original>Processando Metanfetamina</Original>
         </Key>
 		<Key ID="STR_Process_Lolo">
-            <Original>Processing Lolo Leaves</Original>
-            <Portuguese>Processando Lóló</Portuguese>
+            <Original>Processando Lóló</Original>
         </Key>
 		<Key ID="STR_Process_Morfina">
-            <Original>Processing Morfina Leaves</Original>
-            <Portuguese>Processando Morfina</Portuguese>
+            <Original>Processando Morfina</Original>
         </Key>
 		<Key ID="STR_MAR_Lsd_Processing">
-            <Original>Lsd Processing</Original>
-            <Portuguese>Processador de Lsd</Portuguese>
+            <Original>Processador de LSD</Original>
         </Key>
 		<Key ID="STR_MAR_Ecstasy_Processing">
-            <Original>Ecstasy Processing</Original>
-            <Portuguese>Processador de Ecstasy</Portuguese>
+            <Original>Processador de Ecstasy</Original>
         </Key>
 		<Key ID="STR_MAR_Metanfetamina_Processing">
             <Original>Metanfetamina Processing</Original>
             <Portuguese>Processador de Metanfetamina</Portuguese>
         </Key>
 		<Key ID="STR_MAR_Lolo_Processing">
-            <Original>Lóló Processing</Original>
+            <Original>Processador de Lóló</Original>
             <Portuguese>Processador de Lóló</Portuguese>
         </Key>
 		<Key ID="STR_MAR_Morfina_Processing">
@@ -6654,8 +6644,7 @@
             <Portuguese>Campo de Metanfetamina</Portuguese>
         </Key>
 		<Key ID="STR_MAR_Lolo_Field">
-            <Original>Lolo Field</Original>
-            <Portuguese>Campo de Lóló</Portuguese>
+            <Original>Campo de Lóló</Original>
         </Key>
 		<Key ID="STR_MAR_Morfina_Field">
             <Original>Morfina Field</Original>

@@ -42,6 +42,7 @@ switch (playerSide) do {
     };
 // Policia Militar || BOPE
 	case west: {
+	    /*
         if (uniform player isEqualTo "U_Rangemaster") then {
             _skinName = "textures\roupa\pm\uniforme_pm.jpg";
             if (LIFE_SETTINGS(getNumber,"cop_extendedSkins") isEqualTo 1) then {
@@ -51,10 +52,14 @@ switch (playerSide) do {
                 };
             };
             player setObjectTextureGlobal [0, _skinName];
-        };
-		//BOPE
-		if ((FETCH_CONST(life_coplevel) > 10) && ((uniform player) == "U_I_CombatUniform_shortsleeve" or ((uniform player) == "U_I_CombatUniform"))) then {
-		    player setObjectTextureGlobal [0, "textures\roupa\bope\uniforme_bope_padrao.jpg"];
+        };*/
+		//PM
+		if ((FETCH_CONST(life_coplevel) IsEqualTo 1) && ((uniform player) == "U_Rangemaster")) then {
+		    player setObjectTextureGlobal [0, "textures\roupa\bope\uniforme_pm_simples.jpg"];
+		};
+		
+		if ((FETCH_CONST(life_coplevel) >= 2) && ((uniform player) == "U_I_CombatUniform_shortsleeve" or ((uniform player) == "U_I_CombatUniform"))) then {
+		    player setObjectTextureGlobal [0, "textures\roupa\pm\uniforme_pm_padrao.jpg"];
 		};
     };
 	

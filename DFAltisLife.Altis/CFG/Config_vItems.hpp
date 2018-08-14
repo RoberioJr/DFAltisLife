@@ -567,7 +567,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_metanfetaminaUnprocessed.paa";
+        icon = "icons\meta.paa";
         processedItem = "metanfetamina_processed";
     };
 
@@ -579,7 +579,7 @@ class VirtualItems {
         sellPrice = 9000;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_metanfetaminaProcessed.paa";
+        icon = "icons\metap.paa";
     };
 	
 	class lolo_unprocessed {
@@ -590,7 +590,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_loloUnprocessed.paa";
+        icon = "icons\lolo.paa";
         processedItem = "lolo_processed";
     };
 
@@ -602,7 +602,7 @@ class VirtualItems {
         sellPrice = 9500;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_loloProcessed.paa";
+        icon = "icons\lolop.paa";
     };
 	
 	class morfina_unprocessed {
@@ -752,7 +752,7 @@ class VirtualItems {
         sellPrice = 1800;
         illegal = false;
         edible = 10;
-        icon = "icons\ico_peach.paa";
+        icon = "icons\pera.paa";
     };
 	
 	class guava {
@@ -763,7 +763,7 @@ class VirtualItems {
         sellPrice = 1800;
         illegal = false;
         edible = 10;
-        icon = "icons\ico_guava.paa";
+        icon = "icons\goiaba.paa";
     };
 	
 	
@@ -774,7 +774,7 @@ class VirtualItems {
         sellPrice = 1800;
         illegal = false;
         edible = 10;
-        icon = "icons\ico_grape.paa";
+        icon = "icons\uva.paa";
     };
 	
 	class strawberry {
@@ -785,7 +785,7 @@ class VirtualItems {
         sellPrice = 1800;
         illegal = false;
         edible = 10;
-        icon = "icons\ico_strawberry.paa";
+        icon = "icons\morango.paa";
     };
 	
 	class banana {
@@ -796,7 +796,7 @@ class VirtualItems {
         sellPrice = 1800;
         illegal = false;
         edible = 10;
-        icon = "icons\ico_banana.paa";
+        icon = "icons\banana.paa";
     };
 	
 	class pineapple {
@@ -807,10 +807,8 @@ class VirtualItems {
         sellPrice = 1800;
         illegal = false;
         edible = 10;
-        icon = "icons\ico_pineapple.paa";
+        icon = "icons\abacaxi.paa";
     };
-	
-	
 
     class tbacon {
         variable = "tbacon";
