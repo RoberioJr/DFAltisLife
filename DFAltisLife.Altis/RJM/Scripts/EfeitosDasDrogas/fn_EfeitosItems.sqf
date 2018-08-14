@@ -2,7 +2,7 @@
     Author: RobérioJR
 */
 
-_item = param [0,0,[0]];
+params [ ["_item","",[""]] ];
 
 closeDialog 0; //Fechar Inventário
 

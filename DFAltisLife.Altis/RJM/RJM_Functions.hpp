@@ -30,6 +30,7 @@ class RJM_Scripts {
 		class LoopSide {};
 		class RemoverNeblina {};
 		class FpsBoost {};
+		class DelayRJ {};
 	};		
 	
 	class Assaltos {

@@ -35032,7 +35032,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addAction [""Missao Editada Por: RobérioJR, SalMedeiros e Santz"", """"];";
+				init="this addAction [""Missao Editada Por: RobérioJR, SalMedeiros e Nulo"", """"];";
 				disableSimulation=1;
 			};
 			id=2235;

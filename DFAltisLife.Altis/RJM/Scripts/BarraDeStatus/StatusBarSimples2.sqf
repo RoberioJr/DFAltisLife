@@ -105,15 +105,15 @@ case(_FpsHud < 1) : {_colourFps = _colourDead;};
 };
 ((uiNamespace getVariable "RJMStatusBar")displayCtrl 10713)ctrlSetStructuredText parseText
  format["<t shadow='1' shadowColor='#000000'>
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\civ.paa'/>%1 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\cop.paa'/>%2 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\med.paa'/>%3 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\Dinheiro.paa'/>%4 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\hunger.paa'/>%5 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\thirst.paa'/>%7 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\health.paa'/>%9 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\fps.paa'/>%11 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\uptime.paa'/>%13
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\civ.paa'/>%1 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\cop.paa'/>%2 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\med.paa'/>%3 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\Dinheiro.paa'/>%4 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\hunger.paa'/>%5 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\thirst.paa'/>%7 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\health.paa'/>%9 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\fps.paa'/>%11 
+ <img size='1.3' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\uptime.paa'/>%13
  </t>",_CivplayHUD,_WestplayHUD,_IndepplayHUD, /*format["%1",_grid]*/_Dinheiro, _hunger, _colourHunger, _thirst, _colourThirst, _damage, _colourDamage, _FpsHud, _colourFps, _UpTimeHUD, _colourUpTimeHUD, _players, _colourDefault];
  }; 
 };
