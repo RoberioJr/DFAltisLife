@@ -150,21 +150,19 @@ switch (_code) do {
 		};
 	};
 
-	/*
 	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi' F3
 	case 61: {
 		if(vehicle player isEqualTo player) then {
-			if(!life_action_inUse) then {
-			    if (isNil "_delay") then {_delayT = time;};
-			    if ((time - _delayT) > 5) then {
+			if(RJ_DelayTerminado) then {
+			        [5] Spawn RJM_fnc_DelayRJ;
 				    player playActionNow "gestureHiC";
-				    [player,"aipaipara",35,1] remoteExecCall ["life_fnc_say3D",0];
-					_delayT = time;
+				    [player,"aipaipara",40,1] remoteExecCall ["life_fnc_say3D",0];
 			    } else {hint "Espere Um Momento Virar Viado Novamente";};
 			};
 		};
 	};
 
+	/*
 	//Um Cu Como o Seu Merece Ficar Vivo... F2
 	case 60: {
 	    if(vehicle player isEqualTo player) then {

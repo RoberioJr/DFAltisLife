@@ -53,7 +53,7 @@ life_storagePlacing = scriptNull;
 life_seatbelt = false;
 /* EDITS DO RJ */
 NVGRJ = false;
-//Life_radiorj = false;
+RJ_DelayTerminado = true;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

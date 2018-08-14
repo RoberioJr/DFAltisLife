@@ -37,9 +37,8 @@ uiSleep 5;
 _CivplayHUD = civilian countSide playableUnits; //1
 _WestplayHUD = west countSide playableUnits; //2
 _IndepplayHUD = independent countSide playableUnits; //3
-_grid = mapGridPosition player; //4
-_xx = (format[_grid]) select [0,3]; //5
-_yy = (format[_grid]) select [3,3]; //6
+//_grid = mapGridPosition player; //4
+_Dinheiro = [RJM_GRANA] call life_fnc_numberText;
 _hunger = round(life_hunger); //7
 _thirst = round(life_thirst); //8
 _damage = round ((1 - (damage player)) * 100); //9
@@ -109,13 +108,13 @@ case(_FpsHud < 1) : {_colourFps = _colourDead;};
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\civ.paa'/>%1 
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\cop.paa'/>%2 
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\med.paa'/>%3 
- <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\compass.paa'/>%4 
+ <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\Dinheiro.paa'/>%4 
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\hunger.paa'/>%5 
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\thirst.paa'/>%7 
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\health.paa'/>%9 
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\fps.paa'/>%11 
  <img size='1.4' shadowColor='#000000' image='RJM\Scripts\BarraDeStatus\ImagesStatusBar\uptime.paa'/>%13
- </t>",_CivplayHUD,_WestplayHUD,_IndepplayHUD, format["%1",_grid], _hunger, _colourHunger, _thirst, _colourThirst, _damage, _colourDamage, _FpsHud, _colourFps, _UpTimeHUD, _colourUpTimeHUD, _players, _colourDefault];
+ </t>",_CivplayHUD,_WestplayHUD,_IndepplayHUD, /*format["%1",_grid]*/_Dinheiro, _hunger, _colourHunger, _thirst, _colourThirst, _damage, _colourDamage, _FpsHud, _colourFps, _UpTimeHUD, _colourUpTimeHUD, _players, _colourDefault];
  }; 
 };
 
