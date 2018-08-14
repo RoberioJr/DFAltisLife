@@ -14,7 +14,8 @@ _item = CONTROL_DATA(2005);
 switch (true) do {
     /* Efeitos Das Drogas By: RobérioJR */
     case (_item in ["marijuana","cocaineProcessed","tabacoProcessed","lsdProcessed","ecstasyProcessed","metanfetaminaProcessed","loloProcessed","morfinaProcessed","heroinProcessed"]): {
-	    [_item] spawn RJM_fnc_EfeitosItems;
+	    if !(RJ_DelayTerminado) exitWith { hint 'Espere Um Pouco Antes De Fazer Essa Ação!'; };
+		[_item] spawn RJM_fnc_EfeitosItems;
 	};
 
     case (_item in ["waterBottle","coffee","redgull"]): {
