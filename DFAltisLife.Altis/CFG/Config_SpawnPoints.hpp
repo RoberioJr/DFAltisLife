@@ -97,6 +97,13 @@ class CfgSpawnPoints {
 				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
                 conditions = "call life_coplevel >= 1";
 			};
+			
+			class Prisao {
+				displayName = "Complexo Penitenciário";
+				spawnMarker = "prisao_pm";
+				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+                conditions = "call life_coplevel >= 1";
+			};
         };
 
         class Medic {

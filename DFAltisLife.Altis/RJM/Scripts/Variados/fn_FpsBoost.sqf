@@ -4,15 +4,12 @@
 	
 */
 
-if (IsNil FpsBoostAtivado) then { FpsBoostAtivado = false };
-
     if (!FpsBoostAtivado) then {
         setTerrainGrid 50;
-        setViewDistance 1200;
+        //setViewDistance 1200;
 		Hint 'FpsBoost Ativado!';
-    };
-	if (FpsBoostAtivado) then {
+    } else {
         setTerrainGrid 25;
-		setViewDistance 2500;
+		//setViewDistance 2500;
 		Hint 'FpsBoost Desativado!';
     };
