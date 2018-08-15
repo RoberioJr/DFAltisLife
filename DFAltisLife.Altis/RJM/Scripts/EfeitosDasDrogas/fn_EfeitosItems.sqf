@@ -8,7 +8,7 @@ closeDialog 0; //Fechar Inventário
 
 [21] Spawn RJM_fnc_DelayRJ;
 
-switch (_item) do {
+switch (true) do {
     case (_item IsEqualTo 'marijuana'):{ [] spawn RJM_fnc_Maconha; };
 	case (_item IsEqualTo 'cocaineProcessed'):{ [] spawn RJM_fnc_Cocaina; };
 	case (_item IsEqualTo 'tabacoProcessed'):{ [] spawn RJM_fnc_Cigarro; };

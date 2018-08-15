@@ -22,7 +22,7 @@ if (currentWeapon _robber == "") exitWith { hint "HaHa, you mongoloide men!? Vaz
 if (_kassa == 0) exitWith { hint "Não Tem Dinheiro no Caixa!" };
 
 _rip = true;
-_kassa = 95000 + round(random 120000);
+_kassa = 95000 + round(random 100000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
@@ -48,35 +48,33 @@ _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Roubo Em Progresso, Fique Por Perto (10m) (%1%2)...",round(_cP * 100),"%"];
 _Pos = position player; // by ehno: get player pos
-				                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
-				                "Marker200" setMarkerColor "ColorRed";
-				                "Marker200" setMarkerText "!ATENÇAO! ASSALTO EM ANDAMENTO";
-				                "Marker200" setMarkerType "mil_warning";
+				                _marker = createMarker ["MarkerRJposto", _Pos]; //by ehno: Place a Maker on the map
+				                "MarkerRJposto" setMarkerColor "ColorRed";
+				                "MarkerRJposto" setMarkerText "!ATENÇAO! ASSALTO EM ANDAMENTO";
+				                "MarkerRJposto" setMarkerType "mil_warning";
 if(_cP >= 1) exitWith {};
 if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};
 };
 if!(alive _robber) exitWith { _rip = false; };
-if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "Voce precisa estar a menos de 10m para roubar o posto! - Agora não será possivel roubar."; 5 cutText ["","PLAIN"]; _rip = false; };
+if(_robber distance _shop > 10.5) exitWith { deleteMarker "MarkerRJposto"; _shop switchMove ""; hint "Voce precisa estar a menos de 10m para roubar o posto! - Agora não será possivel roubar."; 5 cutText ["","PLAIN"]; _rip = false; };
 5 cutText ["","PLAIN"];
 
 titleText[format["Voce Roubou %1R$, Agora Fuja Para Não Ser Preso!",[_kassa] call life_fnc_numberText],"PLAIN"];
-deleteMarker "Marker200"; // by ehno delete maker
+deleteMarker "MarkerRJposto"; // by ehno delete maker
 RJM_GRANA = RJM_GRANA + _kassa;
 
-/* EDIT By: RobérioJr */
-if (_kassa > 179999) then {
-    hintSilent parseText format ["<t size='3.4' color='#ff0000' shadow='0'>AVISO!</t> <t size='1.2'> Houve Um Grande Roubo Em Um Posto De Gasolina. Os Assaltantes Levaram uma Grande Quantidade Em Dinheiro! </t>"];
+if (_kassa > 149999) then {
+    [1,format ["<t size='3.4' color='#ff0000' shadow='0'>DFTV</t> <t size='1.2'> Houve Um Grande Roubo Em Um Posto De Gasolina. Os Assaltantes Levaram uma Grande Quantidade Em Dinheiro: %1 </t>",_kassa]] remoteExec ["life_fnc_broadcast",civilian];
 };
-/*********************/
 
 _rip = false;
 life_use_atm = false;
-sleep (45 + random(180));
+sleep (60 + random(180));
 life_use_atm = true;
 if!(alive _robber) exitWith {};
 [getPlayerUID _robber,name _robber,"211"] remoteExec ["life_fnc_wantedAdd",2];
 };
 sleep 300;
-_action = _shop addAction["Roubar Posto",life_fnc_robstore];
+_action = _shop addAction["Roubar Posto De Gasolina",life_fnc_robstore];
 _shop switchMove "";

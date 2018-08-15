@@ -158,7 +158,7 @@ switch (_code) do {
 				player playActionNow "gestureHiC";
 				[player,"aipaipara",40,1] remoteExecCall ["life_fnc_say3D",0];
 			 } else { 
-			    hint "Espere Um Momento Virar Viado Novamente"; 
+			    hint "Espere Um Momento Para Virar Viado Novamente"; 
 			};
 	    };
 	};
@@ -195,7 +195,7 @@ switch (_code) do {
             if (cursorTarget distance player < 300 && {(isPlayer cursorTarget)}) then {
                 [] call RJM_fnc_pAssalto;
             } else {
-            hint "Você precisa estar a 300m de distância de seu alvo!";
+            hint "Você Precisa Estar A 300m De Distância De Seu Alvo!";
         };
     };
 
@@ -403,7 +403,7 @@ switch (_code) do {
             };
 
             if (_veh isKindOf "House_F" && {playerSide isEqualTo civilian}) then {
-                if (_veh in life_vehicles && {player distance _veh < 20}) then {
+                if (_veh in life_vehicles && {player distance _veh < 15}) then {
                     _door = [_veh] call life_fnc_nearestDoor;
                     if (_door isEqualTo 0) exitWith {hint localize "STR_House_Door_NotNear"};
                     _locked = _veh getVariable [format ["bis_disabled_Door_%1",_door],0];
@@ -420,7 +420,7 @@ switch (_code) do {
                 };
             } else {
                 _locked = locked _veh;
-                if (_veh in life_vehicles && {player distance _veh < 20}) then {
+                if (_veh in life_vehicles && {player distance _veh < 15}) then {
                     if (_locked isEqualTo 2) then {
                         if (local _veh) then {
                             _veh lock 0;

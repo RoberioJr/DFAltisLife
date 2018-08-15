@@ -2,7 +2,7 @@
 /*
 	fn_seatBelt.sqf
 */
-playSound "lockCarSound"; //--Enable this to play a sound when you put your seatbelt on
+playSound "lockCarSound"; 
 if(!life_seatbelt) then {
 	life_seatbelt = true;
 } else {
