@@ -37,7 +37,6 @@ class RJM_Scripts {
 	    file = "RJM\Scripts\Assaltos";
 		class pAssalto {};
 		class sAssaltoMSG {};
-		class roubarJoalheria {};
 		class roubarAgencia {};
 		class roubarLoterica {};
 	};
@@ -53,6 +52,7 @@ class RJM_Scripts {
 		class Ecstasy {}
 		class Lolo {};
 		class Morfina {};
+		class Heroina {};
 	};
 	
 	class AutoSave {
@@ -62,4 +62,4 @@ class RJM_Scripts {
 };
 
 #include "Scripts\MenuAdminRJ\VAS\cfgfunctions.hpp"     //Menu De Equipamento ADM
-//#include "Logo\rj_logofunc.h"                   //Marca D'Agua Com Logo
+//#include "Logo\rj_logofunc.h"                           //Marca D'Agua Com Logo
