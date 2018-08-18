@@ -18,6 +18,7 @@ class RJM_Scripts {
 		class Notifi {};
 		class Hospital {};
 		class Volume {};
+		class IconesMap {};
 	};
 
     class Variados {

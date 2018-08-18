@@ -14,6 +14,9 @@
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
   _msgnsrj = LIFE_SETTINGS(getNumber,"rj_msgsconometradas");
 
+  /* Configurações */
+  [] ExecVM "RJM\CFGs.sqf";
+  
   /* Correção De Cor */
   if (_grafico isEqualTo 1) then {
    diag_log "RJ: Melhoria De Grafico - Ativado";
@@ -41,11 +44,16 @@
   /* Marcadores */
    [] Spawn RJM_fnc_Marcador;
    
+  /* Icones Dos Farms No Mapa */
+   [] Spawn RJM_fnc_IconesMap;
+   
   /* Ferramentas ADM */
    [] execVM "RJM\Scripts\MenuAdminRJ\loop.sqf";
    
   /* SafeZones */
    [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
+   
+   RJ_JogadorPronto = true;
    
   systemchat "Scripts RJM Inicializadas *o*...";
   

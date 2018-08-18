@@ -55,6 +55,7 @@ life_seatbelt = false;
 NVGRJ = false;
 RJ_DelayTerminado = true;
 FpsBoostAtivado = false;
+RJ_JogadorPronto = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

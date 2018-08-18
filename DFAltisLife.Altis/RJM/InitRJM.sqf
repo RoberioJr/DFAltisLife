@@ -11,7 +11,6 @@
 
    /* DEFINIÇÕES */
   _barstat = LIFE_SETTINGS(getNumber,"rj_barradestatus");
-
 	
   /* Barra De Status */ 
  switch (_barstat) do 
@@ -27,4 +26,11 @@
         [] execVM "RJM\Scripts\BarraDeStatus\StatusBarSimples.sqf";
 	};
  };
+ 
+ RJ_MISSAO_DIR = call {
+        private "_arr";
+        _arr = toArray __FILE__;
+        _arr resize (count _arr - 8);
+        toString _arr
+    };
  

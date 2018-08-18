@@ -15,6 +15,22 @@ _Administradores =
 	"76561198125169667"   //Medeiros
 ];
 
+ /* Configuração Dos Marcadores Do Mapa */
+RJ_MrkFARM = 
+[
+    ['strawberry_1','icons\morango.paa'],     //Morango
+    ['banana_1','icons\banana.paa'],          //Banana
+    ['apple_1','icons\ico_apple.paa'],        //Maçã
+	['apple_2','icons\ico_apple.paa'],        //Maçã
+	['apple_3','icons\ico_apple.paa'],        //Maçã
+	['peaches_1','icons\ico_peach.paa.paa'],  //Pêra
+	['peaches_2','icons\ico_peach.paa.paa'],  //Pêra
+	['peaches_3','icons\ico_peach.paa.paa'],  //Pêra
+	['pineapple_1','icons\abacaxi.paa'],      //Abacaxi
+	['grape_1','icons\uva.paa'],              //Uva
+    ['guava_1','icons\goiaba.paa']	          //Goiaba
+];
+
     /* Configurações Do Radio */ 
 	
 //Veiculos Com Radio
