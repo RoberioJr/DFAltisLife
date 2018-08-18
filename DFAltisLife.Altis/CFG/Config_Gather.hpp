@@ -9,7 +9,7 @@ class CfgGather {
 
         class peach {
             amount = 5;
-            zones[] = { "peaches_1", "peaches_2" "peaches_3" };
+            zones[] = { "peaches_1", "peaches_2", "peaches_3" };
             item = "";
             zoneSize = 30;
         };
