@@ -27,10 +27,13 @@
 	};
  };
  
+ /*
  RJ_MISSAO_DIR = call {
         private "_arr";
         _arr = toArray __FILE__;
         _arr resize (count _arr - 8);
         toString _arr
-    };
+    };*/
+	
+ RJ_MISSAO_DIR = str missionConfigFile seleciona [ 0 , contagem str missionConfigFile - 15 ] ;
  
