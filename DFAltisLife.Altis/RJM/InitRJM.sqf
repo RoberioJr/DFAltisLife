@@ -35,5 +35,5 @@
         toString _arr
     };*/
 	
- RJ_MISSAO_DIR = str missionConfigFile seleciona [ 0 , contagem str missionConfigFile - 15 ] ;
+ RJ_MISSAO_DIR = str missionConfigFile select [0, count str missionConfigFile - 15];
  
