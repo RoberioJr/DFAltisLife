@@ -28,7 +28,7 @@ dog playMove "Dog_Sprint";
 	    if (dog Distance _Alvo < 2) then {
 		    DogAtacando = false;
 			[] remoteExecCall ["RJM_fnc_DogImob",_Alvo];
-			[dog,"dogAtaq",60,1] remoteExecCall ["life_fnc_say3D",0];
+			[dog,"dogAtaq",60,1] remoteExecCall ["life_fnc_say3D",-2];
 		};
 		sleep 0.4;
 	};

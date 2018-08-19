@@ -80,6 +80,7 @@ class CfgRemoteExec {
         F(zipties_fnc_zip_blindfold,CLIENT)
         F(zipties_fnc_zip_patdown,CLIENT)
         F(zipties_fnc_zip_untieFix,CLIENT)
+		F(rjm_fnc_dogimob,CLIENT)
 
 
         /* Server only functions */
