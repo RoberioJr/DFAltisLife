@@ -11,7 +11,8 @@ if(!([true,"kidney",1] call life_fnc_handleInv)) exitWith {hint "Você não têm
 life_action_inUse = true;
 player setVariable["temOrgao",true,true];
 player playMove "AinvPknlMstpSnonWnonDnon_medic";
-sleep 3;
+sleep 15;
 _unit setVariable["orgaoFaltando",true,true];
 life_action_inUse = false;
 [[player], "life_fnc_temOrgao", _unit, false] spawn life_fnc_MP;
+Hint Format ['Você Roubou O Rim De %1', Name _unit];
