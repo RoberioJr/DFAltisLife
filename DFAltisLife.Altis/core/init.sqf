@@ -59,6 +59,11 @@ waitUntil {life_session_completed};
 waitUntil {mav_introcam_continue};
 0 cutFadeOut 9999999;
 
+/* Colocar variável do Orgão ao conectar */
+
+player setVariable["orgaoFaltando",false,true];
+player setVariable["temOrgao",false,true];
+
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
 

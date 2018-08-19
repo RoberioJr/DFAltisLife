@@ -20,6 +20,8 @@ if  !((vehicle _unit) isEqualTo _unit) then {
 };
 
 //Set some vars
+_unit setVariable["orgaoFaltando",false,true];
+_unit setVariable["temOrgao",false,true];
 _unit setVariable ["Revive",true,true];
 _unit setVariable ["name",profileName,true]; //Set my name so they can say my name.
 _unit setVariable ["restrained",false,true];

@@ -62,7 +62,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed", "kidney" };
     };
 
     class oil {
@@ -198,6 +198,16 @@ class VirtualItems {
         icon = "icons\blindfold.paa";
     };
 
+    class kidney {
+        variable = "kidney";
+        displayName = "STR_kidney";
+        weight = 15;
+        buyPrice = -1;
+        sellPrice = 100000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\blindfold.paa"0;
+    };
 	
     //Misc
     class pickaxe {
