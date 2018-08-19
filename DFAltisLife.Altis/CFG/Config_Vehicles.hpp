@@ -46,15 +46,15 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "C_Van_01_box_F", "" },  //Chaninha BOX
-            { "I_Truck_02_transport_F", "" }, //Zamack Transporte
-            { "I_Truck_02_covered_F", "" }, //Zamack Coberto
+            { "C_Truck_02_transport_F", "" }, //Zamack Transporte
+            { "C_Truck_02_covered_F", "" }, //Zamack Coberto
             { "B_Truck_01_transport_F", "" }, //H Transporte
             { "O_Truck_03_transport_F", "" }, //T Transporte
             { "O_Truck_03_covered_F", "" }, //T Coberto
             { "B_Truck_01_box_F", "" }, //H BOX
             { "O_Truck_03_device_F", "" }, //T Device
             { "C_Van_01_fuel_F", "" }, //Chaninha FUEL
-            { "I_Truck_02_fuel_F", "" }, //Zamack FUEL
+            { "C_Truck_02_fuel_F", "" }, //Zamack FUEL
             { "B_Truck_01_fuel_F", "" } //H FUEL
         };
     };
@@ -197,9 +197,9 @@ class LifeCfgVehicles {
 	
 	//HellCat
 	class I_Heli_light_03_unarmed_F {
-	    vItemSpace = 235;
+	    vItemSpace = 325;
 		conditions = "";
-		price = 1000000;
+		price = 480000;
 		textures[] = {
 			{ "Policia", "cop", {
 				"textures\veh\cop\hellcatpm.paa"
@@ -212,9 +212,9 @@ class LifeCfgVehicles {
 	
 	//Mohawk
 	class I_Heli_Transport_02_F {
-	    vItemSpace = 300;
+	    vItemSpace = 490;
 		conditions = "";
-		price = 1200000;
+		price = 500000;
 		textures[] = {
 			{ "Civil 1", "civ", {
 		        "\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_1_ion_CO.paa",
@@ -231,33 +231,33 @@ class LifeCfgVehicles {
 	
 	//Taru T
 	class O_Heli_Transport_04_covered_F {
-	    vItemSpace = 150;
+	    vItemSpace = 135;
 		conditions = "";
-		price = 1250000;
+		price = 425000;
 		textures[] = {};
 	};
 	
 	//Taru C
 	class O_Heli_Transport_04_box_F {
-	    vItemSpace = 400;
+	    vItemSpace = 650;
 		conditions = "";
-		price = 2000000;
+		price = 710000;
 		textures[] = {};
 	};
 	
 	//Huron
 	class B_Heli_Transport_03_F {
-	    vItemSpace = 550;
+	    vItemSpace = 690;
 		conditions = "";
-		price = 3000000;
+		price = 700000;
 		textures[] = {};
 	};
 	
 	//BLACKFISH
 	class B_T_VTOL_01_infantry_F {
-	    vItemSpace = 850;
+	    vItemSpace = 950;
 		conditions = "";
-		price = 5200000;
+		price = 2500000;
 		textures[] = {};
 	};
 	
@@ -265,7 +265,7 @@ class LifeCfgVehicles {
 	class C_Plane_Civil_01_racing_F {
 		vItemSpace = 125;
 		conditions = "";
-		price = 300000;
+		price = 275000;
 		textures[] = {};
 	};
 	
@@ -273,15 +273,15 @@ class LifeCfgVehicles {
 	
 	//Van CAMO
 	class I_G_Van_02_vehicle_F {
-		vItemSpace = 135;
+		vItemSpace = 128;
 		conditions = "";
-		price = 100000;
+		price = 70000;
 		textures[] = {};
 	};
 	
 	//Qilin
 	class O_LSV_02_unarmed_F {
-		vItemSpace = 80;
+		vItemSpace = 90;
 		conditions = "";
 		price = 150000;
 		textures[] = {
@@ -304,15 +304,15 @@ class LifeCfgVehicles {
 	class O_MRAP_02_F {
 		vItemSpace = 95;
 		conditions = "";
-		price = 350000;
+		price = 290000;
 		textures[] = {};
 	};
 	
 	//Strider
 	class I_MRAP_03_F {
-		vItemSpace = 75;
+		vItemSpace = 70;
 		conditions = "";
-		price = 400000;
+		price = 300000;
 		textures[] = {
 			{ "Rebelde", "reb", {
 				"a3\soft_f_beta\mrap_03\data\MRAP_03_ext_CO.paa"
@@ -348,9 +348,9 @@ class LifeCfgVehicles {
 
     // Apex DLC
     class C_Offroad_02_unarmed_F {
-        vItemSpace = 65;
+        vItemSpace = 90;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 12500;
+        price = 48000;
         textures[] = {
             { "Black", "civ", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_black_co.paa"
@@ -554,16 +554,16 @@ class LifeCfgVehicles {
     };
 
     class O_Truck_03_transport_F {
-        vItemSpace = 285;
+        vItemSpace = 300;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1200000;
+        price = 300000;
         textures[] = { };
     };
 
     class O_Truck_03_device_F {
-        vItemSpace = 350;
+        vItemSpace = 540;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 2200000;
+        price = 1200000;
         textures[] = { };
     };
 
@@ -589,16 +589,16 @@ class LifeCfgVehicles {
     };
 
     class B_G_Offroad_01_F {
-        vItemSpace = 65;
+        vItemSpace = 90;
         conditions = "";
-        price = 12500;
+        price = 48000;
         textures[] = { };
     };
 
     class B_G_Offroad_01_armed_F {
         vItemSpace = 65;
         conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
-        price = 450000;
+        price = 350000;
         textures[] = { };
     };
 
@@ -640,9 +640,9 @@ class LifeCfgVehicles {
     */
 	
     class C_Offroad_01_F {
-        vItemSpace = 65;
+        vItemSpace = 90;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 12500;
+        price = 48000;
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -706,9 +706,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Kart_01_Vrana_F : C_Kart_01_Blu_F{};
 
     class C_Hatchback_01_sport_F {
-        vItemSpace = 45;
+        vItemSpace = 60;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 50000;
+        price = 26000;
         textures[] = {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
@@ -742,9 +742,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_Quadbike_01_F {
-        vItemSpace = 25;
+        vItemSpace = 30;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 2500;
+        price = 5000;
         textures[] = {
             { "Brown", "cop", {
                 "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
@@ -807,16 +807,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class O_Truck_03_covered_F {
-        vItemSpace = 300;
+        vItemSpace = 350;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 250000;
+        price = 320000;
         textures[] = {};
     };
 
     class C_Hatchback_01_F {
-        vItemSpace = 40;
+        vItemSpace = 50;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 9500;
+        price = 18500;
         textures[] = {
             { "Beige", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa"
@@ -848,7 +848,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_SUV_01_F {
         vItemSpace = 50;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 30000;
+        price = 35200;
         textures[] = {
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
@@ -908,7 +908,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class B_MRAP_01_F {
         vItemSpace = 80;
         conditions = "";
-        price = 375000;
+        price = 280000;
         textures[] = {
 			{ "Rebelde", "reb", {
 				"\a3\soft_f\MRAP_01\Data\MRAP_01_base_CO.paa",
@@ -922,9 +922,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
      class B_Heli_Light_01_stripped_F {
-        vItemSpace = 90;
+        vItemSpace = 115;
         conditions = "";
-        price = 275000;
+        price = 250000;
         textures[] = {
 			{ "Rebelde Padrão", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Heli_Light_01_ext_BLUFOR_CO.paa"
@@ -939,9 +939,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class B_Heli_Light_01_F {
-        vItemSpace = 90;
+        vItemSpace = 100;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 245000;
+        price = 150000;
         textures[] = {
             /*{ "Police", "cop", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
@@ -998,14 +998,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Heli_Light_01_civil_F : B_Heli_Light_01_F {
-        vItemSpace = 75;
-        price = 245000;
+        vItemSpace = 70;
+        price = 100000;
     };
 
     class O_Heli_Light_02_unarmed_F {
-        vItemSpace = 210;
+        vItemSpace = 275;
         conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
-        price = 750000;
+        price = 350000;
         textures[] = {
             { "PM", "cop", {
                 "\a3\air_f\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa"
@@ -1054,7 +1054,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class I_Truck_02_fuel_F {
+    class C_Truck_02_fuel_F {
         vItemSpace = 40;
         vFuelSpace = 42000;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";

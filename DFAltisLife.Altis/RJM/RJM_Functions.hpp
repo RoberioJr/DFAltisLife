@@ -56,6 +56,14 @@ class RJM_Scripts {
 		class Heroina {};
 	};
 	
+	class Dog {
+		file = "RJM\Scripts\Dog";
+		class Dog {};
+		class DogImob {};
+		class DogAtacar {};
+		class DogLife {};
+	};
+	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};

@@ -97,6 +97,13 @@ switch (_code) do {
 	case 207: {
 	    [] call RJM_fnc_FpsBoost;
 	};
+	
+	//Dog F6
+	case 64: {
+	    if (PlayerSide IsEqualTo west && JogadorTemUmCachorro) then {
+            [] Call RJM_fnc_DogAtacar;
+		};
+    };	
 
 	//Menu De Equipamentos Para Os Admins F7
 	case 65: {
