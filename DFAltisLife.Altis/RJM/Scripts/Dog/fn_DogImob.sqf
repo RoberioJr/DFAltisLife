@@ -3,7 +3,7 @@
 */
 
 [] spawn {
-private ["_curWep","_curMags","_attach"];
+private ["_curWep","_curMags","_attach","_S"];
     if (!life_istazed) then {
         life_istazed = true;
         _curWep = currentWeapon player;
@@ -22,7 +22,9 @@ private ["_curWep","_curMags","_attach"];
         if (!(count _curMags isEqualTo 0)) then {
             {player addMagazine _x;} forEach _curMags;
         };
-        //[player,"tazerSound",100,1] remoteExecCall ["life_fnc_say3D",0];
+		
+		_S = ['grito1','grito2','grito3'] Call Bis_fnc_SelectRandom;
+        [player,_S,100,1] remoteExecCall ["life_fnc_say3D",0];
 
         _obj = "Land_ClutterCutter_small_F" createVehicle ASLTOATL(visiblePositionASL player);
         _obj setPosATL ASLTOATL(visiblePositionASL player);

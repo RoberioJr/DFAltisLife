@@ -184,6 +184,24 @@
         titles[] = {};
     };
 	
+	class grito1 {
+	    name = "grito1"; 
+		sound[] = {\RJM\Recursos\Audio\grito1.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	
+	class grito2 {
+	    name = "grito2"; 
+		sound[] = {\RJM\Recursos\Audio\grito2.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	
+	class grito3 {
+	    name = "grito3"; 
+		sound[] = {\RJM\Recursos\Audio\grito3.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	
 	/* DOG */
 	
 	class pantum {
