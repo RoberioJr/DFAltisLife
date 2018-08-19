@@ -154,6 +154,17 @@ class VirtualItems {
 
 	/* RJ EDIT */
 	
+	class ossodog {
+		variable = "ossodog";
+        displayName = "Comida Do Dog";
+        weight = 2;
+        buyPrice = 250;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\osso.paa";
+	};
+	
 	class ziptie {
         variable = "ziptie";
         displayName = "STR_Ziptie";
