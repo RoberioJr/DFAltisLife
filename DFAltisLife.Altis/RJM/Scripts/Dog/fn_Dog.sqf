@@ -14,7 +14,7 @@ FomeDog = 100;
 		WaitUntil {!DogAtacando};
 		WaitUntil {dog distance player > 3.1};
 		dog moveTo getPos player;
-		sleep 1.5;
+		sleep 1.2;
 	};
  };
  
@@ -25,7 +25,7 @@ FomeDog = 100;
 	DogAtacando = false;
 	JogadorTemUmCachorro = false;
 	FomeDog = 100;
-	[dog,"dogYelp",60,1] remoteExecCall ["life_fnc_say3D",0];
+	[dog,"dogYelp",75,1] remoteExecCall ["life_fnc_say3D",0];
 	SystemChat Format['%1, Seu Cachorro Morreu!',Name Player]; 
  };
  
@@ -35,7 +35,7 @@ FomeDog = 100;
 	    WaitUntil {!DogOcupado};
 		WaitUntil {!DogAtacando};
 		if (dog Distance player > 400) then { 
-		    dog setPos [((getPos player) select 0) + 5, ((getPos player) select 1) + 5, 0];  
+		    dog setPos [((getPos player) select 0) + 7, ((getPos player) select 1) + 7, 0];  
 		};
 		if (dog distance player < 3) then {
 		    dog playMove "Dog_Sit";
@@ -49,7 +49,7 @@ FomeDog = 100;
 		    dog playMove "Dog_Sprint"; 
 		    SystemChat 'Cao Longe, Correndo'; 
 		};
-	    sleep 3.5;
+	    sleep 3;
 	};	
  };
  
@@ -61,7 +61,7 @@ FomeDog = 100;
         _K = [1,2,3,4,5,6] call bis_fnc_selectRandom;
         if (_K IsEqualTo 2) then { 
 			_S = ['pantdois','pantum','dogLat'] call bis_fnc_selectRandom;
-			[dog,_S,50,1] remoteExecCall ["life_fnc_say3D",0]; 
+			[dog,_S,60,1] remoteExecCall ["life_fnc_say3D",0]; 
 	    };
 	};
  };
