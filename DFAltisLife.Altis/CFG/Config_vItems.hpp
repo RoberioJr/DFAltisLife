@@ -206,7 +206,7 @@ class VirtualItems {
         sellPrice = 100000;
         illegal = true;
         edible = -1;
-        icon = "icons\blindfold.paa"0;
+        icon = "icons\blindfold.paa";
     };
 	
     //Misc

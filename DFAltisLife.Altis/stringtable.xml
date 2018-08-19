@@ -12151,6 +12151,9 @@
   <Key ID="STR_blindfold">
       <Original>Saco Preto</Original>
   </Key>
+  <Key ID="STR_kidney">
+      <Original>Rim</Original>
+  </Key>
 </Package>
     <Key ID="STR_pAct_DriverSeat">
         <Original>Entrar Como Motorista</Original>
