@@ -13,7 +13,7 @@ overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the ov
 #include "CFG\Config_RemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "CFG\Config_Master.hpp"
-#include "maverick\maverick_master.cpp"                        //Maverick FrameWork
+#include "maverick\maverick_master.cpp"
 #include "RJM\RJM_Master.hpp" 
 
 class CfgServer {

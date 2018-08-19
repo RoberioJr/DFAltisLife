@@ -16,19 +16,20 @@ _Administradores =
 ];
 
  /* Configuração Dos Marcadores Do Mapa */
-RJ_MrkFARM = 
+ /* ['MARCADOR','ICONE','DESCRIÇÃO'] */
+RJ_MrkMapa = 
 [
-    ['strawberry_1','icons\morango.paa'],     //Morango
-    ['banana_1','icons\banana.paa'],          //Banana
-    ['apple_1','icons\ico_apple.paa'],        //Maçã
-	['apple_2','icons\ico_apple.paa'],        //Maçã
-	['apple_3','icons\ico_apple.paa'],        //Maçã
-	['peaches_1','icons\ico_peach.paa.paa'],  //Pêra
-	['peaches_2','icons\ico_peach.paa.paa'],  //Pêra
-	['peaches_3','icons\ico_peach.paa.paa'],  //Pêra
-	['pineapple_1','icons\abacaxi.paa'],      //Abacaxi
-	['grape_1','icons\uva.paa'],              //Uva
-    ['guava_1','icons\goiaba.paa']	          //Goiaba
+    ['strawberry_1','icons\morango.paa',''],     //Morango
+    ['banana_1','icons\banana.paa',''],          //Banana
+    ['apple_1','icons\ico_apple.paa',''],        //Maçã
+	['apple_2','icons\ico_apple.paa',''],        //Maçã
+	['apple_3','icons\ico_apple.paa',''],        //Maçã
+	['peaches_1','icons\ico_peach.paa',''],      //Pêra
+	['peaches_2','icons\ico_peach.paa',''],      //Pêra
+	['peaches_3','icons\ico_peach.paa',''],      //Pêra
+	['pineapple_1','icons\abacaxi.paa',''],      //Abacaxi
+	['grape_1','icons\uva.paa',''],              //Uva
+    ['guava_1','icons\goiaba.paa','']	         //Goiaba
 ];
 
     /* Configurações Do Radio */ 

@@ -117,7 +117,7 @@ class Life_Settings {
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 4; //Maximum number of houses a player can own.
+    house_limit = 3; //Maximum number of houses a player can own.
     houseGarage_buyPrice = 1000000;
     houseGarage_sellPrice = 0;
 
@@ -147,13 +147,13 @@ class Life_Settings {
     hospital_heal_fee = 500; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 350000; //Amount of cash in bank for new cops
-    bank_civ = 350000; //Amount of cash in bank for new civillians
-    bank_med = 350000; //Amount of cash in bank for new medics
+    bank_cop = 100000; //Amount of cash in bank for new cops
+    bank_civ = 100000; //Amount of cash in bank for new civillians
+    bank_med = 100000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 12000; //Payment for cops
-    paycheck_civ = 3500; //Payment for civillians
-    paycheck_med = 12000; //Payment for medics
+    paycheck_cop = 8000; //Payment for cops
+    paycheck_civ = 2000; //Payment for civillians
+    paycheck_med = 8000; //Payment for medics
 
     paycheck_period = 8; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
@@ -205,8 +205,8 @@ class Life_Settings {
     vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     disableCommanderView = true; //false - Group leaders can access the commander view. true [default] - Group leaders cannot access the commander view.
-                                 //Commander/tactical view is accessed via pressing . [NUM] by default. It raises the camera significantly higher and steeper above the player in order to give a boarder tactical view of the surrounding area.
-
+//                               //Commander/tactical view is accessed via pressing . [NUM] by default. It raises the camera significantly higher and steeper above the player in order to give a boarder tactical view of the surrounding area.
+//
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {

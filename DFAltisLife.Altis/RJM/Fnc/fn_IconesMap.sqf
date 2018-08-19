@@ -8,10 +8,9 @@
 waitUntil {Alive Player};
 WaitUntil {RJ_JogadorPronto};
 waitUntil {!isNull (findDisplay 46)};
-//Marcadores = [['coca','icone\morango.paa'],['coca1','icone\banana.paa'],['coca2','icone\maca.paa']];
 
 findDisplay 12 displayCtrl 51 ctrlAddEventHandler ["Draw", 
-    '  
+	'  
 	{
         _this select 0 drawIcon [
 	    RJ_MISSAO_DIR + (_x select 1),
@@ -20,12 +19,26 @@ findDisplay 12 displayCtrl 51 ctrlAddEventHandler ["Draw",
         24,  
         24,  
         0, 
-        "", 
+        (_x select 2), 
         1,  
         0.03,  
         "TahomaB",  
         "right"  
         ]  
-	} ForEach RJ_MrkFARM;
-    '
+	} ForEach RJ_MrkMapa;
+	
+	_this select 0 drawIcon [
+	    RJ_MISSAO_DIR + "RJM\Recursos\Icones\BrasaoDF_P.paa",
+        [1,1,1,1],  
+        getPos player,
+        24,  
+        24,  
+        getDir player, 
+        "Você",
+        1,  
+        0.03,  
+        "TahomaB",  
+        "right"  
+        ]  
+    '	
 ];
