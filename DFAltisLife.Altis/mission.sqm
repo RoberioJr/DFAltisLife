@@ -8,18 +8,18 @@ class EditorData
 	toggles=66;
 	class ItemIDProvider
 	{
-		nextID=6604;
+		nextID=6618;
 	};
 	class MarkerIDProvider
 	{
-		nextID=304;
+		nextID=305;
 	};
 	class Camera
 	{
-		pos[]={10378.857,32.835171,13196.416};
-		dir[]={0.82696497,-0.5349772,0.17303684};
-		up[]={0.52364385,0.84486175,0.10956892};
-		aside[]={0.20480992,4.0512532e-008,-0.97880918};
+		pos[]={3560.1885,114.23604,13113.365};
+		dir[]={0.79307514,-0.46769255,-0.39032069};
+		up[]={0.41963753,0.88388318,-0.2065284};
+		aside[]={-0.44158936,-2.9918738e-007,-0.89724839};
 	};
 };
 binarizationWanted=0;
@@ -542,7 +542,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2020;
+		items=2028;
 		class Item0
 		{
 			dataType="Marker";
@@ -10708,6 +10708,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23529,7 +23530,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
-					atlOffset=9.9182129e-005;
+					atlOffset=0.19100189;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33735,7 +33736,7 @@ class Mission
 			position[]={20837.57,83.787651,7216.7856};
 			name="car_rebC";
 			type="Empty";
-			angle=309.3558;
+			angle=309.35571;
 			id=2163;
 			atlOffset=54.748131;
 		};
@@ -48003,6 +48004,7 @@ class Mission
 			};
 			id=3331;
 			type="Land_LampShabby_F";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -74953,7 +74955,7 @@ class Mission
 			};
 			id=5867;
 			type="Land_LampHalogen_F";
-			atlOffset=-0.44896126;
+			atlOffset=-0.44896078;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -77851,7 +77853,7 @@ class Mission
 			};
 			id=6023;
 			type="Land_i_House_Big_01_V1_F";
-			atlOffset=-0.044000626;
+			atlOffset=-0.043998718;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -87050,6 +87052,7 @@ class Mission
 			};
 			id=6593;
 			type="Land_InfoStand_V1_F";
+			atlOffset=-7.3432922e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -87225,7 +87228,7 @@ class Mission
 			position[]={22421.436,6.5346007,13764.417};
 			name="base1_spawn_reb_1";
 			type="Empty";
-			angle=180.05878;
+			angle=180.05873;
 			id=6595;
 		};
 		class Item2013
@@ -87234,7 +87237,7 @@ class Mission
 			position[]={22409.193,5.0219727,13755.807};
 			name="base1_spawn_reb_2";
 			type="Empty";
-			angle=94.772148;
+			angle=94.772125;
 			id=6596;
 			atlOffset=-0.94981384;
 		};
@@ -87295,7 +87298,7 @@ class Mission
 			position[]={27302.844,31.491055,24955.75};
 			name="base2_spawn_reb_1";
 			type="Empty";
-			angle=114.66077;
+			angle=114.66076;
 			id=6600;
 		};
 		class Item2017
@@ -87304,7 +87307,7 @@ class Mission
 			position[]={27319.621,32.222221,24957.719};
 			name="base2_spawn_reb_2";
 			type="Empty";
-			angle=221.59795;
+			angle=221.5979;
 			id=6601;
 		};
 		class Item2018
@@ -87313,7 +87316,7 @@ class Mission
 			position[]={27373.354,32.458008,24963.254};
 			name="base2_spawn";
 			type="Empty";
-			angle=240.74443;
+			angle=240.74435;
 			id=6602;
 			atlOffset=0.62529373;
 		};
@@ -87357,6 +87360,455 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item2020
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3197.2161,2.0154302,12868.666};
+						angles[]={0,6.2791185,0};
+					};
+					side="Civilian";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="This AddAction [""<t color='#006FFF'>Comprar Um Cachorro - (R$75,000)</t>"",RJM_fnc_DogLife];";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_I_G_Story_Protagonist_F";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Rangemaster_belt";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=6605;
+					type="B_RangeMaster_F";
+					atlOffset=0.4289999;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6604;
+			atlOffset=0.4289999;
+		};
+		class Item2021
+		{
+			dataType="Marker";
+			position[]={3197.103,1.546,12868.485};
+			name="marker_304";
+			text="Treinador de Cães";
+			type="mil_flag";
+			colorName="ColorBlue";
+			id=6608;
+			atlOffset=0.00028467178;
+		};
+		class Item2022
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13761.907,20.454557,18899.303};
+						angles[]={0,0.82941359,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="This AddAction [""<t color='#006FFF'>Comprar Um Cachorro - (R$75,000)</t>"",RJM_fnc_DogLife];";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_I_G_Story_Protagonist_F";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Rangemaster_belt";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=6610;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6609;
+		};
+		class Item2023
+		{
+			dataType="Marker";
+			position[]={13761.734,19.985126,18899.248};
+			name="marker_305";
+			text="Treinador de Cães";
+			type="mil_flag";
+			colorName="ColorBlue";
+			angle=357.61017;
+			id=6611;
+			atlOffset=-0.46896172;
+		};
+		class Item2024
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16555.951,10.996837,12809.161};
+						angles[]={0,5.3182077,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="This AddAction [""<t color='#006FFF'>Comprar Um Cachorro - (R$75,000)</t>"",RJM_fnc_DogLife];";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_I_G_Story_Protagonist_F";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Rangemaster_belt";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=6613;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6612;
+		};
+		class Item2025
+		{
+			dataType="Marker";
+			position[]={16555.994,10.527407,12808.943};
+			name="marker_306";
+			text="Treinador de Cães";
+			type="mil_flag";
+			colorName="ColorBlue";
+			angle=352.56949;
+			id=6614;
+			atlOffset=-0.4679327;
+		};
+		class Item2026
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={25319.783,82.042641,21824.605};
+						angles[]={0,4.2143221,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="This AddAction [""<t color='#006FFF'>Comprar Um Cachorro - (R$75,000)</t>"",RJM_fnc_DogLife];";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_I_G_Story_Protagonist_F";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Rangemaster_belt";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=6616;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6615;
+		};
+		class Item2027
+		{
+			dataType="Marker";
+			position[]={25319.604,81.601112,21823.992};
+			name="marker_307";
+			text="Treinador de Cães";
+			type="mil_flag";
+			colorName="ColorBlue";
+			angle=359.59207;
+			id=6617;
+			atlOffset=-0.46025848;
 		};
 	};
 };
