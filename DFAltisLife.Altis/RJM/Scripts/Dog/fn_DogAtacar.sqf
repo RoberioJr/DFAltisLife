@@ -1,3 +1,6 @@
+/*
+    Author: RobérioJR
+*/
 
 _Alvo = CursorObject;
 if !(IsPlayer _Alvo) exitWith {};

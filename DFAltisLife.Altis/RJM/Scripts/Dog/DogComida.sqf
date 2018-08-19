@@ -1,3 +1,7 @@
+/*
+    Author: RobérioJR
+*/
+
 if (!Alive Player) ExitWith {};
 
 if ([false,'ossodog',1] call life_fnc_handleInv) then {

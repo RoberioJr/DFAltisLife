@@ -1,3 +1,7 @@
+/*
+    Author: RobérioJR
+*/
+
 #include "..\..\..\script_macros.hpp"
 
 if (PlayerSide IsEqualTo civilian) ExitWith {};

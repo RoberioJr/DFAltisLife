@@ -1,11 +1,15 @@
-
+/*
+    Author: RobérioJR
+*/
     
 	Private '_Ac';
     while {alive dog} do {
-	    sleep 1;
-        if (dog distance player < 1.5) then {
-			_Ac = player addAction ['<t color="#006FFF">Alimentar</t>','RJM\Scripts\Dog\DogComida.sqf'];
+		waitUntil {dog distance player < 1.6};
+        if (dog distance player < 1.6) then {
+			_Ac1 = player addAction ['<t color="#006FFF">Alimentar Dog</t>','RJM\Scripts\Dog\DogComida.sqf'];
+			_Ac2 = player addAction ['<t color="#006FFF">Status Do Dog</t>','RJM\Scripts\Dog\DogStatus.sqf'];
 	    };
         waitUntil {dog distance player > 1.6};
-		player RemoveAction _Ac;
+		player RemoveAction _Ac1;
+		player RemoveAction _Ac2;
 	};

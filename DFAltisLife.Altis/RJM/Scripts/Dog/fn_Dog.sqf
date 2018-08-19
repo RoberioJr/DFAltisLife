@@ -1,4 +1,7 @@
-//https://community.bistudio.com/wiki/Arma_3_Animals:_Override_Default_Animal_Behaviour_Via_Script
+/*
+    Author: RobérioJR
+	//https://community.bistudio.com/wiki/Arma_3_Animals:_Override_Default_Animal_Behaviour_Via_Script
+*/
 
 dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
