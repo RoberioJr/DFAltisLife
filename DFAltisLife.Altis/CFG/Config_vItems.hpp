@@ -542,7 +542,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_lsdUnprocessed.paa";
+        icon = "icons\lsd.paa";
         processedItem = "lsd_processed";
     };
 
@@ -554,7 +554,7 @@ class VirtualItems {
         sellPrice = 1680;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_lsdProcessed.paa";
+        icon = "icons\lsdp.paa";
     };
 	
 	class ecstasy_unprocessed {
@@ -565,7 +565,7 @@ class VirtualItems {
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_ecstasyUnprocessed.paa";
+        icon = "icons\ecstasy.paa";
         processedItem = "ecstasy_processed";
     };
 
@@ -577,7 +577,7 @@ class VirtualItems {
         sellPrice = 2095;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_ecstasyProcessed.paa";
+        icon = "icons\ecstasyp.paa";
     };
 	
 	class metanfetamina_unprocessed {
