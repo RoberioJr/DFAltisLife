@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2338;
+		nextID=2341;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3584;
+		nextID=3695;
 	};
 	class Camera
 	{
-		pos[]={1879.5175,18.058496,5759.4844};
-		dir[]={0.83282101,-0.33826521,-0.43847999};
-		up[]={0.29935461,0.9410249,-0.15760936};
-		aside[]={-0.46592829,-9.4529241e-008,-0.88494921};
+		pos[]={1598.8163,26.344757,5193.1968};
+		dir[]={-0.46502936,-0.31404161,-0.82788807};
+		up[]={-0.15382084,0.94938284,-0.27384728};
+		aside[]={-0.87196553,-1.6577542e-007,0.4897899};
 	};
 };
 binarizationWanted=0;
@@ -457,7 +457,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=231;
+		items=233;
 		class Item0
 		{
 			dataType="Layer";
@@ -27759,6 +27759,51 @@ class Mission
 			colorName="ColorOrange";
 			id=2337;
 			atlOffset=-0.0003490448;
+		};
+		class Item231
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1578.8024,5.5014391,5156.7383};
+						angles[]={0,3.7450306,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=2339;
+					type="B_support_GMG_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2338;
+		};
+		class Item232
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1575.9384,7.1115026,5152.6187};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2340;
+			type="C_Offroad_01_F";
 		};
 	};
 	class Connections

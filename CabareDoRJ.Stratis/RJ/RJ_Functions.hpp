@@ -43,6 +43,11 @@ class RJ_Scripts {
 		class DogImob {};
 		class DogAtacar {};
 	};
+	
+	class Rastreio {
+		file = "RJ\Sistemas\RastreioVeiculos";
+		class Rastreado {};
+		class Rastreia {};
 };
 
 #include "Sistemas\CHVD\CfgFunctions.hpp"
