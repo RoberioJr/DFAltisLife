@@ -2,6 +2,7 @@
 
 class RJMStatusBar {
 	idd = -1;
+	//name= "RJStatusBar";
 	onLoad = "uiNamespace setVariable ['RJMStatusBar', _this select 0]";
 	onUnload = "uiNamespace setVariable ['RJMStatusBar', objNull]";
 	onDestroy = "uiNamespace setVariable ['RJMStatusBar', objNull]";
@@ -14,8 +15,8 @@ class RJMStatusBar {
 	class controls {
 		class statusBarText {
 			idc = 10713;
-			x = safezoneX + safezoneW - 1;
-			y = safezoneY + safezoneH - 0.08;
+			x = safezoneX + safezoneW - 1.36; //Padrão: 1 | Central: 1.36
+			y = safezoneY + safezoneH - 0.052; //Padrão: 0.08 | Mais Baixo: 0.052
 			w = 1;
 			h = 0.08;     //Padrão 0.03
 			shadow = 1;
