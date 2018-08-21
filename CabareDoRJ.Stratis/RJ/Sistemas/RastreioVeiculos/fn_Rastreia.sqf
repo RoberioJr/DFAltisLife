@@ -2,5 +2,6 @@
 _velRastreado = CursorObject;
 if !(_velRastreado isKindOf "Car" || _velRastreado isKindOf "Motorcycle") exitWith{};
 if (_velRastreado isEqualTo nil) exitWith{};
-CursorObject setVariable ["carroRastreado", 1, false];
-[_velRastreado] remoteExecCall ["RJ_fnc_Rastreado", west];
+_tipo = TypeOf _velRastreado;
+_velRastreado setVariable ["carroRastreado", 1, false];
+[_velRastreado, _tipo] remoteExecCall ["RJ_fnc_Rastreado", west];

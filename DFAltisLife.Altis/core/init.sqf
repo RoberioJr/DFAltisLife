@@ -11,7 +11,7 @@ private ["_handle","_timeStamp","_extDB_notLoaded"];
 life_firstSpawn = true;
 life_session_completed = false;
 [] call mav_introcam_fnc_startCinematicCam;
-[0, "Setting up client, please wait"] call mav_introcam_fnc_updateCinematicStatus;
+[0, "Configurando Cliente, Aguarde..."] call mav_introcam_fnc_updateCinematicStatus;
 0 cutFadeOut 9999999;
 _timeStamp = diag_tickTime;
 _extDB_notLoaded = "";
