@@ -3,7 +3,7 @@
 */
 
 _saude = round ((1 - (damage dog)) * 100);
-_fome = round (FomeDog);
+_fome = round (RJ_FomeDog);
 _dono = (Name Player);
 	//--Congigurações terminadas--//	
 hintSilent parseText format [

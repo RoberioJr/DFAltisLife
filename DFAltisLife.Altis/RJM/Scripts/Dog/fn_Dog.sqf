@@ -5,16 +5,16 @@
 
 dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
-DogOcupado = false;
-DogAtacando = false;
+RJ_DogOcupado = false;
+RJ_DogAtacando = false;
 JogadorTemUmCachorro = true;
-FomeDog = 100;
+RJ_FomeDog = 100;
 
   /* Movimentação Do Dog */
 [] spawn {
 	while {alive dog} do {	
-	    WaitUntil {!DogOcupado};
-		WaitUntil {!DogAtacando};
+	    WaitUntil {!RJ_DogOcupado};
+		WaitUntil {!RJ_DogAtacando};
 		WaitUntil {dog distance player > 3.1};
 		dog moveTo getPos player;
 		sleep 1.2;
@@ -24,10 +24,10 @@ FomeDog = 100;
  /* Quando O Dog Morrer */
  [] spawn {
     WaitUntil {!Alive dog};
-	DogOcupado = false;
-	DogAtacando = false;
+	RJ_DogOcupado = false;
+	RJ_DogAtacando = false;
 	JogadorTemUmCachorro = false;
-	FomeDog = 100;
+	RJ_FomeDog = 100;
 	[dog,"dogYelp",75,1] remoteExecCall ["life_fnc_say3D",0];
 	SystemChat Format['%1, Seu Cachorro Morreu!',Name Player]; 
  };
@@ -35,8 +35,8 @@ FomeDog = 100;
   /* IA De Correr E Andar */
 [] spawn {
     while {alive dog} do {
-	    WaitUntil {!DogOcupado};
-		WaitUntil {!DogAtacando};
+	    WaitUntil {!RJ_DogOcupado};
+		WaitUntil {!RJ_DogAtacando};
 		if (dog Distance player > 400) then { 
 		    dog setPos [((getPos player) select 0) + 7, ((getPos player) select 1) + 7, 0];  
 		};
@@ -70,7 +70,7 @@ FomeDog = 100;
  };
 
  [] spawn {
-    WaitUntil {IsNull Player};
+    WaitUntil {!Alive Player};
 	dog SetDamage 1;
 	deleteVehicle dog;
  };
@@ -80,8 +80,8 @@ FomeDog = 100;
     [] execVM 'RJM\Scripts\Dog\DogAction.sqf';
     While {Alive Dog} do {
         Sleep 35;
-	    FomeDog = FomeDog - 1;
-		if (FomeDog < 36) then { SystemChat Format['%1, Seu Cão Está Ficando Com Fome!',Name Player]; };
-	    if (FomeDog < 1) then { dog SetDamage 1; }
+	    RJ_FomeDog = RJ_FomeDog - 1;
+		if (RJ_FomeDog < 36) then { SystemChat Format['%1, Seu Cão Está Ficando Com Fome!',Name Player]; };
+	    if (RJ_FomeDog < 1) then { dog SetDamage 1; }
     };
  };

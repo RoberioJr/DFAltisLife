@@ -3,13 +3,14 @@
 */
 
 _Alvo = CursorObject;
-if !(IsPlayer _Alvo) exitWith {};
+if !(IsPlayer _Alvo) ExitWith {};
+if (_Alvo distance player > 80) ExitWith { Hint 'O Alvo Está Muito Longe Para O Dog Atacar.'; };
 Hint Format['Cao Irá Atacar: %1',Name _Alvo];
-DogAtacando = true;
+RJ_DogAtacando = true;
 
 [] spawn {
-    while {DogAtacando} do {
-        [dog,"dogAtacando",70,1] remoteExecCall ["life_fnc_say3D",0];
+    while {RJ_DogAtacando} do {
+        [dog,"dogAtacando",75,1] remoteExecCall ["life_fnc_say3D",0];
 		dog playMove "Dog_Sprint";
 		sleep 6.5;
     };
@@ -17,10 +18,10 @@ DogAtacando = true;
 
 [_Alvo] spawn {
     _Alvo = _this select 0; 
-    while {DogAtacando} do {
-	    if (IsNull _Alvo) then { DogAtacando = false; };
-	    if (!Alive _Alvo) then { DogAtacando = false; };
-		if (_Alvo distance dog > 75) then { DogAtacando = false; };
+    while {RJ_DogAtacando} do {
+	    if (IsNull _Alvo) then { RJ_DogAtacando = false; };
+	    if (!Alive _Alvo) then { RJ_DogAtacando = false; };
+		if (_Alvo distance dog > 75) then { RJ_DogAtacando = false; };
 	    dog moveTo getPos _Alvo;
 		sleep 0.8;
 	};
@@ -28,9 +29,9 @@ DogAtacando = true;
 
 [_Alvo] spawn {
     _Alvo = _this select 0; 
-    while {DogAtacando} do { 
+    while {RJ_DogAtacando} do { 
 	    if (dog Distance _Alvo < 2) then {
-		    DogAtacando = false;
+		    RJ_DogAtacando = false;
 			[] remoteExecCall ["RJM_fnc_DogImob",_Alvo];
 			[dog,"dogAtaq",80,1] remoteExecCall ["life_fnc_say3D",-2];
 		};
