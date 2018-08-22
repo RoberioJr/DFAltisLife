@@ -3,6 +3,9 @@
         ["_velRastreado","objNull",["objNull"]],
         ["_tipoVeiculo",objNull,[objNull]]
     ];
+	[_velRastreado,_tipoVeiculo] Spawn {
+	_velRastreado = _this Select 0;
+	_tipoVeiculo = _this Select 1;
 	SystemChat 'RemoteExec - 1';
     _carroRastreado = true;
     _limit = 600;
@@ -22,3 +25,4 @@
 	SystemChat Format['RemoteExec - Funcionando: %1',_limit];
     if (_limit < 1) then { _carroRastreado = false; deleteMarkerLocal _marcadorRastreado; };
    };
+  }
