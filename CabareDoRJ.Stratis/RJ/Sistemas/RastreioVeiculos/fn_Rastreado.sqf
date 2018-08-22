@@ -18,7 +18,7 @@
 	SystemChat 'RemoteExec - 2';
     hint "Um novo veículo foi rastreado!";
  
-    while(_carroRastreado) do {
+    while {_carroRastreado} do {
 	_marcadorRastreado setMarkerPosLocal (visiblePosition _velRastreado);
     sleep 1;
     _limit = _limit - 1;
