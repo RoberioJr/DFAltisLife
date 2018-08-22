@@ -48,6 +48,7 @@ class RJ_Scripts {
 		file = "RJ\Sistemas\RastreioVeiculos";
 		class Rastreado {};
 		class Rastreia {};
+	};
 };
 
 #include "Sistemas\CHVD\CfgFunctions.hpp"

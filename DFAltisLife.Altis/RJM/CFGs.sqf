@@ -6,8 +6,6 @@
 |                                                             |
 */
 
-private ["_Administradores","_VeiculosComRadio","_nomeMusicas"];
-
 RJ_Administradores = 
 [
     "76561198134612622",  //RJ

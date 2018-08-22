@@ -1,8 +1,9 @@
 /*Essa função é iniciada em todos os cops*/
-    //_velRastreado = Param [0,0,[0]];
-	//_tipoVeiculo = Param [1,0,[0]];
-	_velRastreado = _this Select 0;
-	_tipoVeiculo = _this Select 1;
+    params [
+        ["_velRastreado","objNull",["objNull"]],
+        ["_tipoVeiculo",objNull,[objNull]]
+    ];
+	SystemChat 'RemoteExec - 1';
     _carroRastreado = true;
     _limit = 600;
     _marcadorRastreado = createMarkerLocal [Format["RST_%1",_tipoVeiculo], visiblePosition _velRastreado];
@@ -11,11 +12,13 @@
 	_marcadorRastreado setMarkerColorLocal "ColorRed";
     _marcadorRastreado setMarkerTypeLocal "c_car";
     _marcadorRastreado setMarkerShapeLocal "ICON";
-    hint Format ["<br/><t color='#f00000ff size='1.5'>Um novo veículo foi rastreado!</t>"];
+	SystemChat 'RemoteExec - 2';
+    hint "Um novo veículo foi rastreado!";
  
     while(_carroRastreado) do {
 	_marcadorRastreado setMarkerPosLocal (visiblePosition _velRastreado);
     sleep 1;
     _limit = _limit - 1;
+	SystemChat Format['RemoteExec - Funcionando: %1',_limit];
     if (_limit < 1) then { _carroRastreado = false; deleteMarkerLocal _marcadorRastreado; };
    };
