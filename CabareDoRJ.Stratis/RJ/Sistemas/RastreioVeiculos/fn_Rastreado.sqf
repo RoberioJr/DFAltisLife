@@ -10,7 +10,7 @@
     _carroRastreado = true;
     _limit = 600;
     _marcadorRastreado = createMarkerLocal [Format["RST_%1",_tipoVeiculo], visiblePosition _velRastreado];
-	_marcadorRastreado setMarkerTextLocal format["RASTREADOR: %1", _tipoVeiculo];
+	_marcadorRastreado setMarkerTextLocal format["RASTREADOR:%1", _tipoVeiculo];
     _marcadorRastreado setMarkerBrushLocal "SolidFull";
 	_marcadorRastreado setMarkerColorLocal "ColorRed";
     _marcadorRastreado setMarkerTypeLocal "c_car";
