@@ -10,7 +10,9 @@ private ["_unit"];
 
 _unit = cursorObject;
 if (isNull _unit) exitWith {}; //Not valid
-if (player distance _unit > 3) exitWith {};
+if (PlayerSide In [west,civilian]) then {
+    if (player distance _unit > 3.5) exitWith {};
+};
 if (_unit getVariable "restrained") exitWith {};
 //if (side _unit isEqualTo west) exitWith {};
 if (player isEqualTo _unit) exitWith {};

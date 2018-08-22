@@ -98,7 +98,7 @@ switch (_code) do {
 	    [] call RJM_fnc_FpsBoost;
 	};
 	
-	//Dog F6
+	//Dog Atacar F6
 	case 64: {
 	    if (PlayerSide IsEqualTo west && JogadorTemUmCachorro) then {
             [] Call RJM_fnc_DogAtacar;
@@ -170,22 +170,21 @@ switch (_code) do {
 	    };
 	};
 
-	/*
+	
 	//Um Cu Como o Seu Merece Ficar Vivo... F2
 	case 60: {
 	    if(vehicle player isEqualTo player) then {
-		    if(!life_action_inUse) then {
-			    if (isNil "_delay") then {_delayT = time;};
-				if ((time - _delayT) > 5) then {
-			        //if ((time - life_action_delay) < 0.5) exitWith {hint localize "STR_NOTF_ActionDelay";};
-		            player playActionNow "gestureHi";
-		            [player,"cu",40,1] remoteExecCall ["life_fnc_say3D",0];
-					_delayT = time;
-				} else {hint "Espere Um Momento Para Usar Esse Argumento";};
-	        };
+		    if(RJ_DelayTerminado) then {
+			    [5] Spawn RJM_fnc_DelayRJ;
+		        player playActionNow "gestureHi";
+		        [player,"cu",40,1] remoteExecCall ["life_fnc_say3D",0];
+		     } else {
+			    hint "Espere Um Momento Para Usar Esse Argumento";
+			};
 		};
 	};
 
+	/*
 	//Prender Medico (Shift + X)
 	case 45: {
         if (_shift) then {_handled = true;};
@@ -268,10 +267,15 @@ switch (_code) do {
     //Restraining (Shift + R) COP MED CIV
     case 19: {
     if (_shift) then {_handled = true;};
+	if (_shift && playerSide isEqualTo independent && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,west])} && {alive cursorObject} && {cursorObject distance player < 5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
+        [] call life_fnc_restrainAction;
+    };
     if (_shift && playerSide isEqualTo west && {!isNull cursorObject} && {cursorObject isKindOf "Man"} && {(isPlayer cursorObject)} && {(side cursorObject in [civilian,independent])} && {alive cursorObject} && {cursorObject distance player < 3.5} && {!(cursorObject getVariable "Escorting")} && {!(cursorObject getVariable "restrained")} && {speed cursorObject < 1}) then {
         [] call life_fnc_restrainAction;
     } else {
-            [] call zipties_fnc_zip_tieAction;
+	        if (playerSide isEqualTo civilian) then {
+                [] call zipties_fnc_zip_tieAction;
+			};
         };
     };
 

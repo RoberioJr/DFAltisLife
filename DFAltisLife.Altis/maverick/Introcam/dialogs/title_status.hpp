@@ -8,7 +8,7 @@ class maverick_dialog_introcam_status {
     	class lblStatus: Life_RscText
 		{
 			idc = 0;
-			text = "Please wait"; //--- ToDo: Localize;
+			text = "Aguarde..."; //--- ToDo: Localize;
 			x = 0.01099997 * safezoneW + safezoneX;
 			y = 0.94 * safezoneH + safezoneY;
 			w = 0.99 * safezoneW;

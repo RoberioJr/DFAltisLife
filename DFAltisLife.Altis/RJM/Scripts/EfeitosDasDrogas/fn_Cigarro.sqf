@@ -27,6 +27,6 @@ _msg =
 hint Format["%1",_msg];
 _smoke = createVehicle ["SmokeS﻿hell", position player, [], 0, "NONE"];  
 //_smoke attachTo [player, [-0.03,0,0.7]];
-_smoke attachTo [player, [0,0,0],"Pelvis"];
+_smoke attachTo [player, [0,0.1,0],"Pelvis"];
 //Sleep 41;﻿
 //deleteVehicle _smoke;

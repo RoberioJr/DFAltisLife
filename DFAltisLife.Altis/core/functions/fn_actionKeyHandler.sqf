@@ -18,6 +18,10 @@ if (playerSide isEqualTo civilian && {player getVariable ["isEscorting",false]})
     [] call zipties_fnc_zip_interaction;
 };
 
+if (playerSide isEqualTo independent && {player getVariable ["isEscorting",false]}) exitWith {
+    [] call life_fnc_MenuMedico;
+};
+
 if (playerSide isEqualTo west && {player getVariable ["isEscorting",false]}) exitWith {
     [] call life_fnc_copInteractionMenu;
 };
@@ -103,8 +107,13 @@ if (isPlayer _curObject && _curObject isKindOf "Man") then {
 	
 	/*RJ EDIT*/
 	if ((_curObject getVariable ["ziptied",true]) && !dialog) then {
-    [_curObject] call zipties_fnc_zip_interaction;
+        [_curObject] call zipties_fnc_zip_interaction;
     };
+	
+	if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo independent) then {
+        [_curObject] call life_fnc_MenuMedico;
+    };
+	
 } else {
     //OK, it wasn't a player so what is it?
     private ["_isVehicle","_miscItems","_money","_list"];

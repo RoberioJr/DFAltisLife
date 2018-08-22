@@ -30,6 +30,9 @@ RJ_MrkMapa =
     ['guava_1','icons\goiaba.paa','']	         //Goiaba
 ];
 
+ /* Valor De Um Cachorro Na Loja */
+RJ_ValorDOG = 75000;
+
     /* Configurações Do Radio */ 
 	
 //Veiculos Com Radio
