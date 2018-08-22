@@ -1,7 +1,7 @@
 /*Essa função é iniciada em todos os cops*/
     params [
         ["_velRastreado",objNull,[objNull]],
-        ["_tipoVeiculo",objNull,[objNull]]
+        ["_tipoVeiculo",'',['']]
     ];
 	[_velRastreado,_tipoVeiculo] Spawn {
 	_velRastreado = _this Select 0;
