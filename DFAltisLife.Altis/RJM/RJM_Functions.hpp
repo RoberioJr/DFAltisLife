@@ -68,6 +68,11 @@ class RJM_Scripts {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};
 	};
+	
+	class Logo {
+		file = "RJM\Scripts\Logo";
+		class iniciarLogo { postInit = 1; };
+	};
 };
 
 #include "Scripts\MenuAdminRJ\VAS\cfgfunctions.hpp"     //Menu De Equipamento ADM

@@ -6,10 +6,9 @@ _EXECscript1 = 'player execVM "'+_pathtotools+'%1"';
 _EXECscript3 = 'player execVM "'+_pathtoweapon+'%1"';
 _EXECscript5 = 'player execVM "'+_pathtovehicles+'%1"';
 //_EXECscript6 = 'player execVM "'+_pathtosoldier+'%1"';
-#include "..\..\CFGs.sqf"
 
-if ((getPlayerUID player) in _Administradores) then { //Lista De Admins
-	if ((getPlayerUID player) in _Administradores) then { //Colocar Aqui Tambem A Lista De Admins
+if ((getPlayerUID player) in RJ_Administradores) then { //Lista De Admins
+	if ((getPlayerUID player) in RJ_Administradores) then { //Colocar Aqui Tambem A Lista De Admins
 		adminmenu =
 		[
 			["RoberioJr Menu",true],

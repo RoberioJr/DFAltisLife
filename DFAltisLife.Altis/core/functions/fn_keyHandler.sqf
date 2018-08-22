@@ -107,14 +107,14 @@ switch (_code) do {
 
 	//Menu De Equipamentos Para Os Admins F7
 	case 65: {
-	    if (FETCH_CONST(life_adminlevel) >= 1) then {
+	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] execVM "RJM\Scripts\MenuAdminRJ\VAS\open.sqf";
 		};
 	};
 
 	//Spawner De Veiculos Para Os Admins F8
 	case 66: {
-	    if (FETCH_CONST(life_adminlevel) >= 1) then {
+	    if ((getPlayerUID player) in RJ_Administradores) then { then {
 	        [] call TUT_fnc_OpenVehUI;
 		};
     };

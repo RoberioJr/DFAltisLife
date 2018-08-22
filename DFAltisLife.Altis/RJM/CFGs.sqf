@@ -8,7 +8,7 @@
 
 private ["_Administradores","_VeiculosComRadio","_nomeMusicas"];
 
-_Administradores = 
+RJ_Administradores = 
 [
     "76561198134612622",  //RJ
 	"76561198335998321",  //Nulo
@@ -35,7 +35,7 @@ RJ_MrkMapa =
     /* Configurações Do Radio */ 
 	
 //Veiculos Com Radio
-_VeiculosComRadio = 
+RJ_VeiculosComRadio = 
 [
     "C_Hatchback_01_sport_F",  //HatchBack Sport
     "C_Hatchback_01_F",        //HatchBack
@@ -52,7 +52,7 @@ _VeiculosComRadio =
 	"C_Van_02_medevac_F"       //Ambulancia
 ];
 
-_nomeMusicas = 
+RJ_nomeMusicas = 
 [
     "Hungria - Insônia Part. Tribo Da Periferia", //1
     "Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol", //2
