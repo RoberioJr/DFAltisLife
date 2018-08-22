@@ -1,6 +1,6 @@
 /*Essa função é iniciada em todos os cops*/
     params [
-        ["_velRastreado","objNull",["objNull"]],
+        ["_velRastreado",objNull,[objNull]],
         ["_tipoVeiculo",objNull,[objNull]]
     ];
 	[_velRastreado,_tipoVeiculo] Spawn {
