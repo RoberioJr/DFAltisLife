@@ -236,7 +236,7 @@ class VirtualItems {
         variable = "toolkit";
         displayName = "STR_Item_Toolkit";
         weight = 4;
-        buyPrice = 275;
+        buyPrice = 500;
         sellPrice = -1;
         illegal = false;
         edible = -1;
@@ -258,7 +258,7 @@ class VirtualItems {
         variable = "fuelFull";
         displayName = "STR_Item_FuelF";
         weight = 5;
-        buyPrice = 600;
+        buyPrice = 1000;
         sellPrice = -1;
         illegal = false;
         edible = -1;
@@ -280,7 +280,7 @@ class VirtualItems {
         variable = "lockpick";
         displayName = "STR_Item_Lockpick";
         weight = 1;
-        buyPrice = 4000;
+        buyPrice = 8000;
         sellPrice = -1;
         illegal = true;
         edible = -1;
@@ -335,7 +335,7 @@ class VirtualItems {
         variable = "storageSmall";
         displayName = "STR_Item_StorageBS";
         weight = 5;
-        buyPrice = 65000;
+        buyPrice = 80000;
         sellPrice = -1;
         illegal = false;
         edible = -1;
@@ -346,7 +346,7 @@ class VirtualItems {
         variable = "storageBig";
         displayName = "STR_Item_StorageBL";
         weight = 10;
-        buyPrice = 125000;
+        buyPrice = 150000;
         sellPrice = -1;
         illegal = false;
         edible = -1;
@@ -414,7 +414,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 895;
+        sellPrice = 525;
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
@@ -436,7 +436,7 @@ class VirtualItems {
         displayName = "STR_Item_SaltR";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 620;
+        sellPrice = 420;
         illegal = false;
         edible = -1;
         icon = "icons\ico_saltProcessed.paa";
@@ -458,7 +458,7 @@ class VirtualItems {
         displayName = "STR_Item_Glass";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 375;
+        sellPrice = 315;
         illegal = false;
         edible = -1;
         icon = "icons\ico_glass.paa";
@@ -574,7 +574,7 @@ class VirtualItems {
         displayName = "STR_Item_EcstasyP";
         weight = 3;
         buyPrice = 2500;
-        sellPrice = 2095;
+        sellPrice = 2055;
         illegal = true;
         edible = -1;
         icon = "icons\ecstasyp.paa";
