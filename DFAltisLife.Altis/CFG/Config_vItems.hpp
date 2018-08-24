@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "ziptie", "gag", "blindfold", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "bisturi", "ziptie", "gag", "blindfold", "boltcutter", "blastingcharge" };
     };
 
     class gang {
@@ -153,6 +153,17 @@ class VirtualItems {
     //Virtual Items
 
 	/* RJ EDIT */
+	
+	class bisturi {
+		variable = "bisturi";
+        displayName = "Bisturí";
+        weight = 8;
+        buyPrice = 8000;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\bisturi.paa";
+	};
 	
 	class ossodog {
 		variable = "ossodog";
