@@ -14,6 +14,7 @@
 	_nomeJogador = _this select 2;
     _carroRastreado = true;
     _limit = 600;
+	_idCarro = Random (9999);
     _marcadorRastreado = createMarkerLocal [Format["RST_%1_%2", _tipoVeiculo, _idCarro], visiblePosition _velRastreado];
 	_marcadorRastreado setMarkerTextLocal format["RASTREADOR: %1, Por: %2", _tipoVeiculo, _nomeJogador];
     _marcadorRastreado setMarkerBrushLocal "SolidFull";
