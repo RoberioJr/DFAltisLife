@@ -2,6 +2,8 @@
     Author: RobérioJR
 */
 
+Private ['_saude','_fome','_dono'];
+
 _saude = round ((1 - (damage dog)) * 100);
 _fome = round (RJ_FomeDog);
 _dono = (Name Player);

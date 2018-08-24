@@ -2,7 +2,7 @@
     Author: RobérioJR
 */
     
-	Private '_Ac';
+	Private ['_Ac1','_Ac2'];
     while {alive dog} do {
 		waitUntil {dog distance player < 1.6};
         if (dog distance player < 1.6) then {

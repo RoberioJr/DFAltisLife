@@ -62,4 +62,7 @@ RJ_nomeMusicas =
     "Julieta - MC Lan" //5
 ];
 
-
+RJ_ListaNegra = 
+[
+    '76561198801482673' //BOLADO
+];
