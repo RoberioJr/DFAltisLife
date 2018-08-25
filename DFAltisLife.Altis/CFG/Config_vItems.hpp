@@ -156,7 +156,7 @@ class VirtualItems {
 	
 	class bisturi {
 		variable = "bisturi";
-        displayName = "Bisturí";
+        displayName = "STR_Item_Bisturi";
         weight = 8;
         buyPrice = 8000;
         sellPrice = -1;
@@ -167,7 +167,7 @@ class VirtualItems {
 	
 	class ossodog {
 		variable = "ossodog";
-        displayName = "Comida Do Dog";
+        displayName = "STR_Item_OssoDog";
         weight = 2;
         buyPrice = 250;
         sellPrice = -1;
@@ -639,7 +639,7 @@ class VirtualItems {
 	
 	class crack_unprocessed {
         variable = "crackUnprocessed";
-        displayName = "Pedra De Crack";
+        displayName = "STR_Item_MorfinaU";
         weight = 4;
         buyPrice = -1;
         sellPrice = -1;
@@ -651,7 +651,7 @@ class VirtualItems {
 
     class crack_processed {
         variable = "crackProcessed";
-        displayName = "Crack Processado";
+        displayName = "STR_Item_MorfinaP";
         weight = 3;
         buyPrice = -1;
         sellPrice = 2055;
@@ -801,7 +801,7 @@ class VirtualItems {
 	
 	class grape {
         variable = "grape";
-        displayName = "Uva";
+        displayName = "STR_Item_Grape";
         buyPrice = -1;
         sellPrice = 200;
         illegal = false;

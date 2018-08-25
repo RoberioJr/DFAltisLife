@@ -28,6 +28,14 @@ diag_log "::Life Client:: Initialization Variables";
 [] call compile preprocessFileLineNumbers "core\configuration.sqf";
 
 diag_log "::Life Client:: Variables initialized";
+diag_log "::Life Client:: Setting up Eventhandlers";
+[] call life_fnc_setupEVH;
+
+diag_log "::Life Client:: Eventhandlers completed";
+diag_log "::Life Client:: Setting up user actions";
+[] call life_fnc_setupActions;
+
+diag_log "::Life Client:: User actions completed";
 diag_log "::Life Client:: Waiting for server functions to transfer..";
 waitUntil {(!isNil "TON_fnc_clientGangLeader")};
 
@@ -55,14 +63,6 @@ waitUntil {mav_introcam_continue};
 
 player setVariable["orgaoFaltando",false,true];
 player setVariable["temOrgao",false,true];
-
-diag_log "::Life Client:: Setting up Eventhandlers";
-[] call life_fnc_setupEVH;
-diag_log "::Life Client:: Eventhandlers completed";
-
-diag_log "::Life Client:: Setting up user actions";
-[] call life_fnc_setupActions;
-diag_log "::Life Client:: User actions completed";
 
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;

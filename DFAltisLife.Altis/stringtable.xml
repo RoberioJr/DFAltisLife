@@ -6558,7 +6558,7 @@
             <Original>Lóló não Refinado</Original>
         </Key>
 		<Key ID="STR_Item_MorfinaU">
-            <Original>Morfina Leaf</Original>
+            <Original>Pedra De Crack</Original>
             <Portuguese>Morfina não Refinada</Portuguese>
         </Key>
 		<Key ID="STR_Item_LsdU">
@@ -6578,7 +6578,7 @@
             <Original>Lóló</Original>
         </Key>
 		<Key ID="STR_Item_MorfinaP">
-            <Portuguese>Morfina Refinada</Portuguese>
+            <Portuguese>Crack Processado</Portuguese>
         </Key>
 		<Key ID="STR_License_Lsd">
             <Original>LSD Training</Original>
@@ -12167,5 +12167,11 @@
     <Key ID="STR_pAct_GoOut">
         <Original>Sair Do Veiculo</Original>
     </Key> 
+	<Key ID="STR_Item_OssoDog">
+        <Original>Comida Do Cachorro</Original>
+    </Key>
+	<Key ID="STR_Item_Bisturi">
+            <Original>Bisturí</Original>
+        </Key>
 
  

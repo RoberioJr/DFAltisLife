@@ -14,7 +14,7 @@ RJ_Administradores =
 ];
 
  /* Configuração Dos Marcadores Do Mapa */
- /* ['MARCADOR','ICONE','DESCRIÇÃO'] */
+ /* ['MARCADOR','ICONE'] */
 RJ_MrkMapa = 
 [
     ['strawberry_1','icons\morango.paa',''],     //Morango

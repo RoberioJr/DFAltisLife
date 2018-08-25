@@ -24,16 +24,16 @@ if (_vehm isEqualTo 1) then {diag_log "RJ: Auto Reparar Veiculo MED - Ativado";}
 
 
 while {true} do {
-    if(playerSide isEqualTo west) then { //COP
+    if (playerSide isEqualTo west) then { //COP
 	    if (_copm isEqualTo 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // Mochila Invisivel COP
     };
-    if(playerSide isEqualTo independent) then { //SAMU
+    if (playerSide isEqualTo independent) then { //SAMU
 	    if (_medm isEqualTo 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // Mochila Invisivel MED
 		if (_vehm isEqualTo 1) then {vehicle player setfuel 1; vehicle player setdammage 0;}; //Auto Reabastecimento e Reparo de Veiculo
     };
-    if(playerSide isEqualTo civilian) then { //CIV
+    if (playerSide isEqualTo civilian) then { //CIV
 		if (_civm isEqualTo 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // Mochila Invisivel CIV
     };
-  sleep 5;   //Tempo Entre Os Loops
+  sleep 30;   //Tempo Entre Os Loops
 };
 

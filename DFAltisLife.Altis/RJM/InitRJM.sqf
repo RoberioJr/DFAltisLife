@@ -26,14 +26,6 @@
         [] execVM "RJM\Scripts\BarraDeStatus\StatusBarSimples.sqf";
 	};
  };
- 
- /*
- RJ_MISSAO_DIR = call {
-        private "_arr";
-        _arr = toArray __FILE__;
-        _arr resize (count _arr - 8);
-        toString _arr
-    };*/
 	
  RJ_MISSAO_DIR = str missionConfigFile select [0, count str missionConfigFile - 15];
  
