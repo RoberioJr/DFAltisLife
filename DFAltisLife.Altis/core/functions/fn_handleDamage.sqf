@@ -57,7 +57,10 @@ if ((isPlayer _source) && (vehicle _source != _source)) then {
         player setVariable ["limit",false];
         [_source] spawn {
             _driver = _this select 0;
-            [0,format["O Jogador %1 Atropelou %2, Denuncie Na Administração!", name _driver, name player]] remoteExec ["life_fnc_broadcast",0];
+			if(RJ_DelayTerminado) then {
+	            [0.8] Spawn RJM_fnc_DelayRJ;
+                [0,format["O Jogador %1 Atropelou %2, Denuncie Na Administração!", name _driver, name player]] remoteExec ["life_fnc_broadcast",0];
+			};
 	    };
     };		
 };
