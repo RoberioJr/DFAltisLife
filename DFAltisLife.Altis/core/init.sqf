@@ -188,3 +188,7 @@ diag_log format ["               End of Altis Life Client Init :: Total Executio
 diag_log "----------------------------------------------------------------------------------------------------";
 /* Auto Save Do Jogador */
 [] spawn RJM_fnc_autoSaveInv;
+/* Var Do RJ */
+RJ_JogadorPronto = true;
+
+

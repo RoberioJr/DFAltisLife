@@ -56,7 +56,5 @@
   /* SafeZones */
    [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
    
-   RJ_JogadorPronto = true;
-   
   systemchat "Scripts RJM Inicializadas *o*...";
   

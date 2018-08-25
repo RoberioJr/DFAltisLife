@@ -135,12 +135,12 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_Rangemaster", $STR_C_Cop_uniforms, 25, "call life_coplevel < 11" },
+            { "U_Rangemaster", $STR_C_Cop_uniforms, 25, "call life_coplevel == 1" },
             //{ "U_B_CombatUniform_mcam_tshirt", "", 350, "call life_coplevel >= 1" },
             //{ "U_B_CombatUniform_mcam_worn", "", 550, "call life_coplevel >= 2" },
             //{ "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" },
-			{ "U_I_CombatUniform", "Uniforme BOPE Manga Longa", 1500, "call life_coplevel >= 11" },
-			{ "U_I_CombatUniform_shortsleeve", "Uniforme BOPE Manga Curta", 1500, "call life_coplevel >= 11" }
+			{ "U_I_CombatUniform", "Uniforme Manga Longa", 1500, "call life_coplevel >= 2" },
+			{ "U_I_CombatUniform_shortsleeve", "Uniforme Manga Curta", 1500, "call life_coplevel >= 2" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -160,8 +160,7 @@ class Clothing {
 			{ "H_Booniehat_dgtl ", "", 300, "" },
 			{ "H_HelmetIA", "", 1200, "" },
 			{ "H_HelmetSpecB_blk ", "", 1200, "" },
-			{ "H_MilCap_dgtl  ", "", 400, "" },
-			{ "H_HelmetB_light_black ", "", 2900, "" }
+			{ "H_MilCap_dgtl  ", "", 400, "" }
 			
         };
         goggles[] = {

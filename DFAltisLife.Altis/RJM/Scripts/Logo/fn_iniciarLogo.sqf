@@ -5,7 +5,7 @@
 */
 
     /* A Logo Deve Estar No Formato: (.Paa)! */
-_DiretorioDaLogo = "RJM\Recursos\Icones\BrasaoDF.paa";
+_DiretorioDaLogo = "RJM\Recursos\Icones\BrasaoDF_P.paa";
 
     /* Não Editar Abaixo */
 	

@@ -32,29 +32,33 @@ private ['_menu','_menuMusica'];
 RJMFIXNOME = "";
     while {true} do 
 	{
-	    while {Dialog} do
-		{
-		    if !(RJMFIXNOME == "") then {
-		        _menu = findDisplay 10100;
-                _menuMusica = _menu displayCtrl 101013;
-                _menuMusica ctrlSetText RJMFIXNOME;
-			};
-			Sleep 5;
+		if !(RJMFIXNOME == "") then {
+		    _menu = findDisplay 10100;
+            _menuMusica = _menu displayCtrl 101013;
+            _menuMusica ctrlSetText RJMFIXNOME;
 		};
+		Sleep 5;
 	};
 };
 
-while {true} do
-{
+[] Spawn {
+    While {true} Do {
+	    waitUntil {typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) != player)};
+		player removeAction ACRADIO; //Remove Ação Do Radio
+		waitUntil {typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) == player)};
+	};
+};
+
+while {true} do {
     waitUntil {alive player};
 	if (typeOf vehicle player in RJ_VeiculosComRadio) then {
 	    if (vehicle player != player && (Driver (vehicle player) == player)) then {
-			_radio = player addaction [("<t color=""#2E9AFE"">" + ("Radio") +"</t>"),"[1] call RJM_fnc_Menu","",5,false,true,"",""];
+			ACRADIO = player addaction [("<t color=""#2E9AFE"">" + ("Radio") +"</t>"),"[1] call RJM_fnc_Menu","",5,false,true,"",""];
         };
 	};
 	waitUntil {vehicle player == player}; //Aguarda Até Que O Jogador Saida Do Veiculo
 	playMusic ""; //Parar Musica
-    player removeAction _radio; //Remove Ação Do Radio
+    player removeAction ACRADIO; //Remove Ação Do Radio
 	waitUntil {vehicle player != player}; //Aguardar O Jogador Entrar No Veiculo
 };
 

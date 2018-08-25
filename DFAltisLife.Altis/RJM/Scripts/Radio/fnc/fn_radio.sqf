@@ -19,27 +19,27 @@ if (_musica isEqualTo 0) exitWith { playSound "botao"; cutText ["Radio Mutada!",
 
 switch (_musica) do {
     case 1: {
-	    _nomeDaMusica = _nomeMusicas select 0; 
+	    _nomeDaMusica = RJ_nomeMusicas select 0; 
 	    _musica = "um";
 	};
 	case 2: {
-	    _nomeDaMusica = _nomeMusicas select 1; 
+	    _nomeDaMusica = RJ_nomeMusicas select 1; 
 	    _musica = "dois";
 	};
 	case 3: {
-	    _nomeDaMusica = _nomeMusicas select 2; 
+	    _nomeDaMusica = RJ_nomeMusicas select 2; 
 	    _musica = "tres";
 	};
 	case 4: {
-	    _nomeDaMusica = _nomeMusicas select 3; 
+	    _nomeDaMusica = RJ_nomeMusicas select 3; 
 	    _musica = "quatro";
 	};
 	case 5: {
-	    _nomeDaMusica = _nomeMusicas select 4; 
+	    _nomeDaMusica = RJ_nomeMusicas select 4; 
 	    _musica = "cinco";
 	};
 	case 6: {
-	    _nomeDaMusica = _nomeMusicas select 4; 
+	    _nomeDaMusica = RJ_nomeMusicas select 4; 
 	    _musica = "seis";
 	};
 };
