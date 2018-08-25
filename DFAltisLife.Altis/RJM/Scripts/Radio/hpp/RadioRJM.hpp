@@ -9,10 +9,8 @@ class RadioRJM
 	idd = 10100;
 	name= "RadioRJM";
 	
-	class ControlsBackground
-	{
-		class Radio
-		{
+	class ControlsBackground {
+		class Radio {
 			type = 0;
 			idc = -1;
 			x = safeZoneX + safeZoneW * 0.24511719;
@@ -26,14 +24,10 @@ class RadioRJM
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
 			access = 0;
-			
 		};
-		
 	};
-	class Controls
-	{
-		class msc6
-		{
+	class Controls {
+		class msc6 {
 			type = 1;
 			idc = 10106;
 			x = safeZoneX + safeZoneW * 0.59082032;
@@ -61,10 +55,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class msc5
-		{
+		class msc5 {
 			type = 1;
 			idc = 10105;
 			x = safeZoneX + safeZoneW * 0.5546875;
@@ -92,10 +84,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class msc4
-		{
+		class msc4 {
 			type = 1;
 			idc = 10104;
 			x = safeZoneX + safeZoneW * 0.52050782;
@@ -123,10 +113,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class msc3
-		{
+		class msc3 {
 			type = 1;
 			idc = 10103;
 			x = safeZoneX + safeZoneW * 0.48925782;
@@ -154,10 +142,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class msc2
-		{
+		class msc2 {
 			type = 1;
 			idc = 10102;
 			x = safeZoneX + safeZoneW * 0.44921875;
@@ -185,10 +171,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class msc1
-		{
+		class msc1 {
 			type = 1;
 			idc = 10101;
 			x = safeZoneX + safeZoneW * 0.41601563;
@@ -216,10 +200,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class Avancar
-		{
+		class Avancar {
 			type = 1;
 			idc = -1;
 			x = safeZoneX + safeZoneW * 0.65917969;
@@ -247,10 +229,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class Voltar
-		{
+		class Voltar {
 			type = 1;
 			idc = -1;
 			x = safeZoneX + safeZoneW * 0.62402344;
@@ -278,10 +258,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class MaisVolume
-		{
+		class MaisVolume {
 			type = 1;
 			idc = 10101234;
 			x = safeZoneX + safeZoneW * 0.336;
@@ -309,10 +287,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class MenosVolume
-		{
+		class MenosVolume {
 			type = 1;
 			idc = 10101235;
 			x = safeZoneX + safeZoneW * 0.305;
@@ -340,7 +316,6 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
 		class Pausar
 		{
@@ -371,10 +346,8 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		class Paredao
-		{
+		class Paredao {
 			type = 1;
 			idc = 101012;
 			x = safeZoneX + safeZoneW * 0.685;
@@ -402,23 +375,18 @@ class RadioRJM
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
 		};
-		
-		class NomeMusica
-		{
+		class NomeMusica {
 			type = 13;
 			idc = 101013;
 			x = safeZoneX + safeZoneW * 0.39160157;
 			y = safeZoneY + safeZoneH * 0.59027778;
 			w = safeZoneW * 0.21679688;
 			h = safeZoneH * 0.03819445;
-			text = "Robério CD's arrazando tudo";
+			text = "Roberio CDs arrazando tudo";
 			size = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 24) * 1.3);
 			colorBackground[] = {1,1,1,0};
 			tooltipColorText[] = {0.902,0.902,0.902,1};
 		};
-		
 	};
-	
 };

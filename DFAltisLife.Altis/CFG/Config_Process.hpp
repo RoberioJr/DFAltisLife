@@ -106,7 +106,7 @@ class ProcessAction {
         NoLicenseCost = 10500;
     };
 	
-	class crack {
+	class morfina {
         MaterialsReq[] = {{"crack_unprocessed",1}};
         MaterialsGive[] = {{"crack_processed",1}};
         Text = "STR_Process_Morfina";

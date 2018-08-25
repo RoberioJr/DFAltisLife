@@ -4,7 +4,7 @@
 
 */
 
-private ["_radio"];
+//private ["_radio"];
 
 /* Iniciando Script */
  diag_log "RJ: Radio Dos Veiculos - Ativado";
@@ -37,18 +37,21 @@ RJMFIXNOME = "";
             _menuMusica = _menu displayCtrl 101013;
             _menuMusica ctrlSetText RJMFIXNOME;
 		};
-		Sleep 5;
+		Sleep 2;
 	};
 };
 
 [] Spawn {
     While {true} Do {
-	    waitUntil {typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) != player)};
+	    waitUntil {typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) == player)};
+		ACRADIO = player addaction [("<t color=""#2E9AFE"">" + ("Radio") +"</t>"),"[1] call RJM_fnc_Menu","",5,false,true,"",""];
+	    waitUntil {(typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) != player)) || ((Vehicle Player) == player)};
+		if (Vehicle Player == Player) then { playMusic ""; };
 		player removeAction ACRADIO; //Remove Ação Do Radio
-		waitUntil {typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) == player)};
 	};
 };
 
+/*
 while {true} do {
     waitUntil {alive player};
 	if (typeOf vehicle player in RJ_VeiculosComRadio) then {
@@ -60,6 +63,6 @@ while {true} do {
 	playMusic ""; //Parar Musica
     player removeAction ACRADIO; //Remove Ação Do Radio
 	waitUntil {vehicle player != player}; //Aguardar O Jogador Entrar No Veiculo
-};
+};*/
 
 
