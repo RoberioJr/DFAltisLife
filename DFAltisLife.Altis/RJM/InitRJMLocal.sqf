@@ -53,6 +53,9 @@
    /* RádioRJM */
    [] execVM "RJM\Scripts\Radio\init.sqf";
    
+  /* Turbo Rocam */
+   [] execVM "RJM\Scripts\Turbo\Action.sqf"; 
+   
   /* SafeZones */
    [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
    

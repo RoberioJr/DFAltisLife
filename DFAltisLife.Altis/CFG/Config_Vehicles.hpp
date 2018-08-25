@@ -131,6 +131,7 @@ class CarShops {
         side = "cop";
         conditions = "";
         vehicles[] = {
+			{ "C_Quadbike_01_F", "" },
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" },
@@ -194,6 +195,18 @@ class LifeCfgVehicles {
     };
 	
 	/* Adição De Veiculos RJ */
+	
+	//Quad Da Cop Turbo
+	class C_Quadbike_01_F {
+		vItemSpace = 30;
+		conditions = "";
+		price = 10000;
+		textures[] = {
+			{ "Policia - Preto", "civ", {
+                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_black_co.paa"
+            }, "call life_coplevel >= 1" },
+		};
+	};
 	
 	//HellCat
 	class I_Heli_light_03_unarmed_F {

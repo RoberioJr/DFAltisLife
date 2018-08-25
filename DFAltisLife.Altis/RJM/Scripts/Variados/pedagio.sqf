@@ -9,21 +9,17 @@
 */
 
 
-if (side player == civilian) then {
+if (PlayerSide IsEqualTo civilian) then {
 	if (CASH > 999) then {
 		call action_pagar;
+	} Else { 
+	    hint "Você não tem dinheiro suficiente para pagar o pedágio!" 
 	};
-	if (CASH < 999) exitWith {hint "Você não tem dinheiro suficiente para pagar o pedágio!"};
 };
 
-if (side player == west) then {
+if (PlayerSide In [west,independent]) then {
 	call action_prioridade;
 };
-
-if (side player == independent) then {
-	call action_prioridade;
-};
-
 
 action_prioridade = {
 	_porta = nearestObject [player, "Land_Net_Fence_gate_F"];

@@ -58,6 +58,10 @@ switch (playerSide) do {
 		    player setObjectTextureGlobal [0, "textures\roupa\bope\uniforme_pm_simples.jpg"];
 		};
 		
+		if ((FETCH_CONST(life_coplevel) >= 2) && ((uniform player) == "U_B_CTRG_1" or ((uniform player) == "U_B_CTRG_3"))) then {
+		    player setObjectTextureGlobal [0, "textures\roupa\pm\uniforme_pm_tipo1.jpg"];
+		};
+		
 		if ((FETCH_CONST(life_coplevel) >= 2) && ((uniform player) == "U_I_CombatUniform_shortsleeve" or ((uniform player) == "U_I_CombatUniform"))) then {
 		    player setObjectTextureGlobal [0, "textures\roupa\pm\uniforme_pm_padrao.jpg"];
 		};

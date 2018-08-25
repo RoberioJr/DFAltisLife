@@ -135,12 +135,11 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_Rangemaster", $STR_C_Cop_uniforms, 25, "call life_coplevel == 1" },
-            //{ "U_B_CombatUniform_mcam_tshirt", "", 350, "call life_coplevel >= 1" },
-            //{ "U_B_CombatUniform_mcam_worn", "", 550, "call life_coplevel >= 2" },
-            //{ "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" },
+            { "U_Rangemaster", $STR_C_Cop_uniforms, 750, "call life_coplevel == 1" },
 			{ "U_I_CombatUniform", "Uniforme Manga Longa", 1500, "call life_coplevel >= 2" },
-			{ "U_I_CombatUniform_shortsleeve", "Uniforme Manga Curta", 1500, "call life_coplevel >= 2" }
+			{ "U_I_CombatUniform_shortsleeve", "Uniforme Manga Curta", 1500, "call life_coplevel >= 2" },
+			{ "U_B_CTRG_1", "Uniforme Tipo 1 Manga Longa", 1500, "call life_coplevel >= 2" },
+			{ "U_B_CTRG_3", "Uniforme Tipo 1 Manga Curta", 1500, "call life_coplevel >= 2" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },

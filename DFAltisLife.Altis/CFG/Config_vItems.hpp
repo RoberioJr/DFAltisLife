@@ -133,7 +133,7 @@ class VirtualShops {
 	class ymarket {
     name = "STR_Shops_yMarket";
     conditions = "";
-    items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "copper_refined", "copper_unrefined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "tabacoProcessed", "lsdProcessed", "ecstasyProcessed", "metanfetaminaProcessed", "loloProcessed", "crackp", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "salt_unrefined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "kidney"};
+    items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "copper_refined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "tabaco_processed", "lsd_processed", "ecstasy_processed", "metanfetamina_processed", "lolo_processed", "crack_processed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "kidney"};
     };
 };
 
@@ -218,6 +218,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\kidney.paa";
+		description = "Um Belo Rim, Limpa O Sangue Das Impurezas Do Corpo, Funcionando Como Filtros. Deve Valer Uma Boa Grana :)";
     };
 	
     //Misc
@@ -307,6 +308,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_goldBar.paa";
+		description = "As Barras De Ouro Padrão São Utilizadas Como Reservas Monetárias Em Espécie Pelos Bancos Centrais, Valem Um Boa Grana.";
     };
 
     class blastingcharge {
@@ -385,6 +387,7 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_oilProcessed.paa";
+		description = "Além De Gerar A Gasolina, Que Serve De Combustível Para Grande Parte Dos Automóveis Que Circulam No Mundo, Vários Produtos São Derivados Como Produtos Asfálticos, Querosene, Solventes, Óleos Combustíveis, Óleos Lubrificantes e Óleo Diesel.";
     };
 
     class copper_unrefined {
@@ -407,6 +410,7 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_copper.paa";
+		description = "Uma das principais aplicações do cobre é para produção de ligas metálicas, materiais formados pela mistura de dois ou mais componentes, no qual pelo menos um é metal.";
     };
 
     class iron_unrefined {
@@ -429,6 +433,7 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
+		description = "O nome ferro é derivado do latim ferrum, é um metal maleável, tenaz, de coloração branco-acizentada apresentando propriedades magnéticas; é ferromagnético à temperatura ambiente, assim como o Níquel e o Cobalto.";
     };
 
     class salt_unrefined {
@@ -451,6 +456,7 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_saltProcessed.paa";
+		description = "O sal era, até o início do século XX, um importante conservante alimentar. A tal ponto chegava sua importância, que foi até mesmo usado como forma de pagamento no período romano, sendo esta a origem da palavra 'salário'. Por este motivo as explorações de sal chegaram a ter valor estratégico, inclusive tendo sido criadas vilas fortificadas para defender as salinas.";
     };
 
     class sand {
@@ -473,6 +479,7 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_glass.paa";
+		description = "É basicamente composto por areia, calcário, barrilha, alumina, corantes e descorantes. As matérias primas que compõem o vidro são os vitrificantes, fundentes e estabilizantes.";
     };
 
     class diamond_uncut {
@@ -495,6 +502,7 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_diamondCut.paa";
+		description = "O diamante é o mais duro material de ocorrência natural que se conhece, com uma dureza de 10 (valor máximo da escala de Mohs). Isto significa que não pode ser riscado por nenhum outro mineral ou substância, exceto o próprio diamante, funcionando como um importante material abrasivo.";
     };
 
     class rock {
@@ -517,6 +525,7 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_cement.paa";
+		description = "O cimento (derivada do latim cæmentué) um aglomerante hidráulico que, em contato com a água, produz reação exotérmica de cristalização de produtos hidratados, ganhando assim resistência mecânica. É o principal material de construção usado como aglomerante. ";
     };
 
     //Drugs
@@ -543,6 +552,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\tabacop.paa";
+		description = "Um cigarro é um pequeno cilindro de folhas de tabaco de corte fino enroladas numa mortalha que pode ser fumado.";
     };
 	
 	class lsd_unprocessed {
@@ -566,6 +576,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\lsdp.paa";
+		description = "LSD é a sigla de Lysergsäurediethylamid, palavra alemã para a dietilamida do ácido lisérgico, que é uma das mais potentes substâncias alucinógenas conhecidas.";
     };
 	
 	class ecstasy_unprocessed {
@@ -589,6 +600,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ecstasyp.paa";
+		description = "A metilenodioximetanfetamina denominada popularmente ecstasy, é uma substância psicotrópica usada frequentemente como droga recreativa. ";
     };
 	
 	class metanfetamina_unprocessed {
@@ -612,6 +624,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\metap.paa";
+		description = "'Say my name'";
     };
 	
 	class lolo_unprocessed {
@@ -635,6 +648,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\lolop.paa";
+		description = "Cheirinho da loló ou loló é o nome popular de um entorpecente preparado clandestinamente baseado em clorofórmio e éter.";
     };
 	
 	class crack_unprocessed {
@@ -658,6 +672,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\crackp.paa";
+		description = "Crack [pronúncia: kɹæk ] é a cocaína solidificada em cristais. O nome deriva do barulho peculiar do cristal de cocaína, ao ser fumado.";
     }; 	
 
     class heroin_unprocessed {
@@ -681,6 +696,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_heroinProcessed.paa";
+		description = "Heroína ou diamorfina é um opioide frequentemente utilizado como droga recreativa devido ao seu efeito eufórico.";
     };
 
     class cannabis {
@@ -704,6 +720,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_marijuana.paa";
+		description = "Cannabis sativa é uma planta herbácea da família das Canabiáceas, amplamente cultivada em muitas partes do mundo.";
     };
 
     class cocaine_unprocessed {
@@ -727,6 +744,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\ico_cocaineProcessed.paa";
+		description = "A cocaína, benzoilmetilecgonina ou éster do ácido benzoico, também conhecida por coca, é um alcaloide, estimulante, com efeitos anestésicos utilizada fundamentalmente como uma droga recreativa.";
     };
 
     //Drink
@@ -761,6 +779,7 @@ class VirtualItems {
         illegal = false;
         edible = 100;
         icon = "icons\ico_waterBottle.paa";
+		description = "Uma Bela Maçã :)";
     };
 
     //Food
@@ -785,6 +804,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\pera.paa";
+		description = "Uma Pêra Pow.";
     };
 	
 	class guava {
@@ -796,6 +816,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\goiaba.paa";
+		description = "Pegar O Onibus Ou Comprar A Goiaba? Eis A Questão...";
     };
 	
 	
@@ -807,6 +828,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\uva.paa";
+		description = "Uma Uva. Cuidado Para Não Levar Uma Descarga Elétrica.";
     };
 	
 	class strawberry {
@@ -818,6 +840,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\morango.paa";
+		description = "Um Belo Morango.";
     };
 	
 	class banana {
@@ -829,6 +852,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\banana.paa";
+		description = "Você Gosta De Uma BANANA?( ͡° ͜ʖ ͡°).";
     };
 	
 	class pineapple {
@@ -840,6 +864,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\abacaxi.paa";
+		description = "Um Abacaxi Bem Bonito.";
     };
 
     class tbacon {
