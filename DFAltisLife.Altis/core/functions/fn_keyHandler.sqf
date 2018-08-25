@@ -93,8 +93,8 @@ switch (_code) do {
 
     /* Alterações RobérioJR */
 	
-	//Pancadão Do RJ
-	case 45:{
+	//Pancadão Do RJ F5
+	case 63:{
 		if (FETCH_CONST(life_donorlevel) >= 2) Then {
 	        if (typeOf vehicle player in VeiculosComRadio) then {
 	            if (vehicle player != player && (Driver (vehicle player) == player)) then {
