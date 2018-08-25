@@ -93,6 +93,20 @@ switch (_code) do {
 
     /* Alterações RobérioJR */
 	
+	//Rádio Normal X
+	case 45:{
+	    if (typeOf vehicle player in VeiculosComRadio) then {
+	        if (vehicle player != player && (Driver (vehicle player) == player)) then {
+	            if (_alt) then {
+				    if (FETCH_CONST(life_donorlevel) < RJ_CaixaDeSomDoador) ExitWith {};
+                    [2] call RJ_fnc_Menu; //Caixa De Som
+				} Else { 
+				    [1] call RJ_fnc_Menu; //Rádio Comum
+				}; 
+			};
+        };
+    };
+	
 	//FPSBOOST
 	case 207: {
 	    [] call RJM_fnc_FpsBoost;

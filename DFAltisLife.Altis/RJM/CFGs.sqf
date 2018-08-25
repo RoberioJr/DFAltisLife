@@ -35,6 +35,9 @@ RJ_ValorDOG = 75000;
 
     /* Configurações Do Radio */ 
 	
+//Nivel De Doador Para Ter Caixa De Som
+RJ_CaixaDeSomDoador = 2;
+
 //Veiculos Com Radio
 RJ_VeiculosComRadio = 
 [
@@ -53,6 +56,7 @@ RJ_VeiculosComRadio =
 	"C_Van_02_medevac_F"       //Ambulancia
 ];
 
+//Nome Das Musicas (Em Ordem)
 RJ_nomeMusicas = 
 [
     "Hungria - Insônia Part. Tribo Da Periferia", //1
@@ -61,8 +65,12 @@ RJ_nomeMusicas =
     "Falso Amor - Aldair Playboy", //4
     "Julieta - MC Lan" //5
 ];
+/***/
 
 RJ_ListaNegra = 
 [
     '76561198801482673' //BOLADO
 ];
+
+
+

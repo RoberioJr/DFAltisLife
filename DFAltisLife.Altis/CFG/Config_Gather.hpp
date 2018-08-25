@@ -112,7 +112,7 @@ class CfgGather {
             zoneSize = 30;
         };
 		
-		class morfina_unprocessed {
+		class crack_unprocessed {
             amount = 3;
             zones[] = { "morfina_1" };
             item = "";

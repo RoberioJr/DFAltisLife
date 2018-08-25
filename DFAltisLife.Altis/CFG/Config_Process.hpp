@@ -87,7 +87,7 @@ class ProcessAction {
         MaterialsGive[] = {{"heroin_processed",1}};
         Text = "STR_Process_Heroin";
         //ScrollText = "Process Heroin";
-        NoLicenseCost = 1750;
+        NoLicenseCost = 10750;
     };
 
     class marijuana {
@@ -103,15 +103,15 @@ class ProcessAction {
         MaterialsGive[] = {{"lsd_processed",1}};
         Text = "STR_Process_Lsd";
         //ScrollText = "Process Lsd";
-        NoLicenseCost = 1500;
+        NoLicenseCost = 10500;
     };
 	
-	class morfina {
-        MaterialsReq[] = {{"morfina_unprocessed",1}};
-        MaterialsGive[] = {{"morfina_processed",1}};
+	class crack {
+        MaterialsReq[] = {{"crack_unprocessed",1}};
+        MaterialsGive[] = {{"crack_processed",1}};
         Text = "STR_Process_Morfina";
         //ScrollText = "Process Morfina";
-        NoLicenseCost = 1500;
+        NoLicenseCost = 10500;
     };
 	
 	class ecstasy {
@@ -119,7 +119,7 @@ class ProcessAction {
         MaterialsGive[] = {{"ecstasy_processed",1}};
         Text = "STR_Process_Ecstasy";
         //ScrollText = "Process ecstasy";
-        NoLicenseCost = 1500;
+        NoLicenseCost = 10500;
     };
 	
 	class metanfetamina {
@@ -127,7 +127,7 @@ class ProcessAction {
         MaterialsGive[] = {{"metanfetamina_processed",1}};
         Text = "STR_Process_Metanfetamina";
         //ScrollText = "Process metanfetamina";
-        NoLicenseCost = 1500;
+        NoLicenseCost = 10500;
     };
 	
 	class lolo {
@@ -135,7 +135,7 @@ class ProcessAction {
         MaterialsGive[] = {{"lolo_processed",1}};
         Text = "STR_Process_Lolo";
         //ScrollText = "Process opio";
-        NoLicenseCost = 1500;
+        NoLicenseCost = 10500;
     };
 
     class cement {

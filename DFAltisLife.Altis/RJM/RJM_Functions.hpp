@@ -64,6 +64,14 @@ class RJM_Scripts {
 		class DogLife {};
 	};
 	
+	class RadioRJ {
+		file = "RJM\Scripts\Radio\fnc";
+		class Menu {};
+		class radio {};
+		class radioSom {};
+		class VolumeAlterar {};
+	};
+	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};

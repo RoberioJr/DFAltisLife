@@ -34,7 +34,7 @@ findDisplay 12 displayCtrl 51 ctrlAddEventHandler ["Draw",
         24,  
         24,  
         getDir player, 
-        "Você",
+        "", //Nome
         1,  
         0.03,  
         "TahomaB",  

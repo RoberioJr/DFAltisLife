@@ -7,17 +7,11 @@
 */
 
   sounds[] = {};
-	class botao {
-        name = "botao";
-        sound[] = {"RJM\Recursos\Audio\botao.ogg", 1.0, 1};
-        titles[] = {};
-    };
 	class um {
         name = "um";
         sound[] = {"RJM\Recursos\Audio\msc1.ogg", 1.0, 1};
         titles[] = {};
     };
-	/*
 	class dois {
         name = "dois";
         sound[] = {"RJM\Recursos\Audio\msc2.ogg", 1.0, 1};
@@ -32,7 +26,31 @@
         name = "quatro";
         sound[] = {"RJM\Recursos\Audio\msc4.ogg", 1.0, 1};
         titles[] = {};
-    };*/
+    };
+	
+	class cinco {
+        name = "cinco";
+        sound[] = {"RJM\Recursos\Audio\msc5.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class intro {
+        name = "intro";
+        sound[] = {"RJM\Recursos\Audio\intro.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class seis {
+        name = "seis";
+        sound[] = {"RJM\Recursos\Audio\msc6.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class botao {
+        name = "botao";
+        sound[] = {"RJM\Recursos\Audio\botao.ogg", 1.0, 1};
+        titles[] = {};
+    };
 	
 	class sirenLong {
         name = "sirenLong";

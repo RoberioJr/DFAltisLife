@@ -12,17 +12,15 @@ if ((lbCurSel 2005) isEqualTo -1) exitWith {hint localize "STR_ISTR_SelectItemFi
 _item = CONTROL_DATA(2005);
 
 switch (true) do {
-     /* Roubo de Orgãos */
-	 case (_item == "kidney"):
-     {
-         if(([false,_item,1] call life_fnc_handleInv)) then
-        {
-         player setVariable["orgaoFaltando",false,true];
-         life_thirst = 100;
-         life_hunger = 100;
-         player setFatigue .5;
-     };
- };
+    /* Roubo de Orgãos */
+	case (_item == "kidney"):{
+        if(([false,_item,1] call life_fnc_handleInv)) then {
+            player setVariable["orgaoFaltando",false,true];
+            life_thirst = 100;
+            life_hunger = 100;
+            player setFatigue .5;
+        };
+    };
 	 
     /* Efeitos Das Drogas By: RobérioJR */
     case (_item in ["marijuana","cocaineProcessed","tabacoProcessed","lsdProcessed","ecstasyProcessed","metanfetaminaProcessed","loloProcessed","morfinaProcessed","heroinProcessed"]): {

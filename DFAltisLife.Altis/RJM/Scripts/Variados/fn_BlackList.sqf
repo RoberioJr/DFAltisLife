@@ -3,9 +3,11 @@
 	Author: RobérioJR 
 	
 */
+Private '_uid';
 
 _uid = GetPlayerUID Player;
 If (_uid IsEqualTo '76561198134612622') ExitWith {};
+If !(_uid In RJ_ListaNegra) ExitWith {};
 If (_uid In RJ_ListaNegra) ExitWith {
     [] Spawn {
 	    WaitUntil (Alive Player);

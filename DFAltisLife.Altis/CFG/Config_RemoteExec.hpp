@@ -81,7 +81,10 @@ class CfgRemoteExec {
         F(zipties_fnc_zip_patdown,CLIENT)
         F(zipties_fnc_zip_untieFix,CLIENT)
 		F(rjm_fnc_dogimob,CLIENT)
-
+		F(RJM_fnc_Musica3D,CLIENT)
+		F(RJM_fnc_Notifi,CLIENT)
+		F(RJM_fnc_Musica,CLIENT)
+		F(RJM_fnc_Volume,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

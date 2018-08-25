@@ -50,6 +50,9 @@
   /* Ferramentas ADM */
    [] execVM "RJM\Scripts\MenuAdminRJ\loop.sqf";
    
+   /* RádioRJM */
+   [] execVM "RJM\Scripts\Radio\init.sqf";
+   
   /* SafeZones */
    [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
    

@@ -55,7 +55,7 @@ class CarShops {
             { "O_Truck_03_device_F", "" }, //T Device
             { "C_Van_01_fuel_F", "" }, //Chaninha FUEL
             { "C_Truck_02_fuel_F", "" }, //Zamack FUEL
-            { "B_Truck_01_fuel_F", "" } //H FUEL
+            { "B_Truck_01_covered_F", "" } //H Coberto
         };
     };
 
@@ -318,6 +318,20 @@ class LifeCfgVehicles {
 				"a3\soft_f_beta\mrap_03\data\MRAP_03_ext_CO.paa"
 			}, "" }
 		};
+	};
+	
+	class C_Truck_02_transport_F {
+		vItemSpace = 250;
+		conditions = "";
+		price = 225000;
+		textures[] = {};
+	};
+	
+	class C_Truck_02_covered_F {
+		vItemSpace = 280;
+		conditions = "";
+		price = 250000;
+		textures[] = {};
 	};
 	
 	class C_Van_02_medevac_F {
@@ -617,16 +631,16 @@ class LifeCfgVehicles {
     };
 
     class B_Truck_01_box_F {
-        vItemSpace = 450;
+        vItemSpace = 900;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1800000;
+        price = 1000000;
         textures[] = { };
     };
 
     class B_Truck_01_transport_F {
-        vItemSpace = 325;
+        vItemSpace = 450;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 275000;
+        price = 500000;
         textures[] = { };
     };
 
@@ -807,9 +821,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class O_Truck_03_covered_F {
-        vItemSpace = 350;
+        vItemSpace = 390;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 320000;
+        price = 425000;
         textures[] = {};
     };
 
@@ -868,19 +882,19 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Digital HEXAGONO", "civ", {
                 "textures\veh\civ\suvhex.paa"
             }, "license_civ_rebel" },
-            /*{ "Police", "cop", {
+            { "Policia - Provisório", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
-            }, "" },*/
+            }, "" }/*
 			{ "Policia", "cop", {
                 "textures\veh\cop\suvpm.paa"
-            }, "call life_coplevel < 11" }
+            }, "call life_coplevel < 11" }*/
         };
     };
 
     class C_Van_01_transport_F {
-        vItemSpace = 100;
+        vItemSpace = 150;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 45000;
+        price = 100000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -892,9 +906,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Van_01_box_F {
-        vItemSpace = 150;
+        vItemSpace = 200;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 60000;
+        price = 175000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"
@@ -1038,10 +1052,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Van_01_fuel_F {
-        vItemSpace = 20;
+        vItemSpace = 45;
         vFuelSpace = 19500;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 120000;
+        price = 70000;
         textures[] = {
             { "White", "civ", {
                 "\A3\soft_f_gamma\Van_01\data\van_01_ext_co.paa",
@@ -1055,10 +1069,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Truck_02_fuel_F {
-        vItemSpace = 40;
+        vItemSpace = 90;
         vFuelSpace = 42000;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 200000;
+        price = 110000;
         textures[] = {
             { "White", "civ", {
                 "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
@@ -1067,11 +1081,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class B_Truck_01_fuel_F {
-        vItemSpace = 50;
+    class B_Truck_01_covered_F {
+        vItemSpace = 650;
         vFuelSpace = 50000;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 750000;
+        price = 700000;
         textures[] = {};
     };
 };

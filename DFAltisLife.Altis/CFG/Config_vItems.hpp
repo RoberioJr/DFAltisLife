@@ -133,7 +133,7 @@ class VirtualShops {
 	class ymarket {
     name = "STR_Shops_yMarket";
     conditions = "";
-    items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "copper_refined", "copper_unrefined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "tabacoProcessed", "lsdProcessed", "ecstasyProcessed", "metanfetaminaProcessed", "loloProcessed", "morfinaProcessed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "salt_unrefined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw"};
+    items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "copper_refined", "copper_unrefined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "tabacoProcessed", "lsdProcessed", "ecstasyProcessed", "metanfetaminaProcessed", "loloProcessed", "crackp", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "salt_unrefined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "kidney"};
     };
 };
 
@@ -637,27 +637,27 @@ class VirtualItems {
         icon = "icons\lolop.paa";
     };
 	
-	class morfina_unprocessed {
-        variable = "morfinaUnprocessed";
-        displayName = "STR_Item_MorfinaU";
+	class crack_unprocessed {
+        variable = "crackUnprocessed";
+        displayName = "Pedra De Crack";
         weight = 4;
         buyPrice = -1;
         sellPrice = -1;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_morfinaUnprocessed.paa";
-        processedItem = "morfina_processed";
+        icon = "icons\crack.paa";
+        processedItem = "crackProcessed";
     };
 
-    class morfina_processed {
-        variable = "morfinaProcessed";
-        displayName = "STR_Item_MorfinaP";
+    class crack_processed {
+        variable = "crackProcessed";
+        displayName = "Crack Processado";
         weight = 3;
         buyPrice = -1;
         sellPrice = 2055;
         illegal = true;
         edible = -1;
-        icon = "icons\ico_morfinaProcessed.paa";
+        icon = "icons\crackp.paa";
     }; 	
 
     class heroin_unprocessed {
@@ -768,8 +768,8 @@ class VirtualItems {
         variable = "apple";
         displayName = "STR_Item_Apple";
         weight = 1;
-        buyPrice = 100;
-        sellPrice = 90;
+        buyPrice = -1;
+        sellPrice = 200;
         illegal = false;
         edible = 10;
         icon = "icons\ico_apple.paa";
@@ -780,8 +780,8 @@ class VirtualItems {
         variable = "peach";
         displayName = "STR_Item_Peach";
         weight = 1;
-        buyPrice = 100;
-        sellPrice = 90;
+        buyPrice = -1;
+        sellPrice = 200;
         illegal = false;
         edible = 10;
         icon = "icons\pera.paa";
@@ -791,8 +791,8 @@ class VirtualItems {
         variable = "guava";
         displayName = "STR_Item_Guava";
         weight = 1;
-        buyPrice = 100;
-        sellPrice = 90;
+        buyPrice = -1;
+        sellPrice = 200;
         illegal = false;
         edible = 10;
         icon = "icons\goiaba.paa";
@@ -802,8 +802,8 @@ class VirtualItems {
 	class grape {
         variable = "grape";
         displayName = "Uva";
-        buyPrice = 100;
-        sellPrice = 90;
+        buyPrice = -1;
+        sellPrice = 200;
         illegal = false;
         edible = 10;
         icon = "icons\uva.paa";
@@ -813,8 +813,8 @@ class VirtualItems {
         variable = "strawberry";
         displayName = "STR_Item_Strawberry";
         weight = 1;
-        buyPrice = 100;
-        sellPrice = 90;
+        buyPrice = -1;
+        sellPrice = 200;
         illegal = false;
         edible = 10;
         icon = "icons\morango.paa";
@@ -824,8 +824,8 @@ class VirtualItems {
         variable = "banana";
         displayName = "STR_Item_Banana";
         weight = 1;
-        buyPrice = 100;
-        sellPrice = 1800;
+        buyPrice = -1;
+        sellPrice = 200;
         illegal = false;
         edible = 10;
         icon = "icons\banana.paa";
@@ -835,8 +835,8 @@ class VirtualItems {
         variable = "pineapple";
         displayName = "STR_Item_Pineapple";
         weight = 1;
-        buyPrice = 100;
-        sellPrice = 90;
+        buyPrice = -1;
+        sellPrice = 200;
         illegal = false;
         edible = 10;
         icon = "icons\abacaxi.paa";
@@ -846,7 +846,7 @@ class VirtualItems {
         variable = "tbacon";
         displayName = "STR_Item_TBacon";
         weight = 1;
-        buyPrice = 195;
+        buyPrice = 85;
         sellPrice = -1;
         illegal = false;
         edible = 40;
