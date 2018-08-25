@@ -8,10 +8,12 @@ if (_Alvo distance player > 80) ExitWith { Hint 'O Alvo Está Muito Longe Para O
 Hint Format['Cao Irá Atacar: %1',Name _Alvo];
 RJ_DogAtacando = true;
 
+//Forçar O Dog A Correr
+dog playMove "Dog_Sprint";
+
 [] spawn {
     while {RJ_DogAtacando} do {
-        [dog,"dogAtacando",75,1] remoteExecCall ["life_fnc_say3D",0];
-		dog playMove "Dog_Sprint";
+        [dog,"dogAtacando",80,1] remoteExecCall ["life_fnc_say3D",0];
 		sleep 6.5;
     };
 };
@@ -35,6 +37,6 @@ RJ_DogAtacando = true;
 			[] remoteExecCall ["RJM_fnc_DogImob",_Alvo];
 			[dog,"dogAtaq",80,1] remoteExecCall ["life_fnc_say3D",-2];
 		};
-		sleep 0.4;
+		sleep 0.2;
 	};
 };
