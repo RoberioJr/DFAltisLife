@@ -34,9 +34,6 @@ RJ_MrkMapa =
 RJ_ValorDOG = 75000;
 
     /* Configurações Do Radio */ 
-	
-//Nivel De Doador Para Ter Caixa De Som
-RJ_CaixaDeSomDoador = 2;
 
 //Veiculos Com Radio
 RJ_VeiculosComRadio = 

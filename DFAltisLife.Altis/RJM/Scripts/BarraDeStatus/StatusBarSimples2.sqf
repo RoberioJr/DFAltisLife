@@ -105,15 +105,15 @@ case(_FpsHud < 1) : {_colourFps = _colourDead;};
 };
 ((uiNamespace getVariable "RJMStatusBar")displayCtrl 10713)ctrlSetStructuredText parseText
  format["<t shadow='1' shadowColor='#000000'>
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\civ.paa'/>%1 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\cop.paa'/>%2 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\med.paa'/>%3 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\Dinheiro.paa'/>%4 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\hunger.paa'/>%5 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\thirst.paa'/>%7 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\health.paa'/>%9 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\fps.paa'/>%11 
- <img size='1.3' shadowColor='#000000' image='RJM\Recursos\Icones\uptime.paa'/>%13
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\civ.paa'/>%1 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\cop.paa'/>%2 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\med.paa'/>%3 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\Dinheiro.paa'/>%4 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\hunger.paa'/>%5 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\thirst.paa'/>%7 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\health.paa'/>%9 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\fps.paa'/>%11 
+ <img size='1.1' shadowColor='#000000' image='RJM\Recursos\Icones\uptime.paa'/>%13
  </t>",_CivplayHUD,_WestplayHUD,_IndepplayHUD, /*format["%1",_grid]*/_Dinheiro, _hunger, _colourHunger, _thirst, _colourThirst, _damage, _colourDamage, _FpsHud, _colourFps, _UpTimeHUD, _colourUpTimeHUD, _players, _colourDefault];
  }; 
 };

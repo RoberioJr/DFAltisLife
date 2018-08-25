@@ -95,10 +95,11 @@ switch (_code) do {
 	
 	//Pancadão Do RJ
 	case 45:{
-		if (FETCH_CONST(life_donorlevel) < RJ_CaixaDeSomDoador) ExitWith {};
-	    if (typeOf vehicle player in VeiculosComRadio) then {
-	        if (vehicle player != player && (Driver (vehicle player) == player)) then {
-                [2] call RJM_fnc_Menu; //Caixa De Som
+		if (FETCH_CONST(life_donorlevel) >= 2) Then {
+	        if (typeOf vehicle player in VeiculosComRadio) then {
+	            if (vehicle player != player && (Driver (vehicle player) == player)) then {
+                    [2] call RJM_fnc_Menu; //Caixa De Som
+		        };
 		    };
 		};
     };

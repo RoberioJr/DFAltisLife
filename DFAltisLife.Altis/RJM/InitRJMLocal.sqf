@@ -42,7 +42,7 @@
   };
    
   /* Marcadores */
-   [] Spawn RJM_fnc_Marcador;
+   //[] Spawn RJM_fnc_Marcador;
    
   /* Icones Dos Farms No Mapa */
    [] Spawn RJM_fnc_IconesMap;
