@@ -59,11 +59,12 @@ RJ_VeiculosComRadio =
 //Nome Das Musicas (Em Ordem)
 RJ_nomeMusicas = 
 [
-    "Hungria - Insônia Part. Tribo Da Periferia", //1
-    "Twenty One Pilots - Heathens ft. Chatuba de Mesquita & MC Carol", //2
-    "Mc orelha - Faixa de gaza 2 (Godjira Mix)", //3
-    "Falso Amor - Aldair Playboy", //4
-    "Julieta - MC Lan" //5
+    "All-Star Brasil - Não Julgue Feat. Jhef", //1
+    "WCnoBEAT - Meu Mundo FT. Mc Cabelinho, PK, Mc Hariel & Orochi", //2
+    "Hungria Hip Hop - Beijo Com Trap", //3
+    "Chatuba de Mesquita - Remix feat. Lilly Wood & The Prick", //4
+    "Coldplay - Viva La Vida", //5
+	"MC Pedrinho e MC Davi - Bonita, Lindinha e Sagaz" //6
 ];
 /***/
 
