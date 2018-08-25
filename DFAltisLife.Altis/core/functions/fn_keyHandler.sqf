@@ -128,7 +128,7 @@ switch (_code) do {
 
 	//Spawner De Veiculos Para Os Admins F8
 	case 66: {
-	    if ((getPlayerUID player) in RJ_Administradores) then { then {
+	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] call TUT_fnc_OpenVehUI;
 		};
     };
