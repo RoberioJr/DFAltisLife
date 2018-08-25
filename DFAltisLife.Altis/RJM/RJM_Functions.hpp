@@ -11,13 +11,9 @@ class RJM_Scripts {
 
     class Funcoes {
 		file = "RJM\Fnc";
-		class Musica3D {};
-		class Musica {};
 		class UnidadesPerto {};
 		class Jogadores {};
-		class Notifi {};
 		class Hospital {};
-		class Volume {};
 		class IconesMap {};
 		class DelayRJ {};
 	};
@@ -70,16 +66,15 @@ class RJM_Scripts {
 		class radio {};
 		class radioSom {};
 		class VolumeAlterar {};
+		class Musica3D {};
+		class Musica {};
+		class Notifi {};
+		class Volume {};
 	};
 	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};
-	};
-	
-	class Logo {
-		file = "RJM\Scripts\Logo";
-		class iniciarLogo { postInit = 1; };
 	};
 };
 

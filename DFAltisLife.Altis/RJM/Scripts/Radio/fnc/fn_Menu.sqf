@@ -14,8 +14,6 @@
 
 Private ["_RjTipoRadio","_menu","_Stop","_SomP","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_vei"];
 /* Definições */
-//#include "..\..\script_macros.hpp"
-#include "..\..\..\CFGs.sqf"
 #define Btn1 10101
 #define Btn2 10102
 #define Btn3 10103
@@ -55,11 +53,12 @@ _Btn5 = _menu displayCtrl Btn5;
 _Btn6 = _menu displayCtrl Btn6;
 _Btn7 = _menu displayCtrl Btn7;
 
-_msc1 = _nomeMusicas select 0;
-_msc2 = _nomeMusicas select 1;
-_msc3 = _nomeMusicas select 2;
-_msc4 = _nomeMusicas select 3;
-_msc5 = _nomeMusicas select 4;
+_msc1 = RJ_nomeMusicas select 0;
+_msc2 = RJ_nomeMusicas select 1;
+_msc3 = RJ_nomeMusicas select 2;
+_msc4 = RJ_nomeMusicas select 3;
+_msc5 = RJ_nomeMusicas select 4;
+_msc6 = RJ_nomeMusicas select 5;
  
  /* Definições dos Botões */
 
@@ -73,6 +72,7 @@ _Btn2 ctrlSetTooltip _msc2;
 _Btn3 ctrlSetTooltip _msc3;
 _Btn4 ctrlSetTooltip _msc4;
 _Btn5 ctrlSetTooltip _msc5;
+_Btn6 ctrlSetTooltip _msc6;
 
  /* Texto Dos Botões */
  

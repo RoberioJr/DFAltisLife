@@ -39,7 +39,7 @@ switch (_musica) do {
 	    _musica = "cinco";
 	};
 	case 6: {
-	    _nomeDaMusica = RJ_nomeMusicas select 4; 
+	    _nomeDaMusica = RJ_nomeMusicas select 5; 
 	    _musica = "seis";
 	};
 };

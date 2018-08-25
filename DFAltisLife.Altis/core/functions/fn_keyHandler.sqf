@@ -98,7 +98,7 @@ switch (_code) do {
 		if (FETCH_CONST(life_donorlevel) < RJ_CaixaDeSomDoador) ExitWith {};
 	    if (typeOf vehicle player in VeiculosComRadio) then {
 	        if (vehicle player != player && (Driver (vehicle player) == player)) then {
-                [2] call RJ_fnc_Menu; //Caixa De Som
+                [2] call RJM_fnc_Menu; //Caixa De Som
 		    };
 		};
     };

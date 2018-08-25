@@ -13,7 +13,6 @@ params [
     ["_Valor","",[""]]
 ];
 
-if (isNull _Veiculo || {_Volume isEqualTo ""}) exitWith {};
 if ((Vehicle player) IsEqualTo _Veiculo) then {
     1 fadeMusic _Volume;
 };

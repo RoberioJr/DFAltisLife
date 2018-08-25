@@ -6,7 +6,7 @@
 |                                                             |
 */
 
-Private ["_VAtualRadio","_vei"];
+Private ["_vei"];
 _vei = (Vehicle Player);
 _BVolume = param [0,0,[0]];
 VAtualRadio = MusicVolume;

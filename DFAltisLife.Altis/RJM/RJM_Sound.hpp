@@ -204,19 +204,19 @@
 	
 	class grito1 {
 	    name = "grito1"; 
-		sound[] = {\RJM\Recursos\Audio\grito1.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\grito1.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
 	class grito2 {
 	    name = "grito2"; 
-		sound[] = {\RJM\Recursos\Audio\grito2.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\grito2.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
 	class grito3 {
 	    name = "grito3"; 
-		sound[] = {\RJM\Recursos\Audio\grito3.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\grito3.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
@@ -224,37 +224,37 @@
 	
 	class pantum {
 		name = "pantum"; 
-		sound[] = {\RJM\Recursos\Audio\dogPant1.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\dogPant1.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
 	class pantdois {
 		name = "pantdois"; 
-		sound[] = {\RJM\Recursos\Audio\dogPant2.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\dogPant2.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
 	class dogYelp {
 	    name = "dogYelp"; 
-		sound[] = {\RJM\Recursos\Audio\dogYelp.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\dogYelp.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
 	class dogLat {
 	    name = "dogLat"; 
-		sound[] = {\RJM\Recursos\Audio\dogLat.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\dogLat.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
 	class dogAtaq {
 	    name = "dogAtaq"; 
-		sound[] = {\RJM\Recursos\Audio\dogAtaq.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\dogAtaq.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	
 	class dogAtacando {
 	    name = "dogAtacando"; 
-		sound[] = {\RJM\Recursos\Audio\dogAtacando.ogg, 1, 1.0};
+		sound[] = {"RJM\Recursos\Audio\dogAtacando.ogg", 1, 1.0};
 		titles[] = {};
 	};
 	/**/

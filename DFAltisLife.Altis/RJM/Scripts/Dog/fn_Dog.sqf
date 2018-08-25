@@ -37,22 +37,22 @@ RJ_FomeDog = 100;
     while {alive dog} do {
 	    WaitUntil {!RJ_DogOcupado};
 		WaitUntil {!RJ_DogAtacando};
-		if (dog Distance player > 400) then { 
-		    dog setPos [((getPos player) select 0) + 7, ((getPos player) select 1) + 7, 0];  
+		if (dog Distance player > 300) then { 
+		    dog setPos [((getPos player) select 0) + 9, ((getPos player) select 1) + 9, 0];  
 		};
 		if (dog distance player < 3) then {
 		    dog playMove "Dog_Sit";
-			SystemChat 'Cao Muito Perto, Sentado';
+			//SystemChat 'Cao Muito Perto, Sentado';
 		};
         if (dog distance player < 10) then {
 		    WaitUntil {dog distance player > 3.1};
 		    dog playMove "Dog_Walk";
-			SystemChat 'Cao Perto, Andando';
+			//SystemChat 'Cao Perto, Andando';
 		} else { 
 		    dog playMove "Dog_Sprint"; 
-		    SystemChat 'Cao Longe, Correndo'; 
+		    //SystemChat 'Cao Longe, Correndo'; 
 		};
-	    sleep 3;
+	    sleep 2.5;
 	};	
  };
  
@@ -63,7 +63,7 @@ RJ_FomeDog = 100;
 		sleep 2.5;
         _K = [1,2,3,4,5,6] call bis_fnc_selectRandom;
         if (_K IsEqualTo 2) then { 
-			_S = ['pantdois','pantum','dogLat'] call bis_fnc_selectRandom;
+			_S = ['pantdois','pantum','dogLat'] call BIS_fnc_SelectRandom;
 			[dog,_S,60,1] remoteExecCall ["life_fnc_say3D",0]; 
 	    };
 	};
@@ -79,7 +79,7 @@ RJ_FomeDog = 100;
  [] spawn {
     [] execVM 'RJM\Scripts\Dog\DogAction.sqf';
     While {Alive Dog} do {
-        Sleep 35;
+        Sleep 38;
 	    RJ_FomeDog = RJ_FomeDog - 1;
 		if (RJ_FomeDog < 36) then { SystemChat Format['%1, Seu Cão Está Ficando Com Fome!',Name Player]; };
 	    if (RJ_FomeDog < 1) then { dog SetDamage 1; }
