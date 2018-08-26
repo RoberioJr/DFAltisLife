@@ -852,7 +852,7 @@ class VirtualItems {
         illegal = false;
         edible = 10;
         icon = "icons\banana.paa";
-		description = "Você Gosta De Uma BANANA?( ͡° ͜ʖ ͡°).";
+		description = "Você Gosta De Uma BANANA?      ( ͡° ͜ʖ ͡°).";
     };
 	
 	class pineapple {

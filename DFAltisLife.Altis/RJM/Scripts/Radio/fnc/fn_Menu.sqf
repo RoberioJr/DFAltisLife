@@ -89,7 +89,7 @@ switch (_RjTipoRadio) do {
     _Btn4 buttonSetAction "[4] call RJM_fnc_radio;";
     _Btn5 buttonSetAction "[5] call RJM_fnc_radio;";
 	_Btn6 buttonSetAction "[6] call RJM_fnc_radio;";
-	_SomP buttonSetAction "CloseDialog 0; sleep 0.3; [2] call RJM_fnc_Menu;";
+	_SomP buttonSetAction "CloseDialog 0; [2] call RJM_fnc_Menu;";
 	_VMas buttonSetAction "[1] call RJM_fnc_VolumeAlterar;";
 	_VMen buttonSetAction "[2] call RJM_fnc_VolumeAlterar;";
     };

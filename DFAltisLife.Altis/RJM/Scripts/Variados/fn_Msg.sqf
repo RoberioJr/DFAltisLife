@@ -8,8 +8,8 @@
   
     // Add a line in this array to add a message  
     _messages = [  
-        "Alguma Dúvida? Entre Em Nosso TS3:<br/> <t color='#e32828' size='1.5'>IP.TS3DFL.TS3IP</t>",  
-        "Nosso Site:<br/><t color='#e32828' size='1.5'>www.dfaltislife.com</t>"  
+        "Alguma Dúvida? Entre Em Nosso Discord:<br/> <t color='#e32828' size='1.5'>Discord.gg/mjAWdGT</t>",  
+        "Nosso Site:<br/><t color='#e32828' size='1.5'>EM BREVE</t>"  
     ];  
 
     _refreshTime = 1000; // Time between each message (in seconds)  
