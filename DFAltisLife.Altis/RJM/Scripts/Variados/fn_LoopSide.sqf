@@ -24,6 +24,7 @@ if (_vehm isEqualTo 1) then {diag_log "RJ: Auto Reparar Veiculo MED - Ativado";}
 
 
 while {true} do {
+    [] Call life_fnc_playerSkins;
     if (playerSide isEqualTo west) then { //COP
 	    if (_copm isEqualTo 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // Mochila Invisivel COP
     };

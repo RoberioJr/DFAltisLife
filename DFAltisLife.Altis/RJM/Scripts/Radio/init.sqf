@@ -42,11 +42,19 @@ RJMFIXNOME = "";
 };
 
 [] Spawn {
+    while {true} Do {
+        waitUntil {typeOf vehicle player in RJ_VeiculosComRadio};
+	    waitUntil {Vehicle Player == Player};
+	    playMusic "";
+	};
+};
+
+[] Spawn {
     While {true} Do {
 	    waitUntil {typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) == player)};
 		ACRADIO = player addaction [("<t color=""#2E9AFE"">" + ("Radio") +"</t>"),"[1] call RJM_fnc_Menu","",5,false,true,"",""];
 	    waitUntil {(typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) != player)) || ((Vehicle Player) == player)};
-		if (Vehicle Player == Player) then { playMusic ""; };
+		//if (Vehicle Player == Player) then { playMusic ""; };
 		player removeAction ACRADIO; //Remove Ação Do Radio
 	};
 };
