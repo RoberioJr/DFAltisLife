@@ -383,7 +383,7 @@ class RadioRJM
 			y = safeZoneY + safeZoneH * 0.59027778;
 			w = safeZoneW * 0.21679688;
 			h = safeZoneH * 0.03819445;
-			style = 0;
+			style = 48;
 			text = "Roberio CDs arrazando tudo";
 			size = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 24) * 1.3);
 			colorBackground[] = {1,1,1,0};
