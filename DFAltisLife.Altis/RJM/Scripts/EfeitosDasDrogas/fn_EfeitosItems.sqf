@@ -2,7 +2,7 @@
     Author: RobérioJR
 */
 
-params [ ["_item","",[""]] ];
+_item = _this Select 0;
 
 closeDialog 0; //Fechar Inventário
 
