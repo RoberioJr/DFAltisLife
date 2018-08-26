@@ -9,7 +9,10 @@ Hint Format['Cao Irá Atacar: %1',Name _Alvo];
 RJ_DogAtacando = true;
 
 //Forçar O Dog A Correr
-dog playMove "Dog_Sprint";
+[] Spawn {
+    Sleep 3;
+	dog playMove "Dog_Sprint";
+};
 
 [] spawn {
     while {RJ_DogAtacando} do {

@@ -10,7 +10,7 @@
 
 params [
     ["_Volume","",[""]],
-    ["_Veiculo","",[""]]
+    ["_Veiculo",objNull,[objNull]]
 ];
 
 if ((Vehicle player) IsEqualTo _Veiculo) then {
