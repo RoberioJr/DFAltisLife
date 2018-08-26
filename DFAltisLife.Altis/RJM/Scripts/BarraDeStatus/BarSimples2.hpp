@@ -21,7 +21,7 @@ class RJMStatusBar {
 			h = 0.08;     //Padrão 0.03
 			shadow = 1;
 			colorBackground[] = { 1, 0.3, 0, 0.0 };  // uncomment and increase 4th number to have a background
-			font = "PuristaSemibold";
+			font = "LucidaConsoleB"; //Padrao: 'PuristaSemibold'
 			size = 0.035;
 			type = 13;
 			style = 1;
