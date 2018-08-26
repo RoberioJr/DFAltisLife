@@ -31,7 +31,7 @@ class Assalto {
 			w = safeZoneW * 0.16796875;
 			h = safeZoneH * 0.03819445;
 			style = 0+2;
-			text = "Escolha Um Tipo De Abordagem:";
+			text = "Escolha Uma Abordagem:";
 			colorBackground[] = {0.302,0.302,0.302,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";

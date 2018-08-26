@@ -788,7 +788,7 @@ class VirtualItems {
         displayName = "STR_Item_Apple";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 150;
         illegal = false;
         edible = 10;
         icon = "icons\ico_apple.paa";
@@ -800,7 +800,7 @@ class VirtualItems {
         displayName = "STR_Item_Peach";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 150;
         illegal = false;
         edible = 10;
         icon = "icons\pera.paa";
@@ -812,7 +812,7 @@ class VirtualItems {
         displayName = "STR_Item_Guava";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 150;
         illegal = false;
         edible = 10;
         icon = "icons\goiaba.paa";
@@ -824,7 +824,7 @@ class VirtualItems {
         variable = "grape";
         displayName = "STR_Item_Grape";
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 150;
         illegal = false;
         edible = 10;
         icon = "icons\uva.paa";
@@ -836,7 +836,7 @@ class VirtualItems {
         displayName = "STR_Item_Strawberry";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 150;
         illegal = false;
         edible = 10;
         icon = "icons\morango.paa";
@@ -848,7 +848,7 @@ class VirtualItems {
         displayName = "STR_Item_Banana";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 150;
         illegal = false;
         edible = 10;
         icon = "icons\banana.paa";
@@ -860,7 +860,7 @@ class VirtualItems {
         displayName = "STR_Item_Pineapple";
         weight = 1;
         buyPrice = -1;
-        sellPrice = 200;
+        sellPrice = 150;
         illegal = false;
         edible = 10;
         icon = "icons\abacaxi.paa";
