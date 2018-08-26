@@ -16,6 +16,6 @@ params [
 if (isNull _veiculo || {_musica isEqualTo ""}) exitWith {};
 
 if ((Vehicle player) IsEqualTo _veiculo) then {
-    if (_musica IsEqualTo 0) ExitWith {playMusic '';};
+    if (_musica IsEqualTo "PARAR") ExitWith {playMusic '';};
     playMusic _musica;
 };

@@ -30,11 +30,11 @@ switch (true) do {
 		};
 	};
 
-    case (_item in ["waterBottle","coffee","redgull"]): {
+    case (_item in ["waterBottle","coffee","redgull","cocacola"]): {
         if ([false,_item,1] call life_fnc_handleInv) then {
             life_thirst = 100;
 			/* SOM 3D EDIT RJ */
-			[player,"beber",25,1] remoteExec ["life_fnc_say3D",0];
+			[player,"beber",30,1] remoteExec ["life_fnc_say3D",0];
             if (LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1) then {player setFatigue 0;};
             if (_item isEqualTo "redgull" && {LIFE_SETTINGS(getNumber,"enable_fatigue") isEqualTo 1}) then {
                 [] spawn {
@@ -97,13 +97,13 @@ switch (true) do {
         closeDialog 0;
     };
 
-    case (_item in ["apple","pineapple","banana","strawberry","grape","guava","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon","peach"]): {
+    case (_item in ["apple","pineapple","pizza","chocolate","ruffles","banana","strawberry","grape","guava","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","donuts","tbacon","peach"]): {
         if (!(M_CONFIG(getNumber,"VirtualItems",_item,"edible") isEqualTo -1)) then {
             if ([false,_item,1] call life_fnc_handleInv) then {
                 _val = M_CONFIG(getNumber,"VirtualItems",_item,"edible");
                 _sum = life_hunger + _val;
 				/* SOM 3D EDIT RJ */
-				[player,"comer",25,1] remoteExec ["life_fnc_say3D",0];
+				[player,"comer",30,1] remoteExec ["life_fnc_say3D",0];
                 switch (true) do {
                     case (_val < 0 && _sum < 1): {life_hunger = 5;}; //This adds the ability to set the entry edible to a negative value and decrease the hunger without death
                     case (_sum > 100): {life_hunger = 100;};

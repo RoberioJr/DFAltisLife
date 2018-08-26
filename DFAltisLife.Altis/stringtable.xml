@@ -6414,6 +6414,18 @@
             <Portuguese>Bacon Tático</Portuguese>
             <Polish>Posiłek taktyczny</Polish>
         </Key>
+		<Key ID="STR_Item_cocacola">
+            <Original>Coca Cola</Original>
+        </Key>
+		<Key ID="STR_Item_pizza">
+            <Original>Pizza</Original>
+        </Key>
+		<Key ID="STR_Item_chocolate">
+            <Original>Chocolate</Original>
+        </Key>
+		<Key ID="STR_Item_ruffles">
+            <Original>Ruffles</Original>
+        </Key>
         <Key ID="STR_Item_RedGull">
             <Original>RedGull</Original>
             <Czech>RedGull</Czech>

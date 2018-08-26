@@ -14,7 +14,7 @@ _vei = (vehicle player);
 
 if (vehicle player == player) exitWith {};
 if (_musica isEqualTo "") exitWith { cutText ["Erro: Nenhuma Musica Selecionada", "PLAIN"]; };
-if (_musica isEqualTo 0) exitWith { playSound "botao"; cutText ["Radio Mutada!", "PLAIN"]; sleep 0.8; [0,_vei] remoteExec ["RJM_fnc_Musica",0]; }; //Parar Musica
+if (_musica isEqualTo 0) exitWith { playSound "botao"; cutText ["Radio Mutada!", "PLAIN"]; sleep 0.8; ['PARAR',_vei] remoteExec ["RJM_fnc_Musica",0]; }; //Parar Musica
 //if (_musica > 5 or {_musica < 1}) then {_musica = selectRandom [1,2,3,4,5];};
 
 switch (_musica) do {

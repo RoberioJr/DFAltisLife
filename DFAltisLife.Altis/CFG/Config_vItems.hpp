@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "cocacola", "tbacon", "chocolate", "donuts", "pizza", "ruffles", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class med_market {
@@ -877,7 +877,51 @@ class VirtualItems {
         edible = 40;
         icon = "icons\ico_tBacon.paa";
     };
+	
+	class cocacola {
+		variable = "cocacola";
+        displayName = "STR_Item_cocacola";
+        weight = 1;
+        buyPrice = 90;
+        sellPrice = -1;
+        illegal = false;
+        edible = 45;
+        icon = "icons\coca.paa";
+	};
+	
+	class ruffles {
+		variable = "ruffles";
+        displayName = "STR_Item_ruffles";
+        weight = 1;
+        buyPrice = 70;
+        sellPrice = -1;
+        illegal = false;
+        edible = 30;
+        icon = "icons\ruffles.paa";
+	};
+	
+	class pizza {
+		variable = "pizza";
+        displayName = "STR_Item_pizza";
+        weight = 1;
+        buyPrice = 70;
+        sellPrice = -1;
+        illegal = false;
+        edible = 50;
+        icon = "icons\pizza.paa";
+	};
 
+	class chocolate {
+		variable = "chocolate";
+        displayName = "STR_Item_chocolate";
+        weight = 1;
+        buyPrice = 75;
+        sellPrice = -1;
+        illegal = false;
+        edible = 40;
+        icon = "icons\chocolate.paa";
+	};
+	
     class donuts {
         variable = "donuts";
         displayName = "STR_Item_Donuts";
