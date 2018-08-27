@@ -33,7 +33,7 @@ ctrlSetText [60712,format ["$%1",[_bPrice] call life_fnc_numberText]];
 ctrlSetText [60712, "N/A"];
 };
 if (!(_sPrice isEqualTo -1)) then {
-ctrlSetText [60711,format ["$%1",[_sPrice] call life_fnc_numberText]];
+ctrlSetText [60711,format ["R$%1",[_sPrice] call life_fnc_numberText]];
 } else {
 ctrlSetText [60711, "N/A"];
 };

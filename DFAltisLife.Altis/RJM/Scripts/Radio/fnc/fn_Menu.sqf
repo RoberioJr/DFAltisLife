@@ -30,7 +30,13 @@ Private ["_RjTipoRadio","_menu","_Stop","_SomP","_Btn1","_Btn2","_Btn3","_Btn4",
 disableSerialization;
 
 _RjTipoRadio = param [0,0,[0]];
+
+Switch (_RjTipoRadio) Do {
+    Case 1: {systemchat 'Rádio Ligada';};
+	Case 2: {systemchat 'Caixa De Som Ligada';};
+};
 //systemchat format["%1",_RjTipoRadio];
+
 
 /* Série De Condições */
 if (!alive player || dialog) exitWith {};
@@ -64,7 +70,7 @@ _msc6 = RJ_nomeMusicas select 5;
 
  /* Descrições */
 _Stop ctrlSetTooltip "Parar A Musica";
-_SomP ctrlSetTooltip "Ligar Paredão";
+//_SomP ctrlSetTooltip "Ligar Paredão";
 _VMas ctrlSetTooltip "Aumentar Volume";
 _VMen ctrlSetTooltip "Diminuir Volume";
 _Btn1 ctrlSetTooltip _msc1;
@@ -89,7 +95,7 @@ switch (_RjTipoRadio) do {
     _Btn4 buttonSetAction "[4] call RJM_fnc_radio;";
     _Btn5 buttonSetAction "[5] call RJM_fnc_radio;";
 	_Btn6 buttonSetAction "[6] call RJM_fnc_radio;";
-	_SomP buttonSetAction "CloseDialog 0; [2] call RJM_fnc_Menu;";
+	//_SomP buttonSetAction "[2] Spawn RJM_fnc_MenuTroca;";
 	_VMas buttonSetAction "[1] call RJM_fnc_VolumeAlterar;";
 	_VMen buttonSetAction "[2] call RJM_fnc_VolumeAlterar;";
     };
@@ -102,9 +108,9 @@ switch (_RjTipoRadio) do {
     _Btn4 buttonSetAction "[4] call RJM_fnc_radioSom;";
     _Btn5 buttonSetAction "[5] call RJM_fnc_radioSom;";
 	_Btn6 buttonSetAction "[6] call RJM_fnc_radioSom;";
-	_SomP buttonSetAction "CloseDialog 0; sleep 0.3; [1] call RJM_fnc_Menu;";
+	//_SomP buttonSetAction "[1] Spawn RJM_fnc_MenuTroca;";
     };
-  Default {CloseDialog 0;[1] call RJM_fnc_Menu; hint "Erro, Iniciando Rádio Normal!";}; 
+  //Default {CloseDialog 0;[1] call RJM_fnc_Menu; hint "Erro, Iniciando Rádio Normal!";}; 
 };
   
   
