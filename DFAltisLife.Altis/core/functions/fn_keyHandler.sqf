@@ -104,13 +104,11 @@ switch (_code) do {
 	
 	//Pancadão Do RJ F5
 	case 63: {
-		if (FETCH_CONST(life_donorlevel) >= 2) Then {
-	        if (typeOf (vehicle player) in RJ_VeiculosComRadio) then {
-	            if (Driver (vehicle player) == player) then {
-                    [2] Call RJM_fnc_Menu;
-		        };
+		//if (FETCH_CONST(life_donorlevel) >= 2) Then {
+	        if (typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) == player)) then {
+                [2] Call RJM_fnc_Menu;
 		    };
-		};
+		//};
     };
 	
 	//FPSBOOST

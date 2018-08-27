@@ -1,3 +1,4 @@
+#include "..\..\..\..\script_macros.hpp"
 /*
 
 	Author: RobérioJR & Medeiros
@@ -32,10 +33,10 @@ disableSerialization;
 _RjTipoRadio = param [0,0,[0]];
 
 Switch (_RjTipoRadio) Do {
-    Case 1: {systemchat 'Rádio Ligada';};
-	Case 2: {systemchat 'Caixa De Som Ligada';};
+    Case 1: {SystemChat 'Rádio Ligada';};
+	Case 2: {if (FETCH_CONST(life_donorlevel) < 2) ExitWith {}; SystemChat 'Caixa De Som Ligada';};
 };
-//systemchat format["%1",_RjTipoRadio];
+//SystemChat format["%1",_RjTipoRadio];
 
 
 /* Série De Condições */
