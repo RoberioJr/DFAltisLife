@@ -95,7 +95,7 @@ switch (_code) do {
 	
 	//Turbo da Rocam (4)
 	case 5: {
-	    if (typeOf (vehicle player) IsEqualTo "C_Quadbike_01_F" && (Driver (vehicle player) == player) Then {
+	    if (typeOf (vehicle player) IsEqualTo "C_Quadbike_01_F" && (Driver (vehicle player) == player)) Then {
 	        if (playerSide IsEqualTo west) Then {
 		        ExecVM "RJM\Scripts\Turbo\vel.sqf";
 		    };
@@ -104,11 +104,9 @@ switch (_code) do {
 	
 	//Pancadão Do RJ F5
 	case 63: {
-		//if (FETCH_CONST(life_donorlevel) >= 2) Then {
-	        if (typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) == player)) then {
-                [2] Call RJM_fnc_Menu;
-		    };
-		//};
+	    if (typeOf vehicle player in RJ_VeiculosComRadio && (Driver vehicle player == player)) then {
+            [2] Call RJM_fnc_Menu;
+		};
     };
 	
 	//FPSBOOST
