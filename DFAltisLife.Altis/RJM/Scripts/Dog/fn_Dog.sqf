@@ -52,7 +52,7 @@ RJ_FomeDog = 100;
 		    dog playMove "Dog_Sprint"; 
 		    //SystemChat 'Cao Longe, Correndo'; 
 		};
-	    sleep 2.5;
+	    sleep 2;
 	};	
  };
  

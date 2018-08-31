@@ -1,0 +1,1 @@
+_this select 0 addMPEventHandler ["MPKilled", {_this call RJ_fnc_KillFeed}];

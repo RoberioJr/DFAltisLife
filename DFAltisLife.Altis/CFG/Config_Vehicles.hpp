@@ -897,10 +897,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "license_civ_rebel" },
             { "Policia - Provisório", "cop", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
-            }, "" }/*
+            }, "" },
 			{ "Policia", "cop", {
                 "textures\veh\cop\suvpm.paa"
-            }, "call life_coplevel < 11" }*/
+            }, "" }
         };
     };
 
