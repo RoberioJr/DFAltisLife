@@ -76,4 +76,4 @@ _msgTarget = format["<t color='#ffffff' size='2'>%2</t><t color='#c45454' size='
 //Enviando mensagem para a vitima
 //[2,_msgTarget] remoteExecCall ["life_fnc_broadcast",_alvo];
 [3,_msgTarget] remoteExecCall ["life_fnc_broadcast",_alvo];
-['invalidCoords'] remoteExec ["BIS_fnc_playSound",_alvo];
+//['invalidCoords'] remoteExec ["BIS_fnc_playSound",_alvo];

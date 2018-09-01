@@ -55,7 +55,7 @@ switch (playerSide) do {
         };*/
 		//PM
 		if ((FETCH_CONST(life_coplevel) IsEqualTo 1) && ((uniform player) == "U_Rangemaster")) then {
-		    player setObjectTextureGlobal [0, "textures\roupa\bope\uniforme_pm_simples.jpg"];
+		    player setObjectTextureGlobal [0, "textures\roupa\pm\uniforme_pm_simples.jpg"];
 		};
 		
 		if ((FETCH_CONST(life_coplevel) >= 2) && ((uniform player) == "U_B_CTRG_1" or ((uniform player) == "U_B_CTRG_3"))) then {

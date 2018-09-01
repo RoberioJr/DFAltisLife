@@ -26,7 +26,16 @@ if (_badCharacter) exitWith {hint localize "STR_News_UnsupportedCharacter"};
 
 [_broadcastHeader,_broadcastMessage,profileName] remoteExec ['life_fnc_AAN',-2];
 
-CASH = CASH - LIFE_SETTINGS(getNumber,"news_broadcast_cost");
+_Valor = LIFE_SETTINGS(getNumber,"news_broadcast_cost");
+
+Switch (PlayerSide) Do {
+    Case Civilian: { _Grana = _Valor; };
+	Case west: { _Grana = _Valor * 0.5; };
+	Case Independent: { _Grana = _Valor * 0.5; };
+};
+
+//CASH = CASH - LIFE_SETTINGS(getNumber,"news_broadcast_cost");
+CASH = CASH - _Grana;
 [0] call SOCK_fnc_updatePartialRJ;
 life_broadcastTimer = time;
 publicVariable "life_broadcastTimer";

@@ -18,11 +18,13 @@ if (getNumber(MissionconfigFile >> (format["Maverick_IntroCam_%1", worldName]) >
 	5 fadeMusic 0;
 };
 
-sleep 5;
-mav_introcam_continue = true;
-mav_introcam_object cameraEffect ["TERMINATE","BACK"];
-camDestroy mav_introcam_object;
-player switchCamera "INTERNAL";
-5 fadeMusic 1;
-5 fadeSound 1;
-playMusic "";
+[] Spawn {
+    sleep 5;
+    mav_introcam_continue = true;
+    mav_introcam_object cameraEffect ["TERMINATE","BACK"];
+    camDestroy mav_introcam_object;
+    player switchCamera "INTERNAL";
+    5 fadeMusic 1;
+    5 fadeSound 1;
+    playMusic "";
+};

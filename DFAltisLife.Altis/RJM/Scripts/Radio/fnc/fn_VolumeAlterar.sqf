@@ -14,13 +14,13 @@ VAtualRadio = MusicVolume;
 switch (_BVolume) do {
     case 1:{ 
 	//if (VAtualRadio IsEqualTo 1) ExitWith { hint 'A Rádio Já Está No Volume Máximo!'; };
-	VAtualRadio = VAtualRadio + 0.15;
+	VAtualRadio = VAtualRadio + 0.10;
 	//1 fadeMusic VAtualRadio;
 	//if (VAtualRadio > 1) then {VAtualRadio = 1;};
 	};
 	case 2:{
     //if (VAtualRadio IsEqualTo 0.15) ExitWith { hint 'A Rádio Já Está No Volume Mínimo!'; };
-	VAtualRadio = VAtualRadio - 0.15;
+	VAtualRadio = VAtualRadio - 0.10;
 	//1 fadeMusic VAtualRadio;
 	//if (VAtualRadio < 0.15) then {VAtualRadio = 0.15;};
 	};
