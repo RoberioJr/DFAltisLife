@@ -59,7 +59,7 @@ class WeaponShops {
 			{ "Binocular", "", 2500, -1, "" }, //BNC
             { "ItemGPS", "", 500, -1, "" }, //GPS
 			{ "FirstAidKit", "", 250, -1, "" }, //KITMED
-			{ "SmokeShell", "", 20000, -1, "" }, //FUMACA BRANCA
+			{ "SmokeShell", "", 8000, -1, "" }, //FUMACA BRANCA
 			{ "hgun_Pistol_heavy_01_MRD_F", "", 7500, -1, "" }, //4-Five
 			{ "arifle_SDAR_F", "", 25000, -1, "" }, //SDAR
             { "arifle_TRG20_F", "", 35000, -1, "" }, //TRG-20
@@ -267,7 +267,8 @@ class WeaponShops {
             { "ItemGPS", "", 100, -1, "" },
             { "Binocular", "", 150, -1, "" },
             { "FirstAidKit", "", 150, -1, "" },
-            { "NVGoggles", "", 1200, -1, "" }
+            { "NVGoggles", "", 1200, -1, "" },
+			{ "SmokeShellRed", "", 150, -1, "" }
         };
         mags[] = {};
         accs[] = {};

@@ -62,7 +62,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed", "kidney" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed", "lsd_processed", "ecstasy_processed", "metanfetamina_processed", "lolo_processed", "crack_processed", "kidney" };
     };
 
     class oil {

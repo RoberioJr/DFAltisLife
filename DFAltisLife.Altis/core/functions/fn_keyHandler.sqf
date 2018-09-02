@@ -104,6 +104,7 @@ switch (_code) do {
 	
 	//Pancadão Do RJ F5
 	case 63: {
+	    if (!Alive Player) ExitWith {};
 	    if (typeOf vehicle player in RJ_VeiculosComRadio && (Driver vehicle player == player)) then {
             [2] Call RJM_fnc_Menu;
 		};
@@ -111,11 +112,13 @@ switch (_code) do {
 	
 	//FPSBOOST
 	case 207: {
+	    if (!Alive Player) ExitWith {};
 	    [] call RJM_fnc_FpsBoost;
 	};
 	
 	//Dog Atacar F6
 	case 64: {
+	    if (!Alive Player) ExitWith {};
 	    if (PlayerSide IsEqualTo west && JogadorTemUmCachorro) then {
             [] Call RJM_fnc_DogAtacar;
 		};
@@ -123,6 +126,7 @@ switch (_code) do {
 
 	//Menu De Equipamentos Para Os Admins F7
 	case 65: {
+	    if (!Alive Player) ExitWith {};
 	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] execVM "RJM\Scripts\MenuAdminRJ\VAS\open.sqf";
 		};
@@ -130,6 +134,7 @@ switch (_code) do {
 
 	//Spawner De Veiculos Para Os Admins F8
 	case 66: {
+	    if (!Alive Player) ExitWith {};
 	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] call TUT_fnc_OpenVehUI;
 		};
@@ -137,6 +142,7 @@ switch (_code) do {
 
 	// I
 	case 23: {
+	    if (!Alive Player) ExitWith {};
 	    if (vehicle player isEqualTo player) then {
 		    sleep 0.85;
 	        playSound "zipper";
@@ -212,6 +218,8 @@ switch (_code) do {
 
 	//Assalto TAB
 	case 15: {
+	        //if (PlayerSide In [west,independent] && ((Side CursorTarget) IsEqualTo PlayerSide)) ExitWith {};
+			//if ((weapons player) isEqualTo [] && (PlayerSide IsEqualTo Civilian)) ExitWith {};
             if !(isPlayer cursorTarget) exitWith {};
             if ((time - life_action_delay) < 1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             if (cursorTarget distance player < 300 && {(isPlayer cursorTarget)}) then {

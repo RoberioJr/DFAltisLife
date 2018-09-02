@@ -157,7 +157,7 @@ class Clothing {
 			{ "H_HelmetB_light ", "", 4600, "" },
 			{ "H_Booniehat_indp ", "", 300, "" },
 			{ "H_Booniehat_dgtl ", "", 300, "" },
-			{ "H_HelmetIA", "", 1200, "" },
+			{ "H_CrewHelmetHeli_B", "", 10000, "" },
 			{ "H_HelmetSpecB_blk ", "", 1200, "" },
 			{ "H_MilCap_dgtl  ", "", 400, "" }
 			

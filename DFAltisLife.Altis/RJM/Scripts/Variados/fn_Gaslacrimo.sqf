@@ -1,6 +1,7 @@
 /*
     Author: RobérioJR
 */
+If (PlayerSide IsEqualTo independent) ExitWith {};
 JogadorNoGas=false;
 
 [] spawn {
