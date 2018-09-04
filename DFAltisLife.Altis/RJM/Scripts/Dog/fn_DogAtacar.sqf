@@ -10,8 +10,8 @@ RJ_DogAtacando = true;
 
 //Forçar O Dog A Correr
 [] Spawn {
+    Sleep 2;
     dog playMove "Dog_Sprint";
-    Sleep 5;
 };
 
 [] spawn {
@@ -37,8 +37,8 @@ RJ_DogAtacando = true;
     while {RJ_DogAtacando} do { 
 	    if (dog Distance _Alvo < 2) then {
 		    RJ_DogAtacando = false;
+			[] Spawn { [dog,"dogAtaq",80,1] remoteExecCall ["life_fnc_say3D",-2]; };
 			[] remoteExecCall ["RJM_fnc_DogImob",_Alvo];
-			[dog,"dogAtaq",80,1] remoteExecCall ["life_fnc_say3D",-2];
 		};
 		sleep 0.2;
 	};

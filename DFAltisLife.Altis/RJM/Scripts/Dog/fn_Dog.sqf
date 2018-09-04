@@ -24,6 +24,9 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 	    WaitUntil {!RJ_DogOcupado};
 		WaitUntil {!RJ_DogAtacando};
 		WaitUntil {dog distance player > 3.1};
+		if (dog Distance player > 300) then { 
+		    dog setPos [((getPos player) select 0) + 9, ((getPos player) select 1) + 9, 0];  
+		};
 		dog moveTo getPos player;
 		sleep 1;
 	};
@@ -45,9 +48,6 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
     while {alive dog} do {
 	    WaitUntil {!RJ_DogOcupado};
 		WaitUntil {!RJ_DogAtacando};
-		if (dog Distance player > 300) then { 
-		    dog setPos [((getPos player) select 0) + 9, ((getPos player) select 1) + 9, 0];  
-		};
 		if (dog distance player < 3) then {
 		    dog playMove "Dog_Sit";
 			WaitUntil {dog distance player > 3};

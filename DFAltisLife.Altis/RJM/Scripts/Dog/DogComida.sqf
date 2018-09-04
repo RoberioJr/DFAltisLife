@@ -20,6 +20,7 @@ if ([false,'ossodog',1] call life_fnc_handleInv) then {
     dog AllowDamage true;
     RJ_DogOcupado = false;
     RJ_FomeDog = 100;
+	dog SetDamage 0;
 	SystemChat Format ['%1, Você Alimentou O Seu Cão',Name player];
 };
  

@@ -19,16 +19,17 @@ Switch (PlayerSide) Do {
 	    if (PlayerSide IsEqualTo civilian) ExitWith { Hint Format['%1',_SemPerm]; };
         if (FETCH_CONST(Life_CopLevel) < 3) ExitWith { Hint Format['%1',_SemPerm]; };
 		if (_ValorCop > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
-        Hint Format['%1, Você Comprou Um Cachorro Por R$%2!',Name Player,RJ_ValorDOG];
+        Hint Format['%1, Você Comprou Um Cachorro Por R$%2!',Name Player,_ValorCop];
 		SystemChat 'Aperte F6 Mirando No Jogador Para O Dog Atacar.';
 		CASH = CASH - _ValorCop;
+		[] call RJM_fnc_Dog;
 	};
 	case Civilian: {
 	    if (PlayerSide IsEqualTo west) ExitWith { Hint Format['%1',_SemPerm]; };
 		if (_ValorCiv > CASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
-        Hint Format['%1, Você Comprou Um Cachorro Por R$%2!',Name Player,RJ_ValorDOG];
+        Hint Format['%1, Você Comprou Um Cachorro Por R$%2!',Name Player,_ValorCiv];
 		CASH = CASH - _ValorCiv;
+		[] call RJM_fnc_Dog;
 	};
 };
 
-[] call RJM_fnc_Dog;
