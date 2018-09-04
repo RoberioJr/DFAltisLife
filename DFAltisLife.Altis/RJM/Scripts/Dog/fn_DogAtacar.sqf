@@ -10,8 +10,8 @@ RJ_DogAtacando = true;
 
 //Forçar O Dog A Correr
 [] Spawn {
-    Sleep 3;
-	dog playMove "Dog_Sprint";
+    dog playMove "Dog_Sprint";
+    Sleep 5;
 };
 
 [] spawn {

@@ -3,12 +3,20 @@
 	//https://community.bistudio.com/wiki/Arma_3_Animals:_Override_Default_Animal_Behaviour_Via_Script
 */
 
+/* Criar O DOG */
 dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
-dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
-RJ_DogOcupado = false;
-RJ_DogAtacando = false;
-JogadorTemUmCachorro = true;
-RJ_FomeDog = 100;
+
+/* Configuração Do Dog */
+ dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
+ dog setAnimSpeedCoef 2;
+ dog setBehaviour "CARELESS";
+ dog setSkill 1;
+
+/* Variáveis Do Dog */
+ RJ_DogOcupado = false;
+ RJ_DogAtacando = false;
+ JogadorTemUmCachorro = true;
+ RJ_FomeDog = 100;
 
   /* Movimentação Do Dog */
 [] spawn {
@@ -17,7 +25,7 @@ RJ_FomeDog = 100;
 		WaitUntil {!RJ_DogAtacando};
 		WaitUntil {dog distance player > 3.1};
 		dog moveTo getPos player;
-		sleep 1.2;
+		sleep 1;
 	};
  };
  
@@ -81,7 +89,7 @@ RJ_FomeDog = 100;
     While {Alive Dog} do {
         Sleep 38;
 	    RJ_FomeDog = RJ_FomeDog - 1;
-		if (RJ_FomeDog < 36) then { SystemChat Format['%1, Seu Cão Está Ficando Com Fome!',Name Player]; };
+		if (RJ_FomeDog < 31) then { SystemChat Format['%1, Seu Cão Está Ficando Com Fome!',Name Player]; };
 	    if (RJ_FomeDog < 1) then { dog SetDamage 1; }
     };
  };
