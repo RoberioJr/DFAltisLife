@@ -31,7 +31,8 @@ RJ_MrkMapa =
 ];
 
  /* Valor De Um Cachorro Na Loja */
-RJ_ValorDOG = 75000;
+   /* COP | CIV | MED*/
+RJ_ValorDOG = [75000,60000,75000];
 
     /* Configurações Do Radio */ 
 
