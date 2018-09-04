@@ -11,6 +11,9 @@
 
    /* DEFINIÇÕES */
   _barstat = LIFE_SETTINGS(getNumber,"rj_barradestatus");
+  
+  /* Configurações */
+  [] ExecVM "RJM\CFGs.sqf";
 	
   /* Barra De Status */ 
  switch (_barstat) do 

@@ -1,7 +1,7 @@
 /*
  
     Author: RobérioJR
-	Desc: Demorou Pra Caralho Mas Eu Consegui \o/ :) *-*...
+	Desc: Demorou Pra Caralho Mas Eu Consegui \o/ :)...
 
 */
 

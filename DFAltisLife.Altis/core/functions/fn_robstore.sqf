@@ -29,7 +29,7 @@ _chance = random(100);
 if(_chance >= 0) then {[1,format["ALARME! - POSTO DE GASOLINA: %1 Esta Sendo Roubado!", _shop]] remoteExec ["life_fnc_broadcast",west]; };
 
 _cops = (west countSide playableUnits);
-if(_cops < 1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "Nao Tem Policiais Suficientes Para O Roubo!";};
+if(_cops < 2) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "Nao Tem Policiais Suficientes Para O Roubo!";};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";

@@ -13,9 +13,6 @@
   _grafico = LIFE_SETTINGS(getNumber,"rj_ativar_grafico");
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
   _msgnsrj = LIFE_SETTINGS(getNumber,"rj_msgsconometradas");
-
-  /* Configurações */
-  [] ExecVM "RJM\CFGs.sqf";
   
   /* Correção De Cor */
   if (_grafico isEqualTo 1) then {
