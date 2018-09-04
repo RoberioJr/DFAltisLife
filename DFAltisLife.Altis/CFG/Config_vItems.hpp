@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "peach", "guava", "grape", "strawberry", "banana", "pineapple", "redgull", "cocacola", "tbacon", "chocolate", "donuts", "pizza", "ruffles", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "peach", "guava", "grape", "strawberry", "banana", "pineapple", "redgull", "cocacola", "tbacon", "chocolate", "donuts", "pizza", "ruffles", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "ossodog" };
     };
 
     class med_market {

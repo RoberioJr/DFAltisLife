@@ -50,14 +50,17 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 		};
 		if (dog distance player < 3) then {
 		    dog playMove "Dog_Sit";
+			WaitUntil {dog distance player > 3};
 			//SystemChat 'Cao Muito Perto, Sentado';
 		};
         if (dog distance player < 10) then {
-		    WaitUntil {dog distance player > 3.1};
 		    dog playMove "Dog_Walk";
+			WaitUntil {dog distance player < 3.1 || (dog distance player > 10)};
 			//SystemChat 'Cao Perto, Andando';
-		} else { 
+		}; 
+		If (dog distance player > 10) then { 
 		    dog playMove "Dog_Sprint"; 
+			WaitUntil {dog distance player < 10};
 		    //SystemChat 'Cao Longe, Correndo'; 
 		};
 	    sleep 2;
