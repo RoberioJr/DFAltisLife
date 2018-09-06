@@ -69,7 +69,7 @@ class CarShops {
 			{ "I_Heli_Transport_02_F", "" }, //MOHAWK
 			{ "O_Heli_Transport_04_covered_F", "" }, //TARU T
 			{ "O_Heli_Transport_04_box_F", "" }, //TARU C
-			{ "B_Heli_Transport_03_F", "" }, //HURON
+			{ "B_Heli_Transport_03_unarmed_F", "" }, //HURON
             { "C_Plane_Civil_01_F", "" }, //CEASAR
 			{ "C_Plane_Civil_01_racing_F","" }, //CEASAR Sport
 			{ "B_T_VTOL_01_infantry_F", "" } //BLACKFISH
