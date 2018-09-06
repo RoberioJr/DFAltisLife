@@ -93,6 +93,13 @@ switch (_code) do {
 
     /* Alterações RobérioJR */
 	
+	//Abrir Porta Com Botão (0)
+    case 11: {
+		if (!_shift && !_alt && !_ctrlKey && (playerSide In [west,independent]) && (vehicle player != player)) then {
+			[] call RJM_fnc_AbrirPorta;
+		};
+	};
+	
 	//Turbo da Rocam (4)
 	case 5: {
 	    if (typeOf (vehicle player) IsEqualTo "C_Quadbike_01_F" && (Driver (vehicle player) == player)) Then {

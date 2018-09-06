@@ -33,7 +33,7 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
  };
  
  /* Quando O Dog Morrer */
- [] spawn {
+[] spawn {
     WaitUntil {!Alive dog};
 	RJ_DogOcupado = false;
 	RJ_DogAtacando = false;
@@ -41,7 +41,7 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 	RJ_FomeDog = 100;
 	[dog,"dogYelp",75,1] remoteExecCall ["life_fnc_say3D",0];
 	SystemChat Format['%1, Seu Cachorro Morreu!',Name Player]; 
- };
+};
  
   /* IA De Correr E Andar */
 [] spawn {
@@ -78,16 +78,16 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 			[dog,_S,60,1] remoteExecCall ["life_fnc_say3D",0]; 
 	    };
 	};
- };
+};
 
- [] spawn {
+[] spawn {
     WaitUntil {!Alive Player};
 	dog SetDamage 1;
 	deleteVehicle dog;
- };
+};
  
 	/* Fome Do Dog */
- [] spawn {
+[] spawn {
     [] execVM 'RJM\Scripts\Dog\DogAction.sqf';
     While {Alive Dog} do {
         Sleep 38;
@@ -95,4 +95,4 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 		if (RJ_FomeDog < 31) then { SystemChat Format['%1, Seu Cão Está Ficando Com Fome!',Name Player]; };
 	    if (RJ_FomeDog < 1) then { dog SetDamage 1; }
     };
- };
+};

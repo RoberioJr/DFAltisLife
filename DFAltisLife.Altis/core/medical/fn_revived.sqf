@@ -61,7 +61,7 @@ if (alive player) then {
 		_handle ppEffectCommit 1;
 		waitUntil {ppEffectCommitted _handle};
 		systemChat "Você está sofrendo os efeitos da morfina aplicada pelo médico.";  //Message on effect start
-		uiSleep 240;
+		uiSleep 200;
 		_handle ppEffectEnable false;
 		ppEffectDestroy _handle;
 		systemChat "O efeito da morfina está acabando!";  //message on effect stop

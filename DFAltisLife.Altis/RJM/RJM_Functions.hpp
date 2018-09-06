@@ -28,6 +28,7 @@ class RJM_Scripts {
 		class LoopSide {};
 		class RemoverNeblina {};
 		class FpsBoost {};
+		class AbrirPorta {};
 	};		
 	
 	class Assaltos {
