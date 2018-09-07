@@ -14,7 +14,7 @@ RJ_Administradores =
 ];
 
  /* Configuração Dos Marcadores Do Mapa */
- /* ['MARCADOR','ICONE'] */
+ /* ['MARCADOR','ICONE','DESCRIÇÃO'] */
 RJ_MrkMapa = 
 [
     ['strawberry_1','icons\morango.paa',''],     //Morango
@@ -35,6 +35,9 @@ RJ_MrkMapa =
 RJ_ValorDOG = [75000,50000,75000];
 
     /* Configurações Do Radio */ 
+
+//Nivel De Doador Minimo Para Ter Acesso Ao Pancadão
+RJ_RadioDoador = 1;
 
 //Veiculos Com Radio
 RJ_VeiculosComRadio = 
@@ -64,12 +67,7 @@ RJ_nomeMusicas =
     "Coldplay - Viva La Vida", //5
 	"MC Pedrinho e MC Davi - Bonita, Lindinha e Sagaz" //6
 ];
-/***/
 
-RJ_ListaNegra = 
-[
-    '76561198801482673' //BOLADO
-];
 
 
 

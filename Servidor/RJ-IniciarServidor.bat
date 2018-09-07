@@ -58,7 +58,7 @@ cd C:\a3server\
    :crash
    set /a tempo=10
    set /a crashs+=1
-   Title Servidor DF AltisLife            Crashs: 0
+   Title Servidor DF AltisLife            Crashs: %crashs%
    goto crashtempo
    
    

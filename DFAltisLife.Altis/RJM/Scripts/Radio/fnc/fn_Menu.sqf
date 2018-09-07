@@ -32,17 +32,19 @@ disableSerialization;
 
 _RjTipoRadio = param [0,0,[0]];
 
-Switch (_RjTipoRadio) Do {
-    Case 1: {SystemChat 'Rádio Ligada';};
-	Case 2: {if (FETCH_CONST(life_donorlevel) < 2) ExitWith {}; SystemChat 'Caixa De Som Ligada';};
-};
-//SystemChat format["%1",_RjTipoRadio];
-
-
 /* Série De Condições */
 if (!alive player || dialog) exitWith {};
+If (_RjTipoRadio IsEqualTo 2 && (FETCH_CONST(life_donorlevel) < RJ_RadioDoador)) ExitWith {}; //Doador
 if (IsNil "_RjTipoRadio") then {Hint "Tipo De Rádio Não Definida, Inserindo Configuração Padrão: Rádio Normal"; _RjTipoRadio = 1;};
 if ((_RjTipoRadio isEqualTo 2) && !((driver (vehicle Player)) isEqualTo player)) ExitWith {hint "Você Não Está No Controle Do Veiculo!";};
+
+
+Switch (_RjTipoRadio) Do {
+    Case 1: {SystemChat 'Rádio Ligada';};
+	Case 2: {SystemChat 'Caixa De Som Ligada';};
+};
+
+//SystemChat format["%1",_RjTipoRadio];
 
 createDialog "RadioRJM";
 
