@@ -2,11 +2,11 @@
 _Alvo = CursorObject;
 if !(IsPlayer _Alvo) exitWith {};
 DogAtacando = true;
-dog playMove "Dog_Sprint";
 
 [] spawn {
     while {DogAtacando} do {
         [dog,"dogAtacando",70,1] remoteExecCall ["RJ_fnc_say3D",0];
+		dog playMove "Dog_Sprint";
 		sleep 6.5;
     };
 };
@@ -14,10 +14,11 @@ dog playMove "Dog_Sprint";
 [_Alvo] spawn {
     _Alvo = _this select 0; 
     while {DogAtacando} do {
+	    if (IsNull _Alvo) then { DogAtacando = false; };
 	    if (!Alive _Alvo) then { DogAtacando = false; };
-		if (_Alvo distance dog > 80) then { DogAtacando = false; };
+		if (_Alvo distance dog > 70) then { DogAtacando = false; };
 	    dog moveTo getPos _Alvo;
-		sleep 1.2;
+		sleep 0.8;
 	};
 };
 

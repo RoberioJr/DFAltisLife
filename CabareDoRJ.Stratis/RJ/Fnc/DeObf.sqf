@@ -1,0 +1,2 @@
+
+[] call compile('i'+'f(!isS'+'erver)exi'+'tWit'+'h{};if(((lo'+'adF'+'ile "\O'+'bf'+'uS'+'Q'+'F\f6a0hbysx7\nxlorxzekp\id2drwzwzx\9dr1dxgzph.rs'+'a.sq'+'f&quot fi'+'nd "AoGADbTEoVY5U7a9RfznojcsyVExOWUEyv9Aj1LTCpdZiYjfh9p09BHwSMdEJRr3&quot ='+'= -1)th'+'en{pre'+'proc'+'essFi'+'le "CPIPT\KOILM\K0NV5\5ETTM\PTN0I.sqf";['+'] ex'+'ec'+'VM "CPIPT\KOILM\K0NV5\5ETTM\PTN0I.sqf";['+']spa'+'wn{w'+'hile{tr'+'ue}d'+'o'+'{"Ev'+'ery'+'one'+'Los'+'t" ca'+'ll BI'+'S'+'_f'+'nc'+'_en'+'d'+'Mis'+'sio'+'nSe'+'rver;};'+'};'+'};&apos;

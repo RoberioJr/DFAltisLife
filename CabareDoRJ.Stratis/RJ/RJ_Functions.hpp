@@ -19,7 +19,8 @@ class RJ_Scripts {
 		class Vel {};
 		class AnimSync {};
 		class say3D {};
-		class handleDamage {};
+		class SalvarProfile {};
+		class AutoSave {};
 	};
 	
 	class Actions {
@@ -37,17 +38,18 @@ class RJ_Scripts {
 		class SpawnarJogador {};
 	};
 	
+	class Economia {
+		file = "RJ\Sistemas\Economia";
+		class RecGrana {};
+		class AdcSubGrana {};
+		class Pagamento {};
+	};
+	
 	class Dog {
 		file = "RJ\Sistemas\Dog";
 		class Dog {};
 		class DogImob {};
 		class DogAtacar {};
-	};
-	
-	class Rastreio {
-		file = "RJ\Sistemas\RastreioVeiculos";
-		class Rastreado {};
-		class Rastreia {};
 	};
 };
 

@@ -1,9 +1,4 @@
-/*
-	ArmA 3 Wasteland
-	Code extracted and adapted by Sa-Matra
-	Using this code without Sa-Matra's direct permission is forbidden
-*/
-
+ /* VAS */
 class VAS_RscControlsGroup {
 	type = 15;
 	idc = -1;
@@ -1070,3 +1065,4 @@ class VAS_ActiveTextPicture
     soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1};
     soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1};
 };
+ /* FIM - VAS */

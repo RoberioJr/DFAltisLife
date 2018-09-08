@@ -4,6 +4,7 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
 DogOcupado = false;
 DogAtacando = false;
+JogadorTemUmCachorro = true;
 FomeDog = 100;
 
   /* Movimentação Do Dog */
@@ -11,6 +12,7 @@ FomeDog = 100;
 	while {alive dog} do {	
 	    WaitUntil {!DogOcupado};
 		WaitUntil {!DogAtacando};
+		WaitUntil {dog distance player > 3.1};
 		dog moveTo getPos player;
 		sleep 1.5;
 	};
@@ -21,6 +23,7 @@ FomeDog = 100;
     WaitUntil {!Alive dog};
 	DogOcupado = false;
 	DogAtacando = false;
+	JogadorTemUmCachorro = false;
 	FomeDog = 100;
 	[dog,"dogYelp",60,1] remoteExecCall ["RJ_fnc_say3D",0];
 	SystemChat Format['%1, Seu Cachorro Morreu!',Name Player]; 
@@ -34,7 +37,12 @@ FomeDog = 100;
 		if (dog Distance player > 400) then { 
 		    dog setPos [((getPos player) select 0) + 5, ((getPos player) select 1) + 5, 0];  
 		};
+		if (dog distance player < 3) then {
+		    dog playMove "Dog_Sit";
+			SystemChat 'Cao Muito Perto, Sentado';
+		};
         if (dog distance player < 10) then {
+		    WaitUntil {dog distance player > 3.1};
 		    dog playMove "Dog_Walk";
 			SystemChat 'Cao Perto, Andando';
 		} else { 

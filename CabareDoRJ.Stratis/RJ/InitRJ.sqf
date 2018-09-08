@@ -11,3 +11,7 @@
 [] execVM "RJ\Cfg\Cfg_SpawnPoints.sqf";
 //Cfg Admins
 [] execVM "RJ\Cfg\Cfg_Admins.sqf";
+//Cfg Economia
+[] execVM "RJ\Cfg\Cfg_Economia.sqf";
+
+

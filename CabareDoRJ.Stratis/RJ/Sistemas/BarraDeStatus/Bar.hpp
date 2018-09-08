@@ -14,7 +14,7 @@ class osefStatusBar2 {
 	class controls {
 		class statusBarText {
 			idc = 10713;
-			x = safezoneX + safezoneW - 1;
+			x = safezoneX + safezoneW - 1; //Padrao: 1
 			y = safezoneY + safezoneH - 0.08;
 			w = 1;
 			h = 0.08;     //Padrão 0.03
@@ -27,7 +27,7 @@ class osefStatusBar2 {
 			text="RJ: Aguarde Um Momento...";
 			class Attributes {
 				align="center";
-				color = "#FFFFF";
+			    color = "#FFFFF";
 			};
 		};
 	};

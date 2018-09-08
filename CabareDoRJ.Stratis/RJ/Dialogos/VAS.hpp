@@ -3,7 +3,7 @@
 	Website: www.iamtonic.co
 */
 
-#include "common.hpp"
+#include "Common.hpp"
 
 class VAS_Diag {
 	idd = 2500;

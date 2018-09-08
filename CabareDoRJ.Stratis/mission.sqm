@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2341;
+		nextID=2359;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3695;
+		nextID=4361;
 	};
 	class Camera
 	{
-		pos[]={1598.8163,26.344757,5193.1968};
-		dir[]={-0.46502936,-0.31404161,-0.82788807};
-		up[]={-0.15382084,0.94938284,-0.27384728};
-		aside[]={-0.87196553,-1.6577542e-007,0.4897899};
+		pos[]={1852.0089,10.255416,5355.7451};
+		dir[]={-0.24066743,-0.26705649,0.9331696};
+		up[]={-0.066698477,0.96367472,0.25861377};
+		aside[]={0.96833843,7.689232e-007,0.24973646};
 	};
 };
 binarizationWanted=0;
@@ -457,7 +457,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=233;
+		items=232;
 		class Item0
 		{
 			dataType="Layer";
@@ -27763,7 +27763,7 @@ class Mission
 		class Item231
 		{
 			dataType="Group";
-			side="West";
+			side="Civilian";
 			class Entities
 			{
 				items=1;
@@ -27772,38 +27772,104 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1578.8024,5.5014391,5156.7383};
-						angles[]={0,3.7450306,0};
+						position[]={1909.549,5.6821856,5742.7998};
+						angles[]={0,4.9847999,0};
 					};
-					side="West";
+					side="Civilian";
 					flags=7;
 					class Attributes
 					{
-						isPlayer=1;
+						init="This AddAction ['Cachorro',RJ_fnc_Dog]";
+						disableSimulation=1;
 					};
 					id=2339;
-					type="B_support_GMG_F";
+					type="C_man_p_beggar_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2338;
-		};
-		class Item232
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1575.9384,7.1115026,5152.6187};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=2340;
-			type="C_Offroad_01_F";
 		};
 	};
 	class Connections

@@ -1,10 +1,12 @@
+Private [];
 
 waitUntil {!(isNull (findDisplay 46))};
+waitUntil {JogadorPronto};
 disableSerialization;
 _rscLayer = "osefStatusBar2" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["osefStatusBar2","PLAIN"];
 [] spawn {
-uiSleep 3;
+uiSleep 2;
  while {true} do
  {
  uiSleep 1;
@@ -22,6 +24,7 @@ _WestplayHUD = west countSide playableUnits; //2
 _IndepplayHUD = independent countSide playableUnits; //3
 _damage = round ((1 - (damage player)) * 100); //4
 _FpsHud = round (diag_fps); //5
+_Dinheiro = RJ_Grana; //6
 ((uiNamespace getVariable "osefStatusBar2")displayCtrl 10713)ctrlSetStructuredText parseText
  format["<t shadow='1' shadowColor='#000000'>
  <img size='1.2' shadowColor='#000000' image='RJ\Sistemas\BarraDeStatus\ImagesStatusBar\vermelho.paa'/>%1 
@@ -29,7 +32,8 @@ _FpsHud = round (diag_fps); //5
  <img size='1.2' shadowColor='#000000' image='RJ\Sistemas\BarraDeStatus\ImagesStatusBar\verde.paa'/>%3 
  <img size='1.4' shadowColor='#000000' image='RJ\Sistemas\BarraDeStatus\ImagesStatusBar\health.paa'/>%4 
  <img size='1.3' shadowColor='#000000' image='RJ\Sistemas\BarraDeStatus\ImagesStatusBar\fps.paa'/>%5 
- </t>",_EastplayHUD,_WestplayHUD,_IndepplayHUD, _damage, _FpsHud];
+ <img size='1.3' shadowColor='#000000' image='RJ\Sistemas\BarraDeStatus\ImagesStatusBar\money.paa'/>%6 
+ </t>",_EastplayHUD,_WestplayHUD,_IndepplayHUD, _damage, _FpsHud, _Dinheiro];
  }; 
 };
 
