@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `med_stats` varchar(32) NOT NULL DEFAULT '"[100,100,0]"',
   `arrested` tinyint(1) NOT NULL DEFAULT '0',
   `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
-  `donorlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
+  `donorlevel` enum('0','1','2','3','4','5','11','12','13','14','15') NOT NULL DEFAULT '0', -- 11 - 15 | Bases De Gangues
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
   `civ_alive` tinyint(1) NOT NULL DEFAULT '0',
   `civ_position` varchar(64) NOT NULL DEFAULT '"[]"',

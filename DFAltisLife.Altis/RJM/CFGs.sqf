@@ -36,8 +36,8 @@ RJ_ValorDOG = [75000,50000,75000];
 
     /* Configurações Do Radio */ 
 
-//Nivel De Doador Minimo Para Ter Acesso Ao Pancadão
-RJ_RadioDoador = 1;
+//Niveis De Doador Para Ter Acesso Ao Pancadão
+RJ_RadioDoador = [1,2,3,4,5];
 
 //Veiculos Com Radio
 RJ_VeiculosComRadio = 

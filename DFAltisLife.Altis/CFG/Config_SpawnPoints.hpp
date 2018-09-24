@@ -60,6 +60,22 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
+			
+			/* Bases De Gangues */
+			
+			class Base1 {
+				displayName = "Base 1";
+				spawnMarker = "base1_spawn";
+				icon = "icons\spawns\rebelde.paa";
+				conditions = "call life_donorLevel == 11";
+			};
+			
+			class Base2 {
+				displayName = "Base 2";
+				spawnMarker = "base2_spawn";
+				icon = "icons\spawns\rebelde.paa";
+				conditions = "call life_donorLevel == 12";
+			};
         };
 
         class Cop {

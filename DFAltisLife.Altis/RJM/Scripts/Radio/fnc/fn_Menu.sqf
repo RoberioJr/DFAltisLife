@@ -34,7 +34,7 @@ _RjTipoRadio = param [0,0,[0]];
 
 /* Série De Condições */
 if (!alive player || dialog) exitWith {};
-If (_RjTipoRadio IsEqualTo 2 && (FETCH_CONST(life_donorlevel) < RJ_RadioDoador)) ExitWith {}; //Doador
+If (_RjTipoRadio IsEqualTo 2 && !(FETCH_CONST(life_donorlevel) in RJ_RadioDoador)) ExitWith {}; //Doador
 if (IsNil "_RjTipoRadio") then {Hint "Tipo De Rádio Não Definida, Inserindo Configuração Padrão: Rádio Normal"; _RjTipoRadio = 1;};
 if ((_RjTipoRadio isEqualTo 2) && !((driver (vehicle Player)) isEqualTo player)) ExitWith {hint "Você Não Está No Controle Do Veiculo!";};
 
