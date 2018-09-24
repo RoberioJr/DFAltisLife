@@ -408,7 +408,7 @@ switch (_code) do {
         };
     };
 
-	//Shift + end Key
+	//Shift + O Key
 	case 24: {
 	if(_shift) then {
 		switch (player getVariable["Earplugs",0]) do {

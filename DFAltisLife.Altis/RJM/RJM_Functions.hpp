@@ -16,6 +16,7 @@ class RJM_Scripts {
 		class Hospital {};
 		class IconesMap {};
 		class DelayRJ {};
+		class Notificar {};
 	};
 
     class Variados {
@@ -49,7 +50,7 @@ class RJM_Scripts {
 		class Metafetamina {};
 		class Ecstasy {}
 		class Lolo {};
-		class Morfina {};
+		class Crack {};
 		class Heroina {};
 	};
 	
@@ -59,6 +60,7 @@ class RJM_Scripts {
 		class DogImob {};
 		class DogAtacar {};
 		class DogLife {};
+		class DogNome {};
 	};
 	
 	class RadioRJ {

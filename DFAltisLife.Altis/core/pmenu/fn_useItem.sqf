@@ -23,7 +23,7 @@ switch (true) do {
     };
 	 
     /* Efeitos Das Drogas By: RobérioJR */
-    case (_item in ["marijuana","cocaineProcessed","tabacoProcessed","lsdProcessed","ecstasyProcessed","metanfetaminaProcessed","loloProcessed","morfinaProcessed","heroinProcessed"]): {
+    case (_item in ["marijuana","cocaineProcessed","tabacoProcessed","lsdProcessed","ecstasyProcessed","metanfetaminaProcessed","loloProcessed","crackProcessed","heroinProcessed"]): {
 	    if !(RJ_DelayTerminado) exitWith { hint 'Espere Um Pouco Antes De Fazer Essa Ação!'; };
 		if ([false,_item,1] call life_fnc_handleInv) then {
 		    [_item] spawn RJM_fnc_EfeitosItems;

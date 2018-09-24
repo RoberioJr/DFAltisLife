@@ -16,7 +16,7 @@ switch (true) do {
 	case (_item IsEqualTo 'ecstasyProcessed'):{ [] spawn RJM_fnc_Ecstasy; };
 	case (_item IsEqualTo 'metanfetaminaProcessed'):{ [] spawn RJM_fnc_Metafetamina; };
 	case (_item IsEqualTo 'loloProcessed'):{ [] spawn RJM_fnc_Lolo; };
-	case (_item IsEqualTo 'morfinaProcessed'): { [] spawn RJM_fnc_Morfina; };
+	case (_item IsEqualTo 'crackProcessed'): { [] spawn RJM_fnc_Crack; };
 	case (_item IsEqualTo 'heroinProcessed'): { [] spawn RJM_fnc_Heroina; };
 	Default {Hint 'Carai Borracha!';};
 };

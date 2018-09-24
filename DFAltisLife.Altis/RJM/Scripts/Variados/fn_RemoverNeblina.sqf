@@ -15,6 +15,7 @@
 [] spawn { /* Remover Chuva */
     While {True} Do {
 	    _nivelChuva = Rain;
+		sleep 10;
 		WaitUntil {_nivelChuva > 0.2};
 		0 setRain 0;
         forceWeatherChange;

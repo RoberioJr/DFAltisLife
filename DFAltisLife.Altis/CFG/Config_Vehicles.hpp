@@ -260,7 +260,7 @@ class LifeCfgVehicles {
 	
 	//Huron
 	class B_Heli_Transport_03_unarmed_F {
-	    vItemSpace = 690;
+	    vItemSpace = 680;
 		conditions = "";
 		price = 700000;
 		textures[] = {};

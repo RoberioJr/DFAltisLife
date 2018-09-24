@@ -57,4 +57,4 @@ switch (playerSide) do {
 
 life_actions pushBack (player addAction["<t color = '#00FF00'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
 life_actions pushBack (player addAction["<t color = '#FF0000'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
-
+Life_actions pushBack (player addAction["<t color = '#00FF00'>Olhar Coleira</t>",RJM_fnc_DogNome,"",7,false,false,"",' !isNull cursorTarget && cursorTarget IsEqualTo "Fin_random_F" && cursorTarget distance player < 3.5 ']);

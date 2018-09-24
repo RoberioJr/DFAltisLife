@@ -22,6 +22,6 @@ if ([false,'ossodog',1] call life_fnc_handleInv) then {
     RJ_FomeDog = 100;
 	dog SetDamage 0;
 	SystemChat Format ['%1, Você Alimentou O Seu Cão',Name player];
-};
+} else { Hint "Você Não Tem Comida Para O Cachorro!"; };
  
  
