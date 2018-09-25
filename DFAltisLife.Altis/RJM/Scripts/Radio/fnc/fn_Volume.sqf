@@ -9,7 +9,7 @@
 // Altera O Volume Da Musica Para Todos Dos Jogadores Dentro De Um Determinado Veiculo
 
 params [
-    ["_Volume","",[""]],
+    ["_Volume",0,[0]],
     ["_Veiculo",objNull,[objNull]]
 ];
 

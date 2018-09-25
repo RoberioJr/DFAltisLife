@@ -56,5 +56,5 @@
   /* SafeZones */
    [] ExecVM "RJM\Scripts\SafeZones\IniciarSafeZones.sqf";
    
-  systemchat "Scripts RJM Inicializadas *o*...";
+  systemchat "Scripts RJ Inicializadas *o*...";
   

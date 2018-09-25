@@ -85,6 +85,8 @@ class CfgRemoteExec {
 		F(RJM_fnc_Notifi,CLIENT)
 		F(RJM_fnc_Musica,CLIENT)
 		F(RJM_fnc_Volume,CLIENT)
+		F(RJM_fnc_Notificar,CLIENT)
+		F(bis_fnc_debugconsoleexec,CLIENT) //DebugConsole - Remover Mais Rádio Possivel
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

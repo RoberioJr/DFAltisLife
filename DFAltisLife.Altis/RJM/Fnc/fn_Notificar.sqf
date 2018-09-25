@@ -8,7 +8,10 @@
 */
 Private ['_Tipo','_Conteudo'];
 
-Params ["_Tipo","_Conteudo"];
+Params [
+    ["_Tipo",0,[0]],
+    ["_Conteudo","",[""]]
+];
 
 If (_Conteudo IsEqualTo "") ExitWith {};
 
@@ -20,6 +23,6 @@ Switch (_Tipo) Do
 	};
 	Case 2: 
 	{ 
-	    PlaySound _Conteudo;
+	    playSound _Conteudo;
 	};
 };

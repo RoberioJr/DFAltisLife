@@ -28,7 +28,7 @@ ctrlShow [60712,true];
 ctrlSetText [60704, localize _dName];
 ctrlSetText [60710,format ["%1",_iWeight]];
 if (!(_bPrice isEqualTo -1)) then {
-ctrlSetText [60712,format ["$%1",[_bPrice] call life_fnc_numberText]];
+ctrlSetText [60712,format ["R$%1",[_bPrice] call life_fnc_numberText]];
 } else {
 ctrlSetText [60712, "N/A"];
 };
