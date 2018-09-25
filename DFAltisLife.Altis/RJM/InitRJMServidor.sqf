@@ -6,17 +6,6 @@
 |            Nosso Site: http://www.rjmscripts.rf.gd          |
 |                                                             |
 */
-   
- Private ["_neblina"];
-   
-   /* DEFINIÇÕES */
-   _neblina = LIFE_SETTINGS(getNumber,"rj_ativar_neblina");
-
-  /* Remover Neblina */
-  if (_neblina isEqualTo 0) then {
-   diag_log "RJ: Neblina - Desativada";
-   [] Spawn RJM_fnc_RemoverNeblina;
-  };
   
   /* LOG COM INFORMAÇÕES SOBRE INICIALIZAÇÃO DO SERVIDOR */
  sleep 1;
