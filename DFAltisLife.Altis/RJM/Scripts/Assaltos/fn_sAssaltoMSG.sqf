@@ -47,7 +47,7 @@ switch (_mode) do {
 	case 2: {
 		switch (playerSide) do {
 			case civilian : {
-				_msg = "CAI FORA RAPÁ!! Não fode!!";
+				_msg = "CAI FORA RAPÁ!! Não Fode!!";
 				_tipo = "ATENÇÃO!";
 			};
 			case west : {

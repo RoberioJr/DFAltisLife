@@ -2,6 +2,7 @@
 /*
     File: init.sqf
     Author: Bryan "Tonic" Boardwine
+	Edit: RobérioJR
 
     Description:
     Master client initialization file
