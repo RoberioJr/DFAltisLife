@@ -99,6 +99,54 @@ _unit = _this select 0;
                 missionNamespace setVariable ["CASH",0];
             };
         };
+		
+		case "defibrillator": {
+		    if (_value > 0) then {
+                _pos = _unit modelToWorld[0,3,0];
+                _pos = [(_pos select 0),(_pos select 1),0];
+                _obj = "Land_Defibrillator_F" createVehicle _pos;
+                [_obj] remoteExecCall ["life_fnc_simDisable",RANY];
+                _obj setPos _pos;
+                _obj setVariable ["item",[_item,_value],true];
+                missionNamespace setVariable [_itemName,0];
+            };
+		};
+		
+		case "gag": {
+		    if (_value > 0) then {
+                _pos = _unit modelToWorld[0,3,0];
+                _pos = [(_pos select 0),(_pos select 1),0];
+                _obj = "Land_DuctTape_F" createVehicle _pos;
+                [_obj] remoteExecCall ["life_fnc_simDisable",RANY];
+                _obj setPos _pos;
+                _obj setVariable ["item",[_item,_value],true];
+                missionNamespace setVariable [_itemName,0];
+            };
+		};
+		
+		case "cocacola": {
+		    if (_value > 0) then {
+                _pos = _unit modelToWorld[0,3,0];
+                _pos = [(_pos select 0),(_pos select 1),0];
+                _obj = "Land_Can_V2_F" createVehicle _pos;
+                [_obj] remoteExecCall ["life_fnc_simDisable",RANY];
+                _obj setPos _pos;
+                _obj setVariable ["item",[_item,_value],true];
+                missionNamespace setVariable [_itemName,0];
+            };
+		};
+		
+		case "blindfold": {
+		    if (_value > 0) then {
+                _pos = _unit modelToWorld[0,3,0];
+                _pos = [(_pos select 0),(_pos select 1),0];
+                _obj = "Land_FoodSack_01_empty_brown_F" createVehicle _pos;
+                [_obj] remoteExecCall ["life_fnc_simDisable",RANY];
+                _obj setPos _pos;
+                _obj setVariable ["item",[_item,_value],true];
+                missionNamespace setVariable [_itemName,0];
+            };
+		};
 
         default {
             if (_value > 0) then {

@@ -6,7 +6,7 @@
     Description:
     Handles actions after the broadcast button is clicked.
 */
-private ["_broadcastHeader","_broadcastMessage","_length","_badCharacter","_characterByte","_allowed","_allowedLength"];
+private ["_broadcastHeader","_broadcastMessage","_length","_badCharacter","_characterByte","_allowed","_allowedLength","_Valor","_Grana"];
 disableSerialization;
 _broadcastHeader = ctrlText (CONTROL(100100,100101));
 _broadcastMessage = ctrlText (CONTROL(100100,100102));
