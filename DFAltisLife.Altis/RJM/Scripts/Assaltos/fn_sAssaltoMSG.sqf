@@ -3,13 +3,19 @@
 	Edit: RobérioJR
 */
 
-private["_mode","_msg","_msgTarget","_alvo","_tipo"];
+private["_mode","_msg","_msgTarget","_alvo","_tipo","_img"];
 
 _mode = param [0,0,[0]];
 _alvo = cursorTarget;
 _jogador = name player;
 
 disableSerialization;
+
+switch (playerSide) do {
+	case civilian : {_img = "textures\assalto.paa";};
+	case west : {_img = "textures\policia.paa";};
+	case independent : {_img = "textures\medico.paa";};
+};
 
 switch (_mode) do {
     case 0: {
@@ -68,8 +74,8 @@ if(_msg isEqualTo "") exitWith {};
 [0,format["%2, voce enviou Um Anúncio para %1 com sucesso !",name _alvo,name player]] remoteExecCall ["life_fnc_broadcast",player];
 
 //Mensagem para a vitima
-//_msgTarget = format["%1",_msg];
-_msgTarget = format["<t color='#ffffff' size='2'>%2</t><t color='#c45454' size='2'>:</t><br/><br/><img shadown='false' size='5' image='textures\atencao.paa'/><br/><br/>%1 | Enviado Por: %3", _msg, _tipo, _jogador];
+//_msgTarget = format["<t color='#ffffff' size='2'>%2</t><t color='#c45454' size='2'>:</t><br/><br/><img shadown='false' size='5' image='textures\atencao.paa'/><br/><br/>%1 | Enviado Por: %3", _msg, _tipo, _jogador];
+_msgTarget = format["<t color='#ffffff' size='2'>%2</t><t color='#c45454' size='2'>:</t><br/><br/><img shadown='false' size='5' image=%4/><br/><br/>%1 | Enviado Por: %3", _msg, _tipo, _jogador, _img];
 //_msgTarget = format["<t color='#ffffff' size='2'>ALERTA</t><br/><br/><img shadown='false' size='10' image='textures\SEUBANNER.jpg'/><br/><br/><t color='#fffc00' size='2'> %1 </t><br/><t color='#ff0000' size='2'>*BY-CASPERENTO*</t>",_msg];
 
 

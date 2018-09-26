@@ -95,8 +95,10 @@ switch (_code) do {
 	
 	//Modo Administrador F9
 	case 67: {
+	    if (!RJ_DelayTerminado) then ExitWith { Hint "Aguarde Um Momento Antes De Efetuar Essa Ação..."; };
 	    if (FETCH_CONST(life_adminlevel) >= 1) Then {
 	        [] Spawn RJM_fnc_ModoAdmin;
+			[10] Spawn RJM_fnc_DelayRJ;
 		};
 	};
 	
@@ -200,7 +202,7 @@ switch (_code) do {
 	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi' F3
 	case 61: {
 		if(vehicle player isEqualTo player) then {
-			if(RJ_DelayTerminado) then {
+			if (RJ_DelayTerminado) then {
 			    [5] Spawn RJM_fnc_DelayRJ;
 				player playActionNow "gestureHiC";
 				[player,"aipaipara",40,1] remoteExecCall ["life_fnc_say3D",0];
