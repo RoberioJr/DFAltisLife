@@ -25,4 +25,12 @@ Switch (_Tipo) Do
 	{ 
 	    playSound _Conteudo;
 	};
+	Case 3:
+	{
+	    SystemChat _Conteudo;
+	};
+	Case 4:
+	{
+	    Hint _Conteudo;
+	};
 };

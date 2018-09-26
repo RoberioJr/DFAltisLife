@@ -93,6 +93,13 @@ switch (_code) do {
 
     /* Alterações RobérioJR */
 	
+	//Modo Administrador F9
+	case 67: {
+	    if (FETCH_CONST(life_adminlevel) >= 1) Then {
+	        [] Spawn RJM_fnc_ModoAdmin;
+		};
+	};
+	
 	//Abrir Porta Com Botão (0)
     case 11: {
 		if (!_shift && !_alt && !_ctrlKey && (playerSide In [west,independent]) && (vehicle player != player)) then {
@@ -134,6 +141,7 @@ switch (_code) do {
 	//Menu De Equipamentos Para Os Admins F7
 	case 65: {
 	    if (!Alive Player) ExitWith {};
+		if !(JogadorNoModoAdmin) ExitWith {};
 	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] execVM "RJM\Scripts\MenuAdminRJ\VAS\open.sqf";
 		};
@@ -142,6 +150,7 @@ switch (_code) do {
 	//Spawner De Veiculos Para Os Admins F8
 	case 66: {
 	    if (!Alive Player) ExitWith {};
+		if !(JogadorNoModoAdmin) ExitWith {};
 	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] call TUT_fnc_OpenVehUI;
 		};

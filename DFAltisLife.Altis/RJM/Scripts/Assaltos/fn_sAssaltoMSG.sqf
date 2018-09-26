@@ -16,7 +16,7 @@ switch (_mode) do {
 		switch (playerSide) do {
 			case civilian : {
 				_msg = "ISSO É UM ASSALTO! MÃOS NA CABEÇA!! (SHIFT + B) DOU 10seg, OU VAMOS ATIRAR!!";
-				_tipo = "ATENÇÃO!";
+				_tipo = "ASSALTO!";
 			};
 			case west : {
 				_msg = "MÃOS NA CABEÇA! (SHIFT + B)";
@@ -32,7 +32,7 @@ switch (_mode) do {
 		switch (playerSide) do {
 			case civilian : {
 				_msg = "ISSO É UM ASSALTO! PARE O VEICULO E FIQUE DENTRO!!.";
-			    _tipo = "ATENÇÃO!";
+			    _tipo = "ASSALTO!";
 			};
 			case west : {
 				_msg = "PARE O VEÍCULO E FIQUE DENTRO ATÉ SEGUNDAS ORDENS! (SHIFT + B)";

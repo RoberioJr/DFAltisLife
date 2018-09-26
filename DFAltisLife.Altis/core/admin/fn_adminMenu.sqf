@@ -9,6 +9,9 @@
 private ["_display","_list","_side","_godmode","_markers"];
 if (FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 
+/* Modo Administrador */
+if !(JogadorNoModoAdmin) ExitWith {closeDialog 0; Hint "Você Não Está No Modo Admin, Aperte (F9) Para Entrar No Modo De Administrador.";};
+
 disableSerialization;
 
 waitUntil {!isNull (findDisplay 2900)};

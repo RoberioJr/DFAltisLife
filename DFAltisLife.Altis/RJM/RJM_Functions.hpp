@@ -80,6 +80,11 @@ class RJM_Scripts {
 		class autoSaveInv {};
 	};
 	
+	class Administrador {
+		file = "Scripts\MenuAdminRJ";
+		class ModoAdmin {};
+	};
+	
 	class Notificar {
 		file = "RJM\Scripts\Notificar";
 		class createNotification {};
