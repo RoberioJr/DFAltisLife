@@ -151,8 +151,10 @@ switch (_code) do {
 	case 23: {
 	    if (!Alive Player) ExitWith {};
 	    if (vehicle player isEqualTo player) then {
-		    sleep 0.85;
-	        playSound "zipper";
+		    [] Spawn {
+		        sleep 0.85;
+	            playSound "zipper";
+			};
 		};
 	};
 
