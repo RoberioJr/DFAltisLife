@@ -80,13 +80,14 @@ class CfgRemoteExec {
         F(zipties_fnc_zip_blindfold,CLIENT)
         F(zipties_fnc_zip_patdown,CLIENT)
         F(zipties_fnc_zip_untieFix,CLIENT)
-		F(rjm_fnc_dogimob,CLIENT)
+		F(RJM_fnc_DogImob,CLIENT)
 		F(RJM_fnc_Musica3D,CLIENT)
 		F(RJM_fnc_Notifi,CLIENT)
 		F(RJM_fnc_Musica,CLIENT)
 		F(RJM_fnc_Volume,CLIENT)
 		F(RJM_fnc_Notificar,CLIENT)
-		F(bis_fnc_debugconsoleexec,CLIENT) //DebugConsole - Remover Mais Rádio Possivel
+		F(RJM_fnc_NotificarADM,CLIENT)
+		F(bis_fnc_debugconsoleexec,CLIENT) //DebugConsole - Remover Mais Rápido Possivel
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

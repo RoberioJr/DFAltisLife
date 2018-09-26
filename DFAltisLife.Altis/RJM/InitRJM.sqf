@@ -37,6 +37,17 @@
    diag_log "RJ: Neblina - Desativada";
    [] Spawn RJM_fnc_RemoverNeblina;
   };
+  
+ "layer_notifications" cutRsc ["rsc_notifications", "PLAIN"];
+ 
+ addMissionEventHandler ["Loaded",{
+	[] spawn {
+		sleep 2;
+		"layer_notifications" cutRsc ["rsc_notifications", "PLAIN"];
+	};
+ }];
 	
  RJ_MISSAO_DIR = str missionConfigFile select [0, count str missionConfigFile - 15];
+ 
+ 
  

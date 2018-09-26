@@ -79,6 +79,12 @@ class RJM_Scripts {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};
 	};
+	
+	class Notificar {
+		file = "RJM\Scripts\Notificar";
+		class createNotification {};
+		class NotificarADM {};
+	};
 };
 
 #include "Scripts\MenuAdminRJ\VAS\cfgfunctions.hpp"     //Menu De Equipamento ADM

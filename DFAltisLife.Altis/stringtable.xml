@@ -12184,6 +12184,23 @@
     </Key>
 	<Key ID="STR_Item_Bisturi">
             <Original>Bisturí</Original>
-        </Key>
+    </Key>
+
+	<Project name="notificationSystem">
+	<Package name="Notifications">
+		<Key ID="STR_author">
+			<English>Haz | RJ </English>
+		</Key>
+		<Key ID="STR_notification_queueCount">
+			<English>Msgs Na Fila: %1</English>
+		</Key>
+		<Key ID="STR_notification_title_example">
+			<English>Nova Notificação</English>
+		</Key>
+		<Key ID="STR_notification_message_example">
+			<English>Isso É Uma Notificação!</English>
+		</Key>
+	</Package>
+</Project>
 
  

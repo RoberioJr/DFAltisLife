@@ -11,4 +11,5 @@
 #include "Scripts\MenuAdminRJ\VAS\menu.hpp"                                    //Menu De Equipamento ADM
 #include "Scripts\AutoSave\Scripts_Master.hpp"                                 //Auto Save Do Jogador
 #include "Scripts\Radio\hpp\RadioRJM.hpp"                                      //Rádio Dos Veiculos
+#include "Scripts\Notificar\config_master.hpp"                                 //Sistema De Notificação
  
