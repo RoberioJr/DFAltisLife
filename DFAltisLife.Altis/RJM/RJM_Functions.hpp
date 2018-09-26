@@ -81,7 +81,7 @@ class RJM_Scripts {
 	};
 	
 	class Administrador {
-		file = "Scripts\MenuAdminRJ";
+		file = "RJM\Scripts\MenuAdminRJ";
 		class ModoAdmin {};
 	};
 	
