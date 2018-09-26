@@ -12,9 +12,9 @@ _jogador = name player;
 disableSerialization;
 
 switch (playerSide) do {
-	case civilian : {_img = "textures\assalto.paa";};
-	case west : {_img = "textures\policia.paa";};
-	case independent : {_img = "textures\medico.paa";};
+	case civilian : {_img = 'textures\assalto.paa';};
+	case west : {_img = 'textures\policia.paa';};
+	case independent : {_img = 'textures\medico.paa';};
 };
 
 switch (_mode) do {

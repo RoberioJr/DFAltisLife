@@ -95,7 +95,7 @@ switch (_code) do {
 	
 	//Modo Administrador F9
 	case 67: {
-	    if (!RJ_DelayTerminado) then ExitWith { Hint "Aguarde Um Momento Antes De Efetuar Essa Ação..."; };
+	    if (!RJ_DelayTerminado) ExitWith { Hint "Aguarde Um Momento Antes De Efetuar Essa Ação..."; };
 	    if (FETCH_CONST(life_adminlevel) >= 1) Then {
 	        [] Spawn RJM_fnc_ModoAdmin;
 			[10] Spawn RJM_fnc_DelayRJ;
