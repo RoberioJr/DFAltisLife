@@ -4,12 +4,16 @@
 
 */
 
-Private ['_cP','_cond','_ui','_progress','_pgText','_Pos','_TempoDaExplosao','_Obj'];
+Private ['_cP','_cond','_ui','_progress','_pgText','_Pos','_TempoDaExplosao','_Obj','_Slider','_PosSlider'];
 
 If (!Alive Player) ExitWith {};
 If (Vehicle Player != Player) ExitWith {};
 
-_TempoDaExplosao = _This Select 0;
+_Slider = (findDisplay 4020) DisplayCtrl 4023; 
+_PosSlider = SliderPosition _Slider;
+closeDialog 0;
+
+_TempoDaExplosao = (round _PosSlider);
 
 closeDialog 0;
 if (_TempoDaExplosao < 10) ExitWith {Hint "Erro Na Configuração Da Bomba";};
@@ -17,7 +21,7 @@ if (_TempoDaExplosao < 10) ExitWith {Hint "Erro Na Configuração Da Bomba";};
 _cond = true;
 
 disableSerialization;
-6 cutRsc ["life_progress","PLAIN"];
+"Bomba" cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
@@ -27,7 +31,7 @@ _cP = 0.01;
 
 if (_cond) then {
     While {true} do {
-        sleep 0.3;
+        sleep 0.15;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format["Plantando Bomba (%1%2)...",round(_cP * 100),"%"];
@@ -39,7 +43,7 @@ if (_cond) then {
         if !(alive player) exitWith {_cond = false;};
 		if (life_istazed || life_isknocked || life_interrupted) exitWith {_cond = false;}; 
     };
-	6 cutText ["","PLAIN"];
+	"Bomba" cutText ["","PLAIN"];
     player playActionNow "stop";
 	if !(_cond) ExitWith { Hint "Ação Interrompida..."; };
 	_Obj = createVehicle ["Land_Sleeping_bag_folded_F", getPos player, [], 0, "CAN_COLLIDE"];

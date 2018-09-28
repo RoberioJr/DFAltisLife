@@ -11,8 +11,9 @@
 	_Btn ctrlSetTooltip "TEXTO"; - Coloca Descrição No Botão
 	
 */
+closeDialog 0;
 
-if (!alive player || dialog) exitWith {};
+if (!alive player) exitWith {};
 
 disableSerialization;
 
@@ -29,4 +30,4 @@ _Slider sliderSetPosition 30;
 
 _Info ctrlSetText "30 Segundos";
 
-_Botao buttonSetAction "_Slid = (findDisplay 4020) DisplayCtrl 4023; _T = SliderPosition _Slid; [_T] Spawn RJM_fnc_Bomba;";
+_Botao buttonSetAction "[] Spawn RJM_fnc_Bomba;";
