@@ -6,16 +6,15 @@
 
 Private ['_cP','_cond','_ui','_progress','_pgText','_Pos','_TempoDaExplosao','_Obj','_Slider','_PosSlider'];
 
+closeDialog 0;
 If (!Alive Player) ExitWith {};
 If (Vehicle Player != Player) ExitWith {};
 
-_Slider = (findDisplay 4020) DisplayCtrl 4023; 
-_PosSlider = SliderPosition _Slider;
-closeDialog 0;
+//_Slider = (findDisplay 4020) DisplayCtrl 4023; 
+//_PosSlider = SliderPosition _Slider;
 
-_TempoDaExplosao = (round _PosSlider);
+_TempoDaExplosao = _this Select 0;
 
-closeDialog 0;
 if (_TempoDaExplosao < 10) ExitWith {Hint "Erro Na Configuração Da Bomba";};
 
 _cond = true;

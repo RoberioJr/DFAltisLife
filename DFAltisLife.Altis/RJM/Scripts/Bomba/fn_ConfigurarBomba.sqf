@@ -22,7 +22,7 @@ createDialog "RJ_Bomba";
 _Menu = findDisplay 4020;
 
 _Slider = _Menu DisplayCtrl 4023;
-_Botao = _Menu DisplayCtrl 4024;
+_Botao = _Menu DisplayCtrl 4022;
 _Info = _Menu DisplayCtrl 4021;
 
 _Slider sliderSetRange [10,240];
@@ -30,4 +30,4 @@ _Slider sliderSetPosition 30;
 
 _Info ctrlSetText "30 Segundos";
 
-_Botao buttonSetAction "[] Spawn RJM_fnc_Bomba;";
+_Botao buttonSetAction "_S = (findDisplay 4020) DisplayCtrl 4023; _T = SliderPosition _S; [_T] Spawn RJM_fnc_Bomba;";
