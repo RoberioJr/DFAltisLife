@@ -202,6 +202,12 @@
         titles[] = {};
     };
 	
+	class bombaplant {
+		name = "bombaplant";
+		sound[] = {"\sounds\bombaplant.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
 	class grito1 {
 	    name = "grito1"; 
 		sound[] = {"RJM\Recursos\Audio\grito1.ogg", 1, 1.0};

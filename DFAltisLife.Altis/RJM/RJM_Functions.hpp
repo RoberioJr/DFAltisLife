@@ -75,6 +75,13 @@ class RJM_Scripts {
 		class Volume {};
 	};
 	
+	class Bomba {
+		file = "RJM\Scripts\Bomba";
+		class Bomba {};
+		class SliderBomba {};
+		class ConfigurarBomba {};
+	};
+	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};

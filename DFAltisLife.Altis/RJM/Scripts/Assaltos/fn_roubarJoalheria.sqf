@@ -59,7 +59,7 @@ if(_robber distance _shop > 12.5) exitWith { };
 if!(alive _robber) exitWith {};
 };
 if!(alive _robber) exitWith { _rip = false; };
-if(_robber distance _shop > 12.5) exitWith { deleteMarker "rjMarker200"; _shop switchMove ""; hint "Você Deve Estar A Menos De 12M Para Assaltar! - Agora O Caixa Foi Trancado."; 5 cutText ["","PLAIN"]; _rip = false; };
+if(_robber distance _shop > 12.5) exitWith { deleteMarker "rjMarker200"; _shop switchMove ""; hint "Você Deve Estar A Menos De 12M Para Assaltar! - Agora O Caixa Foi Trancado."; 6 cutText ["","PLAIN"]; _rip = false; };
 6 cutText ["","PLAIN"];
 
 titleText[format["Você Roubou R$%1, Agora Corre Carai!",[_kassa] call life_fnc_numberText],"PLAIN"];

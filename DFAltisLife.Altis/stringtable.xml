@@ -12183,7 +12183,10 @@
         <Original>Comida Do Cachorro</Original>
     </Key>
 	<Key ID="STR_Item_Bisturi">
-            <Original>Bisturí</Original>
+        <Original>Bisturí</Original>
+    </Key>
+	<Key ID="STR_Item_bomba">
+        <Original>Bomba Temporizada</Original>
     </Key>
 
 	<Project name="notificationSystem">

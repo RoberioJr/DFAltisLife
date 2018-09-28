@@ -13,7 +13,7 @@ _item = CONTROL_DATA(2005);
 
 switch (true) do {
     /* Roubo de Orgãos */
-	case (_item == "kidney"):{
+	case (_item == "kidney"): {
         if(([false,_item,1] call life_fnc_handleInv)) then {
             player setVariable["orgaoFaltando",false,true];
             life_thirst = 100;
@@ -21,7 +21,13 @@ switch (true) do {
             player setFatigue .5;
         };
     };
-	 
+	
+	case (_item == "bomba"): {
+	    if ([false,_item,1] call life_fnc_handleInv) then {
+			[] Call RJM_fnc_ConfigurarBomba;
+        };
+	};
+	
     /* Efeitos Das Drogas By: RobérioJR */
     case (_item in ["marijuana","cocaineProcessed","tabacoProcessed","lsdProcessed","ecstasyProcessed","metanfetaminaProcessed","loloProcessed","crackProcessed","heroinProcessed"]): {
 	    if !(RJ_DelayTerminado) exitWith { hint 'Espere Um Pouco Antes De Fazer Essa Ação!'; };
