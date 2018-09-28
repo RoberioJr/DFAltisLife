@@ -1,9 +1,12 @@
-#include "RJ_Bomba_Macros.hpp"
+/*
 
-#include "CustomControlClasses.h"
-class RJ_Bomba
-{
-	idd = -1;
+    Author: RobérioJR
+
+*/
+
+class RJ_Notificar {
+	name = "RJ_Notificar";
+	idd = 4030;
 	movingEnable = false;
 	enableSimulation = false;
 	
@@ -34,7 +37,7 @@ class RJ_Bomba
 			w = safeZoneW * 0.36328125;
 			h = safeZoneH * 0.0625;
 			style = 2;
-			text = "TITULO";
+			text = "Enviar Mensagem Para Todos";
 			colorBackground[] = {0.302,0.302,0.302,0.9};
 			colorText[] = {0.902,0.902,0.902,1};
 			font = "PuristaMedium";
@@ -45,16 +48,16 @@ class RJ_Bomba
 	};
 	class Controls
 	{
-		class Control2073664
+		class EditText
 		{
 			type = 2;
-			idc = -1;
+			idc = 4031;
 			x = safeZoneX + safeZoneW * 0.39160157;
 			y = safeZoneY + safeZoneH * 0.46875;
 			w = safeZoneW * 0.21679688;
 			h = safeZoneH * 0.0625;
 			style = 2;
-			text = "EDITAVEL";
+			text = "Digite Aqui...";
 			autocomplete = "";
 			colorBackground[] = {0.302,0.302,0.302,0.75};
 			colorDisabled[] = {0.302,0.302,0.302,0.75};
@@ -67,13 +70,13 @@ class RJ_Bomba
 		class Botao
 		{
 			type = 1;
-			idc = -1;
+			idc = 4032;
 			x = safeZoneX + safeZoneW * 0.46484375;
 			y = safeZoneY + safeZoneH * 0.56597223;
 			w = safeZoneW * 0.0703125;
 			h = safeZoneH * 0.03819445;
 			style = 0+2;
-			text = "Confirmar";
+			text = "Enviar";
 			borderSize = 0;
 			colorBackground[] = {0.302,0.302,0.302,0.9};
 			colorBackgroundActive[] = {0.502,0.502,0.502,1};

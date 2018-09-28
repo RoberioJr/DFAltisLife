@@ -15,7 +15,7 @@
 [] spawn {
    private ["_vei"];
     while {true} do {
-	    Sleep 3;
+	    Sleep 2;
 		waitUntil {alive player};
 		if (vehicle player != player) then { _vei = (vehicle player); };
 		waitUntil {vehicle player == player or (!Alive Player)};
@@ -52,25 +52,9 @@ RJMFIXNOME = "";
 [] Spawn {
     While {true} Do {
 	    waitUntil {typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) == player)};
-		ACRADIO = player addaction [("<t color=""#2E9AFE"">" + ("Radio") +"</t>"),"[1] call RJM_fnc_Menu","",5,false,true,"",""];
+		_ACRADIO = player addaction [("<t color=""#2E9AFE"">" + ("Radio") +"</t>"),"[1] call RJM_fnc_Menu","",5,false,true,"",""];
 	    waitUntil {(typeOf vehicle player in RJ_VeiculosComRadio && (Driver (vehicle player) != player)) || ((Vehicle Player) == player)};
-		//if (Vehicle Player == Player) then { playMusic ""; };
-		player removeAction ACRADIO; //Remove Ação Do Radio
+		player removeAction _ACRADIO; //Remove Ação Do Radio
 	};
 };
-
-/*
-while {true} do {
-    waitUntil {alive player};
-	if (typeOf vehicle player in RJ_VeiculosComRadio) then {
-	    if (vehicle player != player && (Driver (vehicle player) == player)) then {
-			ACRADIO = player addaction [("<t color=""#2E9AFE"">" + ("Radio") +"</t>"),"[1] call RJM_fnc_Menu","",5,false,true,"",""];
-        };
-	};
-	waitUntil {vehicle player == player}; //Aguarda Até Que O Jogador Saida Do Veiculo
-	playMusic ""; //Parar Musica
-    player removeAction ACRADIO; //Remove Ação Do Radio
-	waitUntil {vehicle player != player}; //Aguardar O Jogador Entrar No Veiculo
-};*/
-
 
