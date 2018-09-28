@@ -15,7 +15,9 @@ If (Vehicle Player != Player) ExitWith {};
 
 _TempoDaExplosao = _this Select 0;
 
-if (_TempoDaExplosao < 10) ExitWith {Hint "Erro Na Configuração Da Bomba";};
+if (_TempoDaExplosao < 15) ExitWith {Hint "Erro Na Configuração Da Bomba";};
+
+if ([false,'bomba',1] call life_fnc_handleInv) then {
 
 _cond = true;
 
@@ -54,6 +56,7 @@ if (_cond) then {
 	deleteVehicle _Obj;
     "Bo_GBU12_LGB" createVehicle (GetPos _Obj);
 };
+} Else { Hint "Você Não Possui Uma Bomba Meu Amigo!"; };
 
 
 

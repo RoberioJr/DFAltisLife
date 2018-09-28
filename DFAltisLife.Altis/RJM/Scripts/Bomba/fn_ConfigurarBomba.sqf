@@ -25,7 +25,7 @@ _Slider = _Menu DisplayCtrl 4023;
 _Botao = _Menu DisplayCtrl 4022;
 _Info = _Menu DisplayCtrl 4021;
 
-_Slider sliderSetRange [10,240];
+_Slider sliderSetRange [15,240];
 _Slider sliderSetPosition 30;
 
 _Info ctrlSetText "30 Segundos";

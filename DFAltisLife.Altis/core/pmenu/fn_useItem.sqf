@@ -23,9 +23,7 @@ switch (true) do {
     };
 	
 	case (_item == "bomba"): {
-	    if ([false,_item,1] call life_fnc_handleInv) then {
-			[] Call RJM_fnc_ConfigurarBomba;
-        };
+		[] Call RJM_fnc_ConfigurarBomba;
 	};
 	
     /* Efeitos Das Drogas By: RobérioJR */
