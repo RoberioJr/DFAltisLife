@@ -51,7 +51,7 @@ RJ_VeiculosComRadio =
 	"C_Van_01_box_F",          //Chaninha Baú
 	"C_Offroad_02_unarmed_F",  //OffRoad
 	"B_G_Offroad_01_F",        //OffRoad Rebelde
-	"C_Offroad_01_F",         //OffRoad Normal 
+	"C_Offroad_01_F",          //OffRoad Normal 
 	"B_Truck_01_box_F",        //Hemmt Box
 	"C_Van_02_vehicle_F",      //Van De Carga
 	"C_Van_02_medevac_F"       //Ambulancia

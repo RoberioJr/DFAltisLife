@@ -1,6 +1,6 @@
 /*
 
-	Author: RobérioJR & Medeiros
+	Author: RobérioJR
 	Proibido Usar Esse Código Sem Permissão Dos Autores.
 	
 	Ajuda Para Editar:

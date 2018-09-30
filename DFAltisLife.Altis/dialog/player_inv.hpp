@@ -315,5 +315,6 @@ class playerSettings {
             colorText[] = {1,1,1,1};
             colorBackground[] = {0,0,0,0.8};
         };
+		//Botao Entre Mercado e Admin: x = safeZoneX + safeZoneW * 0.46630859;
     };
 };

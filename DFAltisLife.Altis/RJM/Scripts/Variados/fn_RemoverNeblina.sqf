@@ -9,16 +9,8 @@
     while{true} do {
         sleep 20;
         300 setFog 0;
+		999999 setRain 0;
+		//forceWeatherChange;
         sleep 600;
     };
-};
-[] spawn { /* Remover Chuva */
-    While {True} Do {
-	    _nivelChuva = Rain;
-		sleep 10;
-		WaitUntil {_nivelChuva > 0.2};
-		0 setRain 0;
-        forceWeatherChange;
-        999999 setRain 0;
-	};
 };

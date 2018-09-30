@@ -13,8 +13,8 @@ if ((getPlayerUID player) in RJ_Administradores) then { //Lista De Admins
 		[
 			["RoberioJr Menu",true],
 				["Ferramentas", [4], "#USER:ToolsMenu", -5, [["expression", ""]], "1", "1"],
-				["Veiculos", [4], "#USER:VehicleMenu", -5, [["expression", ""]], "1", "1"],
-				["Armas", [5], "#USER:WeaponMenu", -5, [["expression", ""]], "1", "1"],
+				//["Veiculos", [4], "#USER:VehicleMenu", -5, [["expression", ""]], "1", "1"],
+				//["Armas", [5], "#USER:WeaponMenu", -5, [["expression", ""]], "1", "1"],
 				//["Spawn Groups", [5], "#USER:Soldier", -5, [["expression", ""]], "1", "1"],
 				["", [-1], "", -5, [["expression", ""]], "1", "0"],
 			["Sair", [13], "", -3, [["expression", ""]], "1", "1"]		
