@@ -1,7 +1,6 @@
 #include "..\..\..\script_macros.hpp"
 
 waitUntil {!(isNull (findDisplay 46))};
-waitUntil {mav_introcam_continue};  //Fix Camera De Intro
 
 disableSerialization;
 _rscLayer = "RJMStatusBar" call BIS_fnc_rscLayer;

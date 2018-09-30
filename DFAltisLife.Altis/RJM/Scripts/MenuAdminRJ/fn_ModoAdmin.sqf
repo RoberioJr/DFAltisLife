@@ -1,3 +1,4 @@
+#include "..\..\..\script_macros.hpp"
 /*
 
     Author: RobérioJR
@@ -5,7 +6,7 @@
 */
 Private ['_Loadout','_Pos','_Dir','_handle','_Grana','_Banco','_NivelPoder','_Modo'];
 
-_NivelPoder = FETCH_CONST(life_donorlevel)
+_NivelPoder = FETCH_CONST(life_donorlevel);
 Switch (_NivelPoder) Do {
     Case 1: { _Modo = "Suporte"; };
 	Case 2: { _Modo = "SubModerador"; };
