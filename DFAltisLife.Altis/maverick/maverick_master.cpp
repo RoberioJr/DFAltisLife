@@ -5,6 +5,8 @@
 
 */
 
+#include "gui\includes.cpp"
+
  
     /* Scripts */
 
@@ -17,5 +19,3 @@
  //Taxi
    #include "taxis\config.cpp"
    
- //GUI CFG
-   #include "gui\includes.cpp"
