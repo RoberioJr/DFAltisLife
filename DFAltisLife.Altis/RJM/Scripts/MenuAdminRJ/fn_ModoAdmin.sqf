@@ -13,6 +13,7 @@ Switch (_NivelPoder) Do {
 	Case 3: { _Modo = "Moderador"; };
 	Case 4: { _Modo = "SubAdministrador"; };
 	Case 5: { _Modo = "Administrador"; };
+	Default { _Modo = "Moderador"; };
 };
 
  If (!JogadorNoModoAdmin) Then {

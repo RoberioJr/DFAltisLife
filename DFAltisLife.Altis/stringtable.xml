@@ -6877,23 +6877,16 @@
             <Original>Medical Marijuana License</Original>
             <Czech>Medical Marihuana Licence</Czech>
             <Spanish>Licencia de Marihuana Medicinal</Spanish>
-            <Russian></Russian>
-            <German>Medizinisches Marijuana-Lizenz</German>
-            <French>Licence de Cannabis Médical</French>
-            <Italian>Medical Marijuana Licenza</Italian>
             <Portuguese>Licença Medical Marijuana</Portuguese>
-            <Polish>Medical Marijuana Licencji</Polish>
         </Key>
         <Key ID="STR_License_Home">
             <Original>Home Owners License</Original>
             <Czech>Home Majitelé licence</Czech>
             <Spanish>Licencia Mobiliaria</Spanish>
-            <Russian></Russian>
-            <German>Eigentumsurkunde</German>
-            <French>Droit de Propriété</French>
-            <Italian>Licenza possesso Casa</Italian>
             <Portuguese>Licença de Casas</Portuguese>
-            <Polish>Zarządca nieruchomości</Polish>
+        </Key>
+		<Key ID="STR_License_Uber">
+            <Original>Motorista De Uber</Original>
         </Key>
     </Package>
     <Package name="More_Item_Strings">

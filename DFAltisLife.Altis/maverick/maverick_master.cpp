@@ -13,3 +13,6 @@
    
  //Talent Tree - Levels
    #include "talent-tree-modular\config.cpp"
+   
+ //Taxi
+   #include "taxis\config.cpp"

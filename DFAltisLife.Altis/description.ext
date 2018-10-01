@@ -31,8 +31,7 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     //#include "dialog\hud_stats.hpp"
 	#include "RJM\RJM_RscTitles.hpp"
-	#include "maverick\introcam\dialogs\title_status.hpp"
-	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"  //Maverick Levels (PERKS)
+	#include "maverick\maverick_titles_master.cpp"  //Maverick
 };
 
 class CfgFunctions {

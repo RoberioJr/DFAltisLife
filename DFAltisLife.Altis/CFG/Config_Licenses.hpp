@@ -63,6 +63,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class uber {
+		variable = "uber";
+        displayName = "STR_License_Uber";
+        price = 50000;
+        illegal = false;
+        side = "civ";
+	};
 
     //Processing Licenses
     class oil {
