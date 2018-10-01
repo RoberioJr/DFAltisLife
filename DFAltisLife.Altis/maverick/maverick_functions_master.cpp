@@ -16,3 +16,6 @@
   
  //Taxi
    #include "taxis\functions.cpp"
+   
+ //GUI CFG
+   #include "gui\functions\functions.cpp"
