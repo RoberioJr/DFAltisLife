@@ -37,7 +37,7 @@ class maverick_taxis_cfg {
 	class localization {
 		// Localization
 		msgMainInfoNoTaxiCalled	=			"<t size='2'>Você não tem uma chamada de Uber ativa!</t><br/><t>Clique em 'Chamar Uber' para criar uma solicitação de Uber para todos os motoristas de Uber disponíveis!</t><br/><br/><t font='RobotoCondensedBold'>Motoristas disponíveis: %1</t>";
-		msgMainInfoNoTaxiYet =				"<t size='2'>Um Uber foi chamado!</t><br/><t>Nenhum taxista aceitou seu pedido ainda. Você será notificado quando um motorista de Uber o fizer!</t><br/><br/><t font='RobotoCondensedBold'>Motoristas disponíveis: %1</t>";
+		msgMainInfoNoTaxiYet =				"<t size='2'>Um Uber foi chamado!</t><br/><t>Nenhum Motorista aceitou seu pedido ainda. Você será notificado quando um motorista de Uber o fizer!</t><br/><br/><t font='RobotoCondensedBold'>Motoristas disponíveis: %1</t>";
 		msgTaxiCalled = 					"Uma Chamada De Uber Foi Criada!";
 		msgTaxiCancelled = 					"Seu pedido de Uber atual foi cancelado!";
 		msgTaxiFareCancelled =				"Você cancelou a tarifa";
@@ -50,10 +50,10 @@ class maverick_taxis_cfg {
 		msgTaxiMeterStatusTextActive = 		"<t align='right' font='RobotoCondensedBold'>ATIVO</t>";
 		msgTaxiMeterStatusTextInactive = 	"<t align='right' font='RobotoCondensedBold'>INATIVO</t>";
 		masTaxiInfoPleaseWait =				"<t size='2'>%1 está a caminho de você!</t><br/>Por favor, aguarde a sua localização atual para o seu motorista de Uber. Ele está atualmente a %2 de distância.</t>";
-		msgTaxiFareCancelledAsCustomer =	"Seu taxista cancelou a tarifa";
+		msgTaxiFareCancelledAsCustomer =	"Seu Uber cancelou a tarifa";
 		masTaxiFareCancelledAsDriver =		"Seu cliente cancelou a tarifa.";
 		msgTaxiCallAccepted =				"Um motorista de motorista de Uber está a caminho";
-		msgTaxiDriverNotAvailable =			"Você não atende aos requisitos para trabalhar como taxista";
+		msgTaxiDriverNotAvailable =			"Você não atende aos requisitos para trabalhar como Motorista Uber";
 		msgTaxiDestinationUpdated =			"O destino foi atualizado";
 		msgTaxiNoRoadNearFound =			"Nenhum segmento de estrada perto da posição encontrado!";
 		msgTaxiCannotCallWhileDriver =		"Você não pode chamar um Uber enquanto está de plantão como motorista de Uber!";
