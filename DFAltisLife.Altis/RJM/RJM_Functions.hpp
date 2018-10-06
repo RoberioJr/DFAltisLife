@@ -76,10 +76,16 @@ class RJM_Scripts {
 	};
 	
 	class Bomba {
-		file = "RJM\Scripts\Bomba";
+		file = "RJM\Scripts\Items\Bomba";
 		class Bomba {};
 		class SliderBomba {};
 		class ConfigurarBomba {};
+	};
+
+	class Rastreador {
+		file = "RJM\Scripts\Items\Rastreador";
+		class IniciarRastreamento {};
+		class Rastreando {};
 	};
 	
 	class AutoSave {

@@ -23,7 +23,11 @@ switch (true) do {
     };
 	
 	case (_item == "bomba"): {
-		[] Call RJM_fnc_ConfigurarBomba;
+		[] Spawn RJM_fnc_ConfigurarBomba;
+	};
+	
+	case (_item == "rastreador"): {
+	    [] Spawn RJM_fnc_IniciarRastreamento;
 	};
 	
     /* Efeitos Das Drogas By: RobérioJR */

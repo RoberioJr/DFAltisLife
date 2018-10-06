@@ -1,1 +1,0 @@
-#define RJM_AS_SETTINGS(TYPE,SETTING) TYPE(missionConfigFile >> "RJM_AutoSave" >> SETTING)

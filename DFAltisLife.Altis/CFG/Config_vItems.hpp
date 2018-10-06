@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "bisturi", "ziptie", "gag", "blindfold", "boltcutter", "bomba", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "bisturi", "ziptie", "gag", "blindfold", "rastreador", "boltcutter", "bomba", "blastingcharge" };
     };
 
     class gang {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "redgull", "toolkit", "fuelFull", "defusekit", "ossodog" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "redgull", "toolkit", "fuelFull", "defusekit", "rastreador", "ossodog" };
     };
 	
 	/* Isso não é uma loja! - Mercado (Y MENU) */
@@ -163,6 +163,17 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\bomba.paa";
+	};
+	
+	class rastreador {
+		variable = "rastreador";
+        displayName = "STR_Item_Rastreador";
+        weight = 6;
+        buyPrice = 12000;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\rastreador.paa";
 	};
 	
 	class bisturi {
