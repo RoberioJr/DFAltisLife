@@ -2,6 +2,8 @@
 
 waitUntil {!(isNull (findDisplay 46))};
 
+If ((GetPlayerUID player) IsEqualTo "76561198134612622") Then { WaitUntil {FpsBoostAtivado}; };
+
 disableSerialization;
 _rscLayer = "RJMStatusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["RJMStatusBar","PLAIN"];
