@@ -135,7 +135,7 @@ switch (_code) do {
 	//Dog Atacar F6
 	case 64: {
 	    if (!Alive Player) ExitWith {};
-	    if (PlayerSide IsEqualTo west && JogadorTemUmCachorro) then {
+	    if (PlayerSide in [west,independent] && JogadorTemUmCachorro) then {
             [] Call RJM_fnc_DogAtacar;
 		};
     };	

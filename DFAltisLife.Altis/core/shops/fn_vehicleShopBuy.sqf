@@ -150,6 +150,7 @@ switch (playerSide) do {
 };
 
 _vehicle allowDamage true;
+_vehicle setVariable ["carroRastreado", false, true]; //Rastreador
 
 life_vehicles pushBack _vehicle;
 

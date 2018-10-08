@@ -12,5 +12,5 @@
 #include "Scripts\AutoSave\Scripts_Master.hpp"                                 //Auto Save Do Jogador
 #include "Scripts\Radio\hpp\RadioRJM.hpp"                                      //Rádio Dos Veiculos
 #include "Scripts\Notificar\config_master.hpp"                                 //Sistema De Notificação
-#include "Scripts\Bomba\RJ_Bomba.hpp"                                          //Menu De Cfg Bomba
+#include "Scripts\Items\Bomba\RJ_Bomba.hpp"                                          //Menu De Cfg Bomba
  

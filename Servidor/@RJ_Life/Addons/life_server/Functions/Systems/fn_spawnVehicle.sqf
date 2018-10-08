@@ -95,7 +95,10 @@ if (_sp isEqualType "") then {
     _vehicle setVectorUp (surfaceNormal _sp);
     _vehicle setDir _dir;
 };
+
 _vehicle allowDamage true;
+_vehicle setVariable ["carroRastreado", false, true]; //Rastreador
+
 //Send keys over the network.
 [_vehicle] remoteExecCall ["life_fnc_addVehicle2Chain",_unit];
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
