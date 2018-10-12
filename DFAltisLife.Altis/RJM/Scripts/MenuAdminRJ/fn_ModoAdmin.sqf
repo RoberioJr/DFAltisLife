@@ -6,14 +6,14 @@
 */
 Private ['_Loadout','_Pos','_Dir','_handle','_Grana','_Banco','_NivelPoder','_Modo'];
 
-_NivelPoder = FETCH_CONST(life_donorlevel);
+_NivelPoder = FETCH_CONST(life_adminlevel);
 Switch (_NivelPoder) Do {
     Case 1: { _Modo = "Suporte"; };
 	Case 2: { _Modo = "SubModerador"; };
 	Case 3: { _Modo = "Moderador"; };
 	Case 4: { _Modo = "SubAdministrador"; };
 	Case 5: { _Modo = "Administrador"; };
-	Default { _Modo = "Moderador"; };
+	Default { _Modo = "Administrador"; };
 };
 
  If (!JogadorNoModoAdmin) Then {

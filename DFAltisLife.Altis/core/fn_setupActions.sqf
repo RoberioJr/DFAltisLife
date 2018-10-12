@@ -24,7 +24,7 @@ switch (playerSide) do {
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Area</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) == "Flag_Red_F") ']];
 		
 		//Roubar os Orgãos
-		life_actions = life_actions + [player addAction["Roubar Orgão",life_fnc_pegarOrgaos,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["orgaoFaltando",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "temOrgao") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
+		life_actions = life_actions + [player addAction["Roubar Rim",RJM_fnc_pegarOrgaos,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["orgaoFaltando",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "temOrgao") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
 	};
     
     //Cops

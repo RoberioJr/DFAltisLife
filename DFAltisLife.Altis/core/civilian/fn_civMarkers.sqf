@@ -30,11 +30,11 @@ for "_i" from 0 to 1 step 0 do {
                 private ["_unit"];
                 _unit = _x select 1;
                 if (!isNil "_unit" && !isNull _unit) then {
-                      (_x select 0) setMarkerPosLocal (visiblePosition _unit);
+                    (_x select 0) setMarkerPosLocal (visiblePosition _unit);
                 };
             } forEach _markers;
             if (!visibleMap) exitWith {};
-            sleep 0.02;
+            sleep 0.05;
         };
 
         {deleteMarkerLocal (_x select 0);} forEach _markers;

@@ -82,8 +82,6 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
-		class pegarOrgaos {};
-
     };
 
     class Admin {
@@ -117,7 +115,6 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
-		class temOrgaos {};
     };
 
     class Config {

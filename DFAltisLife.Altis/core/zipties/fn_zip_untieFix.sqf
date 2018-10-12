@@ -8,5 +8,5 @@
 5 enableChannel true;
 player setvariable ["gagged",false,true];
 cutText ["","BLACK IN"];
-hint "Você Foi Desencapuzado, Verifique Seu Anus...";
+//hint "Você Foi Desencapuzado, Verifique Seu Anus...";
 player setvariable ["blindfolded",false,true];

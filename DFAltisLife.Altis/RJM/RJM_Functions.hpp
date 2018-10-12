@@ -88,6 +88,12 @@ class RJM_Scripts {
 		class Rastreando {};
 	};
 	
+	class Orgao {
+		file = "RJM\Scripts\Items\Orgao";
+		class temOrgaos {};
+		class pegarOrgaos {};
+	};
+	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};
