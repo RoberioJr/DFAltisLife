@@ -43,6 +43,9 @@ switch (playerSide) do
 			case 3: {life_paycheck = life_paycheck + 4000;};
 			case 4: {life_paycheck = life_paycheck + 6000;};
 			case 5: {life_paycheck = life_paycheck + 8000;};
+			case 6: {life_paycheck = life_paycheck + 10000;};
+			case 7: {life_paycheck = life_paycheck + 12000;};
+			case 8: {life_paycheck = life_paycheck + 14000;};
 		};
 		switch(FETCH_CONST(life_donorlevel)) do
 		{

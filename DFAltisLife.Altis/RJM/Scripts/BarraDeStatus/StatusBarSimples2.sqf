@@ -36,7 +36,7 @@ uiSleep 5;
  };
  
 //Setar Variaveis e Valores das Mesmas
-//new
+_TempoRestart = serverTime - 21600; //21600 = 6horas
 _CivplayHUD = civilian countSide playableUnits; //1
 _WestplayHUD = west countSide playableUnits; //2
 _IndepplayHUD = independent countSide playableUnits; //3
@@ -46,7 +46,7 @@ _hunger = round(life_hunger); //7
 _thirst = round(life_thirst); //8
 _damage = round ((1 - (damage player)) * 100); //9
 _FpsHud = round (diag_fps); //10
-_UpTimeHUD = [serverTime,"HH:MM:SS"] call BIS_fnc_secondsToString; //11
+_UpTimeHUD = [_TempoRestart,"HH:MM:SS"] call BIS_fnc_secondsToString; //11
 // End new
 _players = (count playableUnits -1);
 //Cores Config
