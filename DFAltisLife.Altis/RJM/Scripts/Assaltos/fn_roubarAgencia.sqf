@@ -79,8 +79,8 @@ if(_rip) then
         life_use_atm = false;
         playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", _robber];
         sleep 25;
-        if (_kassa >= 350000) then {
-            [1, format["DF TV: A Agência %1 Acabou De Ser Assaltada, Total Roubado: R$%2",_shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast", civilian];
+        if (_kassa >= 375000) then {
+            [3, format["DF TV: A Agência %1 Acabou De Ser Assaltada, Total Roubado: R$%2",_shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast", civilian];
         };
         sleep 320;
         life_use_atm = true;
