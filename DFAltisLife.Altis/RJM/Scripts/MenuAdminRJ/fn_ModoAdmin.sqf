@@ -9,9 +9,9 @@ Private ['_Loadout','_Pos','_Dir','_handle','_Grana','_Banco','_NivelPoder','_Mo
 _NivelPoder = FETCH_CONST(life_adminlevel);
 Switch (_NivelPoder) Do {
     Case 1: { _Modo = "Suporte"; };
-	Case 2: { _Modo = "SubModerador"; };
-	Case 3: { _Modo = "Moderador"; };
-	Case 4: { _Modo = "SubAdministrador"; };
+	Case 2: { _Modo = "Moderador"; };
+	Case 3: { _Modo = "Administrador"; };
+	Case 4: { _Modo = "Administrador"; };
 	Case 5: { _Modo = "Administrador"; };
 	Default { _Modo = "Moderador"; };
 };

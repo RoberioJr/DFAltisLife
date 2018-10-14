@@ -6,7 +6,7 @@
     Description:
     Teleport selected player to you.
 */
-if (FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0;};
+if (FETCH_CONST(life_adminlevel) < 2) exitWith {closeDialog 0; Hint 'Você Não Possui Poder Para Essa Ação';};
 
 private _target = lbData[2902,lbCurSel (2902)];
 _target = call compile format ["%1", _target];

@@ -6,7 +6,7 @@
     Description:
     Teleport to chosen position.
 */
-if (FETCH_CONST(life_adminlevel) < 3) exitWith {closeDialog 0;};
+if (FETCH_CONST(life_adminlevel) < 2) exitWith {closeDialog 0; Hint 'Você Não Possui Poder Para Essa Ação';};
 
 closeDialog 0;
 

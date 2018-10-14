@@ -9,7 +9,7 @@ params [
     ["_reOpen", false, [false]]
 ];
 
-if (FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+if (FETCH_CONST(life_adminlevel) < 4) exitWith {closeDialog 0; Hint 'Você Não Possui Poder Para Essa Ação'; /*hint localize "STR_ANOTF_ErrorLevel";*/};
 
 life_markers_active = true;
 

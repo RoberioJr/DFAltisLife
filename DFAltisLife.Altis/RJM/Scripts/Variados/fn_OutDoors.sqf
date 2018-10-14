@@ -20,6 +20,6 @@ While  {true} Do {
     if (_cond) Then {
         _ob setObjectTextureGlobal [0, Format["%1",_img]];
         _UltimaTex = _img;
-        sleep 60;
+        sleep 300;
     };
 };

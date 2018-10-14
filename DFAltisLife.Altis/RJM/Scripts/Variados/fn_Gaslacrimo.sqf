@@ -16,6 +16,8 @@ JogadorNoGas=false;
 };
 
 [] spawn {
+    _AntiGasCapacete = "H_CrewHelmetHeli_B";
+	_AntiGasMascara = ['G_Respirator_white_F','G_Respirator_blue_F','G_Respirator_yellow_F'];
     while {true} do {
 
         "dynamicBlur" ppEffectEnable true; 
@@ -26,7 +28,7 @@ JogadorNoGas=false;
 		
         waituntil {JogadorNoGas}; 
 
-        if (headgear player != "H_CrewHelmetHeli_B") then {
+        if (headgear player != _AntiGasCapacete || !(goggles player in _AntiGasMascara)) then {
             "dynamicBlur" ppEffectEnable true; 
             "dynamicBlur" ppEffectAdjust [20]; 
             "dynamicBlur" ppEffectCommit 3; 

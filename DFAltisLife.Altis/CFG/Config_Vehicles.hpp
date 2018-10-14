@@ -135,6 +135,7 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" },
+			{ "O_LSV_02_unarmed_F", "call life_coplevel >= 4" },
             { "B_MRAP_01_F", "call life_coplevel >= 4" }
         };
     };
@@ -301,7 +302,10 @@ class LifeCfgVehicles {
 			{ "Rebelde", "reb", {
 				"\a3\soft_f_exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
 				"\a3\soft_f_exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa"
-			}, "" }
+			}, "" },
+			{ "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            }, "" }
 		};
 	};
 	
