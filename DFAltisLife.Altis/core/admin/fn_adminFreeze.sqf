@@ -13,4 +13,5 @@ if (isNil "_unit") exitWith {};
 if (isNull _unit) exitWith {};
 if (_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
 
+[3,Format["%1 Congelou %2 Com O Painel Administrativo!",Name player,Name _unit]] RemoteExec ["RJM_fnc_Notificar",0];
 [player] remoteExec ["life_fnc_freezePlayer",_unit];

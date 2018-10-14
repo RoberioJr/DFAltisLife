@@ -119,7 +119,7 @@ _controls = [_title, _background, _notification];
 	_x ctrlCommit 1;
 } forEach _controls;
 
-sleep 7;
+sleep 10;
 
 waitUntil {_myIndex - notificationsHiddenIndex == 0};
 

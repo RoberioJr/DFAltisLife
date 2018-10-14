@@ -66,7 +66,7 @@ if(_rip) then
         7 cutText ["","PLAIN"];
 
         titleText[format["Você Conseguiu Roubar R$%1, Agora Saia Antes Que os Policiais Cheguem!",[_kassa] call life_fnc_numberText], "PLAIN"];
-        life_cash = life_cash + _kassa;
+        RJM_GRANA = RJM_GRANA + _kassa;
         deleteMarker "MarkerLotericaRJ";
         _rip = false;
         life_use_atm = false;

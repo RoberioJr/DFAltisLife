@@ -22,6 +22,7 @@ _action = [
 if (_action) then {
     CASH = CASH + _value;
     hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
+	[3,Format["%1 Pegou R$%2 Do Painel Administrativo!",Name player,_value]] RemoteExec ["RJM_fnc_Notificar",0];
     closeDialog 0;
 } else {
     hint localize "STR_NOTF_ActionCancel";
