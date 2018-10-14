@@ -4,7 +4,7 @@
     Author: RobérioJR
 
 */
-Private ['_Loadout','_Pos','_Dir','_handle','_Grana','_Banco','_NivelPoder','_Modo'];
+Private ['_Loadout','_Pos','_Dir','_handle','_Grana','_Banco','_Capacidade','_NivelPoder','_Modo'];
 
 _NivelPoder = FETCH_CONST(life_adminlevel);
 Switch (_NivelPoder) Do {
@@ -23,7 +23,8 @@ Switch (_NivelPoder) Do {
 	_Dir = getDir player;
 	_Grana = RJM_GRANA;
 	_Banco = RJM_BANCO;
-	RJ_DadosModoAdmin = [_Loadout,_Pos,_Dir,_Grana,_Banco];
+	_Capacidade = life_maxWeight;
+	RJ_DadosModoAdmin = [_Loadout,_Pos,_Dir,_Grana,_Banco,_Capacidade];
 	RemoveBackpack player;
 	RemoveUniform Player;
 	RemoveGoggles player;
@@ -37,6 +38,7 @@ Switch (_NivelPoder) Do {
 	    While {JogadorNoModoAdmin} Do {
 		    sleep 3;
 			if (!JogadorNoModoAdmin) ExitWith {};
+			life_maxWeight = 144;
 			player ForceAddUniform (SelectRandom _RoupasVR);
 		};
 	};
@@ -50,6 +52,7 @@ Switch (_NivelPoder) Do {
     player setDir (RJ_DadosModoAdmin select 2);
 	RJM_GRANA = (RJ_DadosModoAdmin select 3);
 	RJM_BANCO = (RJ_DadosModoAdmin select 4);
+	life_maxWeight = (RJ_DadosModoAdmin select 5);
 	life_god = false;
 	life_markers = !life_markers;
 	[3,Format["%1 Encerrou Seu Turno Como %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",0];
