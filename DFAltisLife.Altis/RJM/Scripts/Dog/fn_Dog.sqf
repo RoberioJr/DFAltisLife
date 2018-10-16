@@ -33,6 +33,25 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 	};
  };
  
+[] spawn {
+    While {alive dog} Do {
+	    Sleep 1;
+	    waitUntil {typeOf vehicle player in ['C_Offroad_01_F']};
+		_veidog = (vehicle player);
+		if (dog distance player < 4.5) Then {
+		    If (typeOf _veidog IsEqualTo 'C_Offroad_01_F') Then {
+		        dog attachTo [_veidog,[0,-2.2,-0.7]];
+				dog setDir 180;
+		    };
+			dog playMove "Dog_Sit";
+		    waitUntil {vehicle player == player}; //Jogador Saiu Do Veiculo
+		    dog attachTo [_veidog,[0,-4.8,-1]];
+		    sleep 0.3;
+		    Detach dog;
+		};
+	};
+};
+ 
  /* Quando O Dog Morrer */
 [] spawn {
     WaitUntil {!Alive dog};
@@ -69,7 +88,6 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
  
   /* Emitir Sons */
 [] spawn {
-    Private ['_K','_S'];
     while {alive dog} do {
 		sleep 2.5;
         _K = [1,2,3,4,5,6] call BIS_fnc_SelectRandom;

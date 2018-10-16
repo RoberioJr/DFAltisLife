@@ -25,6 +25,7 @@ _obj setPosATL ASLTOATL(visiblePositionASL player);
 
 life_isknocked = true;
 player attachTo [_obj,[0,0,0]];
+[player,'porrada',65,1] remoteExecCall ["life_fnc_say3D",-2];
 sleep 15;
 player playMoveNow "AmovPpneMstpSrasWrflDnon";
 disableUserInput false;

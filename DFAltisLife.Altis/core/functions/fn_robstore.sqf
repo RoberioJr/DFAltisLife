@@ -22,7 +22,7 @@ if (currentWeapon _robber == "") exitWith { hint "HaHa, you mongoloide men!? Vaz
 if (_kassa == 0) exitWith { hint "Não Tem Dinheiro no Caixa!" };
 
 _rip = true;
-_kassa = 95000 + round(random 100000);
+_kassa = 85000 + round(random 90000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);

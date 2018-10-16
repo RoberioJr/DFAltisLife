@@ -263,15 +263,15 @@ class LifeCfgVehicles {
 	class B_Heli_Transport_03_unarmed_F {
 	    vItemSpace = 680;
 		conditions = "";
-		price = 700000;
+		price = 750000;
 		textures[] = {};
 	};
 	
 	//BLACKFISH
 	class B_T_VTOL_01_infantry_F {
-	    vItemSpace = 950;
+	    vItemSpace = 1300;
 		conditions = "";
-		price = 2500000;
+		price = 3500000;
 		textures[] = {};
 	};
 	

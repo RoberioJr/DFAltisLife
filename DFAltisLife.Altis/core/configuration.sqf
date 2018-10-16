@@ -52,7 +52,6 @@ life_canpay_bail = true;
 life_storagePlacing = scriptNull;
 life_seatbelt = false;
 /* EDITS DO RJ */
-NVGRJ = false;
 RJ_DelayTerminado = true;
 FpsBoostAtivado = false;
 RJ_JogadorPronto = false;

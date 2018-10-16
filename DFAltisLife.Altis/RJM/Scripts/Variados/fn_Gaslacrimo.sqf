@@ -11,13 +11,11 @@ JogadorNoGas=false;
         if((((nearestObject [getpos player, "SmokeShellYellow"]) distance player < _distanciaDeEfeito)) or (((nearestObject [getpos player, "G_40mm_SmokeYellow"]) distance player < _distanciaDeEfeito))) then {
 		    JogadorNoGas=true;
         } else { JogadorNoGas=false; };
-    uiSleep 2;
+    uiSleep 3;
     };
 };
 
 [] spawn {
-    _AntiGasCapacete = "H_CrewHelmetHeli_B";
-	_AntiGasMascara = ['G_Respirator_white_F','G_Respirator_blue_F','G_Respirator_yellow_F'];
     while {true} do {
 
         "dynamicBlur" ppEffectEnable true; 
@@ -28,7 +26,7 @@ JogadorNoGas=false;
 		
         waituntil {JogadorNoGas}; 
 
-        if (headgear player != _AntiGasCapacete || !(goggles player in _AntiGasMascara)) then {
+        if (headgear player != 'H_CrewHelmetHeli_B') then {
             "dynamicBlur" ppEffectEnable true; 
             "dynamicBlur" ppEffectAdjust [20]; 
             "dynamicBlur" ppEffectCommit 3; 
@@ -37,6 +35,6 @@ JogadorNoGas=false;
             player setFatigue 1; 
             5 fadeSound 0.1; 
         };
-    uiSleep 1;
+    uiSleep 1.5;
     };
 };

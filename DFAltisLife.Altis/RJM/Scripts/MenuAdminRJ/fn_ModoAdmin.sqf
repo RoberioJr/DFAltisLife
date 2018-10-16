@@ -41,7 +41,7 @@ Switch (_NivelPoder) Do {
 		};
 	};
 	if !((getPlayerUID player) in RJ_Administradores) then {
-	  [3,Format["%1 Entrou No Modo %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",0];
+	  [3,Format["%1 Entrou No Modo %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",-2];
 	};
  } Else {
     JogadorNoModoAdmin = False;
@@ -55,7 +55,7 @@ Switch (_NivelPoder) Do {
 	life_god = false;
 	life_markers = !life_markers;
 	if !((getPlayerUID player) in RJ_Administradores) then {
-	  [3,Format["%1 Encerrou Seu Turno Como %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",0];
+	  [3,Format["%1 Encerrou Seu Turno Como %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",-2];
 	};
  };
  

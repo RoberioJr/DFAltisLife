@@ -150,20 +150,21 @@ switch (_code) do {
 	};
 
 	//Spawner De Veiculos Para Os Admins F8
+	/*
 	case 66: {
 	    if (!Alive Player) ExitWith {};
 		if (!JogadorNoModoAdmin) ExitWith {};
 	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] call TUT_fnc_OpenVehUI;
 		};
-    };
+    };*/
 
 	// I
 	case 23: {
 	    if (!Alive Player) ExitWith {};
 	    if (vehicle player isEqualTo player) then {
 		    [] Spawn {
-		        sleep 0.85;
+		        sleep 0.65;
 	            playSound "zipper";
 			};
 		};
@@ -171,18 +172,14 @@ switch (_code) do {
 
 	// N
 	case 49: {
-	    if (alive player) then {
-	        _nvgs = hmd player;
-            if (_nvgs isEqualTo "NVGoggles") then {
-			    if !(NVGRJ) then {
-                    playSound "nightV";
-					NVGRJ = true;
-				} else {
-				    playSound "scop";
-				    NVGRJ = false;
-				};
-		    };
-	    };
+	    if (!Alive Player) ExitWith {};
+        if ((hmd player) isEqualTo "NVGoggles") then {
+			if (currentVisionMode player == 1) then {
+                playSound "scop";
+			} else {
+				playSound "nightV";
+	        };
+		};
 	};
 
 	// Alt + F4
@@ -194,7 +191,6 @@ switch (_code) do {
             removeUniform player;
             removeAllWeapons player;
 			[] call SOCK_fnc_updateRequestRJ;
-			//[[1,format["Distrito Federal: %1 Apertou Alt + F4 e Perdeu Todos Os Items!",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			hint "Distrito Federal: Você Apertou Alt + F4 e Perdeu Todos Os Items!";
 		};
 	};
@@ -352,7 +348,7 @@ switch (_code) do {
                     };
                 } else {
                     _list = ["landVehicle","Air","Ship"];
-                    if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 5} && {isNull objectParent player} && {alive cursorObject} && {!life_action_inUse}) then {
+                    if (KINDOF_ARRAY(cursorObject,_list) && {player distance cursorObject < 6.2} && {isNull objectParent player} && {alive cursorObject} && {!life_action_inUse}) then {
                         if (cursorObject in life_vehicles || {locked cursorObject isEqualTo 0}) then {
                             [cursorObject] spawn life_fnc_openInventory;
                         };
