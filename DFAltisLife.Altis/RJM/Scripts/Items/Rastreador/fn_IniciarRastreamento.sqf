@@ -15,8 +15,8 @@ If (Vehicle Player != Player) ExitWith {};
 _velRastreado = CursorObject;
 _nomeJogador = name player;
 //if (_velRastreado getVariable "carroRastreado") exitWith { Hint 'Esse Veiculo Já Está Sendo Rastreado'; };
-//if !(_velRastreado isKindOf "Car") exitWith {};
-if (isNil _velRastreado || IsNull _velRastreado) exitWith {};
+if !(_velRastreado isKindOf "LandVehicle") exitWith {};
+if (isNil '_velRastreado' || IsNull _velRastreado) exitWith {};
 
 
 if ([false,'rastreador',1] call life_fnc_handleInv) then {

@@ -10,7 +10,7 @@ RJ_Administradores =
 [
     "76561198134612622",  //RJ
 	"76561198335998321",  //Nulo
-	"76561198125169667"   //Medeiros
+	"76561198090180406"   //Marvinn
 ];
 
  /* Configuração Dos Marcadores Do Mapa */
