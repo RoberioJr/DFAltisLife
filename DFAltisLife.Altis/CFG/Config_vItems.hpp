@@ -682,7 +682,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\crack.paa";
-        processedItem = "crackProcessed";
+        processedItem = "crack_processed";
     };
 
     class crack_processed {

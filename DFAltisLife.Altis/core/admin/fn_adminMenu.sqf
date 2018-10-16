@@ -10,7 +10,9 @@ private ["_display","_list","_side","_godmode","_markers"];
 if (FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0;};
 
 /* Modo Administrador */
-if (!JogadorNoModoAdmin) ExitWith {closeDialog 0; Hint "Você Não Está Em Serviço, Aperte (F9) Para Entrar No Modo De Trabalho.";};
+if !((getPlayerUID player) in RJ_Administradores) then {
+    if (!JogadorNoModoAdmin) ExitWith {closeDialog 0; Hint "Você Não Está Em Serviço, Aperte (F9) Para Entrar No Modo De Trabalho.";};
+};
 
 disableSerialization;
 

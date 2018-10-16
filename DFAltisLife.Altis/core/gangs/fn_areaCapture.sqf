@@ -102,7 +102,7 @@ titleText[localize "STR_GNOTF_CapturedArea","PLAIN"];
 _gangNum = _area getVariable ["gangNum", ""];
 
 _gName = group player getVariable "gang_name";
-_pText = format["Neutralized Area"];
+_pText = format["Area Neutralizada Pela Polícia"];
 
 if (_gangNum == "Gang_Area_1") then {
     "gang_cap_1" setMarkerText _pText;

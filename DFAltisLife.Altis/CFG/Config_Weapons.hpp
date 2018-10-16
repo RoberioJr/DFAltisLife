@@ -75,7 +75,7 @@ class WeaponShops {
 			{ "arifle_MX_SW_Black_F", "", 150000, -1, "" }, //MX-SW
 			{ "LMG_03_F", "", 160000, -1, "" }, //LIM-85
 			{ "LMG_Mk200_F", "", 260000, -1, "" }, //MK200
-			{ "LMG_Zafir_F", "", 380000, -1, "" }, //Zafir
+			{ "LMG_Zafir_F", "", 450000, -1, "" }, //Zafir
 			{ "arifle_AKS_F", "", 35000, -1, "" }, //AKS
             { "arifle_AKM_F", "", 100000, -1, "" }, //AKM
 			{ "arifle_AK12_F", "", 160000, -1, "" }, //AK-12
@@ -198,7 +198,7 @@ class WeaponShops {
 			{ "Binocular", "", 2500, -1, "" }, //BNC
             { "ItemGPS", "", 500, -1, "" }, //GPS
 			{ "FirstAidKit", "", 250, -1, "" }, //KITMED
-			{ "SmokeShell", "", 20000, -1, "" }, //FUMACA BRANCA
+			{ "SmokeShellYellow", "Gas Lacrimogeneo", 15000, -1, "" }, //FUMACA BRANCA
 			{ "hgun_P07_snds_F", $STR_W_items_StunPistol, 2500, -1, "" },
 			{ "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, -1, "" },
             { "arifle_TRG20_F", "", 35000, -1, "" }, //TRG-20

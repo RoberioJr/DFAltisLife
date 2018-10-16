@@ -31,10 +31,11 @@ while {true} do {
     if (playerSide isEqualTo independent) then { //SAMU
 	    if (_medm isEqualTo 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // Mochila Invisivel MED
 		if (_vehm isEqualTo 1) then {vehicle player setfuel 1; vehicle player setdammage 0;}; //Auto Reabastecimento e Reparo de Veiculo
+		Player AllowDamage False; //Imortabilidade
     };
     if (playerSide isEqualTo civilian) then { //CIV
 		if (_civm isEqualTo 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // Mochila Invisivel CIV
     };
-  sleep 30;   //Tempo Entre Os Loops
+  sleep 25;   //Tempo Entre Os Loops
 };
 

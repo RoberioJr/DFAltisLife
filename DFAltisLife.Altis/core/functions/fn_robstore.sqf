@@ -43,7 +43,7 @@ if(_rip) then
 {
 while{true} do
 {
-sleep 3;
+sleep 4.5;
 _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Roubo Em Progresso, Fique Por Perto (10m) (%1%2)...",round(_cP * 100),"%"];
@@ -65,7 +65,7 @@ deleteMarker "MarkerRJposto"; // by ehno delete maker
 RJM_GRANA = RJM_GRANA + _kassa;
 
 if (_kassa > 149999) then {
-    [1,format ["<t size='3.4' color='#ff0000' shadow='0'>DFTV</t> <t size='1.2'> Houve Um Grande Roubo Em Um Posto De Gasolina. Os Assaltantes Levaram uma Grande Quantidade Em Dinheiro: %1 </t>",_kassa]] remoteExec ["life_fnc_broadcast",civilian];
+    [3,format ["<t size='3.4' color='#ff0000' shadow='0'>DFTV</t> <t size='1.2'> Houve Um Grande Roubo Em Um Posto De Gasolina. Os Assaltantes Levaram uma Grande Quantidade Em Dinheiro: %1 </t>",_kassa]] remoteExec ["life_fnc_broadcast",civilian];
 };
 
 _rip = false;

@@ -25,6 +25,9 @@
  
    /* Outros */
    
+  /* DP Policia Athira */
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szathcop.sqf";
+   
   /* Hospital Do Aero Porto */
  [] ExecVM "RJM\Scripts\SafeZones\Zonas\szhsp.sqf";
  

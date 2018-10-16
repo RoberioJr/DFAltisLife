@@ -9,7 +9,7 @@
     // Add a line in this array to add a message  
 	
     _messages = [  
-        "Alguma Dúvida? Entre Em Nosso Discord:<br/> <t color='#e32828' size='1.5'>Discord.gg/mjAWdGT</t>",  
+        "Alguma Dúvida? Entre Em Nosso Discord:<br/> <t color='#e32828' size='1.5'>Discord.gg/wk8JaGa</t>", 
         "Nosso Site:<br/><t color='#e32828' size='1.5'>EM BREVE</t>",
         "Horarios De Restart:<br/> <t color='#e32828' size='1.5'>12:00 | 18:00 | 00:00 | 06:00</t>"		
     ];  

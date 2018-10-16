@@ -23,8 +23,7 @@ Switch (_NivelPoder) Do {
 	_Dir = getDir player;
 	_Grana = RJM_GRANA;
 	_Banco = RJM_BANCO;
-	_Capacidade = life_maxWeight;
-	RJ_DadosModoAdmin = [_Loadout,_Pos,_Dir,_Grana,_Banco,_Capacidade];
+	RJ_DadosModoAdmin = [_Loadout,_Pos,_Dir,_Grana,_Banco];
 	RemoveBackpack player;
 	RemoveUniform Player;
 	RemoveGoggles player;
@@ -38,11 +37,12 @@ Switch (_NivelPoder) Do {
 	    While {JogadorNoModoAdmin} Do {
 		    sleep 3;
 			if (!JogadorNoModoAdmin) ExitWith {};
-			life_maxWeight = 144;
 			player ForceAddUniform (SelectRandom _RoupasVR);
 		};
 	};
-	[3,Format["%1 Entrou No Modo %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",0];
+	if !((getPlayerUID player) in RJ_Administradores) then {
+	  [3,Format["%1 Entrou No Modo %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",0];
+	};
  } Else {
     JogadorNoModoAdmin = False;
 	_handle = [] spawn life_fnc_stripDownPlayer;
@@ -52,10 +52,11 @@ Switch (_NivelPoder) Do {
     player setDir (RJ_DadosModoAdmin select 2);
 	RJM_GRANA = (RJ_DadosModoAdmin select 3);
 	RJM_BANCO = (RJ_DadosModoAdmin select 4);
-	life_maxWeight = (RJ_DadosModoAdmin select 5);
 	life_god = false;
 	life_markers = !life_markers;
-	[3,Format["%1 Encerrou Seu Turno Como %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",0];
+	if !((getPlayerUID player) in RJ_Administradores) then {
+	  [3,Format["%1 Encerrou Seu Turno Como %2!",Name player,_Modo]] RemoteExec ["RJM_fnc_Notificar",0];
+	};
  };
  
  

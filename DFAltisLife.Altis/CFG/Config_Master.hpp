@@ -32,19 +32,19 @@ class Life_Settings {
    /* Descontos Do Doador */
 	/* Descontos Em Lojas De Armas */
 	rj_desconto_doador0 = 1;        //Descontos Do Jogador                           By:RobérioJR [Preço * Desconto]
-	rj_desconto_doador1 = .85;      //Descontos Do Doador 1                          By:RobérioJR [Preço * Desconto]
-	rj_desconto_doador2 = .75;      //Descontos Do Doador 2                          By:RobérioJR [Preço * Desconto]
-	rj_desconto_doador3 = .65;      //Descontos Do Doador 3                          By:RobérioJR [Preço * Desconto]
-	rj_desconto_doador4 = .51;      //Descontos Do Doador 4                          By:RobérioJR [Preço * Desconto]
-	rj_desconto_doador5 = 1;        //Descontos Do Doador 5                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador1 = .90;      //Descontos Do Doador 1                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador2 = .80;      //Descontos Do Doador 2                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador3 = .70;      //Descontos Do Doador 3                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador4 = .60;      //Descontos Do Doador 4                          By:RobérioJR [Preço * Desconto]
+	rj_desconto_doador5 = .50;      //Descontos Do Doador 5                          By:RobérioJR [Preço * Desconto]
 	
 	/* Descontos Para Veiculos */
 	rj_desconto_doadorveh0 = 1;        //Descontos Do Jogador                        By:RobérioJR [Preço * Desconto]
-	rj_desconto_doadorveh1 = .85;      //Descontos Do Doador 1                       By:RobérioJR [Preço * Desconto]
-	rj_desconto_doadorveh2 = .75;      //Descontos Do Doador 2                       By:RobérioJR [Preço * Desconto]
-	rj_desconto_doadorveh3 = .65;      //Descontos Do Doador 3                       By:RobérioJR [Preço * Desconto]
-	rj_desconto_doadorveh4 = .51;      //Descontos Do Doador 4                       By:RobérioJR [Preço * Desconto]
-	rj_desconto_doadorveh5 = 1;        //Descontos Do Doador 5                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh1 = .90;      //Descontos Do Doador 1                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh2 = .80;      //Descontos Do Doador 2                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh3 = .70;      //Descontos Do Doador 3                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh4 = .60;      //Descontos Do Doador 4                       By:RobérioJR [Preço * Desconto]
+	rj_desconto_doadorveh5 = .50;      //Descontos Do Doador 5                       By:RobérioJR [Preço * Desconto]
 
 	
     /* Data Logging Settings */

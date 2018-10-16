@@ -43,7 +43,7 @@ if(_rip) then
 {
     while{true} do
         {
-            sleep 5;
+            sleep 7;
             _cP = _cP + 0.01;
             _progress progressSetPosition _cP;
             _pgText ctrlSetText format ["Roubando a Agência Bancária, fique por perto (10m)  (%1%2)...",round(_cP * 100), "%"];
