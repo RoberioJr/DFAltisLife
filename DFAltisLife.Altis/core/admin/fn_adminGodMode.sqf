@@ -13,11 +13,15 @@ closeDialog 0;
 if (life_god) then {
     life_god = false;
     titleText [localize "STR_ANOTF_godModeOff","PLAIN"]; titleFadeOut 2;
-	[3,Format["%1 Desativou O Modo Deus!",Name player]] RemoteExec ["RJM_fnc_Notificar",0];
+	if !((getPlayerUID player) in RJ_Administradores) then {
+	  [3,Format["%1 Desativou O Modo Deus!",Name player]] RemoteExec ["RJM_fnc_Notificar",0];
+	};
     player allowDamage true;
 } else {
     life_god = true;
     titleText [localize "STR_ANOTF_godModeOn","PLAIN"]; titleFadeOut 2;
-	[3,Format["%1 Ativou O Modo Deus!",Name player]] RemoteExec ["RJM_fnc_Notificar",0];
+	if !((getPlayerUID player) in RJ_Administradores) then {
+	  [3,Format["%1 Ativou O Modo Deus!",Name player]] RemoteExec ["RJM_fnc_Notificar",0];
+	};
     player allowDamage false;
 };

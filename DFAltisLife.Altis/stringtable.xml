@@ -11082,6 +11082,9 @@
             <Italian>Omicidio di un agente</Italian>
             <Polish>Zabijając żołnierza</Polish>
         </Key>
+		<Key ID="STR_Crime_712">
+            <Original>Estrupo</Original>
+        </Key>
     </Package>
     <Package name="FuelTank_Mission">
         <Key ID="STR_MAR_FuelTank_Storage">
@@ -12156,8 +12159,8 @@
   <Key ID="STR_blindfold">
       <Original>Saco Preto</Original>
   </Key>
-  <Key ID="STR_kidney">
-      <Original>Rim</Original>
+  <Key ID="STR_camisinha">
+      <Original>Camisinha</Original>
   </Key>
 </Package>
     <Key ID="STR_pAct_DriverSeat">

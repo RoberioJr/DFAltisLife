@@ -48,12 +48,10 @@ if(_rip) then
             _progress progressSetPosition _cP;
             _pgText ctrlSetText format ["Roubando a Agência Bancária, fique por perto (10m)  (%1%2)...",round(_cP * 100), "%"];
 
-             if (LIFE_SETTINGS(getNumber,"robberyMarkers") isEqualTo 1) then {
-                _marker = createMarker ["MarkerAgenciaRJ", _shop];
-                "MarkerAgenciaRJ" setMarkerColor "ColorRed";
-                "MarkerAgenciaRJ" setMarkerText "ATENÇÃO: ROUBO EM PROGRESSO!!!";
-                "MarkerAgenciaRJ" setMarkerType "mil_warning";
-                };
+            _marker = createMarker ["MarkerAgenciaRJ", _shop];
+            "MarkerAgenciaRJ" setMarkerColor "ColorRed";
+            "MarkerAgenciaRJ" setMarkerText "ATENÇÃO: ROUBO EM PROGRESSO!!!";
+            "MarkerAgenciaRJ" setMarkerType "mil_warning";
 
             if(_cP >=1) exitWith {};
             if(_robber distance _shop > 10.5) exitWith{};
@@ -82,11 +80,12 @@ if(_rip) then
         if (_kassa >= 375000) then {
             [3, format["DF TV: A Agência %1 Acabou De Ser Assaltada, Total Roubado: R$%2",_shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast", civilian];
         };
+		[] Spawn { Sleep 2; deleteMarker "MarkerAgenciaRJ"; };
         sleep 320;
         life_use_atm = true;
         if!(alive _robber) exitWith {};
         [getPlayerUID _robber, _robber getVariable ["realname",name _robber], "211"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
         call SOCK_fnc_updatePartial;
-        };
+    };
 sleep 300; //5 Minutes
 _action = _shop addAction["Roubar Agência",RJM_fnc_roubarAgencia,civilian];

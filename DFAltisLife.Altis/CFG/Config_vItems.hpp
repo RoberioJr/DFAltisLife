@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "bisturi", "ziptie", "gag", "blindfold", "rastreador", "boltcutter", "bomba", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "camisinha", "ziptie", "gag", "blindfold", "rastreador", "boltcutter", "bomba", "blastingcharge" };
     };
 
     class gang {
@@ -62,7 +62,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed", "lsd_processed", "ecstasy_processed", "metanfetamina_processed", "lolo_processed", "crack_processed", "kidney" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed", "lsd_processed", "ecstasy_processed", "metanfetamina_processed", "lolo_processed", "crack_processed" };
     };
 
     class oil {
@@ -176,6 +176,7 @@ class VirtualItems {
         icon = "icons\rastreador.paa";
 	};
 	
+	/*
 	class bisturi {
 		variable = "bisturi";
         displayName = "STR_Item_Bisturi";
@@ -185,7 +186,7 @@ class VirtualItems {
         illegal = true;
         edible = -1;
         icon = "icons\bisturi.paa";
-	};
+	};*/
 	
 	class ossodog {
 		variable = "ossodog";
@@ -202,9 +203,9 @@ class VirtualItems {
         variable = "ziptie";
         displayName = "STR_Ziptie";
         weight = 6;
-        buyPrice = 4500;
+        buyPrice = 5000;
         sellPrice = -1;
-        illegal = true;
+        illegal = false;
         edible = -1;
         icon = "icons\ziptie.paa";
     };
@@ -231,16 +232,16 @@ class VirtualItems {
         icon = "icons\blindfold.paa";
     };
 
-    class kidney {
-        variable = "kidney";
-        displayName = "STR_kidney";
-        weight = 15;
-        buyPrice = -1;
-        sellPrice = 100000;
-        illegal = true;
+    class camisinha {
+        variable = "camisinha";
+        displayName = "STR_camisinha";
+        weight = 5;
+        buyPrice = 9000;
+        sellPrice = -1;
+        illegal = false;
         edible = -1;
-        icon = "icons\kidney.paa";
-		description = "Um Belo Rim, Limpa O Sangue Das Impurezas Do Corpo, Funcionando Como Filtros. Deve Valer Uma Boa Grana :)";
+        icon = "icons\camisinha.paa";
+		description = "Serve Para Não Transmitir Doenças Sexuais (DST) :)";
     };
 	
     //Misc

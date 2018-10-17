@@ -12,8 +12,7 @@ _corpse = _this select 1;
 life_corpse = _corpse;
 
 //Set some vars on our new body.
-_unit setVariable["orgaoFaltando",false,true];
-_unit setVariable["temOrgao",false,true];
+_unit setVariable["CuArrombado",false,true];
 _unit setVariable ["restrained",false,true];
 _unit setVariable ["Escorting",false,true];
 _unit setVariable ["transporting",false,true];

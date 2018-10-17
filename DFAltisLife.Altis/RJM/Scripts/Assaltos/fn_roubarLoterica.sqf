@@ -75,6 +75,7 @@ if(_rip) then
 		if (_kassa >= 175000) then {
             [3, format["DF TV: A Lotérica %1 Acabou De Ser Assaltada, Total Roubado: R$%2",_shop, [_kassa] call life_fnc_numberText]] remoteExec ["life_fnc_broadcast", civilian];
         };
+		[] Spawn { Sleep 2; deleteMarker "MarkerLotericaRJ"; };
 		sleep 300;
         life_use_atm = true;
         if!(alive _robber) exitWith {};

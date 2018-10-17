@@ -106,6 +106,7 @@ player setVariable ["playerSurrender",false,true];
 player setVariable ["ziptied",false,true];
 player setVariable ["blindfolded",false,true];
 player setVariable ["gagged",false,true];
+player setVariable ["CuArrombado",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";

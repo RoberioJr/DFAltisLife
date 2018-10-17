@@ -60,7 +60,7 @@ if (_areaContested) exitWith {};
 //Setup our progress bar.
 disableSerialization;
 _title = localize "STR_GNOTF_CapturingArea";
-7 cutRsc ["life_progress","PLAIN"];
+"Cartel" cutRsc ["life_progress","PLAIN"];
 _ui = uiNamespace getVariable "life_progress";
 _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
@@ -90,8 +90,8 @@ if (!(_areaContested)) then {
 };
 
 //Kill the UI display and check for various states
-7 cutText ["","PLAIN"];
-        if (player distance _area > 50) exitWith {_area setVariable ["inCapture",false,true];}; //how far they can go from the hideout while capturing
+"Cartel" cutText ["","PLAIN"];
+if (player distance _area > 50) exitWith {_area setVariable ["inCapture",false,true];}; //how far they can go from the hideout while capturing
 if (!alive player || life_istazed || life_isknocked) exitWith {life_action_inUse = false;_area setVariable ["inCapture",false,true];}; //knocked out or tazed revert state
 if (player getVariable["restrained",false]) exitWith {life_action_inUse = false;_area setVariable ["inCapture",false,true];}; //restrained revert state
 if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_area setVariable ["inCapture",false,true];}; //interupted revert state
@@ -196,7 +196,7 @@ if (_areaContested) exitWith {};
 //Setup our progress bar.
 disableSerialization;
 _title = localize "STR_GNOTF_CapturingArea";
-7 cutRsc ["life_progress","PLAIN"];
+"Cartel" cutRsc ["life_progress","PLAIN"];
 _ui = uiNamespace getVariable "life_progress";
 _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
@@ -226,7 +226,7 @@ if (!(_areaContested)) then {
 };
 
 //Kill the UI display and check for various states
-7 cutText ["","PLAIN"];
+"Cartel" cutText ["","PLAIN"];
 if (player distance _area > 50) exitWith {_area setVariable ["inCapture",false,true];}; //how far they can go from the hideout while capturing
 if (!alive player || life_istazed || life_isknocked) exitWith {life_action_inUse = false;_area setVariable ["inCapture",false,true];}; //knocked out or tazed revert state
 if (player getVariable["restrained",false]) exitWith {life_action_inUse = false;_area setVariable ["inCapture",false,true];}; //restrained revert state

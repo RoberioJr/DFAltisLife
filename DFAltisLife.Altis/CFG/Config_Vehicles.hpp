@@ -253,9 +253,9 @@ class LifeCfgVehicles {
 	
 	//Taru C
 	class O_Heli_Transport_04_box_F {
-	    vItemSpace = 650;
+	    vItemSpace = 560;
 		conditions = "";
-		price = 710000;
+		price = 860000;
 		textures[] = {};
 	};
 	
@@ -263,15 +263,15 @@ class LifeCfgVehicles {
 	class B_Heli_Transport_03_unarmed_F {
 	    vItemSpace = 680;
 		conditions = "";
-		price = 750000;
+		price = 1500000;
 		textures[] = {};
 	};
 	
 	//BLACKFISH
 	class B_T_VTOL_01_infantry_F {
-	    vItemSpace = 1300;
+	    vItemSpace = 1250;
 		conditions = "";
-		price = 3500000;
+		price = 3750000;
 		textures[] = {};
 	};
 	

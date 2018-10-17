@@ -36,7 +36,9 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 [] spawn {
     While {alive dog} Do {
 	    Sleep 1;
-	    waitUntil {typeOf vehicle player in ['C_Offroad_01_F']};
+		WaitUntil {!RJ_DogOcupado};
+		WaitUntil {!RJ_DogAtacando};
+	    WaitUntil {typeOf vehicle player in ['C_Offroad_01_F']};
 		_veidog = (vehicle player);
 		if (dog distance player < 4.5) Then {
 		    If (typeOf _veidog IsEqualTo 'C_Offroad_01_F') Then {
