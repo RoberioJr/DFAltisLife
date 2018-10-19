@@ -73,18 +73,18 @@ class WeaponShops {
 			{ "arifle_MXM_Black_F", "", 90000, -1, "" }, //MXM
 			{ "arifle_MX_SW_F", "", 150000, -1, "" }, //MX-SW
 			{ "arifle_MX_SW_Black_F", "", 150000, -1, "" }, //MX-SW
-			{ "LMG_03_F", "", 160000, -1, "" }, //LIM-85
-			{ "LMG_Mk200_F", "", 260000, -1, "" }, //MK200
-			{ "LMG_Zafir_F", "", 450000, -1, "" }, //Zafir
+			{ "LMG_03_F", "", 180000, -1, "" }, //LIM-85
+			{ "LMG_Mk200_F", "", 300000, -1, "" }, //MK200
+			{ "LMG_Zafir_F", "", 580000, -1, "" }, //Zafir
 			{ "arifle_AKS_F", "", 35000, -1, "" }, //AKS
             { "arifle_AKM_F", "", 100000, -1, "" }, //AKM
-			{ "arifle_AK12_F", "", 160000, -1, "" }, //AK-12
+			{ "arifle_AK12_F", "", 180000, -1, "" }, //AK-12
 			{ "srifle_DMR_07_blk_F", "", 60000, -1, "" }, //CMR
-			{ "srifle_DMR_01_F", "", 150000, -1, "" }, // Rahim
-			{ "srifle_EBR_F", "", 180000, -1, "" }, //MK18
-			{ "srifle_DMR_06_olive_F", "", 190000, -1, "" }, //MK14
-			{ "srifle_DMR_03_F", "", 185000, -1, "" }, //MKl
-			{ "arifle_SPAR_03_blk_F", "", 180000, -1, "" } //SPAR-17
+			{ "srifle_DMR_01_F", "", 150000, -1, "" }, //Rahim
+			{ "srifle_EBR_F", "", 220000, -1, "" }, //MK18
+			{ "srifle_DMR_06_olive_F", "", 260000, -1, "" }, //MK14
+			{ "srifle_DMR_03_F", "", 270000, -1, "" }, //MKl
+			{ "arifle_SPAR_03_blk_F", "", 280000, -1, "" } //SPAR-17
         };
         mags[] = {
             { "30Rnd_556x45_Stanag_Tracer_Red", "", 1150, -1, "" }, //5.56 30rnd TRG, SPAR-16 e MK20
@@ -213,7 +213,7 @@ class WeaponShops {
 			{ "LMG_03_F", "", 160000, -1, "call life_coplevel >= 2" }, //LIM-85
 			{ "LMG_Mk200_F", "", 260000, -1, "call life_coplevel >= 4" }, //MK200
 			{ "LMG_Zafir_F", "", 380000, -1, "call life_coplevel >= 7" }, //Zafir
-			{ "arifle_AK12_F", "", 160000, -1, "call life_coplevel >= 3" }, //AK-12
+			{ "arifle_AK12_F", "", 160000, -1, "" }, //AK-12
 			{ "srifle_DMR_07_blk_F", "", 60000, -1, "" }, //CMR
 			{ "srifle_DMR_01_F", "", 150000, -1, "call life_coplevel >= 3" }, // Rahim
 			{ "srifle_EBR_F", "", 180000, -1, "call life_coplevel >= 4" }, //MK18
@@ -250,8 +250,8 @@ class WeaponShops {
 			{ "optic_Arco_blk_F", "", 7000, -1, "call life_coplevel >= 2" },
 			{ "optic_ERCO_snd_F", "", 6500, -1, "call life_coplevel >= 3" },
 			{ "optic_ERCO_blk_F", "", 6500, -1, "call life_coplevel >= 3" },
-			{ "optic_DMS", "", 10000, -1, "call life_coplevel >= 2" },
-			{ "optic_AMS", "", 15000, -1, "call life_coplevel >= 4" },
+			{ "optic_DMS", "", 12000, -1, "call life_coplevel >= 2" },
+			{ "optic_AMS", "", 18000, -1, "call life_coplevel >= 4" },
 			//{ "optic_LRPS", "", 50000, -1, "call life_coplevel >= 7" },
 			{ "bipod_01_F_blk", "", 5000, -1, "call life_coplevel >= 2" },
 			{ "bipod_02_F_blk", "", 5000, -1, "call life_coplevel >= 2" }

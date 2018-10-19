@@ -69,5 +69,13 @@ switch (playerSide) do
 			case 4: {life_paycheck = life_paycheck + 1000;}; 
 			case 5: {life_paycheck = life_paycheck + 1250;}; 
 		};
+		/* Ajudantes */
+		switch(FETCH_CONST(life_adminlevel)) do
+		{
+		    case 0: {life_paycheck = life_paycheck + 0;}; 
+			case 1: {life_paycheck = life_paycheck + 2000;};
+			case 2: {life_paycheck = life_paycheck + 3250;}; 
+			case 3: {life_paycheck = life_paycheck + 4250;}; 
+		};
 	};
 };

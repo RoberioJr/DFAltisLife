@@ -88,6 +88,7 @@ class CfgRemoteExec {
 		F(RJM_fnc_Notificar,CLIENT)
 		F(RJM_fnc_NotificarADM,CLIENT)
 		F(bis_fnc_debugconsoleexec,CLIENT) //DebugConsole - Remover Mais Rápido Possivel
+		F(RJM_fnc_temOrgaos,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

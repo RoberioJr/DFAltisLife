@@ -88,10 +88,10 @@ class RJM_Scripts {
 		class Rastreando {};
 	};
 	
-	class Orgao {
-		file = "RJM\Scripts\Items\Orgao";
-		class temOrgaos {};
-		class pegarOrgaos {};
+	class Estrupo {
+		file = "RJM\Scripts\Items\Estrupo";
+		class CUArrombado {};
+		class ArrombarCU {};
 	};
 	
 	class AutoSave {

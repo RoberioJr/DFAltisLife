@@ -211,9 +211,9 @@ class LifeCfgVehicles {
 	
 	//HellCat
 	class I_Heli_light_03_unarmed_F {
-	    vItemSpace = 325;
+	    vItemSpace = 300;
 		conditions = "";
-		price = 480000;
+		price = 600000;
 		textures[] = {
 			{ "Policia", "cop", {
 				"textures\veh\cop\hellcatpm.paa"
@@ -226,9 +226,9 @@ class LifeCfgVehicles {
 	
 	//Mohawk
 	class I_Heli_Transport_02_F {
-	    vItemSpace = 490;
+	    vItemSpace = 450;
 		conditions = "";
-		price = 500000;
+		price = 900000;
 		textures[] = {
 			{ "Civil 1", "civ", {
 		        "\A3\Air_F_beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_1_ion_CO.paa",
@@ -253,17 +253,17 @@ class LifeCfgVehicles {
 	
 	//Taru C
 	class O_Heli_Transport_04_box_F {
-	    vItemSpace = 560;
+	    vItemSpace = 520;
 		conditions = "";
-		price = 860000;
+		price = 1650000;
 		textures[] = {};
 	};
 	
 	//Huron
 	class B_Heli_Transport_03_unarmed_F {
-	    vItemSpace = 680;
+	    vItemSpace = 650;
 		conditions = "";
-		price = 1500000;
+		price = 2500000;
 		textures[] = {};
 	};
 	
@@ -592,9 +592,9 @@ class LifeCfgVehicles {
     };
 
     class O_Truck_03_device_F {
-        vItemSpace = 540;
+        vItemSpace = 500;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1200000;
+        price = 2000000;
         textures[] = { };
     };
 
@@ -650,14 +650,14 @@ class LifeCfgVehicles {
     class B_Truck_01_box_F {
         vItemSpace = 900;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1200000;
+        price = 2800000;
         textures[] = { };
     };
 
     class B_Truck_01_transport_F {
         vItemSpace = 450;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 500000;
+        price = 800000;
         textures[] = { };
     };
 

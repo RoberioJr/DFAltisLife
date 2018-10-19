@@ -34,7 +34,7 @@ class VirtualShops {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "boltcutter", "blastingcharge", "handcuffs", "keys" };
+        items[] = { "waterBottle", "rabbit", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "boltcutter", "blastingcharge" };
     };
 
     class wongs {

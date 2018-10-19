@@ -48,10 +48,10 @@ _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
 _pgText ctrlSetText format["Roubo Em Progresso, Fique Por Perto (10m) (%1%2)...",round(_cP * 100),"%"];
 _Pos = position player; // by ehno: get player pos
-				                _marker = createMarker ["MarkerRJposto", _Pos]; //by ehno: Place a Maker on the map
-				                "MarkerRJposto" setMarkerColor "ColorRed";
-				                "MarkerRJposto" setMarkerText "!ATENÇAO! ASSALTO EM ANDAMENTO";
-				                "MarkerRJposto" setMarkerType "mil_warning";
+				            _marker = createMarker ["MarkerRJposto", _Pos]; //by ehno: Place a Maker on the map
+				            "MarkerRJposto" setMarkerColor "ColorRed";
+				            "MarkerRJposto" setMarkerText "!ATENÇAO! ASSALTO EM ANDAMENTO";
+				            "MarkerRJposto" setMarkerType "mil_warning";
 if(_cP >= 1) exitWith {};
 if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};

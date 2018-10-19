@@ -89,7 +89,7 @@ class Life_Settings {
     respawn_timer = 250; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
-    news_broadcast_cost = 150000; //Cost for a player to send a news station broadcast.
+    news_broadcast_cost = 200000; //Cost for a player to send a news station broadcast.
     news_broadcast_cooldown = 20; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
     news_broadcast_header_length = 60; //Number of characters that a header can consist of. Anything over this may clip. This depends on the font size and various other factors. Adjust with caution.
 
@@ -107,13 +107,13 @@ class Life_Settings {
 
     /* Fuel System Configurations */
     pump_service = true; //Allow users to use pump service on the map. Default = false
-    fuel_cost = 150; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
+    fuel_cost = 550; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
     service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
     fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
-    gang_price = 60000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
-    gang_upgradeBase = 20000; //The base cost for purchasing additional slots in a gang
+    gang_price = 75000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_upgradeBase = 25000; //The base cost for purchasing additional slots in a gang
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
@@ -147,9 +147,9 @@ class Life_Settings {
     hospital_heal_fee = 500; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 150000; //Amount of cash in bank for new cops
-    bank_civ = 150000; //Amount of cash in bank for new civillians
-    bank_med = 150000; //Amount of cash in bank for new medics
+    bank_cop = 200000; //Amount of cash in bank for new cops
+    bank_civ = 200000; //Amount of cash in bank for new civillians
+    bank_med = 200000; //Amount of cash in bank for new medics
 
     paycheck_cop = 8000; //Payment for cops
     paycheck_civ = 1800; //Payment for civillians

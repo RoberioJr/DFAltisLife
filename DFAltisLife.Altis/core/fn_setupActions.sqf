@@ -24,7 +24,7 @@ switch (playerSide) do {
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Area</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) == "Flag_Red_F") ']];
 		
 		//Roubar os Orgãos
-		life_actions = life_actions + [player addAction["<t color='#FF0000'>COMER O CU DELE</t>",RJM_fnc_pegarOrgaos,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["CuArrombado",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>COMER O CU DELE</t>",RJM_fnc_CUArrombado,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["CuArrombado",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
 	};
     
     //Cops
@@ -55,5 +55,5 @@ switch (playerSide) do {
 
  /* Cinto De Segurança */
 
-life_actions pushBack (player addAction["<t color = '#00FF00'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
-life_actions pushBack (player addAction["<t color = '#FF0000'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
+life_actions pushBack (player addAction["<img image='icons\seatOn.paa' size='1.5'/><t color = '#00FF00'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
+life_actions pushBack (player addAction["<img image='icons\seatOff.paa' size='1.5'/><t color = '#FF0000'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);

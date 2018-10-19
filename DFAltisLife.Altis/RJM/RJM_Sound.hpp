@@ -130,6 +130,12 @@
 		titles[] = {};
 	};
 	
+	class estrupo {
+	    name = "estrupo";
+		sound[] = {"\sounds\estrupo.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
 	class reparar {
 	    name = "reparar";
 		sound[] = {"\sounds\reparar.ogg", 1.0, 1};

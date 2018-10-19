@@ -302,10 +302,10 @@ class Clothing {
             { "U_IG_leader", "", 1340, "" },
             { "U_O_PilotCoveralls", "", 15610, "" },
             { "U_O_SpecopsUniform_ocamo", "", 10000, "" },
-            { "U_O_GhillieSuit", "", 50000, "" },
-			{ "U_B_FullGhillie_lsh", "", 75000, "" },
-			{ "U_B_FullGhillie_ard", "", 75000, "" },
-			{ "U_B_FullGhillie_sard", "", 75000, "" },
+            { "U_O_GhillieSuit", "", 75000, "" },
+			{ "U_B_FullGhillie_lsh", "", 100000, "" },
+			{ "U_B_FullGhillie_ard", "", 100000, "" },
+			{ "U_B_FullGhillie_sard", "", 100000, "" },
             { "U_B_T_Soldier_F", "", 4500, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_1_F", "", 3500, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_2_F", "", 3500, "" }, //Apex DLC
@@ -326,10 +326,10 @@ class Clothing {
             { "H_ShemagOpen_khk", "", 800, "" },
             { "H_ShemagOpen_tan", "", 850, "" },
             { "H_Shemag_olive", "", 850, "" },
-			{ "H_HelmetB", "", 2000, "" },
-			{ "H_HelmetB_camo", "", 2750, "" },
-            { "H_HelmetO_ocamo", "", 4500, "" },
-			{ "H_CrewHelmetHeli_B", "Capacete ANTI-GAS", 12000, "" }
+			{ "H_HelmetB", "", 4500, "" },
+			{ "H_HelmetB_camo", "", 7500, "" },
+            { "H_HelmetO_ocamo", "", 12500, "" },
+			{ "H_CrewHelmetHeli_B", "Capacete ANTI-GAS", 50000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -367,12 +367,12 @@ class Clothing {
 			{ "V_TacVestCamo_khk", "Colete NV1", 3200, "" },
 			{ "V_RebreatherB", "Respirador NV1", 4250, "" },
 			{ "V_I_G_resistanceLeader_F", "Colete NV1", 3200, "" },
-			{ "V_PlateCarrierIA1_dgtl", "Colete NV3", 7800, "" },
-			{ "V_PlateCarrier_Kerry", "Colete NV3", 8000, "" },
-			{ "V_PlateCarrier1_rgr", "Colete NV3", 8200, "" },
-			{ "V_PlateCarrier2_rgr", "Colete NV4", 12500, "" },
-			{ "V_PlateCarrier3_rgr", "Colete NV4", 12500, "" },
-			{ "V_PlateCarrierH_CTRG", "Colete NV4", 13000, "" }
+			{ "V_PlateCarrierIA1_dgtl", "Colete NV3", 15000, "" },
+			{ "V_PlateCarrier_Kerry", "Colete NV3", 15000, "" },
+			{ "V_PlateCarrier1_rgr", "Colete NV3", 15000, "" },
+			{ "V_PlateCarrier2_rgr", "Colete NV4", 25000, "" },
+			{ "V_PlateCarrier3_rgr", "Colete NV4", 25000, "" },
+			{ "V_PlateCarrierH_CTRG", "Colete NV4", 25000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },

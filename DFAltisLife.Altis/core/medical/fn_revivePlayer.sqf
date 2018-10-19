@@ -11,6 +11,9 @@ _target = param [0,objNull,[objNull]];
 if (isNull _target) exitWith {};
 _reviveCost = LIFE_SETTINGS(getNumber,"revive_fee");
 
+ /* Edit RJ */
+_reviveCost = _reviveCost * 1.5;
+
 _revivable = _target getVariable ["Revive",false];
 if (_revivable) exitWith {};
 if (_target getVariable ["Reviving",objNull] == player) exitWith {hint localize "STR_Medic_AlreadyReviving";};
