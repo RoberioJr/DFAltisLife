@@ -271,7 +271,7 @@ class LifeCfgVehicles {
 	class B_T_VTOL_01_infantry_F {
 	    vItemSpace = 1250;
 		conditions = "";
-		price = 3750000;
+		price = 4000000;
 		textures[] = {};
 	};
 	
