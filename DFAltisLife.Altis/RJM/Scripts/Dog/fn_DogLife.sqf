@@ -34,6 +34,7 @@ Switch (PlayerSide) Do {
 
 if (_DogPass) Then {  
     Hint Format['%1, Você Comprou Um Cachorro Por R$%2!',Name Player,_Valor];
+	["ComprarCachorro"] spawn mav_ttm_fnc_addExp;
     CASH = CASH - _Valor;
     [] call RJM_fnc_Dog; 
 };

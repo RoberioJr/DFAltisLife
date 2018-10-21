@@ -30,6 +30,7 @@ class RJM_Scripts {
 		class RemoverNeblina {};
 		class FpsBoost {};
 		class AbrirPorta {};
+		class ApreenderItems {};
 	};		
 	
 	class Assaltos {
@@ -82,6 +83,12 @@ class RJM_Scripts {
 		class ConfigurarBomba {};
 	};
 
+	class Medicinal {
+		file = "RJM\Scripts\Items\Medicinal";
+		class UsarAnalgesico {};
+		class UsarKitMedico {};
+	};
+	
 	class Rastreador {
 		file = "RJM\Scripts\Items\Rastreador";
 		class IniciarRastreamento {};

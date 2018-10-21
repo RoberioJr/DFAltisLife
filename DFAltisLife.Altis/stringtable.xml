@@ -12187,7 +12187,13 @@
 	<Key ID="STR_Item_Rastreador">
         <Original>Rastreador De Veiculos</Original>
     </Key>
-
+    <Key ID="STR_Item_analgesico">
+        <Original>Analgésico</Original>
+    </Key>
+	<Key ID="STR_Item_kitmedico">
+        <Original>Kit Médico</Original>
+    </Key>
+	
 	<Project name="notificationSystem">
 	<Package name="Notifications">
 		<Key ID="STR_author">

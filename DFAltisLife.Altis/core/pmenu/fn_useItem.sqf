@@ -13,6 +13,14 @@ _item = CONTROL_DATA(2005);
 
 switch (true) do {
 	
+	case (_item == "kitmedico"): {
+	    [] Spawn RJM_fnc_UsarKitMedico;
+	};
+	
+	case (_item == "analgesico"): {
+	    [] Spawn RJM_fnc_UsarAnalgesico;
+	};
+	
 	case (_item == "bomba"): {
 		[] Spawn RJM_fnc_ConfigurarBomba;
 	};

@@ -37,7 +37,7 @@ RJMFIXNOME = "";
             _menuMusica = _menu displayCtrl 101013;
             _menuMusica ctrlSetText RJMFIXNOME;
 		};
-		Sleep 2;
+		Sleep 1.5;
 	};
 };
 

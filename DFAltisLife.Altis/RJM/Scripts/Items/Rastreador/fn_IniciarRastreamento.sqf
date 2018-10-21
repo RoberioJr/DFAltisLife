@@ -53,6 +53,7 @@ if (_cond) then {
     _tipo = TypeOf _velRastreado;
     _tipoDoVeiculo = getText (configFile >> "CfgVehicles" >> _tipo >> "displayName");
     SystemChat format['Alvo: %1 | Tipo Alvo: %2',_velRastreado, _tipoDoVeiculo];
+	["Rastreador"] spawn mav_ttm_fnc_addExp;
 	if (playerSide IsEqualto civilian) Then {
 	    [_velRastreado, _tipoDoVeiculo, _nomeJogador] Call RJM_fnc_Rastreando;
 	};

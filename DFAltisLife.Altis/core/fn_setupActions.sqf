@@ -24,7 +24,7 @@ switch (playerSide) do {
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Capturar Area</t>",life_fnc_areaCapture,"",0,false,false,"",' ((typeOf cursorTarget) == "Flag_Red_F") ']];
 		
 		//Roubar os Orgãos
-		life_actions = life_actions + [player addAction["<t color='#FF0000'>COMER O CU DELE</t>",RJM_fnc_CUArrombado,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["CuArrombado",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>COMER O CU DELE</t>",RJM_fnc_ArrombarCU,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["CuArrombado",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
 	};
     
     //Cops
@@ -39,6 +39,8 @@ switch (playerSide) do {
         life_actions = life_actions + [player addAction[localize "STR_pAct_GunnerSeat",life_fnc_copEnter,"gunner",100,false,false,"",'!isNull cursorTarget && ((cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")) && (locked cursorTarget) != 0 && cursorTarget distance player < 3.5']]; 		
         //CopEnter - Exit		
         life_actions = life_actions + [player addAction[localize "STR_pAct_GoOut",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
+	    //Apreender Items No Chão
+		life_actions = life_actions + [player addAction["Apreender Objetos",RJM_fnc_ApreenderItems,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']];
 	};
     
     //EMS
@@ -50,6 +52,8 @@ switch (playerSide) do {
         life_actions = life_actions + [player addAction[localize "STR_pAct_GunnerSeat",life_fnc_copEnter,"gunner",100,false,false,"",'!isNull cursorTarget && ((cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")) && (locked cursorTarget) != 0 && cursorTarget distance player < 3.5']]; 		
         //CopEnter - Exit		
         life_actions = life_actions + [player addAction[localize "STR_pAct_GoOut",life_fnc_copEnter,"exit",100,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
+	    //Apreender Items No Chão
+		life_actions = life_actions + [player addAction["Apreender Objetos",RJM_fnc_ApreenderItems,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']];
 	};
 };
 

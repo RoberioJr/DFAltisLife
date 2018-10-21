@@ -303,8 +303,8 @@ class LifeCfgVehicles {
 				"\a3\soft_f_exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa",
 				"\a3\soft_f_exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa"
 			}, "" },
-			{ "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+			{ "Policia Militar", "cop", {
+				"textures\veh\cop\qillinpm.paa"
             }, "" }
 		};
 	};
@@ -629,7 +629,7 @@ class LifeCfgVehicles {
     class B_G_Offroad_01_armed_F {
         vItemSpace = 65;
         conditions = "license_civ_rebel || {!(playerSide isEqualTo civilian)}";
-        price = 350000;
+        price = 500000;
         textures[] = { };
     };
 

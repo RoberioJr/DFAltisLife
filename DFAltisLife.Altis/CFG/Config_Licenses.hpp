@@ -202,8 +202,9 @@ class Licenses {
         side = "civ";
     };
 	
+	//CRACK
 	class morfina {
-        variable = "crack";
+        variable = "morfina";
         displayName = "STR_License_Morfina";
         price = 120000;
         illegal = true;

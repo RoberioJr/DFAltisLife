@@ -58,6 +58,8 @@ RJ_JogadorPronto = false;
 JogadorTemUmCachorro = false;
 JogadorNoModoAdmin = false;
 RJ_DadosModoAdmin = [];
+RJ_UsandoAnalgesico = false;
+RJ_UsandoMedikit = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

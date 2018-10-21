@@ -20,14 +20,14 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "redgull", "tbacon", "ossodog", "toolkit", "fuelFull", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "redgull", "tbacon", "ossodog", "toolkit", "fuelFull", "analgesico", "kitmedico", "defibrillator" };
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "camisinha", "ziptie", "gag", "blindfold", "rastreador", "boltcutter", "bomba", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "camisinha", "analgesico", "kitmedico", "ziptie", "gag", "blindfold", "rastreador", "boltcutter", "bomba", "blastingcharge" };
     };
 
     class gang {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "redgull", "toolkit", "fuelFull", "defusekit", "rastreador", "ossodog" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "redgull", "analgesico", "kitmedico", "toolkit", "fuelFull", "defusekit", "rastreador", "ossodog" };
     };
 	
 	/* Isso não é uma loja! - Mercado (Y MENU) */
@@ -153,6 +153,28 @@ class VirtualItems {
     //Virtual Items
 
 	/* RJ EDIT */
+	
+	class kitmedico {
+	    variable = "kitmedico";
+        displayName = "STR_Item_kitmedico";
+        weight = 12;
+        buyPrice = 20000;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\kitmedico.paa";
+	};
+	
+	class analgesico {
+		variable = "analgesico";
+        displayName = "STR_Item_analgesico";
+        weight = 9;
+        buyPrice = 8500;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\analgesico.paa";
+	};
 	
 	class bomba {
 		variable = "bomba";

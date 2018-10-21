@@ -5,7 +5,6 @@
 
 */
 
-/*Essa função é iniciada em todos os cops*/
     params [
         ["_velRastreado",objNull,[objNull]],
         ["_tipoVeiculo",'',['']],

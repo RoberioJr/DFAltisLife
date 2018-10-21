@@ -64,11 +64,11 @@ if (life_istazed) exitWith {_cond = false; hint "Você foi Imobilizado!";};
 if !(alive _robber) exitWith {_cond = false;};
 
 if !(_cond) ExitWith {
-	[_action,_shop,_Marcador] Spawn {
+	[_action,_shop] Spawn {
 		_action = _This Select 0;
         _shop = _This Select 1;
-		_Marcador = _This Select 2;
-		deleteMarker _Marcador;
+		_MRK = Format["Agencia_%1",GetPlayerUID Player];
+		deleteMarker _MRK;
 		sleep 300; //5 Minutes
         _action = _shop addAction["Roubar Agência",RJM_fnc_roubarAgencia,civilian];
 	};
@@ -83,7 +83,8 @@ if(_robber distance _shop > 10.5) exitWith {
 
  titleText[format["Você Conseguiu Roubar %1, Agora Saia Antes Que os Policiais Cheguem!",[_kassa] call life_fnc_numberText], "PLAIN"];
  RJM_GRANA = RJM_GRANA + _kassa;
- deleteMarker _Marcador;
+ _MRK = Format["Agencia_%1",GetPlayerUID Player];
+ deleteMarker _MRK;
  playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", _robber];
 
 if (_kassa >= 300000) then {
