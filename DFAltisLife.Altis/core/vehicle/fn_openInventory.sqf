@@ -15,7 +15,7 @@ if ((_vehicle getVariable ["trunk_in_use",false])) exitWith {hint localize "STR_
 sleep 0.2;
 if (life_is_processing) exitWith { hint "RJ ANTI-DUPE: Não é Possivel Abrir O Veiculo Quando Estiver Processando!"; };
 if(([civilian,_vehicle,7] call life_fnc_nearUnits)) exitWith {hint "RJ ANTI-DUPE: Há Um Jogador Por Perto";};
-if ((vehicle player) != player) exitWith {hint "RJ ANTI-DUPE: Saia Do Veiculo Para Abrir Esse Container";};
+//if ((vehicle player) != player) exitWith {hint "RJ ANTI-DUPE: Saia Do Veiculo Para Abrir Esse Container";};
 [_vehicle,"portaabre",25,1] remoteExec ["life_fnc_say3D",0];
 /*-----*/
 _vehicle setVariable ["trunk_in_use",true,true];

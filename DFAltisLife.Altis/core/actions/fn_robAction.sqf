@@ -12,6 +12,7 @@ _target = cursorObject;
 //Error checks
 if (isNull _target) exitWith {};
 if (!isPlayer _target) exitWith {};
+if (_target in (units (group player))) exitWith { Hint 'Esse Jogador é Da Sua Gangue!'; };
 
 if (_target getVariable ["robbed",false]) exitWith {};
 [player] remoteExecCall ["life_fnc_robPerson",_target];

@@ -81,6 +81,6 @@ if(_rip) then
         if!(alive _robber) exitWith {};
         [getPlayerUID _robber, _robber getVariable ["realname",name _robber], "211"] remoteExecCall ["life_fnc_wantedAdd", RSERV];
         call SOCK_fnc_updatePartial;
-        };
+    };
 sleep 300; //5 Minutes
 _action = _shop addAction["Roubar Lotérica",RJM_fnc_roubarLoterica,civilian];

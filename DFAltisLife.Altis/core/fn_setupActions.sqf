@@ -59,5 +59,5 @@ switch (playerSide) do {
 
  /* Cinto De Segurança */
 
-life_actions pushBack (player addAction["<img image='icons\seatOn.paa' size='1.5'/><t color = '#00FF00'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
-life_actions pushBack (player addAction["<img image='icons\seatOff.paa' size='1.5'/><t color = '#FF0000'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
+life_actions pushBack (player addAction["<img image='icons\seatOn.paa' size='1.0'/><t color = '#00FF00'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
+life_actions pushBack (player addAction["<img image='icons\seatOff.paa' size='1.0'/><t color = '#FF0000'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);

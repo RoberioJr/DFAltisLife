@@ -36,7 +36,7 @@ uiSleep 5;
  };
  
 //Setar Variaveis e Valores das Mesmas
-_TempoRestart = 21500 - serverTime; //21600 = 6horas
+_TempoRestart = 21555 - serverTime; //21600 = 6horas
 _CivplayHUD = civilian countSide playableUnits; //1
 _WestplayHUD = west countSide playableUnits; //2
 _IndepplayHUD = independent countSide playableUnits; //3

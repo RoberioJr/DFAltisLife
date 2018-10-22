@@ -227,7 +227,7 @@ class VirtualItems {
         weight = 6;
         buyPrice = 5000;
         sellPrice = -1;
-        illegal = false;
+        illegal = true;
         edible = -1;
         icon = "icons\ziptie.paa";
     };
