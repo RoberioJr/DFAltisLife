@@ -9,11 +9,20 @@
     Used at the hospitals to restore health to full.
     Note: Dialog helps stop a few issues regarding money loss.
 */
-private ["_healCost","_action"];
+private ["_healCost","_action","_planoJogador"];
+_planoJogador = player getVariable "JogadorTemUmPlano";
 if (life_action_inUse) exitWith {};
 if ((damage player) < 0.01) exitWith {hint localize "STR_NOTF_HS_FullHealth"};
 _healCost = LIFE_SETTINGS(getNumber,"hospital_heal_fee");
-if (CASH < _healCost) exitWith {hint format [localize "STR_NOTF_HS_NoCash",[_healCost] call life_fnc_numberText];};
+if (_planoJogador) then { 
+      if (CASH < _healCost / 2) exitWith { 
+	       hint format [localize "STR_NOTF_HS_NoCash",[_healCost] call life_fnc_numberText];
+		   _healCost = _healCost / 2;
+	  }; 
+} else { if (CASH < _healCost) exitWith { 
+           hint format [localize "STR_NOTF_HS_NoCash",[_healCost] call life_fnc_numberText];
+	  };
+};
 
 life_action_inUse = true;
 _action = [

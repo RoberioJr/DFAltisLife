@@ -116,6 +116,11 @@ class RJM_Scripts {
 		class createNotification {};
 		class NotificarADM {};
 	};
+	
+	class PlanoDeSaude {
+		file = "RJM\Scripts\PlanoDeSaude";
+		class ActionPlano {};
+		class Plano {};
 };
 
 #include "Scripts\MenuAdminRJ\VAS\cfgfunctions.hpp"     //Menu De Equipamento ADM
