@@ -664,8 +664,8 @@ class VirtualItems {
         variable = "metanfetaminaProcessed";
         displayName = "STR_Item_MetanfetaminaP";
         weight = 3;
-        buyPrice = 5700;
-        sellPrice = 4865;
+        buyPrice = 5500;
+        sellPrice = 4550;
         illegal = true;
         edible = -1;
         icon = "icons\metap.paa";

@@ -71,7 +71,12 @@ switch (_mode) do {
 if(_msg isEqualTo "") exitWith {};
 
 //Confirmacao de seguranca
-[0,format["%2, voce enviou Um Anúncio para %1 com sucesso !",name _alvo,name player]] remoteExecCall ["life_fnc_broadcast",player];
+[_alvo] Spawn {
+    _alvo = _This Select 0;
+    Sleep 3.5;
+	SystemChat Format['%2, Voce Enviou Um Anúncio Para %1 Com Sucesso!',name _alvo,name player];
+    //[0,format["%2, voce enviou Um Anúncio para %1 com sucesso !",name _alvo,name player]] remoteExecCall ["life_fnc_broadcast",player];
+};
 
 //Mensagem para a vitima
 Switch (_tip) Do {

@@ -65,7 +65,7 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
 	deleteVehicle (_vei getVariable ["tocando", objNull]);
     _helipad = "Land_HelipadEmpty_F" createVehicle [0,0,0];
     _helipad attachTo [_vei, [0,0,0]];
-	_vei setVariable ["tocando", _helipad];
+	_vei setVariable ["tocando",_helipad,true];
 	playSound "botao";
 	titleText[format ["Tocando: %1",_nomeDaMusica],"PLAIN"];
 	sleep 1.5;

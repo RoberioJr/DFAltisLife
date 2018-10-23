@@ -135,6 +135,7 @@ class Clothing {
         side = "cop";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
+			{ "U_B_Wetsuit", "Roupa De Mergulho", 8000, "" },
             { "U_Rangemaster", $STR_C_Cop_uniforms, 750, "call life_coplevel == 1" },
 			{ "U_I_CombatUniform", "Uniforme Manga Longa", 1500, "call life_coplevel >= 2" },
 			{ "U_I_CombatUniform_shortsleeve", "Uniforme Manga Curta", 1500, "call life_coplevel >= 2" },

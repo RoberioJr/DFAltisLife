@@ -1,3 +1,9 @@
+/*
+
+    Author: RobérioJR
+
+*/
+
 private["_unit"];
 _unit = cursorTarget;
 if (isNull _unit) exitWith {};
@@ -5,6 +11,7 @@ if ((_unit getVariable ["CuArrombado",FALSE])) exitWith { hint 'Esse Ai Já Ta S
 if ((animationState _unit != "Incapacitated")) exitWith {};
 if (player == _unit) exitWith {};
 if (!isPlayer _unit) exitWith {};
+
 [_unit] Spawn {
     _unit = _this Select 0;
     if ([false,'camisinha',1] call life_fnc_handleInv) then {

@@ -1,3 +1,9 @@
+/*
+
+    Author: RobérioJR
+
+*/
+
 private["_Estrupador"];
 _Estrupador = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _Estrupador) exitWith {}; //if not the thief get bent
