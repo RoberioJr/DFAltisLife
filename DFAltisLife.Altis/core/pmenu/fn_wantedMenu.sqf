@@ -39,7 +39,7 @@ private _crimes = LIFE_SETTINGS(getArray,"crimes");
     _list2 lbSetData [(lbSize _list2)-1,(_x select 2)];
 } forEach _crimes;
 
-ctrlSetText[2404,"Establishing connection..."];
+ctrlSetText[2404,"Estabilizando Conexão..."];
 
 if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) isEqualTo 0}) then {
     ctrlShow[2405,false];

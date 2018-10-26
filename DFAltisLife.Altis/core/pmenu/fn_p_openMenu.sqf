@@ -12,16 +12,17 @@ disableSerialization;
 
 switch (playerSide) do {
     case west: {
-        ctrlShow[2011,false];
+        ctrlShow[2011,false]; //Gangue
+		ctrlShow[60715,false]; //ListaProcurado Civil
     };
 
     case civilian: {
-        ctrlShow[2012,false];
+        ctrlShow[2012,false]; //Lista Procurado Cop\Med
     };
 
     case independent: {
         //ctrlShow[2012,false];
-        ctrlShow[2011,false];
+        ctrlShow[2011,false]; //Gangue
     };
 };
 

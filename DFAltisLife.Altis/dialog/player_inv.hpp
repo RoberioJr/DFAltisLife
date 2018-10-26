@@ -289,20 +289,6 @@ class playerSettings {
             h = (1 / 25);
         };
 		
-		/*    Mercado
-		class marketButton: Life_RscButtonMenu {
-            idc = 60714;
-            onButtonClick = "[] call life_fnc_marketMenu";
-            text = "$STR_PM_yMarket"; //--- ToDo: Localize;
-            x = 0.598484 * safezoneW + safezoneX;
-            y = 0.66808 * safezoneH + safezoneY;
-            w = 0.0644531 * safezoneW;
-            h = 0.022 * safezoneH;
-            colorText[] = {1,1,1,1};
-            colorBackground[] = {0,0,0,0.8};
-        };
-		*/
-		
 		/* Mercado */
 		class marketButton: Life_RscButtonMenu {
             idc = 60714;
@@ -315,6 +301,29 @@ class playerSettings {
             colorText[] = {1,1,1,1};
             colorBackground[] = {0,0,0,0.8};
         };
-		//Botao Entre Mercado e Admin: x = safeZoneX + safeZoneW * 0.46630859;
+		
+		class ListaProcurado: Life_RscButtonMenu {
+	        idc = 60715;
+			text = "$STR_PM_WantedList";
+            onButtonClick = "[] call life_fnc_wantedMenu";
+	        x = 16.75 * (0.025);
+	        y = 20.1 * (0.04);
+	        w = 6.25 * (0.025);
+	        h = 1 * (0.04);
+	        colorText[] = {1,1,1,1};
+	        colorBackground[] = {0,0,0,0.8};
+        };
+		/*
+		class BotaoLivre: Life_RscButtonMenu {
+	        idc = 60716;
+			//text = "$STR_PM_WantedList";
+	        //onButtonClick = "[] call life_fnc_wantedMenu";
+            x = 0.639271 * safezoneW + safezoneX;
+	        y = 0.7128 * safezoneH + safezoneY;
+	        w = 0.0911458 * safezoneW;
+	        h = 0.028 * safezoneH;
+	        colorText[] = {1,1,1,1};
+	        colorBackground[] = {0,0,0,0.8};
+        };*/
     };
 };

@@ -156,8 +156,8 @@ class Life_Settings {
     bank_med = 200000; //Amount of cash in bank for new medics
 
     paycheck_cop = 12000; //Payment for cops
-    paycheck_civ = 1800; //Payment for civillians
-    paycheck_med = 8000; //Payment for medics
+    paycheck_civ = 1850; //Payment for civillians
+    paycheck_med = 10000; //Payment for medics
 
     paycheck_period = 8; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
@@ -214,50 +214,50 @@ class Life_Settings {
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {
-        {"STR_Crime_187V","650","187V"},
+        {"STR_Crime_187V","1500","187V"},
         {"STR_Crime_187","2000","187"},
-        {"STR_Crime_901","450","901"},
-        {"STR_Crime_215","200","215"},
-        {"STR_Crime_213","1000","213"},
-        {"STR_Crime_211","100","211"},
-        {"STR_Crime_207","350","207"},
-        {"STR_Crime_207A","200","207A"},
-        {"STR_Crime_390","1500","390"},
-        {"STR_Crime_487","150","487"},
-        {"STR_Crime_488","70","488"},
-        {"STR_Crime_480","100","480"},
-        {"STR_Crime_481","100","481"},
-        {"STR_Crime_482","500","482"},
-        {"STR_Crime_483","950","483"},
-        {"STR_Crime_459","650","459"},
-        {"STR_Crime_666","200","666"},
-        {"STR_Crime_667","4500","667"},
-        {"STR_Crime_668","1500","668"},
+        {"STR_Crime_901","5000","901"},
+        {"STR_Crime_215","800","215"},
+        {"STR_Crime_213","10000","213"},
+        {"STR_Crime_211","1200","211"},
+        {"STR_Crime_207","10000","207"},
+        {"STR_Crime_207A","1500","207A"},
+        {"STR_Crime_390","500","390"},
+        {"STR_Crime_487","35000","487"},
+        {"STR_Crime_488","10000","488"},
+        {"STR_Crime_480","1500","480"},
+        {"STR_Crime_481","5000","481"},
+        {"STR_Crime_482","10000","482"},
+        {"STR_Crime_483","17500","483"},
+        {"STR_Crime_459","1650","459"},
+        {"STR_Crime_666","1500","666"},
+        {"STR_Crime_667","30000","667"},
+        {"STR_Crime_668","2500","668"},
         {"STR_Crime_1","250","1"},
         {"STR_Crime_2","200","2"},
         {"STR_Crime_3","150","3"},
         {"STR_Crime_4","250","4"},
         {"STR_Crime_5","100","5"},
-        {"STR_Crime_6","80","6"},
-        {"STR_Crime_7","150","7"},
+        {"STR_Crime_6","2000","6"},
+        {"STR_Crime_7","250","7"},
         {"STR_Crime_8","5000","8"},
         {"STR_Crime_9","5000","9"},
-        {"STR_Crime_10","15000","10"},
+        {"STR_Crime_10","20000","10"},
         {"STR_Crime_11","10000","11"},
         {"STR_Crime_12","2500","12"},
         {"STR_Crime_13","1500","13"},
-        {"STR_Crime_14","500","14"},
+        {"STR_Crime_14","1000","14"},
         {"STR_Crime_15","2500","15"},
         {"STR_Crime_16","1500","16"},
         {"STR_Crime_17","100","17"},
         {"STR_Crime_18","1500","18"},
-        {"STR_Crime_19","2500","19"},
-        {"STR_Crime_20","500","20"},
-        {"STR_Crime_21","500","21"},
-        {"STR_Crime_22","2000","22"},
+        {"STR_Crime_19","750","19"},
+        {"STR_Crime_20","10000","20"},
+        {"STR_Crime_21","1500","21"},
+        {"STR_Crime_22","10000","22"},
         {"STR_Crime_23","5000","23"},
-        {"STR_Crime_24","10000","24"},
-        {"STR_Crime_25","20000","25"},
+        {"STR_Crime_24","5000","24"},
+        {"STR_Crime_25","10000","25"},
 		{"STR_Crime_712","25000","712"}
     };
 };
