@@ -78,6 +78,15 @@ class CfgDebriefing {
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
+	
+	class DiscordouTermos {
+        title = "Distrito Federal";
+        subtitle = "Se Você Não Concorda, Apenas Vá Embora...";
+        description = "Se Isso Foi Um Engano, Basta Reconectar E Aceitar Nossos Termos!";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
 };
 
 class CfgNotifications {

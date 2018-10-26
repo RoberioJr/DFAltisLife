@@ -234,8 +234,7 @@ switch (_code) do {
 
 	//Assalto TAB
 	case 15: {
-	        //if (PlayerSide In [west,independent] && ((Side CursorTarget) IsEqualTo PlayerSide)) ExitWith {};
-			//if ((weapons player) isEqualTo [] && (PlayerSide IsEqualTo Civilian)) ExitWith {};
+			if (currentWeapon player isEqualTo "") ExitWith {};
             if !(isPlayer cursorTarget) exitWith {};
             if ((time - life_action_delay) < 1) exitWith {hint localize "STR_NOTF_ActionDelay";};
             if (cursorTarget distance player < 300 && {(isPlayer cursorTarget)}) then {

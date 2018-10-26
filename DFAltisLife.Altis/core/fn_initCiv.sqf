@@ -15,6 +15,20 @@ civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", _spawnBuildings,350];
 civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", _spawnBuildings,350];
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", _spawnBuildings,350];
 
+ /* Termos E Condições */
+ [] spawn RJM_fnc_AbrirTermosECond;
+ waitUntil {RJ_ConcordouTermos && isNull (findDisplay 66669)};
+ 
+  /* Configuração Das Bases */
+Switch (FETCH_CONST(life_base)) Do {
+    Case 0: {RJ_Base = 0;};
+	Case 1: {RJ_Base = 1;};
+	Case 2: {RJ_Base = 2;};
+	Case 3: {RJ_Base = 3;};
+	Case 4: {RJ_Base = 4;};
+	Case 5: {RJ_Base = 5;};
+};
+
 waitUntil {!(isNull (findDisplay 46))};
 if (life_is_alive && !life_is_arrested) then {
     /* Spawn at our last position */

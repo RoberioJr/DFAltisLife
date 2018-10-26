@@ -101,6 +101,13 @@ class RJM_Scripts {
 		class ArrombarCU {};
 	};
 	
+	class TermosCond {
+		file = "RJM\Scripts\TermosCond";
+	    class AbrirTermosECond {}; 
+        class AceitarTermos {}; 
+        class DiscordarTermos {}; 
+	};
+	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};

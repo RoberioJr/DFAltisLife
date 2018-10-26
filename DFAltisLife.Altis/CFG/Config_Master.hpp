@@ -46,6 +46,16 @@ class Life_Settings {
 	rj_desconto_doadorveh4 = .60;      //Descontos Do Doador 4                       By:RobérioJR [Preço * Desconto]
 	rj_desconto_doadorveh5 = .50;      //Descontos Do Doador 5                       By:RobérioJR [Preço * Desconto]
 
+	/* Termos E Condições Do Servidor */
+	rj_TermosCondMenu[] = { // Messages to be shown on the menu
+        "É Proibido O Uso De Hack Ou Macros",
+        "É Proibido O Abuso De BUGs Para Beneficio Próprio",
+        "É Proibido Fazer SPAM No Chat Do Jogo",
+		"É Proibido Cometer Crimes Nas SafeZones",
+        "É Proibido Cometer RDM, VDM e METAGAMMING",
+		"Nossas Regras Estão Em Nosso Discord: discord.gg/sRFQcHz",
+		"O Descumprimento Das Regras Pode Lhe Render Advertências!"
+    };
 	
     /* Data Logging Settings */
     battlEye_friendlyLogging = false; //False [default] - Read the logs from the server.rpt. True - Read the logs from the publicVariable.log. NOTE: Due to how diag_log works it will log to both files either way and the setting is merely for beautification purposes.

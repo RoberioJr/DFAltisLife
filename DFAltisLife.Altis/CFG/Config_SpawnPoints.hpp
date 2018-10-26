@@ -67,14 +67,14 @@ class CfgSpawnPoints {
 				displayName = "Base 1";
 				spawnMarker = "base1_spawn";
 				icon = "icons\spawns\rebelde.paa";
-				conditions = "call life_donorLevel == 11";
+				conditions = "call life_base == 1";
 			};
 			
 			class Base2 {
 				displayName = "Base 2";
 				spawnMarker = "base2_spawn";
 				icon = "icons\spawns\rebelde.paa";
-				conditions = "call life_donorLevel == 12";
+				conditions = "call life_base == 2";
 			};
         };
 

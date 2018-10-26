@@ -41,6 +41,15 @@
   /* Marcadores */
    //[] Spawn RJM_fnc_Marcador;
    
+  /* ConfigBases */
+  Switch (FETCH_CONST(life_base)) Do {
+    Case 0: {};
+	Case 1: {};
+	Case 2: {};
+	Case 3: {};
+	Case 4: {};
+  };
+   
   /* Icones Dos Farms No Mapa */
    [] Spawn RJM_fnc_IconesMap;
    
