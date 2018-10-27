@@ -198,7 +198,7 @@ class Life_Client_Core {
         class calWeightDiff {};
         class checkMap {};
         class clearVehicleAmmo {};
-        class dropItems {};
+        class derrubarItens {};
         class escInterupt {};
         class fetchCfgDetails {};
         class fetchDeadGear {};
