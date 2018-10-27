@@ -114,14 +114,6 @@ class ProcessAction {
         NoLicenseCost = 10500;
     };
 	
-	class ecstasy {
-        MaterialsReq[] = {{"ecstasy_unprocessed",1}};
-        MaterialsGive[] = {{"ecstasy_processed",1}};
-        Text = "STR_Process_Ecstasy";
-        //ScrollText = "Process ecstasy";
-        NoLicenseCost = 10500;
-    };
-	
 	class metanfetamina {
         MaterialsReq[] = {{"metanfetamina_unprocessed",1}};
         MaterialsGive[] = {{"metanfetamina_processed",1}};

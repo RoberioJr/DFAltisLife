@@ -108,6 +108,11 @@ class RJM_Scripts {
         class DiscordarTermos {}; 
 	};
 	
+	class MenuAnims {
+		file = "RJM\Scripts\MenuAnims";
+		class MenuAnims {};
+	};
+	
 	class AutoSave {
 	    file = "RJM\Scripts\AutoSave";
 		class autoSaveInv {};
@@ -126,4 +131,3 @@ class RJM_Scripts {
 };
 
 #include "Scripts\MenuAdminRJ\VAS\cfgfunctions.hpp"     //Menu De Equipamento ADM
-//#include "Logo\rj_logofunc.h"                           //Marca D'Agua Com Logo

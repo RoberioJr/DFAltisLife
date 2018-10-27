@@ -62,7 +62,7 @@ class VirtualShops {
         name = "STR_Shops_DrugDealer";
         side = "civ";
         conditions = "";
-        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed", "lsd_processed", "ecstasy_processed", "metanfetamina_processed", "lolo_processed", "crack_processed" };
+        items[] = { "cocaine_processed", "heroin_processed", "marijuana", "tabaco_processed", "lsd_processed", "metanfetamina_processed", "lolo_processed", "crack_processed" };
     };
 
     class oil {
@@ -133,7 +133,7 @@ class VirtualShops {
 	class ymarket {
     name = "STR_Shops_yMarket";
     conditions = "";
-    items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "copper_refined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "tabaco_processed", "lsd_processed", "ecstasy_processed", "metanfetamina_processed", "lolo_processed", "crack_processed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "kidney"};
+    items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "copper_refined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "tabaco_processed", "lsd_processed", "metanfetamina_processed", "lolo_processed", "crack_processed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "kidney"};
     };
 };
 
@@ -168,7 +168,7 @@ class VirtualItems {
 	class analgesico {
 		variable = "analgesico";
         displayName = "STR_Item_analgesico";
-        weight = 9;
+        weight = 7;
         buyPrice = 8500;
         sellPrice = -1;
         illegal = false;
@@ -622,30 +622,6 @@ class VirtualItems {
         edible = -1;
         icon = "icons\lsdp.paa";
 		description = "LSD é a sigla de Lysergsäurediethylamid, palavra alemã para a dietilamida do ácido lisérgico, que é uma das mais potentes substâncias alucinógenas conhecidas.";
-    };
-	
-	class ecstasy_unprocessed {
-        variable = "ecstasyUnprocessed";
-        displayName = "STR_Item_EcstasyU";
-        weight = 4;
-        buyPrice = -1;
-        sellPrice = -1;
-        illegal = true;
-        edible = -1;
-        icon = "icons\ecstasy.paa";
-        processedItem = "ecstasy_processed";
-    };
-
-    class ecstasy_processed {
-        variable = "ecstasyProcessed";
-        displayName = "STR_Item_EcstasyP";
-        weight = 3;
-        buyPrice = 4900;
-        sellPrice = 3950;
-        illegal = true;
-        edible = -1;
-        icon = "icons\ecstasyp.paa";
-		description = "A metilenodioximetanfetamina denominada popularmente ecstasy, é uma substância psicotrópica usada frequentemente como droga recreativa. ";
     };
 	
 	class metanfetamina_unprocessed {

@@ -9,7 +9,7 @@
 RJ_Administradores = 
 [
     "76561198134612622",  //RJ
-	"76561198335998321",  //Nulo
+	//"76561198335998321",  //Nulo
 	"76561198090180406"   //Marvinn
 ];
 
@@ -67,6 +67,23 @@ RJ_nomeMusicas =
     "Coldplay - Viva La Vida", //5
 	"MC Pedrinho e MC Davi - Bonita, Lindinha e Sagaz" //6
 ];
+
+//Menu De Animações CFG
+RJ_MenuAnims = 
+[
+    ["Kung Fu", "AmovPercMstpSnonWnonDnon_exerciseKata"],
+    ["Flexões", "AmovPercMstpSnonWnonDnon_exercisePushup"],
+    ["Agachamento (Rapido)", "AmovPercMstpSnonWnonDnon_exercisekneeBendB"],
+    ["Agachamento (Normal)", "AmovPercMstpSnonWnonDnon_exercisekneeBendA"],
+    ["Assustado", "AmovPercMstpSnonWnonDnon_Scared"],
+	["Espacate", "Acts_EpicSplit"]
+];
+
+
+
+
+
+
 
 
 

@@ -14,6 +14,11 @@ switch (playerSide) do {
     case west: {
         ctrlShow[2011,false]; //Gangue
 		ctrlShow[60715,false]; //ListaProcurado Civil
+		/*
+		_Menu = findDisplay 2001;
+		_Menu displayCtrl 60715 ctrlSetText "Objetos";
+		buttonSetAction "closeDialog 0; [] call RJM_fnc_Objetos;";
+		*/
     };
 
     case civilian: {

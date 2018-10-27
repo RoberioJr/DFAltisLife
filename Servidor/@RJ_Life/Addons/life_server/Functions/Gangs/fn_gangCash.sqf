@@ -14,7 +14,7 @@
  */
 
 //gets the flag locations
-_area = [4586.172,21382.557,0] nearestObject "Flag_Red_F";
+_area = [11209.121,8717.759,0] nearestObject "Flag_Red_F";
 
 //gets the gang names of the flag owners
 _owner = _area getVariable ["gangOwner",grpNull];
@@ -23,7 +23,7 @@ _owner = _area getVariable ["gangOwner",grpNull];
 _gFund = _owner getVariable ["gang_bank",0];
 
 //set the new gang funds
-_owner setVariable ["gang_bank",round(_gFund+((count playableUnits)*1750)),true];
+_owner setVariable ["gang_bank",round(_gFund+((count playableUnits)*2000)),true];
 
 //push gang funds to DB
 [1,_owner] call TON_fnc_updateGang;

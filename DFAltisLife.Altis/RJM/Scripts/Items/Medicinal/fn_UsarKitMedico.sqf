@@ -12,8 +12,6 @@ If (Vehicle Player != Player) ExitWith {};
 If ((Damage Player) < 0.24) ExitWith { hint 'Você Não Pode Usar O Kit Medico Pois Não Está Muito Ferido!'; }; 
 If (RJ_UsandoMedikit) ExitWith { hint 'Aguarde Um Momento Para Usar Outro MediKit'; };
 
-if ([false,'kitmedico',1] call life_fnc_handleInv) then {
-
 _cond = true;
 
 disableSerialization;
@@ -43,6 +41,8 @@ If (_cond) Then {
 	Player playActionNow "stop";
 	if !(_cond) ExitWith { Hint "Ação Interrompida..."; };
 	
+	[false,'kitmedico',1] call life_fnc_handleInv; //Remove O Item
+	
 	[] Spawn {
 	    //_Dam = Damage Player;
 	    //Player SetDamage (_Dam - 0.5);
@@ -52,7 +52,6 @@ If (_cond) Then {
 		RJ_UsandoMedikit = False;
 	};
 };
-} Else { hint 'Você Não Um Kit Médico'; };
 
 
 

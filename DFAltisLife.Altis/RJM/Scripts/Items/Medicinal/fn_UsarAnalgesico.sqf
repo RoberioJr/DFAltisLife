@@ -11,8 +11,6 @@ If (!Alive Player) ExitWith {};
 If (Vehicle Player != Player) ExitWith {};
 If (RJ_UsandoAnalgesico) ExitWith { hint 'Você Já Tomou Um Analgésico, Espere Um Pouco Para Usar Outro.'; };
 
-if ([false,'analgesico',1] call life_fnc_handleInv) then {
-
 _cond = true;
 
 disableSerialization;
@@ -42,6 +40,8 @@ If (_cond) Then {
 	Player playActionNow "stop";
 	if !(_cond) ExitWith { Hint "Ação Interrompida..."; };
 	
+	[false,'analgesico',1] call life_fnc_handleInv; //Remove O Item 
+	
 	RJ_UsandoAnalgesico = true;
 	SystemChat "Você Usou Um Analgèsico, O Efeito Durará 2 Minutos!";
 	
@@ -63,7 +63,6 @@ If (_cond) Then {
 		RJ_UsandoAnalgesico = false;
 	};
 };
-} Else { hint 'Você Não Possui Analgésicos'; };
 
 
 

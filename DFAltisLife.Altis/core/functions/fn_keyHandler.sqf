@@ -105,7 +105,7 @@ switch (_code) do {
 	//Abrir Porta Com Botão (0)
     case 11: {
 		if (!_shift && !_alt && !_ctrlKey && (playerSide In [west,independent]) && (vehicle player != player)) then {
-			[] call RJM_fnc_AbrirPorta;
+			[] Spawn RJM_fnc_AbrirPorta;
 		};
 	};
 	
@@ -129,7 +129,7 @@ switch (_code) do {
 	//FPSBOOST
 	case 207: {
 	    if (!Alive Player) ExitWith {};
-	    [] call RJM_fnc_FpsBoost;
+	    [] Spawn RJM_fnc_FpsBoost;
 	};
 	
 	//Dog Atacar F6

@@ -91,13 +91,6 @@ class CfgGather {
             zoneSize = 30;
         };
 		
-		class ecstasy_unprocessed {
-            amount = 3;
-            zones[] = { "ecstasy_1" };
-            item = "";
-            zoneSize = 30;
-        };
-		
 		class metanfetamina_unprocessed {
             amount = 3;
             zones[] = { "metanfetamina_1" };

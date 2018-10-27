@@ -8,7 +8,6 @@ class playerSettings {
     class controlsBackground {
 		
 		/* TABLET */
-		/*
 		class InvTablet: Life_RscPicture {
             idc = 9090909;
             text = "textures\tablet.paa";
@@ -17,7 +16,6 @@ class playerSettings {
             w = 1;
             h = 1.28;
         };
-		*/
 		
         class Life_RscTitleBackground: Life_RscText {
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
@@ -313,17 +311,17 @@ class playerSettings {
 	        colorText[] = {1,1,1,1};
 	        colorBackground[] = {0,0,0,0.8};
         };
-		/*
-		class BotaoLivre: Life_RscButtonMenu {
+		
+		class MenuAnims: Life_RscButtonMenu {
 	        idc = 60716;
-			//text = "$STR_PM_WantedList";
-	        //onButtonClick = "[] call life_fnc_wantedMenu";
+			text = "Animações";
+	        onButtonClick = "closeDialog 0; createDialog ""life_mov﻿es_menu"";";﻿﻿﻿
             x = 0.639271 * safezoneW + safezoneX;
 	        y = 0.7128 * safezoneH + safezoneY;
 	        w = 0.0911458 * safezoneW;
 	        h = 0.028 * safezoneH;
 	        colorText[] = {1,1,1,1};
 	        colorBackground[] = {0,0,0,0.8};
-        };*/
+        };
     };
 };

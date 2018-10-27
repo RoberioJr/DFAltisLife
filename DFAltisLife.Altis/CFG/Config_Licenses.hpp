@@ -178,14 +178,6 @@ class Licenses {
         side = "civ";
     };
 	
-	class ecstasy {
-        variable = "ecstasy";
-        displayName = "STR_License_Ecstasy";
-        price = 180000;
-        illegal = true;
-        side = "civ";
-    };
-	
 	class metanfetamina {
         variable = "metanfetamina";
         displayName = "STR_License_Metanfetamina";

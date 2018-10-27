@@ -23,6 +23,10 @@
  [] ExecVM "RJM\Scripts\SafeZones\Zonas\szreb2.sqf"; //S
  [] ExecVM "RJM\Scripts\SafeZones\Zonas\szreb3.sqf"; //C
  
+ /* Bases De Gangues */
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szbase1";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szbase2";
+ 
    /* Outros */
    
   /* DP Policia Athira */
