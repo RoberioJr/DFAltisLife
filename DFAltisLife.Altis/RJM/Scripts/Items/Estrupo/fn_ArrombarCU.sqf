@@ -11,6 +11,7 @@ if ((_unit getVariable ["CuArrombado",FALSE])) exitWith { hint 'Esse Ai Já Ta S
 if ((animationState _unit != "Incapacitated")) exitWith {};
 if (player == _unit) exitWith {};
 if (!isPlayer _unit) exitWith {};
+if (_unit in (units (group player))) exitWith { Hint 'Não Pode Fazer Isso Com Seu Amiguinho!'; };
 
 [_unit] Spawn {
     _unit = _this Select 0;

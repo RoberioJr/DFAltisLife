@@ -75,8 +75,7 @@ RJ_MenuAnims =
     ["Flexões", "AmovPercMstpSnonWnonDnon_exercisePushup"],
     ["Agachamento (Rapido)", "AmovPercMstpSnonWnonDnon_exercisekneeBendB"],
     ["Agachamento (Normal)", "AmovPercMstpSnonWnonDnon_exercisekneeBendA"],
-    ["Assustado", "AmovPercMstpSnonWnonDnon_Scared"],
-	["Espacate", "Acts_EpicSplit"]
+    ["Assustado", "AmovPercMstpSnonWnonDnon_Scared"]
 ];
 
 

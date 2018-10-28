@@ -33,7 +33,7 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 
  [1,format["000 ALERTA:\n\nAgência: %1 Está Sendo Roubado Por %2",_shop,_robber, name _robber]] remoteExec ["life_fnc_broadcast",west];
 
- [3,660] Spawn RJM_fnc_VarAssaltoPub;
+ [3,660] RemoteExec ['RJM_fnc_VarAssaltoPub',2];
 
 disableSerialization;
 8 cutRsc ["life_progress", "PLAIN"];

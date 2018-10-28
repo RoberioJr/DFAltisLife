@@ -12,7 +12,8 @@ case "passenger":
   };
 case "gunner":
   {
-    cursorTarget lock false;player action["getIngunner", cursorTarget];cursorTarget lock true;
+    //cursorTarget lock false;player action["getIngunner", cursorTarget];cursorTarget lock true;
+	player moveInTurret [cursorObject, [3]];
   };
 case "exit":
   {

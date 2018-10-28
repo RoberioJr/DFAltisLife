@@ -3,11 +3,15 @@
     Author: RobérioJR
 
 */
+Params [
+    ["_TipoDeAssalto",0,[0]],
+    ["_TempoDeEspera",1,[0]]
+];
 
 If (!IsServer) ExitWith {};
 
-_TipoDeAssalto = _This Select 0;
-_TempoDeEspera = _This Select 1;
+//_TipoDeAssalto = _This Select 0;
+//_TempoDeEspera = _This Select 1;
 
 Switch (_TipoDeAssalto) Do {
     Case 1: { //Posto

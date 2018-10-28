@@ -182,6 +182,7 @@ switch (_code) do {
 		};
 	};
 
+	/*
 	// Alt + F4
 	case 62: {
 	    if (_alt) then {
@@ -193,7 +194,7 @@ switch (_code) do {
 			[] call SOCK_fnc_updateRequestRJ;
 			hint "Distrito Federal: Você Apertou Alt + F4 e Perdeu Todos Os Items!";
 		};
-	};
+	};*/
 
 	//Ai Pai Para | LUTO | 'Ai Pai Para Não me Bati hihihihi' F3
 	case 61: {
