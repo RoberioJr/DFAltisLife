@@ -23,6 +23,8 @@ if (west countSide playableUnits < 6) exitWith {hint "Policiais insuficientes!";
 if !(alive _robber) exitWith {};
 if (currentWeapon _robber isEqualTo "") exitWith {hint "Você precisa de armas para roubar essa loja!";};
 
+if !(LiberadoRoubarAgencia) ExitWith {Hint 'Outra Agência Já Está Sendo Assaltada, Aguarde O Assalto Terminar!';};
+
 _cond = true;
 //_kassa = 200000 + round(random 100000);
 _kassa = 200000 + ((west countSide playableUnits) * 15000);
@@ -31,6 +33,7 @@ _shop switchMove "AmovPercMstpSsurWnonDnon";
 
  [1,format["000 ALERTA:\n\nAgência: %1 Está Sendo Roubado Por %2",_shop,_robber, name _robber]] remoteExec ["life_fnc_broadcast",west];
 
+ [3,660] Spawn RJM_fnc_VarAssaltoPub;
 
 disableSerialization;
 8 cutRsc ["life_progress", "PLAIN"];
@@ -42,7 +45,7 @@ _progress progressSetPosition 0.01;
 _cP = 0.01;
 
 while{true} do {
-    sleep 6;
+    sleep 7.5;
     _cP = _cP + 0.01;
     _progress progressSetPosition _cP;
     _pgText ctrlSetText format ["Roubando a Agência Bancária, fique por perto (10m)  (%1%2)...",round(_cP * 100), "%"];

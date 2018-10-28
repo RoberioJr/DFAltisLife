@@ -7,6 +7,13 @@
 |                                                             |
 */
   
+  LiberadoRoubarPosto = True;
+  PublicVariable "LiberadoRoubarPosto";
+  LiberadoRoubarLoterica = True;
+  PublicVariable "LiberadoRoubarLoterica";
+  LiberadoRoubarAgencia = True;
+  PublicVariable "LiberadoRoubarAgencia";
+  
   /* LOG COM INFORMAÇÕES SOBRE INICIALIZAÇÃO DO SERVIDOR */
  sleep 1;
  Diag_Log "RJ: Scripts E Modulos RJ Foram Inicializados.";

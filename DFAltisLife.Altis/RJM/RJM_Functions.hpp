@@ -39,6 +39,7 @@ class RJM_Scripts {
 		class sAssaltoMSG {};
 		class roubarAgencia {};
 		class roubarLoterica {};
+		class VarAssaltoPub {};
 	};
 	
 	class EfeitosDrogas {

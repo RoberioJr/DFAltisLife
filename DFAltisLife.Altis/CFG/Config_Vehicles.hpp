@@ -136,7 +136,8 @@ class CarShops {
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 2" },
 			{ "O_LSV_02_unarmed_F", "call life_coplevel >= 4" },
-            { "B_MRAP_01_F", "call life_coplevel >= 4" }
+            { "B_MRAP_01_F", "call life_coplevel >= 4" },
+			{ "I_MRAP_03_F", "call life_coplevel >= 4" },
         };
     };
 
@@ -333,6 +334,9 @@ class LifeCfgVehicles {
 		textures[] = {
 			{ "Rebelde", "reb", {
 				"a3\soft_f_beta\mrap_03\data\MRAP_03_ext_CO.paa"
+			}, "" },
+			{ "Policia Militar", "cop", {
+				"textures\veh\cop\striderpm.paa"
 			}, "" }
 		};
 	};

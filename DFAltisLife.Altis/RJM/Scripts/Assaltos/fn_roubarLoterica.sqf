@@ -38,7 +38,7 @@ if(_rip) then
 {
     while{true} do
         {
-            sleep 7;
+            sleep 6.5;
             _cP = _cP + 0.01;
             _progress progressSetPosition _cP;
             _pgText ctrlSetText format ["Roubando a Casa Lotérica, fique por perto (10m)  (%1%2)...",round(_cP * 100), "%"];

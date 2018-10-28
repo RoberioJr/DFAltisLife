@@ -24,8 +24,8 @@
  [] ExecVM "RJM\Scripts\SafeZones\Zonas\szreb3.sqf"; //C
  
  /* Bases De Gangues */
- [] ExecVM "RJM\Scripts\SafeZones\Zonas\szbase1";
- [] ExecVM "RJM\Scripts\SafeZones\Zonas\szbase2";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szbase1.sqf";
+ [] ExecVM "RJM\Scripts\SafeZones\Zonas\szbase2.sqf";
  
    /* Outros */
    
