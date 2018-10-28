@@ -9,7 +9,6 @@
 private ["_medic","_dir","_reviveCost"];
 _medic = param [0,"Unknown Medic",[""]];
 _reviveCost = LIFE_SETTINGS(getNumber,"revive_fee");
-_precisaDeCirurgia = false;
 
 [life_save_gear] spawn life_fnc_loadDeadGear;
 life_corpse setVariable ["realname",nil,true]; //Should correct the double name sinking into the ground.
@@ -66,12 +65,5 @@ if (alive player) then {
 		_handle ppEffectEnable false;
 		ppEffectDestroy _handle;
 		systemChat "O efeito da morfina está acabando!";  //message on effect stop
-		_chanceDeCirurgia = Random 100;
-        if(_chanceDeCirurgia >= 75) then {
-		player setVariable ["precisaDeCirurgia", true];
-
-		} else {
-		player setVariable ["precisaDeCirurgia", false];
-		};
 	};
 };
