@@ -129,6 +129,11 @@ class RJM_Scripts {
 		class createNotification {};
 		class NotificarADM {};
 	};
+	
+	class Cirurgia {
+		file = "RJM\Scripts\Cirurgia";
+		class EventMaca {};
+		class initCirurgia {};
 };
 
 #include "Scripts\MenuAdminRJ\VAS\cfgfunctions.hpp"     //Menu De Equipamento ADM

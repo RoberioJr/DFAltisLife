@@ -56,6 +56,15 @@ for "_i" from 0 to 1 step 0 do {
     if (_target getVariable ["Reviving",objNull] != player) exitWith {};
 };
 
+/*
+   RJM EDIT: Avisar a necessidade de cirurgia 
+*/
+_necessitaCirurgia = _target getVariable "precisaDeCirurgia";
+if(_necessitaCirurgia) then {
+   hintSilent parseText format["<t size='1' font='Zeppelin33' color='#ff0000'>O Paciente precisa de uma Cirurgia!</t>"]; 
+} else { hintSilent parseText format["<t size='1' font='Zeppelin33' color='#ff0000'>O Paciente não precisa de uma Cirurgia!</t>"];
+};
+
 //Kill the UI display and check for various states
 "progressBar" cutText ["","PLAIN"];
 player playActionNow "stop";
