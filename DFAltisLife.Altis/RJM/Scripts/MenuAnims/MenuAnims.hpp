@@ -52,7 +52,7 @@ class RJ_MenuAnims {
         };
         class performMove: Life_RscButtonMenu {
             idc = -1;
-            text = "Move";
+            text = "Colocar";
             onButtonClick = "_move = lbData[2902,lbCurSel (2902)];_move = call compile format[""%1"", _move]; player playMove _move; closeDialog 0;";
             x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
             y = 0.88 - (1 / 25);
@@ -60,4 +60,4 @@ class RJ_MenuAnims {
             h = (1 / 25);
         };
     };
-};﻿
+};

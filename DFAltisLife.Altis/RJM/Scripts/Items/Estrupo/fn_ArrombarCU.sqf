@@ -22,7 +22,7 @@ if (!isPlayer _unit) exitWith {};
         _unit setVariable["CuArrombado",true,true];
         life_action_inUse = false;
 		[player] RemoteExec ['RJM_fnc_CuArrombado',_unit];
-		[4,Format['%1 Arrombou o Cu De %2 Com Força E Sem Cuspe!',name player,name _unit]] RemoteExec ['RJM_fnc_Notificar',-2];
+		[4,Format['%1 Arrombou o CU De %2 Com Força E Sem Cuspe!',name player,name _unit]] RemoteExec ['RJM_fnc_Notificar',-2];
 		["Estrupar"] spawn mav_ttm_fnc_addExp;
         //[[player], "life_fnc_temOrgao", _unit, false] spawn life_fnc_MP;
     } else { Hint 'Você Não Tem Camisinhas!'; };

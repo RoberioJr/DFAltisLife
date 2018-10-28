@@ -15,7 +15,7 @@ civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", _spawnBuildings,350];
 civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", _spawnBuildings,350];
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", _spawnBuildings,350];
 
- /* Termos E Condições */
+/* Termos E Condições */
  [] spawn RJM_fnc_AbrirTermosECond;
  waitUntil {RJ_ConcordouTermos && isNull (findDisplay 66669)};
  

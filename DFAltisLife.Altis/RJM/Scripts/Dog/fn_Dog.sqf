@@ -1,6 +1,6 @@
 /*
     Author: RobérioJR
-	//https://community.bistudio.com/wiki/Arma_3_Animals:_Override_Default_Animal_Behaviour_Via_Script
+	https://community.bistudio.com/wiki/Arma_3_Animals:_Override_Default_Animal_Behaviour_Via_Script
 */
 
 /* Criar O DOG */
@@ -31,7 +31,7 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 		dog moveTo getPos player;
 		sleep 1;
 	};
- };
+};
  
 [] spawn {
     While {alive dog} Do {

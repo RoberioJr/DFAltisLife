@@ -314,8 +314,8 @@ class playerSettings {
 		
 		class MenuAnims: Life_RscButtonMenu {
 	        idc = 60716;
-			text = "Animações";
-	        onButtonClick = "closeDialog 0; createDialog ""life_mov﻿es_menu"";";﻿﻿﻿
+			text = "Animacoes";
+	        onButtonClick = "closeDialog 0; createDialog ""RJ_MenuAnims"";";
             x = 0.639271 * safezoneW + safezoneX;
 	        y = 0.7128 * safezoneH + safezoneY;
 	        w = 0.0911458 * safezoneW;
