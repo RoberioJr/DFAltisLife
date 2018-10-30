@@ -272,6 +272,7 @@ class Clothing {
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_Cap_blu", "", 10, "" },
+			{ "H_Beret_blk", "", 45, "" },
 			{ "H_PASGT_basic_white_F", "", 200, "" }
         };
         goggles[] = {

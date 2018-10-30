@@ -143,7 +143,7 @@ class CarShops {
 
     class cop_air {
         side = "cop";
-        conditions = "call life_coplevel >= 2";
+        conditions = "";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
             { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 4" }
