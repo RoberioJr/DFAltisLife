@@ -62,6 +62,9 @@ RJ_UsandoAnalgesico = false;
 RJ_UsandoMedikit = false;
 RJ_ConcordouTermos = false;
 RJ_Base = 0;
+life_barrier_active = false;  
+life_barrier_activeObj = ObjNull;    
+life_bar_placey = [];
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

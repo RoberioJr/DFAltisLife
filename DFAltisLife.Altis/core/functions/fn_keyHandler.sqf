@@ -90,13 +90,24 @@ if (life_container_active) exitwith {
 };
 
 switch (_code) do {
-
     /* Alterações RobérioJR */
+	
+	//Colocaveis (C)
+	case 46: {
+	    _currentPos = getPosATL life_barrier_activeObj;  
+        detach life_barrier_activeObj;  
+        life_barrier_activeObj setPos[(getPos life_barrier_activeObj select 0), (getPos life_barrier_activeObj select 1), 0];  
+        life_barrier_activeObj enableSimulationGlobal true;  
+        life_bar_placey pushBack life_barrier_activeObj;  
+        life_barrier_active = false;  
+        life_barrier_activeObj = ObjNull;  
+        hint "Você Colocou Um Objeto!";  
+	};
 	
 	//Modo Administrador F9
 	case 67: {
-	    if (!RJ_DelayTerminado) ExitWith { Hint "Aguarde Um Momento Antes De Efetuar Essa Ação..."; };
 	    if (FETCH_CONST(life_adminlevel) >= 1) Then {
+	    if (!RJ_DelayTerminado) ExitWith { Hint "Aguarde Um Momento Antes De Efetuar Essa Ação..."; };
 	        [] Spawn RJM_fnc_ModoAdmin;
 			[10] Spawn RJM_fnc_DelayRJ;
 		};
@@ -106,15 +117,6 @@ switch (_code) do {
     case 11: {
 		if (!_shift && !_alt && !_ctrlKey && (playerSide In [west,independent]) && (vehicle player != player)) then {
 			[] Spawn RJM_fnc_AbrirPorta;
-		};
-	};
-	
-	//Turbo da Rocam (4)
-	case 5: {
-	    if (typeOf (vehicle player) IsEqualTo "C_Quadbike_01_F" && (Driver (vehicle player) == player)) Then {
-	        if (playerSide IsEqualTo west) Then {
-		        ExecVM "RJM\Scripts\Turbo\vel.sqf";
-		    };
 		};
 	};
 	

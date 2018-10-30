@@ -77,6 +77,15 @@ class RJM_Scripts {
 		class Volume {};
 	};
 	
+	class Colocaveis {
+		file = "RJM\Scripts\Colocaveis";
+		class ColocaveisMenu {};
+		class ColocaveisColocar {};
+		class ColocaveisFinalizado {};
+		class ColocaveisRemoverTodos {};
+		class ColocaveisCancelar {};
+	};
+	
 	class Bomba {
 		file = "RJM\Scripts\Items\Bomba";
 		class Bomba {};

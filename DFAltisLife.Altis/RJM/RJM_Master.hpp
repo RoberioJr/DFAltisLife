@@ -15,4 +15,5 @@
 #include "Scripts\Items\Bomba\RJ_Bomba.hpp"                                   //Menu De Cfg Bomba
 #include "Scripts\TermosCond\TermosCond.hpp"                                  //Menu De Termos E Condições
 #include "Scripts\MenuAnims\MenuAnims.hpp"                                    //Menu De Animações
+#include "Scripts\Colocaveis\Colocaveis.hpp"                                  //Menu De Colocaveis
  

@@ -302,8 +302,9 @@ class playerSettings {
 		
 		class ListaProcurado: Life_RscButtonMenu {
 	        idc = 60715;
-			text = "$STR_PM_WantedList";
-            onButtonClick = "[] call life_fnc_wantedMenu";
+			//text = "$STR_PM_WantedList";
+			text = "";
+			//onButtonClick = "[] call life_fnc_wantedMenu";
 	        x = 16.75 * (0.025);
 	        y = 20.1 * (0.04);
 	        w = 6.25 * (0.025);

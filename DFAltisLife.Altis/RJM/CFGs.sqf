@@ -78,7 +78,33 @@ RJ_MenuAnims =
     ["Assustado", "AmovPercMstpSnonWnonDnon_Scared"]
 ];
 
+//Objetos Do Menu De Colocaveis
+RJ_Colocaveis = [
+	["Cone", "RoadCone_F"],
+	["Cone Branco Leve", "RoadCone_L_F"],
+	["Placa De Transito", "SignAd_Sponsor_F"],
+	["Cerca", "Land_BarGate_F"],
+	["Cerca Truck", "Land_Crash_barrier_F"],
+	["Cerca Plastico (Laranja)", "PlasticBarrier_03_orange_F"],
+	["Cerca Plastico (Amarelo)", "PlasticBarrier_02_yellow_F"],
+	["Cerca De Arame Farpado", "Land_Razorwire_F"],
+    ["Barricada De Concreto", "Land_Mil_ConcreteWall_F"],
+	["Barricada De Sacos De Areia", "Land_BagFence_Long_F"],
+	["Cancela (Barra)", "Land_BarGate_F"],
+	["Mesa Militar", "Land_CampingTable_F"],
+	["Cadeira", "Land_CampingChair_V2_F"],
+	["Holofote", "Land_PortableLight_single_F"],
+	["Holofote Duplo", "Land_PortableLight_double_F"],
+	["Alvo", "Target_PopUp_Moving_90deg_F"],
+	["Mapa De Altis", "MapBoard_altis_F"],
+	["Sofá Grande", "Land_Sofa_01_F"],
+	["Poltrona", "Land_ArmChair_01_F"],
+	["Tapete", "Land_Rug_01_Traditional_F"],
+	["Bandeira Da ONU", "Flag_UNO_F"]
+];
 
+//Limite De Colocaveis
+RJ_LimiteColocaveis = 75;
 
 
 
