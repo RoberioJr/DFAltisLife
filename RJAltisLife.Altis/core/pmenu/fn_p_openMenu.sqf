@@ -13,7 +13,7 @@ disableSerialization;
 switch (playerSide) do {
     case west: {
         ctrlShow[2011,false]; //Gangue
-		ctrlShow[60715,false]; //ListaProcurado Civil
+		//ctrlShow[60715,false]; //ListaProcurado Civil
 		
 		_Menu = findDisplay 2001;
 		_Btn = _Menu displayCtrl 60715;
