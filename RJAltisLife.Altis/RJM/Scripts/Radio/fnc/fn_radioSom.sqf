@@ -59,17 +59,17 @@ if (isNull (_vei getVariable ["tocando", objNull])) then {
         //deleteVehicle (_vei getVariable ["tocando", objNull]);
 	//};
 	[_vei,_musica,_nomeDaMusica] Spawn {
-    _vei = _This Select 0;
-    _musica = _This Select 1;
-    _nomeDaMusica = _This Select 2;
-	deleteVehicle (_vei getVariable ["tocando", objNull]);
-    _helipad = "Land_HelipadEmpty_F" createVehicle [0,0,0];
-    _helipad attachTo [_vei, [0,0,0]];
-	_vei setVariable ["tocando",_helipad,true];
-	playSound "botao";
-	titleText[format ["Tocando: %1",_nomeDaMusica],"PLAIN"];
-	sleep 1.5;
-	[_helipad,_musica,205,1] remoteExec ["RJM_fnc_Musica3D",0];
+        _vei = _This Select 0;
+        _musica = _This Select 1;
+        _nomeDaMusica = _This Select 2;
+	    deleteVehicle (_vei getVariable ["tocando", objNull]);
+        _helipad = "Land_HelipadEmpty_F" createVehicle [0,0,0];
+        _helipad attachTo [_vei, [0,0,0]];
+	    _vei setVariable ["tocando",_helipad,true];
+	    playSound "botao";
+	    titleText[format ["Tocando: %1",_nomeDaMusica],"PLAIN"];
+	    sleep 1.5;
+	    [_helipad,_musica,205,1] remoteExec ["RJM_fnc_Musica3D",0];
 	};
 
 //};

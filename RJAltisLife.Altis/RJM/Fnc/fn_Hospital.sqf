@@ -9,7 +9,8 @@
 //Cria Um Hospital No Marcador Definido
 
 private ["_hospital","_variavel"];
-_marcador = param [0,0,[0]];
+
+_marcador = param ["","",[""]];
 
 {
     //_marcador = 'hospital_rj';

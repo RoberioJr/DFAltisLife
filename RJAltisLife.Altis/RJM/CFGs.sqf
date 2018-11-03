@@ -30,6 +30,15 @@ RJ_MrkMapa =
     ['guava_1','icons\goiaba.paa','']	         //Goiaba
 ];
 
+ /* Configuração Das SafeZones */
+ /* ['MARCADOR','RAIO DA SAFEZONE'] */
+RJ_SafeZones = 
+[
+    ['',''],
+	['',''],
+	['','']
+];
+
  /* Valor De Um Cachorro Na Loja */
    /* COP | CIV | MED*/
 RJ_ValorDOG = [75000,50000,30000];

@@ -45,16 +45,16 @@ switch (_musica) do {
 };
 
 [_vei,_musica,_nomeDaMusica] Spawn {
- _vei = _This Select 0;
- _musica = _This Select 1;
- _nomeDaMusica = _This Select 2;
- playSound "botao";
- //titleText[format ["Tocando: %1",_nomeDaMusica],"PLAIN"];
- _mensagem = format ["Tocando: %1",_nomeDaMusica];
- [_mensagem,_vei] remoteExec ["RJM_fnc_Notifi",0];
- sleep 1.5;
- [_musica,_vei] remoteExec ["RJM_fnc_Musica",0];
- RJMFIXNOME = _nomeDaMusica;
+    _vei = _This Select 0;
+    _musica = _This Select 1;
+    _nomeDaMusica = _This Select 2;
+    playSound "botao";
+    //titleText[format ["Tocando: %1",_nomeDaMusica],"PLAIN"];
+    _mensagem = format ["Tocando: %1",_nomeDaMusica];
+    [_mensagem,_vei] remoteExec ["RJM_fnc_Notifi",0];
+    sleep 1.5;
+    [_musica,_vei] remoteExec ["RJM_fnc_Musica",0];
+    RJMFIXNOME = _nomeDaMusica;
 };
  
  

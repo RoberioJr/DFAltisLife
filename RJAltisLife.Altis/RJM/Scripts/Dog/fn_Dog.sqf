@@ -86,7 +86,7 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 		};
 	    sleep 2;
 	};	
- };
+};
  
   /* Emitir Sons */
 [] spawn {
