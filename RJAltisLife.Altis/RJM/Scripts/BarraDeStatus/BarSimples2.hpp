@@ -15,20 +15,27 @@ class RJMStatusBar {
 	class controls {
 		class statusBarText {
 			idc = 10713;
+			/*
 			x = safezoneX + safezoneW - 1.36; //Padrão: 1 | Central: 1.36
 			y = safezoneY + safezoneH - 0.052; //Padrão: 0.08 | Mais Baixo: 0.052
 			w = 1;
 			h = 0.08;     //Padrão 0.03
+			*/
+			x = 0.185 * safezoneW + safezoneX;
+			y = 0.940044 * safezoneH + safezoneY;
+			w = 0.65 * safezoneW;
+			h = 0.0300033 * safezoneH;
 			shadow = 1;
 			colorBackground[] = { 1, 0.3, 0, 0.0 };  // uncomment and increase 4th number to have a background
 			font = "LucidaConsoleB"; //Padrao: 'PuristaSemibold'
 			size = 0.035;
 			type = 13;
-			style = 1;
+			//style = 1;
+			style = 2;
 			text="";
 			class Attributes {
 				align="center";
-				color = "#FFFFF";
+				color = "#FFFFFF";
 			};
 		};
 	};

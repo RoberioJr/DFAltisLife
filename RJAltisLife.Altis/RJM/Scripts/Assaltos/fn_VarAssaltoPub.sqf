@@ -15,7 +15,8 @@ If (!IsServer) ExitWith {};
 
 Switch (_TipoDeAssalto) Do {
     Case 1: { //Posto
-	    [] Spawn {
+	    [_TempoDeEspera] Spawn {
+		    _TempoDeEspera = _This Select 0;
 	        LiberadoRoubarPosto = False;
 		    PublicVariable "LiberadoRoubarPosto";
 			Sleep _TempoDeEspera;
@@ -24,7 +25,8 @@ Switch (_TipoDeAssalto) Do {
 		};
 	};
 	Case 2: { //Loterica
-	    [] Spawn {
+	    [_TempoDeEspera] Spawn {
+		    _TempoDeEspera = _This Select 0;
 	        LiberadoRoubarLoterica = False;
             PublicVariable "LiberadoRoubarLoterica";
 			Sleep _TempoDeEspera;
@@ -33,7 +35,8 @@ Switch (_TipoDeAssalto) Do {
 		};
 	};
 	Case 3: { //Agencia
-	    [] Spawn {
+	    [_TempoDeEspera] Spawn {
+		    _TempoDeEspera = _This Select 0;
 	        LiberadoRoubarAgencia = False;
 		    PublicVariable "LiberadoRoubarAgencia";
 			Sleep _TempoDeEspera;

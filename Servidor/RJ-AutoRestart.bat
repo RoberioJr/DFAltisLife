@@ -47,8 +47,10 @@ color 9
    cls
    ping -n 3 127.0.0.1 >NUL
    taskkill /f /im "arma3server.exe"
+   taskkill /f /im "arma3server_x64.exe"
    ping -n 3 127.0.0.1 >NUL
    taskkill /f /im "arma3server.exe"
+   taskkill /f /im "arma3server_x64.exe"
    goto variaveis
    
   REM ## FIM DO SCRIPT ## 

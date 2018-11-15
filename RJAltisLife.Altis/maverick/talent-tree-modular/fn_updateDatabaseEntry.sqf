@@ -11,7 +11,7 @@ scriptName "fn_updateDatabaseEntry";
 
 scopeName "main";
 
-diag_log "fn_updateDatabaseEntry.sqf 1";
+//diag_log "fn_updateDatabaseEntry.sqf 1";
 
 params [
 	["_which", -1, [0]],
@@ -19,11 +19,11 @@ params [
 	["_pid", "", [""]]
 ];
 
-diag_log "fn_updateDatabaseEntry.sqf 2";
+//diag_log "fn_updateDatabaseEntry.sqf 2";
 
 if (_toUpdate isEqualTo [] || {_pid isEqualTo ""} || {_which isEqualTo -1}) exitWith {};
 
-diag_log "fn_updateDatabaseEntry.sqf 3";
+//diag_log "fn_updateDatabaseEntry.sqf 3";
 
 private _query = "";
 switch (_which) do {

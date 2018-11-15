@@ -15,7 +15,7 @@ class Assalto {
 			w = safeZoneW * 0.31445313;
 			h = safeZoneH * 0.0625;
 			style = 0+2;
-			text = "Distrito Federal AltisLife";
+			text = "War X Broders";
 			colorBackground[] = {0.102,0.102,0.102,0.873};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";

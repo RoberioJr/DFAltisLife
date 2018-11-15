@@ -15,7 +15,6 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 
 /* Variáveis Do Dog */
  RJ_DogOcupado = false;
- RJ_DogAtacando = false;
  JogadorTemUmCachorro = true;
  RJ_FomeDog = 100;
 
@@ -23,7 +22,6 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 [] spawn {
 	while {alive dog} do {	
 	    WaitUntil {!RJ_DogOcupado};
-		WaitUntil {!RJ_DogAtacando};
 		WaitUntil {dog distance player > 3.1};
 		if (dog Distance player > 300) then { 
 		    dog setPos [((getPos player) select 0) + 9, ((getPos player) select 1) + 9, 0];  
@@ -33,11 +31,11 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 	};
 };
  
+  /* Entrar Em Veiculos */
 [] spawn {
     While {alive dog} Do {
 	    Sleep 1;
 		WaitUntil {!RJ_DogOcupado};
-		WaitUntil {!RJ_DogAtacando};
 	    WaitUntil {typeOf vehicle player in ['C_Offroad_01_F']};
 		_veidog = (vehicle player);
 		if (dog distance player < 4.5) Then {
@@ -58,7 +56,6 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 [] spawn {
     WaitUntil {!Alive dog};
 	RJ_DogOcupado = false;
-	RJ_DogAtacando = false;
 	JogadorTemUmCachorro = false;
 	[dog,"dogYelp",75,1] remoteExecCall ["life_fnc_say3D",0];
 	SystemChat Format['%1, Seu Cachorro Morreu!',Name Player]; 
@@ -68,7 +65,6 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 [] spawn {
     while {alive dog} do {
 	    WaitUntil {!RJ_DogOcupado};
-		WaitUntil {!RJ_DogAtacando};
 		if (dog distance player < 3) then {
 		    dog playMove "Dog_Sit";
 			WaitUntil {dog distance player > 3};
@@ -100,13 +96,14 @@ dog = createAgent ["Fin_random_F", getPos player, [], 5, "CAN_COLLIDE"];
 	};
 };
 
+  /* Matar O Dog Quando O Jogador Morrer */
 [] spawn {
     WaitUntil {!Alive Player};
 	dog SetDamage 1;
 	deleteVehicle dog;
 };
  
-	/* Fome Do Dog */
+  /* Fome Do Dog */
 [] spawn {
     [] execVM 'RJM\Scripts\Dog\DogAction.sqf';
     While {Alive Dog} do {

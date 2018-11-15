@@ -58,6 +58,13 @@ switch (playerSide) do {
 };
 
  /* Cinto De Segurança */
+life_actions pushBack (player addAction["<img image='icons\seatOn.paa' size='1.0'/><t color = '#00FF00'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",'!life_seatbelt && vehicle player != player && vehicle player isKindOf "LandVehicle"']);
+life_actions pushBack (player addAction["<img image='icons\seatOff.paa' size='1.0'/><t color = '#FF0000'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",'life_seatbelt && vehicle player != player && vehicle player isKindOf "LandVehicle"']);
 
-life_actions pushBack (player addAction["<img image='icons\seatOn.paa' size='1.0'/><t color = '#00FF00'>Colocar Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
-life_actions pushBack (player addAction["<img image='icons\seatOff.paa' size='1.0'/><t color = '#FF0000'>Remover Cinto</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
+ /* ParaQuedas */
+life_actions = life_actions + [player addAction["<t color='#00FF00'>Abrir Paraquedas</t>",RJM_fnc_PQD,"",7,false,false,"",'({player distance _x < 10 max sizeOf typeOf _x && count crew _x > 0} count (player nearEntities ["Helicopter_Base_F", 20]) == 0) && vehicle player == player && (getPos player) select 2 > 20']];
+
+
+ 
+ 
+ 

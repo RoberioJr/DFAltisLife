@@ -12,7 +12,7 @@ waitUntil {!IsNil "RJ_SafeZones"};
 {
 
     _Marcador = _x select 0;
-	_RaioSafe = _X select 1;
+	_RaioSafe = _x select 1;
     [_Marcador,_RaioSafe] Spawn RJM_fnc_SafeZones;
 	Sleep 0.1;
 	

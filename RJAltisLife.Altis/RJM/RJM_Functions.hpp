@@ -31,6 +31,7 @@ class RJM_Scripts {
 		class FpsBoost {};
 		class AbrirPorta {};
 		class ApreenderItems {};
+		class PQD {};
 	};		
 	
 	class Assaltos {
