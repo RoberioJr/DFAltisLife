@@ -227,6 +227,8 @@ FLUSH PRIVILEGES;
 ALTER TABLE vehicles ADD insure INT(1) NOT NULL DEFAULT '0';
 -- Maverick Perks
 ALTER TABLE `altislife`.`players`  ADD COLUMN `exp_level` INT NOT NULL DEFAULT 0, ADD COLUMN `exp_total` INT NOT NULL DEFAULT 0 AFTER `exp_level`, ADD COLUMN `exp_perkPoints` INT NOT NULL DEFAULT 0 AFTER `exp_total`, ADD COLUMN `exp_perks` TEXT AFTER `exp_perkPoints`;
+-- Maverick Tuning
+ALTER TABLE `altislife`.`vehicles` ADD COLUMN `tuning_data` VARCHAR(300) NOT NULL DEFAULT '[]';
 -- Tempo Da Prisão
 ALTER TABLE  `players` ADD (`jail_time` int(11) NOT NULL DEFAULT '0');
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
