@@ -136,6 +136,7 @@ class CfgRemoteExec {
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
 		F(TON_fnc_insureCar,SERVER)     /* Seguro De Veiculos */
+		F(RJM_fnc_SetarJogador,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
