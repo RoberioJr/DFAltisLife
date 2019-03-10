@@ -32,6 +32,7 @@ class life_spawn_selection
  y = 0.0292 * safezoneH + safezoneY;
  w = 0.8085 * safezoneW;
  h = 0.9438 * safezoneH;
+ widthRailWay = 1;
  maxSatelliteAlpha = 0.75;
  alphaFadeStartScale = 1.15;
  alphaFadeEndScale = 1.29;

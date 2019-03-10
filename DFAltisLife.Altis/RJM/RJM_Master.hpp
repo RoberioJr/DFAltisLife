@@ -6,6 +6,7 @@
 |                                                             |
 */
 
+#include "Scripts\MenuSetagem\MenuSetagem.hpp"                                //Menu De Setagem
 #include "Scripts\MenuAdminRJ\VeiculoSpawn\Common.hpp"                        //Menu De Veiculos ADM
 #include "Scripts\MenuAdminRJ\VeiculoSpawn\TUT_gui_veh.hpp"                   //Menu De Veiculos ADM
 #include "Scripts\MenuAdminRJ\VAS\menu.hpp"                                   //Menu De Equipamento ADM

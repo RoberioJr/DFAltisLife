@@ -19,6 +19,7 @@ _unit setVariable ["transporting",false,true];
 _unit setVariable ["playerSurrender",false,true];
 _unit setVariable ["steam64id",getPlayerUID player,true]; //Reset the UID.
 _unit setVariable ["realname",profileName,true]; //Reset the players name.
+_unit setVariable ["RJ_Patente",RJ_Patente,true];
 
 player playMoveNow "AmovPpneMstpSrasWrflDnon";
 

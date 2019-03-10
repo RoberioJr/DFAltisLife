@@ -48,6 +48,14 @@ class RJM_Scripts {
 		class VarAssaltoPub {};
 	};
 	
+	class Setagem {
+		file = "RJM\Scripts\MenuSetagem";
+		class MenuSetagem {};
+		class LBChangeSetagem {};
+		class PrepararSetagem {};
+		class SetarJogador {};
+	};
+	
 	class SafeZones {
 		file = "RJM\Scripts\SafeZones";
 		class CfgSafeZones {};
@@ -121,6 +129,12 @@ class RJM_Scripts {
 		file = "RJM\Scripts\Items\Rastreador";
 		class IniciarRastreamento {};
 		class Rastreando {};
+	};
+	
+	class Tornozeleira {
+		file = "RJM\Scripts\Items\Tornozeleira";
+		class IniciarTorno {};
+		class TornoRastreando {};
 	};
 	
 	class Estrupo {

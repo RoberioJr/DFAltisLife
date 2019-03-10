@@ -35,6 +35,8 @@ if (!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
  waitUntil {RJ_ConcordouTermos && isNull (findDisplay 66669)};
 
 player setVariable ["rank",(FETCH_CONST(life_coplevel)),true];
+//Sistema De Setagem de Patentes
+player setVariable ["RJ_Patente",RJ_Patente,true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

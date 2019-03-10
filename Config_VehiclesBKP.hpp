@@ -413,14 +413,14 @@ class LifeCfgVehicles {
 	class C_Truck_02_transport_F {
 		vItemSpace = 400;
 		conditions = "";
-		price = 300000;
+		price = 600000;
 		textures[] = {};
 	};
 	
 	class C_Truck_02_covered_F {
 		vItemSpace = 450;
 		conditions = "";
-		price = 375000;
+		price = 675000;
 		textures[] = {};
 	};
 	
@@ -721,9 +721,9 @@ class LifeCfgVehicles {
     };
 
     class B_Truck_01_box_F {
-        vItemSpace = 900;
+        vItemSpace = 1000;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1500000;
+        price = 1800000;
         textures[] = { 
 				{ "Diablo", "civ", {
 					"textures\veh\civ\frenteHemttCiv.paa"
@@ -750,7 +750,7 @@ class LifeCfgVehicles {
     class C_Offroad_01_F {
         vItemSpace = 200;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 60000;
+        price = 75000;
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
@@ -817,7 +817,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Hatchback_01_sport_F {
         vItemSpace = 150;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 35000;
+        price = 48500;
         textures[] = {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
@@ -931,7 +931,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Hatchback_01_F {
         vItemSpace = 100;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 20000;
+        price = 35000;
         textures[] = {
             { "Beige", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa"
@@ -966,7 +966,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_SUV_01_F {
         vItemSpace = 180;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
-        price = 55000;
+        price = 65000;
         textures[] = {
             { "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
@@ -1018,7 +1018,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Van_01_box_F {
         vItemSpace = 300;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 100000;
+        price = 150000;
         textures[] = {
             { "White", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"

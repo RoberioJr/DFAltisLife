@@ -40,6 +40,10 @@ switch (true) do {
 	case (_item == "rastreador"): {
 	    [] Spawn RJM_fnc_IniciarRastreamento;
 	};
+
+    case (_item == "tornozeleira"): {
+	    [] Spawn RJM_fnc_IniciarTorno;
+	};
 	
     /* Efeitos Das Drogas By: RobérioJR */
     case (_item in ["marijuana","cocaineProcessed","tabacoProcessed","lsdProcessed","metanfetaminaProcessed","loloProcessed","crackProcessed","heroinProcessed"]): {

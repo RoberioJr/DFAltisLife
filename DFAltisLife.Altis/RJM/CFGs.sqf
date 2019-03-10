@@ -180,6 +180,23 @@ RJ_Colocaveis = [
 //Limite De Colocaveis
 RJ_LimiteColocaveis = 65;
 
+// [PATENTE COP, PATENTE PC, PATENTE MED]
+RJ_PatentesCFG = [
+    ["Recruta","Investigador","Soc.Estudante"],
+    ["Soldado","Perito","Enfermeiro"],
+    ["Cabo","Escrivão","Medico"],
+    ["3°Sargento","Delegado","Cirurgião" ],
+    ["2°Sargento","","CIR.Geral" ],
+    ["1°Sargento","","SUB.Comandante" ],
+    ["SubTenente","","CMD.Med" ],
+    ["2°Tenente","",""],
+    ["1°Tenente","",""],
+    ["Capitão","",""],
+    ["Major","","" ],
+    ["Ten.Cel","","" ],
+    ["Coronel","","" ]
+];
+
 
 
 

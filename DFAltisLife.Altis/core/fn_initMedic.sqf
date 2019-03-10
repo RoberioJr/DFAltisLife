@@ -17,6 +17,9 @@ if ((FETCH_CONST(life_medicLevel)) < 1 && (FETCH_CONST(life_adminlevel) isEqualT
  [] spawn RJM_fnc_AbrirTermosECond;
  waitUntil {RJ_ConcordouTermos && isNull (findDisplay 66669)};
  
+//Sistema De Setagem de Patentes
+player setVariable ["RJ_Patente",RJ_Patente,true];
+ 
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

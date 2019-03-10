@@ -61,6 +61,16 @@
 		_Mkr setMarkerTypeLocal "mil_dot";
 		_Mkr setMarkerTextLocal format["Base De Gangue %1",(call life_base)];
 	};
+
+   /* Setup Do Sistema De Setagem De Patentes */
+	[] Spawn {
+	    If (PlayerSide IsEqualto civilian) Exitwith {};
+	    Switch (PlayerSide) Do {
+		    Case: west {RJ_Patente = (FETCH_CONST(life_coplevel) - 1);};
+			Case: independent {RJ_Patente = (FETCH_CONST(life_medicLevel) - 1);};
+		};
+		If (RJ_Patente < 0) Then {RJ_Patente = 0};
+	};
     
 	If (PlayerSide IsEqualTo Independent) Then {
 	    [0] call RJM_fnc_CopomMed;

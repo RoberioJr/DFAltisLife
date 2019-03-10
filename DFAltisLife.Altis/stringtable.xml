@@ -3581,23 +3581,11 @@
         </Key>
         <Key ID="STR_NOTF_MaxWeight">
             <Original>You are over carrying your max weight! You will not be able to run or move fast till you drop some items!</Original>
-            <Czech>Překročili jste přenášení maximální váhu! Nebudete moci spustit nebo přesunout rychle, dokud se kapka některé položky!</Czech>
-            <Spanish>Estas cargando tu peso máximo! No puedes correr o moverte rapido hasta que botes algunos objetos!</Spanish>
-            <Russian></Russian>
-            <German>Du trägst zu viel bei dir! Du bist nicht in der Lage, zu rennen oder dich schnell zu bewegen, bis du einige Gegenstände abgelegt hast!</German>
-            <French>Vous êtes surchargé, vous ne pouvez plus courir ou bouger rapidement à moins de lacher quelques objets !</French>
-            <Italian>Stai trasportando oltre il tuo carico massimo! Non riuscirai a correre fino a quando non ti libererai di qualche oggetto!</Italian>
             <Portuguese>Você está carregando muito peso. Você não irá conseguir correr ou se mover rapidamente.</Portuguese>
             <Polish>Niesiesz maksymalny ciężar, nie będziesz mógł biegać ani szybko chodzić dopuki nie wyrzucisz jakiejś rzeczy</Polish>
         </Key>
         <Key ID="STR_NOTF_SearchVeh">
             <Original>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Vehicle Info&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Owners&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Original>
-            <Czech>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Informace o vozidle&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Majitelé&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Czech>
-            <Spanish>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Info de Vehículo&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Dueños&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Spanish>
-            <Russian>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Vehicle Info&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Owners&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Russian>
-            <German>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Fahrzeuginfo&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Besitzer&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</German>
-            <French>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Info du véhicule&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Propriétaires&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</French>
-            <Italian>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Vehicle Info&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Owners&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Italian>
             <Portuguese>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Info do Veículo&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Donos&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Portuguese>
             <Polish>&lt;t color='#FF0000'&gt;&lt;t size='2'&gt;Informacja o pojeździe&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFD700'&gt;&lt;t size='1.5'&gt;Właściciel&lt;/t&gt;&lt;/t&gt;&lt;br/&gt; %1</Polish>
         </Key>
@@ -3614,385 +3602,169 @@
         </Key>
         <Key ID="STR_NOTF_CannotSeizePerson">
             <Original>You couldn't effectively seize any items. Try again.</Original>
-            <Czech>Dalo by se efektivně využily všech položek. Zkus to znovu.</Czech>
-            <French>Vous n'avez pas pu saisir les objets. Réessayez.</French>
-            <Spanish>No pudistes efectivamente, confiscar algun objeto. Prueba de nuevo.</Spanish>
-            <Italian>Impossibile perquisire la persona in maniera esaustiva. Riprova.</Italian>
-            <Polish>Nie można skutecznie wykorzystać żadnych przedmiotów. Spróbuj ponownie.</Polish>
-            <Russian></Russian>
             <Portuguese>Você não pode apreender nenhum item, efetivamente. Tente de novo.</Portuguese>
             <German>Es konnten nicht alle Gegenstände beschlagnahmt werden. Versuche es noch einmal.</German>
         </Key>
         <Key ID="STR_NOTF_Repairing">
             <Original>Repairing %1</Original>
-            <Czech>Dalo by se efektivně využily všech položek. Zkus to znovu....</Czech>
-            <Spanish>Reparando %1</Spanish>
-            <Russian></Russian>
-            <German>Wird repariert %1...</German>
-            <French>Réparation de %1</French>
-            <Italian>Riparando %1</Italian>
             <Portuguese>Reparando %1</Portuguese>
             <Polish>Naprawiam %1</Polish>
         </Key>
         <Key ID="STR_NOTF_ActionInVehicle">
             <Original>You can't do that from inside the vehicle!</Original>
-            <Czech>Můžete to udělat zevnitř vozu!</Czech>
-            <French>Vous ne pouvez pas faire ceci à l'intérieur du véhicule !</French>
-            <Spanish>No puedes hacer eso desde adentro del vehículo!</Spanish>
-            <Italian>Non si può fare dall'interno del veicolo!</Italian>
-            <Russian></Russian>
-            <German>Du kannst das nicht tun während du in einem Fahrzeug sitzt!</German>
             <Portuguese>Você não pode fazer isso de dentro do veículo!</Portuguese>
             <Polish>Nie możesz tego wykonać z wntrza pojazdu!</Polish>
         </Key>
         <Key ID="STR_NOTF_RepairedVehicle">
             <Original>You have repaired that vehicle.</Original>
-            <Czech>Jste opravil, že vozidlo.</Czech>
-            <Spanish>>Has reparado el vehículo.</Spanish>
-            <Russian></Russian>
-            <German>Du hast dieses Fahrzeug repariert.</German>
-            <French>Vous avez réparé ce véhicule.</French>
-            <Italian>Hai riparato il veicolo.</Italian>
             <Portuguese>Você reparou esse veículo.</Portuguese>
             <Polish>Naprawiłeś pojazd</Polish>
         </Key>
         <Key ID="STR_NOTF_Mine_Success">
             <Original>You have mined %2 %1(s).</Original>
-            <Czech>Jste shromáždili %2 %1(y).</Czech>
-            <French>Vous avez recueilli %2 %1(s).</French>
-            <Spanish>Has recolectado %2 %1(s).</Spanish>
-            <Italian>Hai raccolto %2 unità di %1.</Italian>
-            <Russian></Russian>
-            <German>Du hast %2 %1 abgebaut.</German>
             <Portuguese>Você colheu %2 %1(s).</Portuguese>
             <Polish>Zebrałeś %2 %1 (s).</Polish>
         </Key>
         <Key ID="STR_NOTF_Gather_Success">
             <Original>You have gathered %2 %1(s).</Original>
-            <Czech>Jste shromáždili %2 %1(y).</Czech>
-            <French>Vous avez recueilli %2 %1(s).</French>
-            <Spanish>Has recolectado %2 %1(s).</Spanish>
-            <Italian>Hai raccolto %2 unità di %1.</Italian>
-            <Russian></Russian>
-            <German>Du hast %2 %1 gesammelt.</German>
             <Portuguese>Você colheu %2 %1(s).</Portuguese>
             <Polish>Zebrałeś %2 %1 (s).</Polish>
         </Key>
         <Key ID="STR_NOTF_GatherVeh">
             <Original>You can't gather from inside a car!</Original>
-            <Czech>Nemůžete sbírat zevnitř vozu!</Czech>
-            <French>Vous ne pouvez pas ramasser à l'intérieur d'une voiture !</French>
-            <Spanish>No puedes recolectar desde adentro de un vehículo!</Spanish>
-            <Italian>Non si può raccogliere da dentro una macchina!</Italian>
-            <Russian></Russian>
-            <German>Wie soll das von hier aus gehen? Du sitzt in einem Fahrzeug!</German>
             <Portuguese>Você não pode colher de dentro do carro!</Portuguese>
             <Polish>Nie możesz zbierać z wnętrza samochodu</Polish>
         </Key>
         <Key ID="STR_NOTF_NoLootingPerson">
             <Original>You are not allowed to loot dead bodies.</Original>
-            <Czech>Ty jsou není dovoleno kořist mrtvoly.</Czech>
-            <French>Vous n'êtes pas autorisé à piller des cadavres.</French>
-            <Spanish>No puedes buscar cuerpos muertos.</Spanish>
-            <Italian>Non è consentito a saccheggiare cadaveri.</Italian>
-            <Russian></Russian>
-            <German>Du darfst keine Leichen durchsuchen!</German>
             <Portuguese>Você não está liberado para lootiar corpos mortos</Portuguese>
             <Polish>Nie możesz przeszukiwać martwych ciał</Polish>
         </Key>
         <Key ID="STR_NOTF_Frozen">
             <Original>You have been frozen by an administrator.</Original>
-            <Czech>Vy byly zmrazeny správcem.</Czech>
-            <French>Vous avez été gelé par un administrateur.</French>
-            <Spanish>Un admin te ha congelado!</Spanish>
-            <Italian>Sei stato congelato da un amministratore.</Italian>
-            <Russian></Russian>
-            <German>Du wurdest von einem Admin eingefroren.</German>
             <Portuguese>Você foi congelado por um administrador</Portuguese>
             <Polish>Zostałeś zamrożony przez administratora</Polish>
         </Key>
         <Key ID="STR_NOTF_Teleport">
             <Original>You have teleported to your selected position.</Original>
-            <Czech>Jste teleported do vašeho zvolené poloze.</Czech>
-            <French>Vous avez été téléporté à la position sélectionnée.</French>
-            <Spanish>Te has teletransportado a la posisción seleccionada.</Spanish>
-            <Italian>Ti sei teletrasportaato alla posizione selezionata.</Italian>
-            <Polish>Masz teleportowany do wybranej pozycji.</Polish>
-            <Russian></Russian>
             <Portuguese>Você foi teleportado para a posição que você selecionou</Portuguese>
             <German>Du hast dich zu deiner gewünschten Position teleportiert.</German>
         </Key>
         <Key ID="STR_NOTF_Unfrozen">
             <Original>You have been unfrozen by an administrator.</Original>
-            <Czech>Byli jste zmrzlá správcem.</Czech>
-            <French>Vous avez été dégelé par un administrateur.</French>
-            <Spanish>Un admin te ha descongelado!</Spanish>
-            <Italian>Sei stato scongelato da un amministratore.</Italian>
-            <Russian></Russian>
-            <German>Ein Admin hat dich wieder aufgetaut.</German>
             <Portuguese>Você foi descongelado por um administrador</Portuguese>
             <Polish>Zostałeś odmrożony przez administratora</Polish>
         </Key>
         <Key ID="STR_NOTF_noOneSelected">
             <Original>No one was selected!</Original>
-            <Czech>Nikdo byl vybrán!</Czech>
-            <French>Personne n'a été sélectionné !</French>
-            <Spanish>Nadie fue seleccionado!</Spanish>
-            <Italian>Nessuno è stato selezionato!</Italian>
-            <Polish>Nikt nie został wybrany!</Polish>
             <Portuguese>Ninguém foi selecionado!</Portuguese>
             <Russian>Никто не был выбран!</Russian>
             <German>Niemand wurde ausgewählt!</German>
         </Key>
         <Key ID="STR_NOTF_didNotSelectItemToGive">
             <Original>You didn't select an item you wanted to give.</Original>
-            <Czech>Nevybrali jste položku, kterou chtěl dát.</Czech>
-            <French>Vous n'avez pas sélectionné l'objet que vous vouliez donner.</French>
-            <Spanish>No ha seleccionado el objeto que quiere dar.</Spanish>
-            <Italian>non è stato selezionato un elemento che si voleva dare.</Italian>
-            <Polish>Nie wybrano element, który chciał dać.</Polish>
             <Portuguese>Você não selecionou um item que você queria dar.</Portuguese>
             <Russian>Вы не выбрали пункт, который вы хотели дать.</Russian>
             <German>Du hast keinen Gegenstand ausgewählt, um diesen weitergeben zu können.</German>
         </Key>
         <Key ID="STR_NOTF_notNumberFormat">
             <Original>You didn't enter an actual number format.</Original>
-            <Czech>Nezadal jste skutečný formát čísla.</Czech>
-            <French>Vous n'avez pas saisi un format de nombre réel.</French>
-            <Spanish>No ha especificado un formato de número real.</Spanish>
-            <Italian>Non hai inserito un formato di numero reale.</Italian>
-            <Polish>Nie wprowadzono rzeczywisty format liczb.</Polish>
             <Portuguese>Você não inseriu um formato número real.</Portuguese>
-            <Russian>Вы не ввели фактический формат числа.</Russian>
-            <German>Du hast keine echte Zahl eingegeben.</German>
         </Key>
         <Key ID="STR_NOTF_enterAmountGive">
             <Original>You need to enter an actual amount you want to give.</Original>
-            <Czech>Musíte zadat skutečnou částku, kterou chcete dát.</Czech>
-            <French>Vous devez entrer un montant réel que vous voulez donner.</French>
-            <Spanish>Es necesario introducir una cantidad real que se desea dar.</Spanish>
-            <Italian>È necessario immettere un importo effettivo si vuole dare.</Italian>
-            <Polish>Musisz podać rzeczywistą kwotę, którą chcesz dać.</Polish>
             <Portuguese>É necessário introduzir uma quantidade real que você quer dar.</Portuguese>
-            <Russian>Вам необходимо ввести фактическую сумму, которую вы хотите дать.</Russian>
-            <German>Du musst einen tatsächlichen Wert eingeben, um diesen weitergeben zu können.</German>
         </Key>
         <Key ID="STR_NOTF_enterAmountRemove">
             <Original>You need to enter an actual amount you want to remove.</Original>
-            <Czech>Musíte zadat skutečnou částku, kterou chcete odebrat.</Czech>
-            <French>Vous devez entrer un montant réel que vous souhaitez supprimer.</French>
-            <Spanish>Es necesario introducir una cantidad real que se desea eliminar.</Spanish>
-            <Italian>È necessario immettere un importo effettivo che si desidera rimuovere.</Italian>
-            <Polish>Musisz podać rzeczywistą kwotę, którą chcesz usunąć.</Polish>
             <Portuguese>É necessário introduzir uma quantidade real que você deseja remover.</Portuguese>
             <Russian>Вам необходимо ввести фактическую сумму, которую вы хотите удалить.</Russian>
             <German>Du musst einen tatsächlichen Wert eigeben, um diese löschen zu können.</German>
         </Key>
         <Key ID="STR_NOTF_notWithinRange">
             <Original>The selected player is not within range.</Original>
-            <Czech>Zvolená Hráč není v dosahu.</Czech>
-            <French>Le joueur sélectionné est hors de portée.</French>
-            <Spanish>El jugador seleccionado no está dentro del rango.</Spanish>
-            <Italian>Il giocatore selezionato non è nel raggio d'azione.</Italian>
-            <Polish>Wybrany gracz nie jest w zasięgu.</Polish>
             <Portuguese>O jogador selecionado não está dentro do alcance.</Portuguese>
-            <Russian>Выбранный игрок не находится в пределах диапазона.</Russian>
-            <German>Der ausgewählte Spieler ist nicht in Reichweite.</German>
         </Key>
         <Key ID="STR_NOTF_couldNotGive">
             <Original>Couldn't give that much of that item, maybe you don't have that amount?</Original>
-            <Czech>Nemohl dát, že velká část této položky, možná nemáte tuto částku?</Czech>
-            <French>Impossible de donner cet objet, peut-être que vous n'en n'avez pas autant ?</French>
-            <Spanish>No se pudo dar a que gran parte de ese elemento, tal vez usted no tiene esa cantidad?</Spanish>
-            <Italian>Impossibile dare quella quantità di oggetti.</Italian>
-            <Polish>nie mógł dać, że wiele z tego elementu, może nie masz tej kwoty?</Polish>
             <Portuguese>não poderia dar que muito desse item, talvez você não tem essa quantia?</Portuguese>
-            <Russian>Не могу дать, что большая часть этого пункта, может быть, у вас нет этой суммы?</Russian>
-            <German>Du konntest nicht so eine große Menge von diesem Gegenstand weitergeben. Hast du vielleicht nicht genug davon?</German>
         </Key>
         <Key ID="STR_NOTF_youGaveItem">
             <Original>You gave %1 %2 %3.</Original>
-            <Czech>Ty jsi dal %1 %2 %3.</Czech>
-            <French>Vous avez donné %1 %2 %3.</French>
-            <Spanish>Diste %1 %2 %3.</Spanish>
-            <Italian>Hai dato %1 %2 %3.</Italian>
-            <Polish>Daliście %1 %2 %3.</Polish>
             <Portuguese>você deu %1 %2 %3.</Portuguese>
-            <Russian>Ты дал %1 %2 %3.</Russian>
-            <German>Du hast %1 %2 %3 gegeben.</German>
         </Key>
         <Key ID="STR_NOTF_notEnoughtToGive">
             <Original>You don't have that much to give!</Original>
-            <Czech>Nemusíte to hodně dát!</Czech>
-            <French>Vous n'avez pas autant à donner !</French>
-            <Spanish>Usted no tiene mucho para dar!</Spanish>
-            <Italian>Non hai abbastanza oggetti da dare!</Italian>
-            <Polish>Nie ma tego dużo dać!</Polish>
             <Portuguese>Você não tem muito para dar!</Portuguese>
-            <Russian>Вы не так много, чтобы дать!</Russian>
-            <German>Du hast nicht so eine große Menge von diesem Gegenstand!</German>
         </Key>
         <Key ID="STR_NOTF_youGaveMoney">
             <Original>You gave $%1 to %2.</Original>
-            <Czech>Dal jsi $%1 do %2.</Czech>
-            <French>Vous avez donné $%1 à %2.</French>
-            <Spanish>Usted le dio $%1 a %2.</Spanish>
-            <Italian>Hai dato $%1 a %2.</Italian>
-            <Polish>Dałeś $%1 do %2.</Polish>
             <Portuguese>Você deu $%1 para %2.</Portuguese>
-            <Russian>Вы дали $%1 %2.</Russian>
-            <German>Du hast $%1 %2 gegeben.</German>
         </Key>
         <Key ID="STR_NOTF_recentlyRobbedBank">
             <Original>You recently robbed the bank! You can't give money away just yet.</Original>
-            <Czech>Nedávno jste vyloupil banku! Nemůžete dávat peníze pryč jen zatím.</Czech>
-            <French>Vous avez récemment volé la banque! Vous ne pouvez pas donner de l'argent pour l'instant.</French>
-            <Spanish>Recientemente has robado el banco! No se puede dar dinero por el momento.</Spanish>
-            <Italian>Recentemente hai rapinato la banca! Non puoi ancora depositare i soldi nel tuo conto bancario.</Italian>
-            <Polish>Niedawno obrabował bank! Nie można dać pieniądze w błoto jeszcze.</Polish>
             <Portuguese>Recentemente, você roubou o banco! Você não pode dar dinheiro fora ainda.</Portuguese>
-            <Russian>Вы недавно ограбили банк! Вы не можете отдавать деньги только пока.</Russian>
-            <German>Du hast kürzlich die Bank ausgeraubt! Du kannst deswegen kein Geld weitergeben.</German>
         </Key>
         <Key ID="STR_NOTF_noDataSelected">
             <Original>No data selected.</Original>
-            <Czech>vybrány žádné údaje.</Czech>
-            <French>Aucune donnée sélectionnée.</French>
-            <Spanish>No hay datos seleccionados.</Spanish>
-            <Italian>Non ci sono dati selezionati.</Italian>
-            <Polish>Nie wybrano danych.</Polish>
             <Portuguese>Não há dados selecionado.</Portuguese>
-            <Russian>Нет выбранных данных.</Russian>
-            <German>Keine Daten ausgewählt.</German>
         </Key>
         <Key ID="STR_NOTF_didNotSelectVehicle">
             <Original>You did not select a vehicle.</Original>
-            <Czech>Nevybrali jste vozidlo.</Czech>
-            <French>Vous n'avez pas sélectionné de véhicule.</French>
-            <Spanish>No ha seleccionado un vehículo.</Spanish>
-            <Italian>Non hai selezionato un veicolo.</Italian>
-            <Polish>Nie wybrano pojazdu.</Polish>
             <Portuguese>Você não selecionou um veículo.</Portuguese>
-            <Russian>Вы не выбрали автомобиль.</Russian>
-            <German>Du hast kein Fahrzeug ausgewählt.</German>
         </Key>
         <Key ID="STR_NOTF_noVehOwned">
             <Original>You do not own any vehicles.</Original>
-            <Czech>Nevlastníte žádná vozidla.</Czech>
-            <French>Vous ne possédez pas de véhicules.</French>
-            <Spanish>Usted no posee ningún vehículo.</Spanish>
-            <Italian>Non possedete tutti i veicoli.</Italian>
-            <Polish>Nie posiada żadnych pojazdów.</Polish>
             <Portuguese>Você não possui quaisquer veículos.</Portuguese>
-            <Russian>Вы не являетесь владельцем каких-либо транспортных средств.</Russian>
-            <German>Du besitzt keine Fahrzeuge.</German>
         </Key>
         <Key ID="STR_NOTF_didNotSelectPlayer">
             <Original>You did not select a player.</Original>
-            <Czech>Nevybrali jste si přehrávač.</Czech>
-            <French>Vous n'avez pas sélectionné de joueur.</French>
-            <Spanish>No ha seleccionado un jugador.</Spanish>
-            <Italian>Non hai selezionato un giocatore.</Italian>
-            <Polish>Nie wybrano odtwarzacza.</Polish>
             <Portuguese>Você não selecionou um jogador.</Portuguese>
             <Russian>Вы не выбрали игрока.</Russian>
             <German>Du hast keinen Spieler ausgewählt.</German>
         </Key>
         <Key ID="STR_NOTF_givenKeysTo">
             <Original>You have given %1 keys to your %2.</Original>
-            <Czech>Dali jste %1 klíče ke svému %2.</Czech>
-            <French>Vous avez donné les clés de votre %2 à %1.</French>
-            <Spanish>Usted ha dado %1 llaves de su %2.</Spanish>
-            <Italian>Hai dato a %1 chiavi della vostra %2.</Italian>
-            <Polish>Dałeś %1 klucze do %2.</Polish>
             <Portuguese>Você tem dado %1 chaves de sua %2.</Portuguese>
             <Russian>Вы дали %1 ключи от %2.</Russian>
             <German>Du hast %1 die Schlüssel zu deinem %2 gegeben.</German>
         </Key>
         <Key ID="STR_NOTF_gaveKeysFrom">
             <Original>%1 has gave you keys for a %2.</Original>
-            <Czech>%1 has gave you keys for a %2.</Czech>
-            <French>%1 a vous a donné les clés de %2.</French>
-            <Spanish>%1 has gave you keys for a %2.</Spanish>
-            <Italian>%1 has gave you keys for a %2.</Italian>
-            <Polish>%1 has gave you keys for a %2.</Polish>
             <Portuguese>%1 has gave you keys for a %2.</Portuguese>
             <Russian>%1 has gave you keys for a %2.</Russian>
             <German>%1 hat dir die Schlüssel zum %2 gegeben.</German>
         </Key>
         <Key ID="STR_NOTF_cannotRemoveHouseKeys">
             <Original>You cannot remove the keys to your house!</Original>
-            <Czech>Nemůžete odstranit klíče od domu!</Czech>
-            <French>Vous ne pouvez pas supprimer les clés de votre maison !</French>
-            <Spanish>No se puede quitar las llaves de su casa!</Spanish>
-            <Italian>Non è possibile rimuovere le chiavi a casa tua!</Italian>
-            <Polish>Nie można usunąć klucze do swojego domu!</Polish>
             <Portuguese>Você não pode remover as chaves de sua casa!</Portuguese>
             <Russian>Вы не можете удалить ключи к вашему дому!</Russian>
             <German>Du kannst die Schlüssel zu diesem Haus nicht wegwerfen!</German>
         </Key>
         <Key ID="STR_NOTF_didNotSelectToRemove">
             <Original>You did not select anything to remove.</Original>
-            <Czech>Nevybrali jste nic odstranit.</Czech>
-            <French>Vous avez rien sélectionné à supprimer.</French>
-            <Spanish>No ha seleccionado nada que quitar.</Spanish>
-            <Italian>Non hai selezionato niente da rimuovere.</Italian>
-            <Polish>Nie zrobił nic, aby usunąć wybrać.</Polish>
             <Portuguese>Você não selecionou nada para remover.</Portuguese>
             <Russian>Вы ничего удалить не выбрать.</Russian>
             <German>Du hast nichts zum Entsorgen ausgewählt.</German>
         </Key>
         <Key ID="STR_NOTF_couldNotRemoveThatMuch">
             <Original>Could not remove that much of that item. Maybe you do not have that amount?</Original>
-            <Czech>Nepodařilo se odstranit, že velká část této položky. Možná, že nemáte tuto částku?</Czech>
-            <French>Impossible d'en supprimer autant. Peut-être que vous ne disposez pas de ce montant ?</French>
-            <Spanish>No se pudo eliminar que gran parte de ese elemento. Tal vez usted no tiene esa cantidad?</Spanish>
-            <Italian>Impossibile rimuovere quel quantitativo di oggetti.</Italian>
-            <Polish>Nie można usunąć, że wiele z tego elementu. Może nie masz tej kwoty?</Polish>
             <Portuguese>Não foi possível remover que muito desse item. Talvez você não tem essa quantia?</Portuguese>
-            <Russian>Не удалось удалить, что большая часть этого элемента. Может быть, у вас нет этой суммы?</Russian>
-            <German>Du konntest nicht so eine große Menge von diesem Gegenstand entsorgen. Hast du vielleicht nicht so viele davon?</German>
         </Key>
         <Key ID="STR_NOTF_removedFromInventory">
             <Original>You have successfully removed %1 %2 from your inventory.</Original>
-            <Czech>Úspěšně jste odstraněny %1 %2 z vašeho inventáře.</Czech>
-            <French>Vous avez réussi à retirer %1 %2 de votre inventaire.</French>
-            <Spanish>Has eliminado correctamente %1 %2 de su inventario.</Spanish>
-            <Italian>Hai rimosso con successo %1 %2 dal tuo inventario.</Italian>
-            <Polish>Pomyślnie usunięto %1 %2 z inwentarza.</Polish>
             <Portuguese>Você removeu com êxito %1 %2 do seu inventário.</Portuguese>
-            <Russian>Вы успешно удалены %1 %2 из инвентаря.</Russian>
-            <German>Du hast erfolgreich %1 %2 aus deinem Inventar entsorgt.</German>
         </Key>
         <Key ID="STR_NOTF_menuWillNotOpen">
             <Original>Something went wrong; the menu will not open?</Original>
-            <Czech>Něco se pokazilo; nabídka neotevře?</Czech>
-            <French>Quelque chose s'est mal déroulé; le menu ne s'ouvre pas ?</French>
-            <Spanish>Algo salió mal; el menú no se abre?</Spanish>
-            <Italian>Qualcosa è andato storto; il menu non si apre?</Italian>
-            <Polish>Coś poszło nie tak; menu nie otworzy?</Polish>
             <Portuguese>Algo deu errado; o menu não vai abrir?</Portuguese>
-            <Russian>Что-то пошло не так; меню не откроется?</Russian>
-            <German>Etwas ist schief gelaufen. Das Menü konnte nicht geöffnet werden.</German>
         </Key>
         <Key ID="STR_NOTF_ConfigDoesNotExist">
             <Original>Config does not exist?</Original>
-            <Czech>Config neexistuje?</Czech>
-            <French>Config n'existe pas ?</French>
-            <Spanish>Config no existe?</Spanish>
-            <Italian>Config non esiste?</Italian>
-            <Polish>Konfiguracja nie istnieje?</Polish>
             <Portuguese>O configuração não existe?</Portuguese>
-            <Russian>Config не существует?</Russian>
-            <German>Einstellung nicht vorhanden?</German>
         </Key>
         <Key ID="STR_NOTF_canOnlyStoreInLandVeh">
             <Original>You cannot store that in anything but a land vehicle!</Original>
-            <Czech>Nelze uložit, že v ničem jiném než pozemní vozidla!</Czech>
-            <French>Vous pouvez stocker cet objet seulement dans les véhicules terrestres !</French>
-            <Spanish>No se puede almacenar en cualquier cosa menos que un vehículo terrestre!</Spanish>
-            <Italian>Non è possibile depositare questa risorsa in un veicolo che non sia terrestre!</Italian>
-            <Polish>Nie można zapisać, że w nic poza pojazdem lądowym!</Polish>
             <Portuguese>Você não pode armazenar isso em qualquer coisa, mas um veículo de terra!</Portuguese>
             <Russian>Вы не можете хранить, что ничего, кроме наземного транспортного средства!</Russian>
             <German>Du kannst das nur in einem Landfahrzeug lagern!</German>
@@ -5138,100 +4910,46 @@
         </Key>
         <Key ID="STR_MISC_NoStorageWarn">
             <Original>You need to install storage containers to have storing capabilities!</Original>
-            <Czech>Je třeba nainstalovat kontejnery skladovací mít skladovací kapacity!</Czech>
-            <Spanish>Debes instalar contenedores para tener capabilidades de almacenamiento!</Spanish>
-            <Russian></Russian>
-            <German>Du musst dir Container kaufen, um etwas einlagern zu können!</German>
-            <French>Vous devez installer des conteneurs de stockage pour disposer de capacité de stockage!</French>
-            <Italian>Devi posizionare dei contenitori per aver la possibilità di depositare qualcosa!</Italian>
             <Portuguese>Você tem que instalar caixas para poder guardar items!</Portuguese>
             <Polish>Musisz zainstalować pojemniki aby uzyskać możliwość składowania rzeczy</Polish>
         </Key>
         <Key ID="STR_MISC_NoStorageVeh">
             <Original>This vehicle isn't capable of storing virtual items.</Original>
-            <Czech>Toto vozidlo není schopné uchovávat virtuální položky.</Czech>
-            <Spanish>Este vehiculo no puede guardar objetos virtuales.</Spanish>
-            <Russian></Russian>
-            <German>Dieses Fahrzeug kann keine virtuellen Gegenstände lagern.</German>
-            <French>Ce véhicule n'est pas en mesure de stocker des objets virtuels.</French>
-            <Italian>Questo veicolo non è in grado di trasportare oggetti virtuali.</Italian>
             <Portuguese>Esse veículo não pode armazenar items virtuais.</Portuguese>
             <Polish>Ten pojazd nie przechowuje wirtualnych przedmiotów</Polish>
         </Key>
         <Key ID="STR_MISC_Weight">
             <Original>Weight:</Original>
-            <Czech>Hmotnost:</Czech>
-            <Spanish>Peso:</Spanish>
-            <Russian></Russian>
-            <German>Gewicht:</German>
-            <French>Poids:</French>
-            <Italian>Peso:</Italian>
             <Portuguese>Peso:</Portuguese>
             <Polish>Waga:</Polish>
         </Key>
         <Key ID="STR_MISC_HouseStorage">
             <Original>House Storage</Original>
-            <Czech>dům Storage</Czech>
-            <Spanish>Inventario de la casa</Spanish>
-            <Russian></Russian>
-            <German>Lagerplatz des Hauses</German>
-            <French>Conteneur de stockage</French>
-            <Italian>Inventario Casa</Italian>
             <Portuguese>Cavalos de Força:</Portuguese>
             <Polish>Domowa skrzynka</Polish>
         </Key>
         <Key ID="STR_MISC_VehStorage">
             <Original>Vehicle Trunk</Original>
-            <Czech>vozidlo Trunk</Czech>
-            <Spanish>Maletero de Vehículo</Spanish>
-            <Russian></Russian>
-            <German>Kofferraum</German>
-            <French>Coffre du véhicule</French>
-            <Italian>Inventario veicolo</Italian>
             <Portuguese>Capacidade da mala:</Portuguese>
             <Polish>Bagażnik pojazdu</Polish>
         </Key>
         <Key ID="STR_MISC_VehDoesntExist">
             <Original>The vehicle either doesn't exist or is destroyed.</Original>
-            <Czech>Vozidlo buď neexistuje, nebo je zničena.</Czech>
-            <Spanish>El vehículo no existe o fue destruido.</Spanish>
-            <Russian></Russian>
-            <French>Le véhicule n'existe pas ou a été détruit.</French>
-            <German>Entweder existiert das Fahrzeug nicht oder es wurde zerstört.</German>
-            <Italian>Il veicolo non esiste o è stato distrutto.</Italian>
             <Portuguese>Veículo não existe ou está destruido.</Portuguese>
             <Polish>Pojazd nie istnieje lub jest zniszczony</Polish>
         </Key>
         <Key ID="STR_MISC_WrongNumFormat">
             <Original>Invalid number format</Original>
-            <Czech>Neplatný formát number</Czech>
-            <Spanish>Formato de numero inválido</Spanish>
-            <Russian></Russian>
-            <German>Ungültiges Zahlenformat!</German>
-            <French>Format de nombre invalide</French>
-            <Italian>Formato numerico non valido</Italian>
             <Portuguese>Formato de número inválido.</Portuguese>
             <Polish>Niepoprawny format liczby</Polish>
         </Key>
         <Key ID="STR_MISC_Under1">
             <Original>You can't enter anything below 1!</Original>
-            <Czech>Nemůžete nic zadávat menší než 1!</Czech>
-            <Spanish>No puedes poner nada menos que 1!</Spanish>
-            <Russian></Russian>
-            <German>Du kannst nichts unter 1 eingeben!</German>
-            <French>Vous ne pouvez pas prendre moins d'1 objet !</French>
-            <Italian>Non puoi inserire nulla al di sotto di 1!</Italian>
             <Portuguese>Você não pode digitar nada abaixo de 1!</Portuguese>
             <Polish>Nie możesz wprowadzić niczego poniżej 1!</Polish>
         </Key>
         <Key ID="STR_MISC_NotEnough">
             <Original>The vehicle doesn't have that many of that item.</Original>
-            <Czech>Vozidlo nemá že mnohé z této položky.</Czech>
-            <Spanish>El vehículo no tiene tantos de ese objeto.</Spanish>
-            <Russian></Russian>
-            <German>Das Fahrzeug hat nicht so viele dieser Gegenstände.</German>
-            <French>Le véhicule ne contient pas autant de cet objet.</French>
-            <Italian>Il veicolo non contiene così tanti oggetti.</Italian>
             <Portuguese>O veículo não tem essa quantidade de items.</Portuguese>
             <Polish>Pojazd nie posiada takiej ilości rzeczy.</Polish>
         </Key>
@@ -5248,22 +4966,11 @@
         </Key>
         <Key ID="STR_MISC_soundfade">
             <Original>Your sound was set to fade mode!</Original>
-            <Czech>Váš zvuk byl nastaven do režimu slábnout!</Czech>
-            <French>Votre son a été diminué!</French>
-            <Spanish>Tu sonido fue puesto en modo bajo!</Spanish>
-            <Italian>Il vostro sound è stato impostato in modalità a svanire!</Italian>
-            <Russian></Russian>
-            <German>Deine Lautstärke wurde in den "Fade-Mode" geändert!</German>
             <Portuguese>Seu som está abafado.</Portuguese>
             <Polish>Dzwięk został ustawiony w tryb wyciszony!</Polish>
         </Key>
         <Key ID="STR_MISC_overviewText">
             <Original>An RPG game mode developed by Tonic.</Original>
-            <Czech>Mód RPG hra vyvinutá Tonic.</Czech>
-            <French>Un mode de jeu de RPG développé par Tonic.</French>
-            <Spanish>Un modo de juego de rol desarrollado por Tonic.</Spanish>
-            <Italian>Una modalità di gioco RPG sviluppato da Tonic.</Italian>
-            <Polish>Tryb gry RPG stworzona przez Tonic.</Polish>
             <Portuguese>Um modo de jogo RPG desenvolvido pela Tonic.</Portuguese>
             <Russian>Режим RPG игра, разработанная компанией Tonic.</Russian>
             <German>Ein RPG-Modus entwickelt von Tonic.</German>
@@ -5283,67 +4990,31 @@
         </Key>
         <Key ID="STR_House_ContainerDeny">
             <Original>You are not allowed to access this storage container without the owner opening it.</Original>
-            <Czech>Nemáte povolen přístup k tomuto skladovacího kontejneru, aniž by majitel otevření.</Czech>
-            <Spanish>No tienes permiso de acceder este contenedor, sin el dueño haberlo abierto.</Spanish>
-            <Russian></Russian>
-            <German>Du bist nicht berechtigt, auf diesen Container zuzugreifen, ohne dass der Besitzer ihn aufgeschlossen hat.</German>
-            <French>Vous n'êtes pas autorisé à accéder à ce conteneur de stockage sans que le propriétaire ne l'ouvre.</French>
-            <Italian>Non sei autorizzato ad accedere a questo contentitore senza il permesso del proprietario.</Italian>
             <Portuguese>Você so pode acessar a caixa se o dono deixar ela aberta.</Portuguese>
             <Polish>Nie masz dostępu do pojemnika dopóki właściciel go nie otworzy.</Polish>
         </Key>
         <Key ID="STR_House_Container_House_Near">
             <Original>There are no houses near you.</Original>
-            <Czech>Nejsou žádné domy u vás.</Czech>
-            <Spanish>No hay casas cerca de ti.</Spanish>
-            <Italian>Non ci sono case vicino a voi.</Italian>
-            <Polish>Brak domy w pobliżu ciebie.</Polish>
-            <Russian></Russian>
-            <French>Il n'y a aucune maison près de vous.</French>
             <Portuguese>Não há casas perto  de você.</Portuguese>
             <German>Es gibt keine Häuser in deiner Nähe.</German>
         </Key>
         <Key ID="STR_House_Container_Floating">
             <Original>The storage box is over the stairs!</Original>
-            <Czech>Úložný box je u konce schodů!</Czech>
-            <French>Le conteneur est dans les escaliers!</French>
-            <Spanish>La caja de almacenamiento está sobre las escaleras!</Spanish>
-            <Italian>Il contenitore è sopra le scale!</Italian>
-            <Polish>Schowek jest na schodach!</Polish>
-            <Portuguese>A caixa de armazenamento é sobre as escadas!</Portuguese>
             <Russian>Ящик для хранения находится над лестницей!</Russian>
             <German>Der Container ist über die Treppe!</German>
         </Key>
         <Key ID="STR_House_Container_House_Near_Owner">
             <Original>You are not the owner of the house.</Original>
-            <Czech>Nejste vlastníkem domu.</Czech>
-            <Spanish>No eres el dueño de la casa.</Spanish>
-            <Italian>Non sei il proprietario della casa.</Italian>
-            <Polish>Nie jesteś właścicielem domu.</Polish>
-            <Russian></Russian>
-            <French>Vous n'êtes pas le propriétaire de la maison.</French>
             <Portuguese>Você não é o dono da casa.</Portuguese>
             <German>Du bist nicht der Eigentümer des Hauses.</German>
         </Key>
         <Key ID="STR_House_Door_Unlock">
             <Original>You have unlocked the door.</Original>
-            <Czech>Jste odemkl dveře.</Czech>
-            <Spanish>Has abierto la puerta.</Spanish>
-            <Russian></Russian>
-            <German>Du hast die Tür aufgeschlossen.</German>
-            <French>Vous avez ouvert la porte.</French>
-            <Italian>Hai sbloccato la porta.</Italian>
             <Portuguese>Você destrancou a porta.</Portuguese>
             <Polish>Odblokowałeś drzwi.</Polish>
         </Key>
         <Key ID="STR_House_Door_Lock">
             <Original>You have locked the door.</Original>
-            <Czech>Jste zamkli dveře.</Czech>
-            <Spanish>Has cerrado con llave la puerta.</Spanish>
-            <Russian></Russian>
-            <German>Du hast die Tür abgeschlossen.</German>
-            <French>Vous avez fermé à clé la porte.</French>
-            <Italian>Hai bloccato la porta.</Italian>
             <Portuguese>Você trancou a porta.</Portuguese>
             <Polish>Zablokowałeś drzwi.</Polish>
         </Key>
@@ -9001,34 +8672,16 @@
     <Package name="FSM_Strings">
         <Key ID="STR_FSM_Paycheck">
             <Original>You will receive your next paycheck in %1 minutes.</Original>
-            <Czech>Obdržíte svůj další výplatní pásku v %1 minut.</Czech>
-            <Spanish>Recibiras tu siguiente pago en %1 minutos</Spanish>
-            <Russian></Russian>
-            <German>Du erhältst deinen nächsten Gehaltsscheck in %1 Minuten.</German>
-            <French>Vous recevrez votre prochaine paye dans %1 minutes.</French>
-            <Italian>Riceverai il tuo prossimo stipendio in %1 minuti.</Italian>
             <Portuguese>Você irá receber seu próximo pagamento em %1 minuto(s).</Portuguese>
             <Polish>Otrzymasz kolejną wypłatę w ciągu %1 minut.</Polish>
         </Key>
         <Key ID="STR_FSM_MissedPay">
             <Original>You have missed a paycheck because you were dead.</Original>
-            <Czech>Jste vynechal výplatu, protože jste byli mrtví.</Czech>
-            <Spanish>Te has perdido un pago por estar muerto.</Spanish>
-            <Russian></Russian>
-            <German>Du erhältst kein Gehaltsscheck, da du gestorben bist.</German>
-            <French>Vous n'avez pas reçu votre paye en raison de votre mort.</French>
-            <Italian>Hai perso uno stipendio .</Italian>
             <Portuguese>Você não recebeu seu pagamento pois estava morto.</Portuguese>
             <Polish>Ominęła cię wypłata ponieważ byłeś martwy.</Polish>
         </Key>
         <Key ID="STR_FSM_ReceivedPay">
             <Original>You have received a paycheck of $%1.</Original>
-            <Czech>Dostali jste výplatu ve výši $ %1.</Czech>
-            <Spanish>Has recibido un pago de $%1</Spanish>
-            <Russian></Russian>
-            <German>Du hast deinen Gehaltscheck in Höhe von $%1 erhalten.</German>
-            <French>Vous avez reçu votre paye de $%1.</French>
-            <Italian>Hai ricevuto uno stipendio di $%1.</Italian>
             <Portuguese>Você recebeu seu pagamento de R$%1.</Portuguese>
             <Polish>Otrzymałeś wypłatę w kwocie $%1.</Polish>
         </Key>
@@ -11240,12 +10893,6 @@
         </Key>
         <Key ID="STR_FuelTank_PipeLine">
             <Original>This gas station is supplied through a pipeline.</Original>
-            <Czech>Tento Čerpací stanice se dodává potrubím.</Czech>
-            <French>Cette station service est fournie par un pipeline</French>
-            <Spanish>Esta estación es suministrada por una tubería.</Spanish>
-            <Italian>Questa stazione di gas è alimentata attraverso una tubatura.</Italian>
-            <Polish>Ta stacja gaz jest dostarczany rurociągiem.</Polish>
-            <Russian></Russian>
             <German>Diese Tankstelle wird über eine Pipeline versorgt.</German>
             <Portuguese>Esse posto é abastecido através de uma mangueira.</Portuguese>
         </Key>
@@ -11275,33 +10922,18 @@
     <Package name="NotWhitelisted">
         <Key ID="STR_NotWhitelisted_Title">
             <Original>Mission Failed</Original>
-            <Czech>Mise selhala</Czech>
-            <French>Mission échouée</French>
-            <Spanish>Misión fallida</Spanish>
-            <Italian>Missione fallita</Italian>
-            <Polish>Misja nie powiodła się</Polish>
             <Portuguese>Missão fracassada</Portuguese>
             <Russian>Миссия провалена</Russian>
             <German>Mission fehlgeschlagen.</German>
         </Key>
         <Key ID="STR_NotWhitelisted_SubTitle">
             <Original>You are not white-listed to use this slot.</Original>
-            <Czech>Mise selhala</Czech>
-            <French>Vous n'êtes pas white-listé.</French>
-            <Spanish>No tienes permiso de usar este slot.</Spanish>
-            <Italian>Missione fallita</Italian>
-            <Polish>Misja nie powiodła się</Polish>
             <Portuguese>Missão fracassada</Portuguese>
             <Russian>Миссия провалена</Russian>
             <German>Nicht auf der Whitelist.</German>
         </Key>
         <Key ID="STR_NotWhitelisted_Descript">
             <Original>You are not allowed to use this slot because you do not have the appropriate permissions. Try another slot.</Original>
-            <Czech>Ty jsou není dovoleno používat tento slot, protože nemáte příslušná oprávnění. Zkuste použít jiný slot.</Czech>
-            <French>Vous n'êtes pas autorisé à utiliser cet emplacement parce que vous ne disposez pas des autorisations appropriées. Essayez un autre emplacement.</French>
-            <Spanish>No puede usar este slot porque no tiene los permisos requeridos. Por favor trate con otro slot.</Spanish>
-            <Italian>Non è consentito usare questo slot, perché non si dispone delle autorizzazioni appropriate. Prova un altro slot.</Italian>
-            <Polish>Nie wolno korzystać z tego gniazda, ponieważ nie masz odpowiednich uprawnień. Spróbuj użyć innego gniazda.</Polish>
             <Portuguese>Você não tem permissão para usar esse slot, porque você não tem as permissões apropriadas. Tente outro slot.</Portuguese>
             <Russian>Вы не можете использовать этот слот, потому что у вас нет соответствующих разрешений. Попробуйте использовать другой слот.</Russian>
             <German>Du bist nicht auf der Whitelist, deswegen kannst du diesen Platz nicht verwenden. Versuche es auf einen anderen Platz.</German>
@@ -11321,22 +10953,12 @@
         </Key>
         <Key ID="STR_Blacklisted_SubTitle">
             <Original>You are blacklisted from cops.</Original>
-            <Czech>Ty jsou na černé listině z policajtů.</Czech>
-            <French>Vous êtes sur blacklisté de la police.</French>
-            <Spanish>Usted está en la lista negra de policías.</Spanish>
-            <Italian>Stai lista nera da poliziotti.</Italian>
-            <Polish>Jesteś na czarnej liście od policjantów.</Polish>
             <Portuguese>Você está na lista negra de policiais.</Portuguese>
             <Russian>Вы в черном списке от ментов.</Russian>
             <German>Du bist von Polizisten auf die schwarze Liste gesetzt worden.</German>
         </Key>
         <Key ID="STR_Blacklisted_Descript">
             <Original>You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.</Original>
-            <Czech>Ty jsou nesmí být policajt vzhledem k předcházejícími akcemi a administrátoři vám odstraní z bytí policista.</Czech>
-            <French>Vous avez été blacklisté de la police en raisons d'actions précédentes allant à l'encontre des règles. Vous ne pouvez plus devenir policier.</French>
-            <Spanish>No tiene permiso a ser policía por acciones anteriores. Los administradores han bloqueado su acceso.</Spanish>
-            <Italian>Non è consentito fare il poliziotto a causa di azioni precedenti e gli amministratori di aver rimosso da essere un poliziotto.</Italian>
-            <Polish>Nie mogą być policjantem z powodu wcześniejszych działań oraz administratorzy usunęli cię od bycia policjantem.</Polish>
             <Portuguese>Você não tem permissão para ser um policial devido a ações anteriores e os admins ter removido-lo de ser um policial.</Portuguese>
             <Russian>Вы не можете быть полицейским в связи с предыдущими действиями и админы удалили вас от того, чтобы быть полицейским.</Russian>
             <German>Du bist aufgrund früherer Aktion, kein Polizist mehr. Du wurdest von den Admins aus der Polizei entfernt.</German>
@@ -11356,88 +10978,48 @@
         </Key>
         <Key ID="STR_SpyDetect_SubTitle">
             <Original>You were detected by the SpyGlass.</Original>
-            <Czech>Vy byly detekovány dalekohled.</Czech>
-            <French>Vous avez été détecté par SpyGlass.</French>
-            <Spanish>Fue detectado por el SpyGlass.</Spanish>
-            <Italian>Lei è stato rilevato dal SpyGlass.</Italian>
-            <Polish>Ty zostały wykryte przez lunetę.</Polish>
             <Portuguese>Você foi detectado pelo SpyGlass.</Portuguese>
             <Russian>Вы были обнаружены с помощью SpyGlass.</Russian>
             <German>Du wurdest von SpyGlass erkannt.</German>
         </Key>
         <Key ID="STR_SpyDetect_Descript">
             <Original>You were detected for cheating and have been reported to the server. Enjoy your day.</Original>
-            <Czech>Vy byly detekovány za podvádění a byly zaznamenány na server. Užijte si svůj den.</Czech>
-            <French>Vous avez été détecté pour triche et avez été signalé au serveur. Profitez de votre journée.</French>
-            <Spanish>Fue detectada por hacer trampas y se le ha informado al servidor. Disfruta tu día.</Spanish>
-            <Italian>Lei è stato rilevato per truffa e sono stati segnalati per il server. Buona giornata.</Italian>
-            <Polish>Ty wykryto oszustwo i zostały zgłoszone do serwera. Miłego dnia.</Polish>
             <Portuguese>Está foram detectados por engano e têm sido relatados para o servidor. Aproveite seu dia.</Portuguese>
             <Russian>Вы были обнаружены для мошенничества и было сообщено на сервер. Удачного дня.</Russian>
             <German>>Du wurdest wegen Betrug erkannt und an den Server gemeldet. Genieße deinen Tag.</German>
         </Key>
         <Key ID="STR_SpyDetect_cookieJar">
             <Original>SPYGLASS-FLAG: %1 : %2 : %3</Original>
-            <Czech>SPYGLASS-FLAG: %1 : %2 : %3</Czech>
-            <French>SPYGLASS-FLAG: %1 : %2 : %3</French>
-            <Spanish>SPYGLASS-FLAG: %1 : %2 : %3</Spanish>
-            <Italian>SPYGLASS-FLAG: %1 : %2 : %3</Italian>
-            <Polish>SPYGLASS-FLAG: %1 : %2 : %3</Polish>
             <Portuguese>SPYGLASS-FLAG: %1 : %2 : %3</Portuguese>
             <Russian>SPYGLASS-FLAG: %1 : %2 : %3</Russian>
             <German>SPYGLASS-ERKENNUNG: %1 : %2 : %3</German>
         </Key>
         <Key ID="STR_SpyDetect_CheaterFlagged">
             <Original>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</Original>
-            <Czech>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</Czech>
-            <French>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</French>
-            <Spanish>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</Spanish>
-            <Italian>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</Italian>
-            <Polish>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</Polish>
             <Portuguese>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</Portuguese>
             <Russian>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Cheater Flagged&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Detection: %2</Russian>
             <German>&lt;t align='center'&gt;&lt;t color='#FF0000'&gt;&lt;t size='3'&gt;SPY-GLASS&lt;/t&gt;&lt;/t&gt;&lt;br/&gt;Betrüger Erkannt&lt;/t&gt;&lt;br/&lt;br/&gt;Name: %1&lt;br/&gt;Erkennung: %2</German>
         </Key>
         <Key ID="STR_SpyDetect_cmdMenuCheck">
             <Original>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</Original>
-            <Czech>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</Czech>
-            <French>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</French>
-            <Spanish>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</Spanish>
-            <Italian>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</Italian>
-            <Polish>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</Polish>
             <Portuguese>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</Portuguese>
             <Russian>%1 was observed by SPY-GLASS, he/she was trying to access commanding menu:\n\n %2\n\n and that commanding-menu is not known to the system. PLEASE NOTE he/she may not be cheating but the SPY-GLASS found it relevant to report in.</Russian>
             <German>%1 wurde beobachtet durch SPY-GLASS. Er/Sie hatte versucht auf das Befehlsmenü:\n\n %2\n\n zuzugreifen, diese ist dem System aber nicht bekannt. BITTE BEACHTE! Er/Sie betrügt deshalb nicht, aber SPY-GLASS fand es trotzdem relevant es zu melden.</German>
         </Key>
         <Key ID="STR_SpyDetect_Variable_MN">
             <Original>Variable: %1 is not allowed TYPE: %2 NS: MN</Original>
-            <Czech>Variable: %1 is not allowed TYPE: %2 NS: MN</Czech>
-            <French>Variable: %1 is not allowed TYPE: %2 NS: MN</French>
-            <Spanish>Variable: %1 is not allowed TYPE: %2 NS: MN</Spanish>
-            <Italian>Variable: %1 is not allowed TYPE: %2 NS: MN</Italian>
-            <Polish>Variable: %1 is not allowed TYPE: %2 NS: MN</Polish>
             <Portuguese>Variable: %1 is not allowed TYPE: %2 NS: MN</Portuguese>
             <Russian>Variable: %1 is not allowed TYPE: %2 NS: MN</Russian>
             <German>Variable: %1 ist nicht erlaubt. TYPE: %2 NS: MN</German>
         </Key>
         <Key ID="STR_SpyDetect_Variable_UI">
             <Original>Variable: %1 is not allowed TYPE: %2 NS: UI</Original>
-            <Czech>Variable: %1 is not allowed TYPE: %2 NS: UI</Czech>
-            <French>Variable: %1 is not allowed TYPE: %2 NS: UI</French>
-            <Spanish>Variable: %1 is not allowed TYPE: %2 NS: UI</Spanish>
-            <Italian>Variable: %1 is not allowed TYPE: %2 NS: UI</Italian>
-            <Polish>Variable: %1 is not allowed TYPE: %2 NS: UI</Polish>
             <Portuguese>Variable: %1 is not allowed TYPE: %2 NS: UI</Portuguese>
             <Russian>Variable: %1 is not allowed TYPE: %2 NS: UI</Russian>
             <German>Variable: %1 ist nicht erlaubt. TYPE: %2 NS: UI</German>
         </Key>
         <Key ID="STR_SpyDetect_Observes">
             <Original>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</Original>
-            <Czech>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</Czech>
-            <French>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</French>
-            <Spanish>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</Spanish>
-            <Italian>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</Italian>
-            <Polish>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</Polish>
             <Portuguese>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</Portuguese>
             <Russian>||SPY-GLASS Observes|| Name: %1 | UID: %2 | Reason: %3</Russian>
             <German>||SPY-GLASS Beobachtung|| Name: %1 | UID: %2 | Grund: %3</German>
@@ -11714,44 +11296,24 @@
         </Key>
         <Key ID="STR_DL_ML_Robbed_BEF">
             <Original>robbed $%1 from %2. Bank Balance: $%3  On Hand Balance: $%4</Original>
-            <Czech>oloupen $%1 z %2. Banka Zůstatek: $%3 po zralé úvaze rukou: $%4</Czech>
-            <French>a volé $%1 de %2. Argent en banque : $%4 Cash : $%4</French>
-            <Spanish>robó $%1 de $%2. Saldo Bancario: $%3 Saldo en Efectivo: $%4</Spanish>
-            <Italian></Italian>
-            <Polish></Polish>
             <Portuguese>roubou R$%1 de %2. Quantia no Banco: R$%3 Quantia na Mão: R$%4</Portuguese>
             <Russian>ограбил $%1 из %2. Банковский баланс: $%3 на руку Баланс: $%4</Russian>
             <German>hat $%1 von $%2 geraubt. Bankkonto: $%3  Bargeld: $%4</German>
         </Key>
         <Key ID="STR_DL_ML_Robbed">
             <Original>%1 - %2 robbed $%3 from %4. Bank Balance: $%5  On Hand Balance: $%6</Original>
-            <Czech>%1 - %2 okraden $%3 z %4. Banka Zůstatek: $%5 po zralé úvaze rukou: $%6</Czech>
-            <French>%1 - %2 a volé $%3 de %4. Argent en banque : $%5. Cash : $%6</French>
-            <Spanish>%1 - %2 robó $%3 de $%4. Saldo Bancario: $%5 Saldo en Efectivo: $%6</Spanish>
-            <Italian></Italian>
-            <Polish></Polish>
             <Portuguese>%1 - %2 roubou R$%3 de %4. Quantia no Banco: R$%5 Quantia na Mão: R$%6</Portuguese>
             <Russian>%1 - %2 ограбил $%3 от %4. Банковский баланс: $%5 на руку Баланс: $%6</Russian>
             <German>%1 - %2 hat $%3 von %4 geraubt. Bankkonto: $%5  Bargeld: $%6</German>
         </Key>
         <Key ID="STR_DL_AL_createdGang_BEF">
             <Original>created a gang named: %1 for $%2</Original>
-            <Czech>Vytvořili gang s názvem: %1 za $%2</Czech>
-            <French>a créé un gang nommé : %1 pour $%2</French>
-            <Spanish>creó una pandilla llamada: %1 por $%2</Spanish>
-            <Italian></Italian>
-            <Polish></Polish>
             <Portuguese>criou uma gangue chamada: %1 por R$%2</Portuguese>
             <Russian>создали банду под названием: %1 за $%2</Russian>
             <German>hat eine Gang mit dem Namen: $1 für $%2 erstellt.</German>
         </Key>
         <Key ID="STR_DL_AL_createdGang">
             <Original>%1 - %2 created a gang named: %3 for $%4</Original>
-            <Czech>%1 - %2 vytvořili gang s názvem: %3 za $%4</Czech>
-            <French>%1 - %2 a créé un gang nommé : %3 pour $%4</French>
-            <Spanish>%1 - %2 creó una pandilla llamada: %3 por $%4</Spanish>
-            <Italian></Italian>
-            <Polish></Polish>
             <Portuguese>%1 - %2 criou uma gangue chamada: %3 por R$%4</Portuguese>
             <Russian>%1 - %2 создали банду под названием: %3 за $%4</Russian>
             <German>%1 - %2 hat eine Gang mit dem Namen: %3 für $%4 erstellt.</German>
@@ -12238,6 +11800,9 @@
     </Key>
 	<Key ID="STR_Item_Rastreador">
         <Original>Rastreador De Veiculos</Original>
+    </Key>
+	<Key ID="STR_Item_Tornozeleira">
+        <Original>Tornozeleira Eletronica</Original>
     </Key>
     <Key ID="STR_Item_analgesico">
         <Original>Analgésico</Original>

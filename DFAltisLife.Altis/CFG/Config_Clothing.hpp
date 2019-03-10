@@ -149,10 +149,10 @@ class Clothing {
 			{ "H_Cap_police", "", 925, "" },
             { "H_Booniehat_mcamo", "", 920, "call life_coplevel >= 1" },
             { "H_Beret_blk", "", 950, "call life_coplevel >= 2" },
-			{ "H_Beret_gen_F", "", 950, "call life_coplevel >= 5" },
+			{ "H_Beret_gen_F", "", 950, "call life_coplevel >= 4" },
 			{ "H_Beret_02", "", 950, "call life_coplevel >= 4" },
 			{ "H_Beret_Colonel", "", 950, "call life_coplevel >= 12" },
-			{ "H_Beret_blk_POLICE", "", 900, "call life_coplevel >= 11" },
+			{ "H_Beret_blk_POLICE", "", 900, "call life_coplevel >= 9" },
             { "H_MilCap_mcamo", "", 900, "" },
             { "H_MilCap_gen_F", "", 900, "" }, //Apex DLC
             { "H_MilCap_oucamo", "", 900, "" },
@@ -275,7 +275,8 @@ class Clothing {
             { "U_Rangemaster", $STR_C_EMS_uniforms, 50, "" },
 			{ "U_I_CombatUniform", $STR_C_EMS_uniforms, 500, "call life_mediclevel >= 2" },
 			{ "U_I_CombatUniform_shortsleeve", $STR_C_EMS_uniforms, 500, "call life_mediclevel >= 4" },
-			{ "U_I_CombatUniform_tshirt", "Uniforme Condutor", 500, "call life_mediclevel >= 2" }
+			{ "U_I_CombatUniform_tshirt", "Uniforme Condutor", 500, "call life_mediclevel >= 2" },
+			{ "U_B_Wetsuit", "", 2000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },

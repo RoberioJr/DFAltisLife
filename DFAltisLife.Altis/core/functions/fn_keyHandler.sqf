@@ -95,16 +95,13 @@ switch (_code) do {
 	//Colocaveis (C)
 	case 46: {
 	    [] Call RJM_fnc_ColocaveisFinalizado;
-	    /*
-	    _currentPos = getPosATL life_barrier_activeObj;  
-        detach life_barrier_activeObj;  
-        life_barrier_activeObj setPos[(getPos life_barrier_activeObj select 0), (getPos life_barrier_activeObj select 1), 0];  
-        life_barrier_activeObj enableSimulationGlobal true;  
-        life_bar_placey pushBack life_barrier_activeObj;  
-        life_barrier_active = false;  
-        life_barrier_activeObj = ObjNull;  
-        hint "Você Colocou Um Objeto!";  
-		*/
+	};
+	
+	//Menu De Setagem F7
+	case 66: {
+	    If (PlayerSide In [west,independent] && ((FETCH_CONST(life_coplevel) IsEqualTo 13) || (FETCH_CONST(life_mediclevel) IsEqualTo 8))) Then {
+	        [] Call RJM_fnc_MenuSetagem;
+		};
 	};
 	
 	//Modo Administrador F9
@@ -145,6 +142,7 @@ switch (_code) do {
 		};
     };	
 
+	/*
 	//Menu De Equipamentos Para Os Admins F7
 	case 65: {
 	    if (!Alive Player) ExitWith {};
@@ -155,14 +153,14 @@ switch (_code) do {
 	};
 
 	//Spawner De Veiculos Para Os Admins F8
-	/*
 	case 66: {
 	    if (!Alive Player) ExitWith {};
 		if (!JogadorNoModoAdmin) ExitWith {};
 	    if ((getPlayerUID player) in RJ_Administradores) then {
 	        [] call TUT_fnc_OpenVehUI;
 		};
-    };*/
+    };
+	*/
 
 	// I
 	case 23: {
