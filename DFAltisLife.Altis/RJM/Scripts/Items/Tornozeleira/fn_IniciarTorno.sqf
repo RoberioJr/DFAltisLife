@@ -18,7 +18,7 @@ if ([false,'tornozeleira',1] call life_fnc_handleInv) then {
 _cond = true;
 
 disableSerialization;
-"Tornozeleira" cutRsc ["life_progress","PLAIN"];
+"tornozeleira" cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;

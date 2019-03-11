@@ -65,9 +65,11 @@
    /* Setup Do Sistema De Setagem De Patentes */
 	[] Spawn {
 	    If (PlayerSide IsEqualto civilian) Exitwith {};
+		WaitUntil {!IsNil "life_coplevel" || !IsNil "life_medicLevel"};
+		Sleep 0.2;
 	    Switch (PlayerSide) Do {
-		    Case: west {RJ_Patente = (FETCH_CONST(life_coplevel) - 1);};
-			Case: independent {RJ_Patente = (FETCH_CONST(life_medicLevel) - 1);};
+		    Case: west {RJ_Patente = (call life_coplevel) - 1;};
+			Case: independent {RJ_Patente = (call life_medicLevel) - 1;};
 		};
 		If (RJ_Patente < 0) Then {RJ_Patente = 0};
 	};
