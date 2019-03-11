@@ -6,8 +6,6 @@
 
 _verificar = _This Select 0;
 
-If !(Player IsEqualTo _verificar) ExitWith {};
-
 [] call SOCK_fnc_updateRequestRJ;
 player EnableSimulation False;
 [1,"Você Foi Removido De Uma Corporação, Seu Jogo Irá Fechar Em Alguns Segundos!"] call RJM_fnc_Notificar;

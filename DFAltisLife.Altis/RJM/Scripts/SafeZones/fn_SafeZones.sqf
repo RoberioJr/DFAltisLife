@@ -4,16 +4,17 @@
 
 */
 
-private ["_EH","_DentroDaSafe","_Marcador","_Raio"];
+private ["_EH","_DentroDaSafe","_Marcador","_Raio","_Safe"];
 
 _Marcador = _This Select 0;
 _Raio = _This Select 1;
 
+_Safe = (GetMarkerPos _Marcador);
 _DentroDaSafe = false;
 
 while {true} do {
 	if (alive player) then {
-		if (((GetMarkerPos _Marcador) distance player < _Raio) && (!_DentroDaSafe)) then {
+		if ((_Safe distance player < _Raio) && (!_DentroDaSafe)) then {
 			if (PlayerSide isEqualto civilian) then {
 				_EH = player addEventHandler ["fired", {deleteVehicle (_this select 6); titleText ["Armas/Granadas São proibidas na safezone!", "PLAIN", 3]; titleFadeOut 1; }];
 			};
@@ -23,7 +24,7 @@ while {true} do {
 			player allowDamage false;
 		};
 
-		if (((GetMarkerPos _Marcador) distance player > _Raio) && (_DentroDaSafe)) then {
+		if ((_Safe distance player > _Raio) && (_DentroDaSafe)) then {
 		    if (PlayerSide isEqualto civilian) then {
 			    player removeEventHandler ["fired", _EH];
 			};
