@@ -14,6 +14,9 @@
   _gaslacr = LIFE_SETTINGS(getNumber,"rj_ativar_gaslacrimo");
   _msgnsrj = LIFE_SETTINGS(getNumber,"rj_msgsconometradas");
   
+  /* Configurações */
+  [] ExecVM "RJM\CFGs.sqf";
+  
   /* Correção De Cor */
   if (_grafico isEqualTo 1) then {
    diag_log "RJ: Melhoria De Grafico - Ativado";
@@ -52,6 +55,9 @@
   /* Sistema De Tags Ao Falar */
    [] Spawn RJM_fnc_Falando;
    
+  /* SafeZones */
+   [] Spawn RJM_fnc_CfgSafeZones;
+   
   /* Marcar Bases De Gangues */
     [] Spawn {
 	    WaitUntil {!IsNil "life_base"};
@@ -67,15 +73,17 @@
 	    If (PlayerSide IsEqualto civilian) Exitwith {};
 		WaitUntil {!IsNil "life_coplevel" || !IsNil "life_medicLevel"};
 		Sleep 0.2;
+		RJ_Patente = 0;
 	    Switch (PlayerSide) Do {
-		    Case: west {RJ_Patente = (call life_coplevel);};
-			Case: independent {RJ_Patente = (call life_medicLevel);};
+		    Case west: {RJ_Patente = (call life_coplevel);};
+			Case independent: {RJ_Patente = (call life_medicLevel);};
 		};
-		If (RJ_Patente < 0) Then {RJ_Patente = 0};
 	};
-    
-	If (PlayerSide IsEqualTo Independent) Then {
-	    [0] call RJM_fnc_CopomMed;
+	
+   /* Setup Do Copom Médico */
+    [] Spawn {
+		If !(PlayerSide IsEqualTo Independent) ExitWith {};
+		[] call RJM_fnc_CopomMed;
 	};
 	
   /* Ferramentas ADM */
@@ -84,8 +92,5 @@
   /* RádioRJM */
    [] execVM "RJM\Scripts\Radio\init.sqf";
    
-  /* SafeZones */
-  [] Spawn RJM_fnc_CfgSafeZones;
-   
-  systemchat "Scripts RJ Inicializadas *o*...";
+  SystemChat "Scripts RJ Inicializadas *o*...";
   

@@ -4,8 +4,6 @@
 
 */
 
-waitUntil {time > 0};
-waitUntil {!isNull player};
 waitUntil {!IsNil "RJ_SafeZones"};
 
 diag_log "RJ: Iniciando SafeZones...";
@@ -20,21 +18,3 @@ diag_log "RJ: Iniciando SafeZones...";
 } ForEach RJ_SafeZones;
 
 diag_log "RJ: Todas As SafeZones Foram Geradas :)";
-
-/*
-[] Spawn {
-    While {True} Do {
-	    _Cond = True;
-	    {
-		    If (_Cond) Then {
-	            If ((GetMarkerPos (_x Select 0)) distance player < (_x Select 1)) Then {
-		            RJ_JogadorNaSafe = True;
-					_Cond = False;
-		        } Else { RJ_JogadorNaSafe = False; };
-		    };
-			Sleep 0.2;
-		} ForEach RJ_SafeZones;
-		Sleep 4;
-	};
-};
-*/

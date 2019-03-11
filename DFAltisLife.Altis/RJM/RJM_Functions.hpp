@@ -73,14 +73,7 @@ class RJM_Scripts {
 		file = "RJM\Scripts\EfeitosDasDrogas";
 		class EfeitosItems {};
 		class Maconha {};
-		class Cocaina {};
-		class LSD {};
 		class Cigarro {};
-		class Metafetamina {};
-		class Ecstasy {}
-		class Lolo {};
-		class Crack {};
-		class Heroina {};
 	};
 	
 	class Dog {

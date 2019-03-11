@@ -12,10 +12,6 @@
    /* DEFINIÇÕES */
   _barstat = LIFE_SETTINGS(getNumber,"rj_barradestatus");
   _neblina = LIFE_SETTINGS(getNumber,"rj_ativar_neblina");
-
-  
-  /* Configurações */
-  [] ExecVM "RJM\CFGs.sqf";
 	
   /* Barra De Status */ 
  switch (_barstat) do 
