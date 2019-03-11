@@ -82,6 +82,9 @@ CREATE TABLE IF NOT EXISTS `players` (
   `bankacc` int(100) NOT NULL DEFAULT '0',
   `coplevel` enum('0','1','2','3','4','5','6','7','8','9','10','11','12','13') NOT NULL DEFAULT '0',
   `mediclevel` enum('0','1','2','3','4','5','6','7','8') NOT NULL DEFAULT '0',
+  `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
+  `donorlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
+  `base` enum('0','1','2','3','4','5','6','7') NOT NULL DEFAULT '0', -- Bases De Gangue
   `civ_licenses` text NOT NULL,
   `cop_licenses` text NOT NULL,
   `med_licenses` text NOT NULL,
@@ -92,9 +95,6 @@ CREATE TABLE IF NOT EXISTS `players` (
   `cop_stats` varchar(32) NOT NULL DEFAULT '"[100,100,0]"',
   `med_stats` varchar(32) NOT NULL DEFAULT '"[100,100,0]"',
   `arrested` tinyint(1) NOT NULL DEFAULT '0',
-  `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
-  `donorlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
-  `base` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0', -- Bases De Gangue
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
   `civ_alive` tinyint(1) NOT NULL DEFAULT '0',
   `civ_position` varchar(64) NOT NULL DEFAULT '"[]"',

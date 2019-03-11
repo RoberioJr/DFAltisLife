@@ -83,6 +83,20 @@ class CfgSpawnPoints {
 				icon = "icons\spawns\rebelde.paa";
 				conditions = "call life_base == 3";
 			};
+			
+			class BaseLib1 {
+				displayName = "Base Liberada 1";
+				spawnMarker = "base_lib_1";
+				icon = "icons\spawns\rebelde.paa";
+				conditions = "call life_base == 6";
+			};
+			
+			class BaseLib2 {
+				displayName = "Base Liberada 2";
+				spawnMarker = "base_lib_2";
+				icon = "icons\spawns\rebelde.paa";
+				conditions = "call life_base == 7";
+			};
         };
 
         class Cop {

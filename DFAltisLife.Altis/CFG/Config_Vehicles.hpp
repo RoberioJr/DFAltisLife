@@ -129,10 +129,7 @@ class CarShops {
         side = "med";
         conditions = "";
         vehicles[] = {
-			{ "B_Quadbike_01_F", "call life_mediclevel >= 1" }, //QUAD 
             { "C_Offroad_01_F", "call life_mediclevel >= 1" },//OFFROAD
-            { "C_Hatchback_01_F", "call life_mediclevel >= 3" }, //HATCHBACK
-			{ "C_Hatchback_01_sport_F", "call life_mediclevel >= 5" },//HATCHBACK SPORT
 			{ "C_SUV_01_F", "call life_mediclevel >= 5" }, //SUV
 			{ "B_MRAP_01_F", "call life_mediclevel >= 7" },//HUNTER
 			{ "C_Van_02_medevac_F", "call life_mediclevel >= 1" }    //Ambulancia Laws Of War
@@ -144,7 +141,6 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "B_Heli_Light_01_F", "call life_mediclevel >= 1" },
-			{ "B_Heli_Transport_03_unarmed_F", "call life_mediclevel >= 3" },
             { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 5" }
         };
     };
@@ -294,10 +290,6 @@ class LifeCfgVehicles {
 			{ "Black", "civ", {
                 "#(argb,8,8,3)color(0,0,0,0.8)",
 				"#(argb,8,8,3)color(0,0,0,0.8)"
-            }, "" },
-			{ "Samu", "med", {
-                "textures\veh\med\Hurom_samu_p1.paa",
-				"textures\veh\med\Hurom_samu_p2.paa"
             }, "" },
 			{ "PM", "cop", {
                 "textures\veh\cop\Huron.paa",
@@ -837,9 +829,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
-			{ "Samu", "med", {
-                "textures\veh\med\hatchback_samu.paa"
-            }, "" },
             /*{ "Police", "cop", {
                 "#(ai,64,64,1)Fresnel(1.3,7)"
             }, "" },*/
@@ -884,9 +873,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            }, "" },
-			{ "Samu", "med", {
-                "textures\veh\med\SamuQuad.paa"
             }, "" }
         };
     };

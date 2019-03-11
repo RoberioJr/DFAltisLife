@@ -192,6 +192,11 @@ diag_log "----------------------------------------------------------------------
 [] spawn RJM_fnc_autoSaveInv;
 /* FrameWork The-Programer */
 [] spawn theprogrammer_core_fnc_clientInit;
+/* Sistema De Setagem de Patentes */
+[] Spawn {
+	WaitUntil {!IsNil "RJ_Patente"};
+	player setVariable ["RJ_Patente",RJ_Patente,true];
+};
 /* Var Do RJ */
 RJ_JogadorPronto = true;
 

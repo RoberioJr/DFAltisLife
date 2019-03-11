@@ -20,10 +20,10 @@ while {true} do {
 			};
 			_DentroDaSafe = true;
 			RJ_JogadorNaSafe = True;
-			if (isPlayer player) then {
+			//if (isPlayer player) then {
 				systemChat format["Você entrou na safezone %1. Você não pode receber dano.", (name player)];
 				player allowDamage false;
-			};
+			//};
 		};
 
 		if (((GetMarkerPos _Marcador) distance player > _Raio) && (_DentroDaSafe)) then {
@@ -32,10 +32,10 @@ while {true} do {
 			};
 			_DentroDaSafe = false;
 			RJ_JogadorNaSafe = False;
-			if (isPlayer player) then {
+			//if (isPlayer player) then {
 				hintSilent parseText format ["<t size='3.4' color='#ff0000' shadow='0'>AVISO!</t> <t size='1.2'> Você está Saindo Da SafeZone! Você Poderá Ser Ferido! </t>"];
 			    player allowDamage true;
-			};
+			//};
 		};
 	};
 	sleep 2;

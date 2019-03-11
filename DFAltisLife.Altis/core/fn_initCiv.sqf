@@ -28,8 +28,6 @@ Switch (FETCH_CONST(life_base)) Do {
 	Case 4: {RJ_Base = 4;};
 	Case 5: {RJ_Base = 5;};
 };
-//Sistema De Setagem de Patentes
-player setVariable ["RJ_Patente",RJ_Patente,true];
 
 waitUntil {!(isNull (findDisplay 46))};
 if (life_is_alive && !life_is_arrested) then {

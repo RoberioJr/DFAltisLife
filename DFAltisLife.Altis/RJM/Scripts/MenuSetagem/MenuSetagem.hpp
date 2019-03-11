@@ -120,7 +120,7 @@ class RJ_MenuSetagem
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			onLBSelChanged = "_this Spawn RJM_fnc_LBChangeSetagem";
 			class ListScrollBar
@@ -188,7 +188,7 @@ class RJ_MenuSetagem
 			offsetPressedY = 0.01;
 			offsetX = 0.01;
 			offsetY = 0.01;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.5);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
