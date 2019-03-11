@@ -182,6 +182,7 @@ RJ_LimiteColocaveis = 65;
 
 // [PATENTE COP, PATENTE PC, PATENTE MED]
 RJ_PatentesCFG = [
+    ["Remover","Remover","Remover"],
     ["Recruta","Investigador","Soc.Estudante"],
     ["Soldado","Perito","Socorrista"],
     ["Cabo","Escrivão","Tec.Enfermagem"],

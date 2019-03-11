@@ -54,6 +54,7 @@ class RJM_Scripts {
 		class LBChangeSetagem {};
 		class PrepararSetagem {};
 		class SetarJogador {};
+		class JogadorRemovido {};
 	};
 	
 	class SafeZones {

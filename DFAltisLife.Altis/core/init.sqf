@@ -194,6 +194,7 @@ diag_log "----------------------------------------------------------------------
 [] spawn theprogrammer_core_fnc_clientInit;
 /* Sistema De Setagem de Patentes */
 [] Spawn {
+    If (PlayerSide IsEqualto civilian) Exitwith {};
 	WaitUntil {!IsNil "RJ_Patente"};
 	player setVariable ["RJ_Patente",RJ_Patente,true];
 };

@@ -54,7 +54,7 @@ lbClear _nivel;
 {
     If !((_x Select _select) IsEqualTo "") Then {
         _nivel lbAdd format ["%1",(_x Select _select)];
-        _nivel lbSetValue [(lbSize _nivel)-1,(_ForEachIndex + 1)];
+        _nivel lbSetValue [(lbSize _nivel)-1,_ForEachIndex];
 	};
 } forEach RJ_PatentesCFG;
 

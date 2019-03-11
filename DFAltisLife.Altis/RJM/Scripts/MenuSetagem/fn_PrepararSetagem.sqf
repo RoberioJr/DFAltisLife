@@ -32,4 +32,6 @@ Switch (PlayerSide) Do {
  
 if (_query isEqualTo "") exitWith {};
 
+If (_valor IsEqualTo 0) Then { [_jogador] remoteExec ['RJM_fnc_JogadorRemovido',_jogador]; };
+
 [_query,(Name Player),(Name _jogador),_valor,_tipo] RemoteExec ["RJM_fnc_SetarJogador",2];

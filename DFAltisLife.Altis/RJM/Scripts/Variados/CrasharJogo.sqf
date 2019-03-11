@@ -4,4 +4,4 @@
 
 */
 
-#include "CRASHANDO SEU JOGO :) By: RoberioJR"
+#include "Você Foi Removido De Alguma Corporação Do Servidor - Reinicie Seu Jogo By: RoberioJR"

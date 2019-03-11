@@ -19,7 +19,7 @@
   life_med_calls = [];
   PublicVariable "life_med_calls";
   
-  [] Spawn RJM_fnc_Guincho;
+  //[] Spawn RJM_fnc_Guincho;
   
   /* LOG COM INFORMAÇÕES SOBRE INICIALIZAÇÃO DO SERVIDOR */
  sleep 1;

@@ -51,7 +51,7 @@
    
   /* Sistema De Tags Ao Falar */
    [] Spawn RJM_fnc_Falando;
-  
+   
   /* Marcar Bases De Gangues */
     [] Spawn {
 	    WaitUntil {!IsNil "life_base"};
@@ -68,8 +68,8 @@
 		WaitUntil {!IsNil "life_coplevel" || !IsNil "life_medicLevel"};
 		Sleep 0.2;
 	    Switch (PlayerSide) Do {
-		    Case: west {RJ_Patente = (call life_coplevel) - 1;};
-			Case: independent {RJ_Patente = (call life_medicLevel) - 1;};
+		    Case: west {RJ_Patente = (call life_coplevel);};
+			Case: independent {RJ_Patente = (call life_medicLevel);};
 		};
 		If (RJ_Patente < 0) Then {RJ_Patente = 0};
 	};
