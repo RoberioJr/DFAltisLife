@@ -48,11 +48,11 @@ if (!isNull _source) then {
 
  /* Cinto De Segurança */
 if ((vehicle _unit) isKindOf "Car" && (isNull _source || _source isEqualTo _unit)) then {
-	_damage = if (life_seatbelt) then { _damage / 2 } else { _damage};
+	_damage = if (life_seatbelt) then { _damage / 2 } else { _damage };
 };
 
 //Anti VDM 
-if ((isPlayer _source) && (vehicle _source != _source) && (vehicle Player IsEqualTo Player)) then {
+if ((isPlayer _source) && (vehicle _source != _source) && (vehicle Player IsEqualTo Player) && !(vehicle _source IsKindOf "Air")) then {
     if(_part == "body" && (side _source == civilian)) then {
         player setVariable ["limit",false];
         [_source] spawn {
