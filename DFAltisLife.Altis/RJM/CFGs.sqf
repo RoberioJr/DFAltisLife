@@ -33,7 +33,6 @@ RJ_MrkMapa =
 	['garagem_veh_ath','icons\icomap\garagem_veh.paa',''],	        					//GaragemVeh
 	['garagem_veh_aeroporto','icons\icomap\garagem_veh.paa',''],	        					//GaragemVeh
 	['garagem_veh_pyrgos','icons\icomap\garagem_veh.paa',''],	        					//GaragemVeh
-	//['garagem_veh_agios','icons\icomap\garagem_veh.paa',''],	        					//GaragemVeh
 	['garagem_veh_sof','icons\icomap\garagem_veh.paa',''],	        					//GaragemVeh
 	['garagem_ae_marc','icons\icomap\garagem_ae.paa',''],	        					//GaragemVeh
 	['garagem_ae_kav','icons\icomap\garagem_ae.paa',''],	        					//GaragemVeh

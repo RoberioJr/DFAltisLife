@@ -95,6 +95,7 @@ class CfgRemoteExec {
 		F(RJM_fnc_temOrgaos,CLIENT)
 		F(RJM_fnc_Rastreando,CLIENT)
 		F(RJM_fnc_TornoRastreando,CLIENT)
+		F(RJM_fnc_JogadorRemovido,CLIENT)
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)

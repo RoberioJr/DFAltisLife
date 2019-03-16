@@ -312,7 +312,7 @@ class Clothing {
             { "G_Lady_Dark", "", 1150, "" },
             { "G_Lady_Blue", "", 1150, "" },
 			{ "G_Aviator", "", 1100, "call life_mediclevel >= 6" },
-			{ "G_Diving", "", 1100, "call life_mediclevel >= 7" }
+			{ "G_Diving", "", 1100, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
@@ -320,7 +320,7 @@ class Clothing {
 			{ "V_DeckCrew_blue_F","", 10000, "call life_mediclevel >= 5" },
 			{ "V_DeckCrew_red_F","", 10000, "call life_mediclevel >= 5" },
 			{ "V_LegStrapBag_black_F","", 10000, "call life_mediclevel >= 5" },
-			{ "V_RebreatherB","", 10000, "call life_mediclevel >= 5" }
+			{ "V_RebreatherB","", 14000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },

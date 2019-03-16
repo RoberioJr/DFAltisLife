@@ -15,7 +15,7 @@ If (Vehicle Player != Player) ExitWith {};
 _velRastreado = CursorObject;
 _nomeJogador = name player;
 //if (_velRastreado getVariable "carroRastreado") exitWith { Hint 'Esse Veiculo Já Está Sendo Rastreado'; };
-if !(_velRastreado isKindOf "LandVehicle") exitWith {};
+if !(_velRastreado isKindOf "LandVehicle") exitWith {}; //LandVehicle
 if (isNil '_velRastreado' || IsNull _velRastreado) exitWith {};
 
 
