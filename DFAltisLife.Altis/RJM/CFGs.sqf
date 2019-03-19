@@ -180,6 +180,7 @@ RJ_Colocaveis = [
 RJ_LimiteColocaveis = 65;
 
 // [PATENTE COP, PATENTE PC, PATENTE MED, PATENTE BM]
+/*
 RJ_PatentesCFG = [
     ["Remover","Remover","Remover","Remover"],
     ["Recruta","Investigador","Soc.Estudante","Recruta"],
@@ -195,7 +196,7 @@ RJ_PatentesCFG = [
     ["Major","","",""],
     ["Ten.Cel","","",""],
     ["Coronel","","",""]
-];
+];*/
 
 RJ_PatentesCFG = [
 /*     -PM-                  -PC-                  -SAMU-               -BM-      */
