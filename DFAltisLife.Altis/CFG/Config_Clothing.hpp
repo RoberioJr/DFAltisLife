@@ -271,11 +271,17 @@ class Clothing {
         conditions = "";
         side = "med";
         uniforms[] = {
+			//SAMU
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_Rangemaster", $STR_C_EMS_uniforms, 50, "" },
-			{ "U_I_CombatUniform", $STR_C_EMS_uniforms, 500, "call life_mediclevel >= 2" },
-			{ "U_I_CombatUniform_shortsleeve", $STR_C_EMS_uniforms, 500, "call life_mediclevel >= 4" },
-			{ "U_I_CombatUniform_tshirt", "Uniforme Condutor", 500, "call life_mediclevel >= 2" },
+            { "U_Rangemaster", $STR_C_EMS_uniforms, 75, "call life_mediclevel < 9" },
+			{ "U_I_CombatUniform", $STR_C_EMS_uniforms, 500, "call life_mediclevel in [2,3,4,5,6,7,8]" },
+			{ "U_I_CombatUniform_shortsleeve", $STR_C_EMS_uniforms, 500, "call life_mediclevel in [2,3,4,5,6,7,8]" },
+			{ "U_I_CombatUniform_tshirt", "Uniforme Condutor", 500, "call life_mediclevel in [2,3,4,5,6,7,8]" },
+			//Bombeiros
+			{ "U_Marshal", "Uniforme Bombeiro", 75, "call life_mediclevel > 8" },
+			{ "U_I_CombatUniform", "Uniforme Padrão Bombeiros", 500, "call life_mediclevel > 11" },
+			{ "U_I_CombatUniform_shortsleeve", "Uniforme Padrão Bombeiros 2", 500, "call life_mediclevel > 11" },
+			//All
 			{ "U_B_Wetsuit", "", 2000, "" }
         };
         headgear[] = {

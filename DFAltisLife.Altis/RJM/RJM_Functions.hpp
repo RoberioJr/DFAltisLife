@@ -55,6 +55,7 @@ class RJM_Scripts {
 		class PrepararSetagem {};
 		class SetarJogador {};
 		class JogadorRemovido {};
+		class VerificarPatente {};
 	};
 	
 	class SafeZones {

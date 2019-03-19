@@ -179,22 +179,39 @@ RJ_Colocaveis = [
 //Limite De Colocaveis
 RJ_LimiteColocaveis = 65;
 
-// [PATENTE COP, PATENTE PC, PATENTE MED]
+// [PATENTE COP, PATENTE PC, PATENTE MED, PATENTE BM]
 RJ_PatentesCFG = [
-    ["Remover","Remover","Remover"],
-    ["Recruta","Investigador","Soc.Estudante"],
-    ["Soldado","Perito","Socorrista"],
-    ["Cabo","Escrivão","Tec.Enfermagem"],
-    ["3°Sargento","Delegado","Enfermeiro"],
-    ["2°Sargento","","Médico"],
-    ["1°Sargento","","Cirurgião"],
-    ["SubTenente","","Cir.Geral" ],
-    ["2°Tenente","","Sub.Comandante"],
-    ["1°Tenente","","Cmd.Médico"],
-    ["Capitão","",""],
-    ["Major","",""],
-    ["Ten.Cel","",""],
-    ["Coronel","",""]
+    ["Remover","Remover","Remover","Remover"],
+    ["Recruta","Investigador","Soc.Estudante","Recruta"],
+    ["Soldado","Perito","Socorrista","Soldado"],
+    ["Cabo","Escrivão","Tec.Enfermagem","Cabo"],
+    ["3°Sargento","Delegado","Enfermeiro","3/2/1°Sargento"],
+    ["2°Sargento","","Médico","Sub/2/1°Tenente"],
+    ["1°Sargento","","Cirurgião","Capitão/Major"],
+    ["SubTenente","","Cir.Geral","T.Coronel"],
+    ["2°Tenente","","Sub.Comandante","Coronel"],
+    ["1°Tenente","","Cmd.Médico",""],
+    ["Capitão","","",""],
+    ["Major","","",""],
+    ["Ten.Cel","","",""],
+    ["Coronel","","",""]
+];
+
+RJ_PatentesCFG = [
+/*     -PM-                  -PC-                  -SAMU-               -BM-      */
+    [["Recruta",1],     ["Investigador",99], ["Soc.Estudante",1],   ["Recruta",9],
+	[["Soldado",2],     ["Perito",99],       ["Socorrista",2],      ["Soldado",10]],
+	[["Cabo",3],        ["Escrivão",99],     ["Enfermeiro",3],      ["Cabo",11]],
+	[["3°Sargento",4],  ["Delegado",99],     ["Médico",4],          ["3/2/1°Sargento",12]],
+	[["2°Sargento",5],  ["",-1],             ["Cirurgião",5],       ["Sub/2/1°Tenente",13]],
+	[["1°Sargento",6],  ["",-1],             ["Cir.Geral",6],       ["Capitão/Major",14]],
+	[["SubTenente",7],  ["",-1],             ["Sub.Comandante",7],  ["T.Coronel",15]],
+	[["2°Tenente",8],   ["",-1],             ["Cmd.Médico",8],      ["Coronel",16]],
+	[["1°Tenente",9],   ["",-1],             ["",-1]],              ["",-1]],
+	[["Capitão",10],    ["",-1],             ["",-1],               ["",-1]],
+	[["Major",11],      ["",-1],             ["",-1],               ["",-1]],
+	[["Ten.Cel",12],    ["",-1],             ["",-1],               ["",-1]],
+	[["Coronel",13]     ["",-1]              ["",-1]                ["",-1]]
 ];
 
 

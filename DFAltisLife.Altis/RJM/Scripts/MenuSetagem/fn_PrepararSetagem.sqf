@@ -1,3 +1,4 @@
+#include "..\..\..\script_macros.hpp"
 /*
 
     Author: RobérioJr

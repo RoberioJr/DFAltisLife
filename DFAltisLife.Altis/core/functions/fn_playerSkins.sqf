@@ -87,14 +87,26 @@ switch (playerSide) do {
 	*/
 // Medicos || SAMU
     case independent: {
-        if (uniform player isEqualTo "U_Rangemaster") then {
-            player setObjectTextureGlobal [0, "textures\roupa\med\uniforme_med.jpg"];
-        };
-		if (uniform player in ["U_I_CombatUniform","U_I_CombatUniform_shortsleeve"]) then {
-            player setObjectTextureGlobal [0, "textures\roupa\med\Samu_Medico.jpg"];
-        };
-		if (uniform player IsEqualTo "U_I_CombatUniform_tshirt") then {
-		    player setObjectTextureGlobal [0, "textures\roupa\med\Samu_Condutor.jpg"];
+	    If (FETCH_CONST(life_mediclevel) < 9) ExitWith {
+			if (uniform player isEqualTo "U_Rangemaster") then {
+				player setObjectTextureGlobal [0, "textures\roupa\med\uniforme_med.jpg"];
+			};
+			if (uniform player in ["U_I_CombatUniform","U_I_CombatUniform_shortsleeve"]) then {
+				player setObjectTextureGlobal [0, "textures\roupa\med\Samu_Medico.jpg"];
+			};
+			if (uniform player IsEqualTo "U_I_CombatUniform_tshirt") then {
+				player setObjectTextureGlobal [0, "textures\roupa\med\Samu_Condutor.jpg"];
+			};
 		};
+		//Bombeiros
+		if (uniform player IsEqualTo "U_Marshal" && (FETCH_CONST(life_mediclevel) in [9,10,11])) ExitWith {
+            player setObjectTextureGlobal [0, "textures\roupa\med\bomb_rec.jpg"];
+        };
+		if (uniform player in ["U_I_CombatUniform","U_I_CombatUniform_shortsleeve"] && (FETCH_CONST(life_mediclevel) in [12,13,14])) ExitWith {
+            player setObjectTextureGlobal [0, "textures\roupa\med\bomb_laran.jpg"];
+        };
+		if (uniform player in ["U_I_CombatUniform","U_I_CombatUniform_shortsleeve"] && (FETCH_CONST(life_mediclevel) in [15,16])) ExitWith {
+            player setObjectTextureGlobal [0, "textures\roupa\med\bomb_verm.jpg"];
+        };
     };
 };

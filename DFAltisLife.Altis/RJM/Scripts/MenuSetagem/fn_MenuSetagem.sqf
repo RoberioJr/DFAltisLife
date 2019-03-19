@@ -18,15 +18,19 @@
 	_Btn ctrlSetTooltip "TEXTO"; - Coloca Descrição No Botão
 
 */
-Private ['_select','_listplayers','_nivel','_botao','_nome','_cor'];
+Private ['_select','_listplayers','_nivel','_botao','_nome','_cor','_array'];
 
 If (!alive player || dialog) exitWith {};
+
 If (PlayerSide IsEqualTo west) Then {
     If !(FETCH_CONST(life_coplevel) IsEqualTo 13) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
 	_select = 0;
 } Else {
-    If !(FETCH_CONST(life_mediclevel) IsEqualTo 8) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
+    If !(FETCH_CONST(life_mediclevel) in [8,16]) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
 	_select = 2;
+	If (FETCH_CONST(life_mediclevel) IsEqualTo 16) Then {
+	    _select = 3;
+	};
 };
 
 disableSerialization;
@@ -51,10 +55,13 @@ lbClear _listplayers;
 } ForEach playableUnits;
 
 lbClear _nivel;
+_nivel lbAdd "Remover";
+_nivel lbSetValue [(lbSize _nivel)-1,0];
 {
-    If !((_x Select _select) IsEqualTo "") Then {
-        _nivel lbAdd format ["%1",(_x Select _select)];
-        _nivel lbSetValue [(lbSize _nivel)-1,_ForEachIndex];
+    _array = (_x Select _select);
+    If !((_array Select 0) IsEqualTo "" || (_array Select 1) < 0) Then {
+        _nivel lbAdd format ["%1",(_array Select 0)];
+        _nivel lbSetValue [(lbSize _nivel)-1,(_array Select 1)];
 	};
 } forEach RJ_PatentesCFG;
 

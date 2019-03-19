@@ -141,7 +141,8 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "B_Heli_Light_01_F", "call life_mediclevel >= 1" },
-            { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 5" }
+            { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 5" },
+			{ "I_Heli_light_03_unarmed_F", "call life_mediclevel > 8" }
         };
     };
 
@@ -240,6 +241,9 @@ class LifeCfgVehicles {
 			{ "Policia", "cop", {
 				"textures\veh\cop\hellcatpm.paa"
 			}, "call life_coplevel >= 1" },
+			{ "Bombeiros", "med", {
+				"textures\veh\cop\hellbm.paa"
+			}, "call life_mediclevel > 8" },
 			{ "Rebelde", "reb", {
 				"\A3\air_f_epb\Heli_Light_03\data\Heli_Light_03_base_INDP_CO.paa"
 			}, "" }
@@ -423,7 +427,10 @@ class LifeCfgVehicles {
 		textures[] = {
 		    { "Ambulancia", "med", {
 				"textures\veh\med\van_samu.paa"
-			}, "" }
+			}, "call life_mediclevel < 9" },
+			{ "Ambulancia", "med", {
+				"textures\veh\med\van_bm.paa"
+			}, "call life_mediclevel > 8" }
 		};
 	};
 
@@ -781,9 +788,11 @@ class LifeCfgVehicles {
 				"textures\veh\cop\offroadpm.paa"
 			}, "call life_coplevel < 11" },
 			{ "SAMU", "med", {
-				"textures\veh\med\offroad_samu.paa",
 				"textures\veh\med\offroad_samu.paa"
-			}, "" }
+			}, "call life_mediclevel < 9" },
+			{ "Bombeiros", "med", {
+				"textures\veh\med\offroad_bm.paa"
+			}, "call life_mediclevel > 8" }
         };
     };
 
@@ -1069,7 +1078,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			}, "call life_coplevel >= 1" },
 			{ "SAMU", "med", {
 				"textures\veh\med\mh9med.paa"
-			}, "" },
+			}, "call life_mediclevel < 9" },
+			{ "Bombeiros", "med", {
+				"textures\veh\med\mh9bm.paa"
+			}, "call life_mediclevel > 8" },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
             }, "" },
