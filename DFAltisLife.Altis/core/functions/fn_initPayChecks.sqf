@@ -42,6 +42,7 @@ switch (playerSide) do
 	{
 		switch(FETCH_CONST(life_mediclevel)) do
 		{
+		    //SAMU
 			case 0: {life_paycheck = life_paycheck + 0;}; 
 			case 1: {life_paycheck = life_paycheck + 0;}; 
 			case 2: {life_paycheck = life_paycheck + 5000;}; 
@@ -51,6 +52,15 @@ switch (playerSide) do
 			case 6: {life_paycheck = life_paycheck + 13000;};
 			case 7: {life_paycheck = life_paycheck + 15000;};
 			case 8: {life_paycheck = life_paycheck + 17000;};
+			//BM
+			case 9: {life_paycheck = life_paycheck + 0;};
+			case 10: {life_paycheck = life_paycheck + 5000;};
+			case 11: {life_paycheck = life_paycheck + 7000;};
+			case 12: {life_paycheck = life_paycheck + 9000;};
+			case 13: {life_paycheck = life_paycheck + 11000;};
+			case 14: {life_paycheck = life_paycheck + 13000;};
+			case 15: {life_paycheck = life_paycheck + 15000;};
+			case 16: {life_paycheck = life_paycheck + 17000;};
 		};
 		switch(FETCH_CONST(life_donorlevel)) do
 		{

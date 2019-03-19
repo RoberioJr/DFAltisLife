@@ -68,7 +68,7 @@
 		_Mkr setMarkerTextLocal format["Base De Gangue %1",(call life_base)];
 	};
 
-   /* Setup Do Sistema De Setagem De Patentes */
+  /* Setup Do Sistema De Setagem De Patentes */
 	[] Spawn {
 	    If (PlayerSide IsEqualto civilian) Exitwith {};
 		WaitUntil {!IsNil "life_coplevel" || !IsNil "life_medicLevel"};
