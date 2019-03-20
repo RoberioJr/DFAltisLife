@@ -242,7 +242,7 @@ class LifeCfgVehicles {
 				"textures\veh\cop\hellcatpm.paa"
 			}, "call life_coplevel >= 1" },
 			{ "Bombeiros", "med", {
-				"textures\veh\cop\hellbm.paa"
+				"textures\veh\med\hellbm.paa"
 			}, "call life_mediclevel > 8" },
 			{ "Rebelde", "reb", {
 				"\A3\air_f_epb\Heli_Light_03\data\Heli_Light_03_base_INDP_CO.paa"

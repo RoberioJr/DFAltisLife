@@ -200,7 +200,7 @@ RJ_PatentesCFG = [
 
 RJ_PatentesCFG = [
 /*     -PM-                  -PC-                  -SAMU-               -BM-      */
-    [["Recruta",1],     ["Investigador",99], ["Soc.Estudante",1],   ["Recruta",9],
+    [["Recruta",1],     ["Investigador",99], ["Soc.Estudante",1],   ["Recruta",9]],
 	[["Soldado",2],     ["Perito",99],       ["Socorrista",2],      ["Soldado",10]],
 	[["Cabo",3],        ["Escrivão",99],     ["Enfermeiro",3],      ["Cabo",11]],
 	[["3°Sargento",4],  ["Delegado",99],     ["Médico",4],          ["3/2/1°Sargento",12]],
