@@ -97,9 +97,9 @@ switch (_code) do {
 	    [] Call RJM_fnc_ColocaveisFinalizado;
 	};
 	
-	//Menu De Setagem F7
+	//Menu De Setagem F8
 	case 66: {
-	    If (PlayerSide In [west,independent] && ((FETCH_CONST(life_coplevel) IsEqualTo 13) || (FETCH_CONST(life_mediclevel) IsEqualTo 8))) Then {
+	    If (PlayerSide In [west,independent] && ((FETCH_CONST(life_coplevel) IsEqualTo 13) || (FETCH_CONST(life_mediclevel) in [8,16]))) Then {
 	        [] Call RJM_fnc_MenuSetagem;
 		};
 	};
