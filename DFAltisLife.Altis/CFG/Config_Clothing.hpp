@@ -293,7 +293,8 @@ class Clothing {
 			{ "H_RacingHelmet_1_blue_F", "", 1145, "call life_mediclevel >= 5" },
 			{ "H_Beret_blk", "", 1145, "call life_mediclevel >= 5" },
 			{ "H_Beret_02", "", 1145, "call life_mediclevel >= 6" },
-			{ "H_Beret_Colonel", "", 1145, "call life_mediclevel >= 7" }
+			{ "H_Beret_Colonel", "", 1145, "call life_mediclevel >= 7" },
+			{ "H_PilotHelmetFighter_B", "", 15000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
