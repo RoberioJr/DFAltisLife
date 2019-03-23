@@ -104,6 +104,13 @@ class CfgSpawnPoints {
 				icon = "icons\spawns\rebelde.paa";
 				conditions = "call life_base == 8";
 			};
+			
+			class BaseEb {
+				displayName = "Base EB";
+				spawnMarker = "spawn_eb";
+				icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+				conditions = "call life_base == 1";
+			};
         };
 
         class Cop {
