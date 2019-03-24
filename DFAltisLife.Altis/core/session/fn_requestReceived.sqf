@@ -51,6 +51,7 @@ switch (playerSide) do {
     case west: {
         CONST(life_coplevel,(_this select 7));
         CONST(life_medicLevel,0);
+		CONST(life_exercito,0);
         life_blacklisted = _this select 9;
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 10) select 0);
@@ -97,6 +98,7 @@ switch (playerSide) do {
     case independent: {
         CONST(life_medicLevel,(_this select 7));
         CONST(life_coplevel,0);
+		CONST(life_exercito,0);
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);
             life_thirst = ((_this select 9) select 1);
