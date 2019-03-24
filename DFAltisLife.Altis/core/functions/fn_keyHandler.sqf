@@ -99,7 +99,7 @@ switch (_code) do {
 	
 	//Menu De Setagem F8
 	case 66: {
-	    If (PlayerSide In [west,independent] && ((FETCH_CONST(life_coplevel) IsEqualTo 13) || (FETCH_CONST(life_mediclevel) in [8,16]))) Then {
+	    If ((FETCH_CONST(life_coplevel) IsEqualTo 13) || (FETCH_CONST(life_mediclevel) in [8,16]) || (FETCH_CONST(life_exercito) IsEqualTo 13)) Then {
 	        [] Call RJM_fnc_MenuSetagem;
 		};
 	};

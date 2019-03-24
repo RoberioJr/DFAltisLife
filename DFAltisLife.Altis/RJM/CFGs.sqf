@@ -208,7 +208,7 @@ RJ_PatentesCFG = [
 	[["1°Sargento",6],  ["",-1],             ["Cir.Geral",6],       ["Capitão/Major",14],    ["1°Sargento",6]],
 	[["SubTenente",7],  ["",-1],             ["Sub.Comandante",7],  ["T.Coronel",15],        ["SubTenente",7]],
 	[["2°Tenente",8],   ["",-1],             ["Cmd.Médico",8],      ["Coronel",16],          ["2°Tenente",8]],
-	[["1°Tenente",9],   ["",-1],             ["",-1]],              ["",-1],                 ["1°Tenente",9]],
+	[["1°Tenente",9],   ["",-1],             ["",-1],              ["",-1],                  ["1°Tenente",9]],
 	[["Capitão",10],    ["",-1],             ["",-1],               ["",-1],                 ["Capitão",10]],
 	[["Major",11],      ["",-1],             ["",-1],               ["",-1],                 ["Major",11]],
 	[["Ten.Cel",12],    ["",-1],             ["",-1],               ["",-1],                 ["Ten.Cel",12]],

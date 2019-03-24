@@ -5,8 +5,6 @@
     USO: [IDMUSICA] call RJM_fnc_radio;
 */
 
-#include "..\..\..\CFGs.sqf"
-
 Private ["_musica","_vei","_nomeDaMusica"];
 
 _musica = param [0,0,[0]];

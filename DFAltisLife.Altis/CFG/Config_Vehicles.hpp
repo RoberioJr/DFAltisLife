@@ -815,15 +815,15 @@ class LifeCfgVehicles {
 			{ "Policia", "cop", {
 				"textures\veh\cop\offroadpm.paa"
 			}, "call life_coplevel < 11" },
-			{ "Exercito", "civ", {
-				"textures\veh\exerc\offroad_eb.paa"
-			}, "call life_exercito >= 1" },
 			{ "SAMU", "med", {
 				"textures\veh\med\offroad_samu.paa"
 			}, "call life_mediclevel < 9" },
 			{ "Bombeiros", "med", {
 				"textures\veh\med\offroad_bm.paa"
-			}, "call life_mediclevel > 8" }
+			}, "call life_mediclevel > 8" },
+			{ "Exercito", "civ", {
+				"textures\veh\exerc\offroad_eb.paa"
+			}, "call life_exercito >= 1" }
         };
     };
 
@@ -1107,9 +1107,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Policia", "cop", {
 				"textures\veh\cop\mh9pm.paa"
 			}, "call life_coplevel >= 1" },
-			{ "Exercito", "civ", {
-				"textures\veh\exerc\mh9_eb.paa"
-			}, "call life_exercito >= 1" },
 			{ "SAMU", "med", {
 				"textures\veh\med\mh9med.paa"
 			}, "call life_mediclevel < 9" },
@@ -1154,7 +1151,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
-            }, "" }
+            }, "" },
+			{ "Exercito", "civ", {
+				"textures\veh\exerc\mh9_eb.paa"
+			}, "call life_exercito >= 1" }
             /*{ "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
             }, "" }*/
