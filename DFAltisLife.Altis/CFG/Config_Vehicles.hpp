@@ -157,8 +157,18 @@ class CarShops {
 			{ "O_LSV_02_unarmed_F", "call life_coplevel >= 4" },
 			{ "B_LSV_01_unarmed_F", "call life_coplevel >= 4" },
             { "B_MRAP_01_F", "call life_coplevel >= 4" },
-			{ "I_MRAP_03_F", "call life_coplevel >= 4" },
-			
+			{ "I_MRAP_03_F", "call life_coplevel >= 4" }
+        };
+    };
+
+	class exercito {
+        side = "civ";
+        conditions = "call life_exercito >= 1";
+        vehicles[] = {
+            { "C_Offroad_01_F", "" },
+			{ "B_LSV_01_unarmed_F", "call life_exercito >= 2" },
+			{ "B_T_APC_Wheeled_01_cannon_F", "call life_exercito >= 5" },
+			{ "B_Heli_Light_01_F", "call life_exercito >= 2" }
         };
     };
 
@@ -168,7 +178,7 @@ class CarShops {
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
             { "I_Heli_light_03_unarmed_F", "call life_coplevel >= 4" },
-			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 6" }, //HURON
+			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 6" } //HURON
         };
     };
 
@@ -219,6 +229,21 @@ class LifeCfgVehicles {
     };
 	
 	/* Adição De Veiculos RJ */
+	
+	class B_T_APC_Wheeled_01_cannon_F {
+	    vItemSpace = 85;
+		conditions = "call life_exercito >= 1";
+		price = 650000;
+		textures[] = {
+			{ "Exercito", "civ", {
+                "A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_base_olive_CO.paa",
+				"A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa",
+				"A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_tows_olive_co.paa",
+				"a3\Armor_F\Data\camonet_NATO_Green_CO.paa",
+				"a3\Armor_F\Data\cage_olive_CO.paa"
+            }, "call life_exercito >= 1" },
+		};
+	};
 	
 	//Quad Da Cop Turbo
 	class C_Quadbike_01_F {
@@ -374,7 +399,10 @@ class LifeCfgVehicles {
 		textures[] = {
 			{ "PM", "cop", {
 				"textures\veh\cop\prowlerpm.paa"
-			}, "" }
+			}, "" },
+			{ "Exercito", "civ", {
+				"textures\veh\exerc\prowler_eb.paa"
+			}, "call life_exercito >= 1" }
 		};
 	};
 	
@@ -787,6 +815,9 @@ class LifeCfgVehicles {
 			{ "Policia", "cop", {
 				"textures\veh\cop\offroadpm.paa"
 			}, "call life_coplevel < 11" },
+			{ "Exercito", "civ", {
+				"textures\veh\exerc\offroad_eb.paa"
+			}, "call life_exercito >= 1" },
 			{ "SAMU", "med", {
 				"textures\veh\med\offroad_samu.paa"
 			}, "call life_mediclevel < 9" },
@@ -1076,6 +1107,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Policia", "cop", {
 				"textures\veh\cop\mh9pm.paa"
 			}, "call life_coplevel >= 1" },
+			{ "Exercito", "civ", {
+				"textures\veh\exerc\mh9_eb.paa"
+			}, "call life_exercito >= 1" },
 			{ "SAMU", "med", {
 				"textures\veh\med\mh9med.paa"
 			}, "call life_mediclevel < 9" },

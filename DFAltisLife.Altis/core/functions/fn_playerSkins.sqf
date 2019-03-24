@@ -39,6 +39,14 @@ switch (playerSide) do {
                 player setObjectTextureGlobal [0, "textures\roupa\civ\civilian_uniform_7.jpg"];
             };
         };
+		If (FETCH_CONST(life_exercito) >= 1) Then {
+		    if (uniform player in ["U_B_CTRG_1","U_B_CTRG_3"]) then {
+			    player setObjectTextureGlobal [0, "textures\roupa\exerc\Unif_Padrao.jpg"];
+			};
+			if ((backpack player) IsEqualTo "B_Kitbag_rgr") then {
+			    (backpack player) setObjectTextureGlobal [0, "textures\roupa\exerc\Mochila.paa"];
+			};
+		};
     };
 // Policia Militar || BOPE
 	case west: {

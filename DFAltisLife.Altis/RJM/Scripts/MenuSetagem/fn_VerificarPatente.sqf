@@ -26,7 +26,12 @@ Switch (Side _jogador) Do {
 		    { _array = (_x Select 3); If ((_array Select 1) IsEqualTo _nivel) Then { _patente = (_array Select 0); }; } ForEach RJ_PatentesCFG;
 		};
 	};
+	case civilian: {
+	    If (_nivel in [1,2,3,4,5,6,7,8,9,10,11,12,13]) Then {
+		    { _array = (_x Select 4); If ((_array Select 1) IsEqualTo _nivel) Then { _patente = (_array Select 0); }; } ForEach RJ_PatentesCFG;
+		};
+	};
 };
-If (_patente IsEqualTo "") Then { _patente = "Erro"; };
+If (_patente IsEqualTo "") Then { _patente = "Civil"; };
 
 _patente

@@ -29,6 +29,7 @@ _tipo = "";
 Switch (PlayerSide) Do {
     case west: {_query = format ["UPDATE players SET coplevel='%1' WHERE pid='%2'",_valor,_uid]; _tipo = "COP";};
 	case independent: {_query = format ["UPDATE players SET mediclevel='%1' WHERE pid='%2'",_valor,_uid]; _tipo = "MED";};
+	case civilian: {_query = format ["UPDATE players SET exercito='%1' WHERE pid='%2'",_valor,_uid]; _tipo = "EXERC";};
 };
  
 if (_query isEqualTo "") exitWith {};

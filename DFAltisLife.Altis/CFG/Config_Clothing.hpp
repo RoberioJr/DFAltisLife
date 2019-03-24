@@ -136,8 +136,6 @@ class Clothing {
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
 			{ "U_B_Wetsuit", "Roupa De Mergulho", 18000, "" },
-			{ "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_B_Wetsuit", "", 22000, "" },
             { "U_Rangemaster", $STR_C_Cop_uniforms, 1750, "call life_coplevel == 1" },
 			{ "U_I_CombatUniform", "Uniforme Manga Longa", 9000, "call life_coplevel >= 2" },
 			{ "U_I_CombatUniform_shortsleeve", "Uniforme Manga Curta", 9000, "call life_coplevel >= 2" },
@@ -197,6 +195,42 @@ class Clothing {
         };
     };
 
+	class exercito {
+        title = "Loja De Roupas Do Exercito";
+        conditions = "call life_exercito >= 1";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+            { "U_B_CTRG_1", "Uniforme Padrão", 8500, "call life_exercito >= 1" },
+			{ "U_B_CTRG_3", "Uniforme Manga Longa", 9000, "call life_exercito >= 2" }
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+			{ "H_Booniehat_dgtl", "", 75, "" },
+            { "H_Booniehat_oli", "", 75, "" },
+            { "H_Beret_blk", "", 75, "" },
+			{ "H_Cap_blk_Raven", "", 75, "" },
+			{ "H_Cap_grn_BI", "", 75, "" },
+			{ "H_PASGT_basic_olive_F", "", 950, "" }
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" },
+			{ "G_Diving", "", 22500, "" },
+			{"G_Balaclava_blk", "", 11150, "" }
+        };
+        vests[] = {
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+			{ "V_TacVest_camo", "", 4500, "" },
+            { "V_PlateCarrierIA1_dgtl", "", 8500, "" }
+        };
+        backpacks[] = {
+            { "NONE", $STR_C_Remove_backpacks, 0, "" },
+            { "B_Kitbag_rgr", "", 1500, "" },
+            { "B_AssaultPack_rgr", "", 1800, "" },
+            { "B_Carryall_oli", "", 2500, "" }
+        };
+    };
+	
     class dive {
         title = "STR_Shops_C_Diving";
         conditions = "license_civ_dive";

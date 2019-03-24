@@ -105,11 +105,12 @@ class CfgSpawnPoints {
 				conditions = "call life_base == 8";
 			};
 			
-			class BaseEb {
+			//Exercito
+			class BaseEB {
 				displayName = "Base EB";
 				spawnMarker = "spawn_eb";
 				icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-				conditions = "call life_base == 1";
+				conditions = "call life_exercito >= 1";
 			};
         };
 

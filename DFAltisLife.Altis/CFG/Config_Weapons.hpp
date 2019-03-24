@@ -85,8 +85,7 @@ class WeaponShops {
 			{ "srifle_EBR_F", "", 500000, -1, "" }, //MK18
 			{ "srifle_DMR_06_olive_F", "", 375000, -1, "" }, //MK14
 			{ "srifle_DMR_03_F", "", 550000, -1, "" }, //MKl
-			{ "arifle_SPAR_03_blk_F", "", 450000, -1, "" },	//SPAR-17
-			//{ "srifle_DMR_04_F", "", 900000, -1, "" } // KIr
+			{ "arifle_SPAR_03_blk_F", "", 450000, -1, "" }	//SPAR-17
         };
         mags[] = {
             { "30Rnd_556x45_Stanag_Tracer_Red", "", 1150, -1, "" }, //5.56 30rnd TRG, SPAR-16 e MK20
@@ -224,8 +223,7 @@ class WeaponShops {
 			{ "srifle_EBR_F", "", 200500, -1, "call life_coplevel >= 3" }, //MK18
 			{ "srifle_DMR_06_olive_F", "", 210000, -1, "call life_coplevel >= 3" }, //MK14
 			{ "srifle_DMR_03_F", "", 250000, -1, "call life_coplevel >= 4" }, //MKl
-			{ "arifle_SPAR_03_blk_F", "", 275000, -1, "call life_coplevel >= 4" }, //SPAR-17
-			//{ "srifle_DMR_04_F", "", 900000, -1, "" } // KIr
+			{ "arifle_SPAR_03_blk_F", "", 275000, -1, "call life_coplevel >= 4" } //SPAR-17
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, -1, "" },
@@ -263,6 +261,75 @@ class WeaponShops {
 			//{ "optic_LRPS", "", 50000, -1, "call life_coplevel >= 7" },
 			{ "bipod_01_F_blk", "", 5000, -1, "call life_coplevel >= 1" },
 			{ "bipod_02_F_blk", "", 5000, -1, "call life_coplevel >= 1" }
+        };
+    };
+	
+	class exercito {
+        name = "Lojas de Armas Exercito";
+        side = "civ";
+        conditions = "call life_exercito >= 1";
+        items[] = {
+			{ "Rangefinder", "", 15000, -1, "" }, //Focalizador
+			{ "NVGoggles", "", 2500, -1, "" }, //NVG
+			{ "Binocular", "", 2500, -1, "" }, //BNC
+            { "ItemGPS", "", 500, -1, "" }, //GPS
+			{ "FirstAidKit", "", 250, -1, "" }, //KITMED
+			{ "SmokeShellYellow", "Gas Lacrimogeneo", 10000, -1, "" }, //FUMACA BRANCA
+			{ "SMG_03C_TR_black", "", 100000, -1, "call life_exercito >= 2" }, //ADR-97
+			{ "arifle_CTAR_blk_F", "",150000, -1, "call life_exercito >= 2" }, //CAR
+			{ "arifle_SPAR_01_blk_F", "", 120000, -1, "call life_exercito >= 2" }, //SPAR-16
+            { "arifle_Katiba_F", "", 50000, -1, "" }, //Katiba
+			{ "arifle_MXC_F", "", 50000, -1, "" }, //MXC
+			{ "arifle_MX_F", "", 52500, -1, "" }, //MX
+			{ "arifle_MXM_Black_F", "", 100000, -1, "" }, //MXM
+			{ "arifle_MX_SW_Black_F", "", 110000, -1, "" }, //MX-SW
+			{ "LMG_03_F", "", 115000, -1, "call life_exercito >= 2" }, //LIM-85
+			{ "LMG_Mk200_F", "", 225000, -1, "call life_exercito >= 3" }, //MK200
+			{ "arifle_AK12_F", "", 137500, -1, "call life_exercito >= 3" }, //AK-12
+			{ "srifle_DMR_07_blk_F", "", 167500, -1, "call life_exercito >= 3" }, //CMR
+			{ "srifle_DMR_01_F", "", 150000, -1, "call life_exercito >= 4" }, // Rahim
+			{ "srifle_EBR_F", "", 200500, -1, "" }, //MK18
+			{ "srifle_DMR_06_olive_F", "", 210000, -1, "call life_exercito >= 3" }, //MK14
+			{ "srifle_DMR_03_F", "", 250000, -1, "" }, //MKl
+			{ "arifle_SPAR_03_blk_F", "", 275000, -1, "" }, //SPAR-17
+			{ "srifle_DMR_02_camo_F", "", 390000, -1, "call life_exercito >= 4" } //MAR-10
+        };
+        mags[] = {
+            { "16Rnd_9x21_Mag", "", 125, -1, "" },
+            { "30Rnd_556x45_Stanag_Tracer_Red", "", 1150, -1, "" }, //5.56 30rnd TRG, SPAR-16 e MK20
+            { "30Rnd_762x39_Mag_Tracer_Green_F", "", 1850, -1, "" }, //7.62 30rnd AK12 e AKM
+            { "30Rnd_65x39_caseless_green_mag_Tracer", "", 800, -1, "" }, //6.5 30rnd Katiba
+            { "10Rnd_762x54_Mag", "", 1350, -1, "" }, //7.62 10rnd
+			{ "150Rnd_762x54_Box_Tracer", "", 2500, -1, "" }, //7.62 150rnd Zafir
+			{ "200Rnd_65x39_cased_Box_Tracer", "", 2000, -1, "" }, //6.5 200rnd MK200
+			{ "200Rnd_556x45_Box_Tracer_Red_F", "", 1350, -1, "" }, //5.56 200rnd LIM-85
+			{ "11Rnd_45ACP_Mag", "", 150, -1, "" },
+			{ "30Rnd_65x39_caseless_mag_Tracer", "", 900, -1, "" }, //6.5 30rnd MX
+			{ "100Rnd_65x39_caseless_mag_Tracer", "", 1080, -1, "" }, //6.5 100rnd mxSW
+			{ "20Rnd_762x51_Mag", "", 1750, -1, "" }, //7.62 20rnd sniper
+			{ "20Rnd_650x39_Cased_Mag_F", "", 1350, -1, "" }, //6.5 20rnd sniper
+            { "30Rnd_580x42_Mag_Tracer_F", "", 1750, -1, "" }, //5.8 30rnd
+			{ "50Rnd_570x28_SMG_03", "", 1000, -1, "" }, //5.7mm 50rnd
+			{ "10Rnd_127x54_Mag", "", 3500, -1, "" },
+			{ "10Rnd_338_Mag", "", 7500, -1, "" } //.338 10Rnd
+        };
+        accs[] = {
+			{ "acc_flashlight_pistol", "", 250, -1, "" },//Pistol Flashlight
+			{ "acc_flashlight", "", 1000, -1, "" },
+			{ "optic_MRD", "", 2750, -1, "" },
+            { "optic_ACO_grn", "", 2000, -1, "" },
+            { "optic_Holosight", "", 2000, -1, "" },
+			{ "optic_MRCO", "", 3500, -1, "" },
+			{ "optic_Arco", "", 7000, -1, "" },
+            { "optic_Hamr", "", 7500, -1, "" },
+			{ "optic_Arco_blk_F", "", 7000, -1, "" },
+			{ "optic_ERCO_snd_F", "", 6500, -1, "" },
+			{ "optic_ERCO_blk_F", "", 6500, -1, "" },
+			{ "optic_DMS", "", 12000, -1, "" },
+			{ "optic_AMS", "", 18000, -1, "" },
+			{ "optic_LRPS", "", 50000, -1, "call life_exercito >= 6" },
+			{ "bipod_01_F_blk", "", 5000, -1, "" },
+			{ "bipod_02_F_blk", "", 5000, -1, "" }
         };
     };
 

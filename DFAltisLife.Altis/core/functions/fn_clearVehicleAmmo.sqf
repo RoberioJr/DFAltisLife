@@ -34,6 +34,12 @@ if (_veh isEqualTo "B_Heli_Transport_01_F") then {
     _vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
 };
 
+if (_veh isEqualTo "B_T_APC_Wheeled_01_cannon_F") then {
+    _vehicle removeMagazinesTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
+    _vehicle removeMagazinesTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
+	_vehicle removeMagazinesTurret ["200Rnd_762x51_Belt_Red",[0]];
+};
+
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;

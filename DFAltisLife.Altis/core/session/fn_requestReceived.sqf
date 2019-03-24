@@ -64,6 +64,7 @@ switch (playerSide) do {
         CONST(life_coplevel, 0);
         CONST(life_medicLevel, 0);
 		CONST(life_base,(_this select 13));
+		CONST(life_exercito,(_this select 14));
         life_houses = _this select (_count - 3);
         if (LIFE_SETTINGS(getNumber,"save_playerStats") isEqualTo 1) then {
             life_hunger = ((_this select 9) select 0);

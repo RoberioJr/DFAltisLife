@@ -199,20 +199,20 @@ RJ_PatentesCFG = [
 ];*/
 
 RJ_PatentesCFG = [
-/*     -PM-                  -PC-                  -SAMU-               -BM-      */
-    [["Recruta",1],     ["Investigador",99], ["Soc.Estudante",1],   ["Recruta",9]],
-	[["Soldado",2],     ["Perito",99],       ["Socorrista",2],      ["Soldado",10]],
-	[["Cabo",3],        ["Escrivão",99],     ["Enfermeiro",3],      ["Cabo",11]],
-	[["3°Sargento",4],  ["Delegado",99],     ["Médico",4],          ["3/2/1°Sargento",12]],
-	[["2°Sargento",5],  ["",-1],             ["Cirurgião",5],       ["Sub/2/1°Tenente",13]],
-	[["1°Sargento",6],  ["",-1],             ["Cir.Geral",6],       ["Capitão/Major",14]],
-	[["SubTenente",7],  ["",-1],             ["Sub.Comandante",7],  ["T.Coronel",15]],
-	[["2°Tenente",8],   ["",-1],             ["Cmd.Médico",8],      ["Coronel",16]],
-	[["1°Tenente",9],   ["",-1],             ["",-1]],              ["",-1]],
-	[["Capitão",10],    ["",-1],             ["",-1],               ["",-1]],
-	[["Major",11],      ["",-1],             ["",-1],               ["",-1]],
-	[["Ten.Cel",12],    ["",-1],             ["",-1],               ["",-1]],
-	[["Coronel",13],    ["",-1],             ["",-1],               ["",-1]]
+/*     -PM-                  -PC-                  -SAMU-               -BM-                   -Exercito-        */
+    [["Recruta",1],     ["Investigador",99], ["Soc.Estudante",1],   ["Recruta",9],           ["Recruta",1]],        
+	[["Soldado",2],     ["Perito",99],       ["Socorrista",2],      ["Soldado",10],          ["Soldado",2]],
+	[["Cabo",3],        ["Escrivão",99],     ["Enfermeiro",3],      ["Cabo",11],             ["Cabo",3]],
+	[["3°Sargento",4],  ["Delegado",99],     ["Médico",4],          ["3/2/1°Sargento",12],   ["3°Sargento",4]],
+	[["2°Sargento",5],  ["",-1],             ["Cirurgião",5],       ["Sub/2/1°Tenente",13],  ["2°Sargento",5]],
+	[["1°Sargento",6],  ["",-1],             ["Cir.Geral",6],       ["Capitão/Major",14],    ["1°Sargento",6]],
+	[["SubTenente",7],  ["",-1],             ["Sub.Comandante",7],  ["T.Coronel",15],        ["SubTenente",7]],
+	[["2°Tenente",8],   ["",-1],             ["Cmd.Médico",8],      ["Coronel",16],          ["2°Tenente",8]],
+	[["1°Tenente",9],   ["",-1],             ["",-1]],              ["",-1],                 ["1°Tenente",9]],
+	[["Capitão",10],    ["",-1],             ["",-1],               ["",-1],                 ["Capitão",10]],
+	[["Major",11],      ["",-1],             ["",-1],               ["",-1],                 ["Major",11]],
+	[["Ten.Cel",12],    ["",-1],             ["",-1],               ["",-1],                 ["Ten.Cel",12]],
+	[["Coronel",13],    ["",-1],             ["",-1],               ["",-1],                 ["Coronel",13]]
 ];
 
 

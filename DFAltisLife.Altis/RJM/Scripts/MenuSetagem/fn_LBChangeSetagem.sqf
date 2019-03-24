@@ -14,11 +14,11 @@ _nome = _menu displayCtrl 3001;
 _steamid = _menu displayCtrl 3002;
 _nivelatual = _menu displayCtrl 3003;
 
-If (Side _jogador IsEqualTo civilian) Then {
-    _patente = "Civil";
-} Else {
+//If (Side _jogador IsEqualTo civilian) Then {
+//    _patente = "Civil";
+//} Else {
     _patente = [_jogador] Call RJM_fnc_VerificarPatente;
-};
+//};
 
 _nome ctrlSetText Format["Nome: %1",(name _jogador)];
 _steamid ctrlSetText Format["SteamID: %1",(getPlayerUID _jogador)];
