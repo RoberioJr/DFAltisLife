@@ -25,12 +25,17 @@ If (!alive player || dialog) exitWith {};
 If (PlayerSide IsEqualTo west) Then {
     If !(FETCH_CONST(life_coplevel) IsEqualTo 13) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
 	_select = 0;
-} Else {
+};
+If (PlayerSide IsEqualTo independent) Then {
     If !(FETCH_CONST(life_mediclevel) in [8,16]) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
 	_select = 2;
 	If (FETCH_CONST(life_mediclevel) IsEqualTo 16) Then {
 	    _select = 3;
 	};
+};
+If (PlayerSide IsEqualTo civilian) Then {
+    If !(FETCH_CONST(life_exercito) IsEqualTo 13) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
+	_select = 4;
 };
 
 disableSerialization;
