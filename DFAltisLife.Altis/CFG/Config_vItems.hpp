@@ -29,6 +29,13 @@ class VirtualShops {
         conditions = "license_civ_rebel";
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "camisinha", "analgesico", "kitmedico", "ziptie", "gag", "blindfold", "rastreador", "boltcutter", "bomba", "blastingcharge" };
     };
+	
+	class exercito {
+		name = "STR_MAR_MarketExerc";
+        side = "civ";
+        conditions = "call life_exercito >= 1";
+        items[] = { "waterBottle", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "analgesico", "kitmedico", "ziptie", "gag", "blindfold", "rastreador", "boltcutter" };
+	};
 
     class gang {
         name = "STR_Shops_Gang";

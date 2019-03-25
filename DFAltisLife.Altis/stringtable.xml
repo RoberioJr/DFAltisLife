@@ -8296,12 +8296,6 @@
         </Key>
         <Key ID="STR_Shop_Veh_NotEnough">
             <Original>You do not have enough cash to purchase this vehicle.\n\nAmount Lacking: $%1</Original>
-            <Czech>Nemáte dostatek peněz na koupi tohoto vozidla \n\nAmount Postrádat: $%1</Czech>
-            <Spanish>No tienes suficiente dinero para comprar este vehículo.\n\nFalta: $%1</Spanish>
-            <Russian></Russian>
-            <German>Du hast nicht genug Geld, um das Fahrzeug zu kaufen.\n\nFehlender Betrag: $%1</German>
-            <French>Vous n'avez pas assez d'argent pour acheter ce véhicule \n\nArgent Manquant: $%1</French>
-            <Italian>Non hai fondi sufficienti per comprare questo veicolo.\n\nTi mancano: $%1</Italian>
             <Portuguese>Você não tem dinheiro suficiente para comprar esse veiculo.\n\nFaltam: R$%1</Portuguese>
             <Polish>Nie masz tyle pieniędzy by kupić ten pojazd.\n\nBrakuje: $%1</Polish>
         </Key>
@@ -8318,23 +8312,11 @@
         </Key>
         <Key ID="STR_Shop_Veh_Block">
             <Original>There is a vehicle currently blocking the spawn point</Original>
-            <Czech>Tam je vozidlo v současné době blokuje potěr bod</Czech>
-            <Spanish>Hay un vehículo bloqueando el punto de Spawn.</Spanish>
-            <Russian></Russian>
-            <German>Ein Fahrzeug blockiert gerade den Spawnpunkt.</German>
-            <French>Il y a actuellement un véhicule qui bloque le point de spawn</French>
-            <Italian>C'è già un veicolo che blocca la zona di spawn</Italian>
             <Portuguese>Existe um veiculo bloquenado a area de respaw</Portuguese>
             <Polish>Inny pojazd blokuje miejsce odrodzenia pojazdów</Polish>
         </Key>
         <Key ID="STR_Shop_Veh_Bought">
             <Original>You bought a %1 for $%2</Original>
-            <Czech>Koupil sis %1 pro $%2</Czech>
-            <Spanish>Comprastes %1 por $%2</Spanish>
-            <Russian></Russian>
-            <German>Du kaufst eine(n) %1 für $%2.</German>
-            <French>Vous avez acheté un %1 pour $%2</French>
-            <Italian>Hai comprato un %1 al costo di $%2</Italian>
             <Portuguese>Você comprou %1 por R$%2</Portuguese>
             <Polish>Kupiłeś %1 za $%2</Polish>
         </Key>
@@ -9141,6 +9123,9 @@
             <German>Markt</German>
             <Portuguese>Mercado</Portuguese>
             <Polish>Market spożywczy</Polish>
+        </Key>
+		<Key ID="STR_MAR_MarketExerc">
+            <Original>Mercado Do Exercito</Original>
         </Key>
         <Key ID="STR_MAR_Air_Service">
             <Original>Air Service Station</Original>

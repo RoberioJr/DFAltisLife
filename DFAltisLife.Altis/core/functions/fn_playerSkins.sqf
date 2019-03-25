@@ -43,8 +43,8 @@ switch (playerSide) do {
 		    if (uniform player in ["U_B_CTRG_1","U_B_CTRG_3"]) then {
 			    player setObjectTextureGlobal [0, "textures\roupa\exerc\Unif_Padrao.jpg"];
 			};
-			if ((backpack player) IsEqualTo "B_Kitbag_rgr") then {
-			    (backpack player) setObjectTextureGlobal [0, "textures\roupa\exerc\Mochila.paa"];
+			if ((backpackContainer player) IsEqualTo "B_Kitbag_rgr") then {
+			    (backpackContainer player) setObjectTextureGlobal [0, "textures\roupa\exerc\Mochila.paa"];
 			};
 		};
     };
