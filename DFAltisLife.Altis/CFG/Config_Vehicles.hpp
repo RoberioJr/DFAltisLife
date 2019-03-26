@@ -874,11 +874,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },*/
 			{ "Policia", "cop", {
                 "textures\veh\cop\hatchbackpm.paa"
-            }, "call life_coplevel < 11" }
-			/*
-			{ "BOPE - Provisório", "cop", {
-                "\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_BASE09_CO.paa"
-            }, "call life_coplevel > 10" }*/
+            }, "" },
+			{ "Policia Civil", "cop", {
+                "textures\veh\pc\hatchbackpc.paa"
+            }, "call life_coplevel >= 14" }
         };
     };
 
@@ -1023,7 +1022,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Policia", "cop", {
                 "textures\veh\cop\suvpm.paa"
-            }, "" }
+            }, "" },
+			{ "Policia Civil", "cop", {
+                "textures\veh\pc\suvpc.paa"
+            }, "call life_coplevel >= 14" }
         };
     };
 

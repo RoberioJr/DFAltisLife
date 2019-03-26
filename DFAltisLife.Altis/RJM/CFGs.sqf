@@ -200,10 +200,10 @@ RJ_PatentesCFG = [
 
 RJ_PatentesCFG = [
 /*     -PM-                  -PC-                  -SAMU-               -BM-                   -Exercito-        */
-    [["Recruta",1],     ["Investigador",99], ["Soc.Estudante",1],   ["Recruta",9],           ["Recruta",1]],        
-	[["Soldado",2],     ["Perito",99],       ["Socorrista",2],      ["Soldado",10],          ["Soldado",2]],
-	[["Cabo",3],        ["Escrivão",99],     ["Enfermeiro",3],      ["Cabo",11],             ["Cabo",3]],
-	[["3°Sargento",4],  ["Delegado",99],     ["Médico",4],          ["3/2/1°Sargento",12],   ["3°Sargento",4]],
+    [["Recruta",1],     ["Investigador",14], ["Soc.Estudante",1],   ["Recruta",9],           ["Recruta",1]],        
+	[["Soldado",2],     ["Perito",15],       ["Socorrista",2],      ["Soldado",10],          ["Soldado",2]],
+	[["Cabo",3],        ["Escrivão",16],     ["Enfermeiro",3],      ["Cabo",11],             ["Cabo",3]],
+	[["3°Sargento",4],  ["Delegado",17],     ["Médico",4],          ["3/2/1°Sargento",12],   ["3°Sargento",4]],
 	[["2°Sargento",5],  ["",-1],             ["Cirurgião",5],       ["Sub/2/1°Tenente",13],  ["2°Sargento",5]],
 	[["1°Sargento",6],  ["",-1],             ["Cir.Geral",6],       ["Capitão/Major",14],    ["1°Sargento",6]],
 	[["SubTenente",7],  ["",-1],             ["Sub.Comandante",7],  ["T.Coronel",15],        ["SubTenente",7]],

@@ -23,8 +23,11 @@ Private ['_select','_listplayers','_nivel','_botao','_nome','_cor','_array'];
 If (!alive player || dialog) exitWith {};
 
 If (PlayerSide IsEqualTo west) Then {
-    If !(FETCH_CONST(life_coplevel) IsEqualTo 13) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
+    If !(FETCH_CONST(life_coplevel) in [13,17]) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};
 	_select = 0;
+	If (FETCH_CONST(life_coplevel) IsEqualTo 17) Then {
+	    _select = 1;
+	};
 };
 If (PlayerSide IsEqualTo independent) Then {
     If !(FETCH_CONST(life_mediclevel) in [8,16]) ExitWith {hint 'Você Não Tem Permissão Para Usar Isso!'};

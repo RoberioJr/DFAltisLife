@@ -43,7 +43,7 @@ switch (playerSide) do {
 		    if (uniform player in ["U_B_CTRG_1","U_B_CTRG_3"]) then {
 			    player setObjectTextureGlobal [0, "textures\roupa\exerc\Unif_Padrao.jpg"];
 			};
-			if ((backpackContainer player) IsEqualTo "B_Kitbag_rgr") then {
+			if ((backpack player) IsEqualTo "B_Kitbag_rgr") then {
 			    (backpackContainer player) setObjectTextureGlobal [0, "textures\roupa\exerc\Mochila.paa"];
 			};
 		};
@@ -72,6 +72,10 @@ switch (playerSide) do {
 		
 		if ((FETCH_CONST(life_coplevel) >= 2) && ((uniform player) == "U_I_CombatUniform_shortsleeve" or ((uniform player) == "U_I_CombatUniform"))) then {
 		    player setObjectTextureGlobal [0, "textures\roupa\pm\uniforme_pm_padrao.jpg"];
+		};
+		//PC
+		if ((FETCH_CONST(life_coplevel) >= 14) && ((uniform player) == "U_Rangemaster")) then {
+		    player setObjectTextureGlobal [0, "textures\roupa\pc\Uniforme_PC.jpg"];
 		};
     };
 	

@@ -17,6 +17,9 @@ Switch (Side _jogador) Do {
 	    If (_nivel in [1,2,3,4,5,6,7,8,9,10,11,12,13]) then { 
 		    { _array = (_x Select 0); If ((_array Select 1) IsEqualTo _nivel) Then { _patente = (_array Select 0); }; } ForEach RJ_PatentesCFG;
 		};
+		If (_nivel in [14,15,16,17]) then { 
+		    { _array = (_x Select 1); If ((_array Select 1) IsEqualTo _nivel) Then { _patente = (_array Select 0); }; } ForEach RJ_PatentesCFG;
+		};
 	};
 	case independent: {
 	    If (_nivel in [1,2,3,4,5,6,7,8]) Then {
