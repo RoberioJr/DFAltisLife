@@ -823,7 +823,10 @@ class LifeCfgVehicles {
 			}, "call life_mediclevel > 8" },
 			{ "Exercito", "civ", {
 				"textures\veh\exerc\offroad_eb.paa"
-			}, "call life_exercito >= 1" }
+			}, "call life_exercito >= 1" },
+			{ "BOPE", "cop", {
+				"textures\veh\bope\bopeoffroad.paa"
+			}, "" }
         };
     };
 
@@ -1077,6 +1080,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "SAMU", "med", {
 				"textures\veh\med\HunterSamu01.paa",
 				"textures\veh\med\HunterSamu02.paa"
+			}, "" },
+			{ "BOPE", "cop", {
+				"textures\veh\bope\bopehunter.paa",
+				"textures\veh\bope\bopehunter2.paa"
 			}, "" }
         };
     };
@@ -1156,10 +1163,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
 			{ "Exercito", "civ", {
 				"textures\veh\exerc\mh9_eb.paa"
-			}, "call life_exercito >= 1" }
-            /*{ "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
-            }, "" }*/
+			}, "call life_exercito >= 1" },
+			{ "BOPE", "cop", {
+				"textures\veh\bope\mh9bope.paa"
+			}, "" }
         };
     };
 

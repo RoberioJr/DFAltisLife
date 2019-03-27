@@ -138,7 +138,7 @@ class Clothing {
 			{ "U_B_Wetsuit", "Roupa De Mergulho", 18000, "" },
             { "U_Rangemaster", $STR_C_Cop_uniforms, 1750, "" },
 			{ "U_I_CombatUniform", "Uniforme Manga Longa", 9000, "call life_coplevel >= 2" },
-			{ "U_I_CombatUniform_shortsleeve", "Uniforme Manga Curta", 9000, "call life_coplevel >= 2" },
+			{ "U_I_CombatUniform_shortsleeve", "Uniforme BOPE Manga Curta", 9000, "call life_coplevel >= 2" },
 			{ "U_B_CTRG_1", "Uniforme Tipo 1 Manga Longa", 9000, "call life_coplevel >= 2" },
 			{ "U_B_CTRG_3", "Uniforme Tipo 1 Manga Curta", 9000, "call life_coplevel >= 2" }
         };
