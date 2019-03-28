@@ -75,7 +75,7 @@ class WeaponShops {
 			{ "arifle_MX_SW_F", "", 175000, -1, "" }, //MX-SW
 			{ "arifle_MX_SW_Black_F", "", 180000, -1, "" }, //MX-SW
 			{ "LMG_03_F", "", 250000, -1, "" }, //LIM-85
-			{ "LMG_Mk200_F", "", 650000, -1, "" }, //MK200
+			{ "LMG_Mk200_F", "", 600000, -1, "" }, //MK200
 			//{ "LMG_Zafir_F", "", 800000, -1, "" }, //Zafir
 			{ "arifle_AKS_F", "", 245000, -1, "" }, //AKS
             { "arifle_AKM_F", "", 290000, -1, "" }, //AKM
