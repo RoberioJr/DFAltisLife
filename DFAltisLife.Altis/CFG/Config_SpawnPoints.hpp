@@ -39,6 +39,13 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
             };
+			
+			class Eventos {
+                displayName = "Eventos";
+                spawnMarker = "spawn_eventos";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
 
             class RebelN {
                 displayName = $STR_SP_Reb_N;

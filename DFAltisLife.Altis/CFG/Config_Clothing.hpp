@@ -206,12 +206,21 @@ class Clothing {
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
+			{ "H_Beret_blk", "", 1000, "" },
+			{ "H_Beret_grn", "", 1000, "" },
+			{ "H_Beret_red", "", 1000, "" },
+			{ "H_Beret_grn_SF", "", 1000, "" },
+			{ "H_Beret_brn_SF", "", 1000, "" },
+			{ "H_Beret_ocamo", "", 1000, "" },
+			{ "H_Beret_02", "", 1000, "" },
+			{ "H_Beret__colonel", "", 2000, "" },			
 			{ "H_Booniehat_dgtl", "", 75, "" },
             { "H_Booniehat_oli", "", 75, "" },
             { "H_Beret_blk", "", 75, "" },
 			{ "H_Cap_blk_Raven", "", 75, "" },
 			{ "H_Cap_grn_BI", "", 75, "" },
-			{ "H_PASGT_basic_olive_F", "", 950, "" }
+			{ "H_PASGT_basic_olive_F", "", 950, "" },
+			{ "H_HelmetB_Enh_tna_F", "", 10000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -221,13 +230,21 @@ class Clothing {
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
 			{ "V_TacVest_camo", "", 4500, "" },
-            { "V_PlateCarrierIA1_dgtl", "", 8500, "" }
+            { "V_PlateCarrierIA1_dgtl", "", 8500, "" },
+			{ "V_PlateCarrier1_rgr_noflag_F", "", 15000, "" },
+			{ "V_PlateCarrier1_blk", "", 15000, "" },
+			{ "V_PlateCarrier2_rgr_noflag_F", "", 30000, "" },
+			{ "V_PlateCarrierSpec_Blk", "", 30000, "" }
+			
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
             { "B_Kitbag_rgr", "", 1500, "" },
             { "B_AssaultPack_rgr", "", 1800, "" },
-            { "B_Carryall_oli", "", 2500, "" }
+            { "B_Carryall_oli", "", 2500, "" },
+			{ "B_LegStrapBag_black_F", "", 2500, "" },
+			{ "B_LegStrapBag_olive_F", "", 2500, "" }
+			
         };
     };
 	

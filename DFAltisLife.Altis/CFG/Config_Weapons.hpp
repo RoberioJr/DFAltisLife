@@ -110,6 +110,7 @@ class WeaponShops {
             { "acc_flashlight", "", 1000, -1, "" },
             { "optic_ACO_grn", "", 1000, -1, "" },
             { "optic_Holosight", "", 1000, -1, "" },
+			{ "optic_NVS", "", 25000, -1, "" },
 			{ "optic_MRCO", "", 2500, -1, "" },
             { "optic_Hamr", "", 3500, -1, "" },
             { "optic_Arco", "", 3000, -1, "" },
@@ -247,6 +248,7 @@ class WeaponShops {
         accs[] = {
 			{ "acc_flashlight_pistol", "", 250, -1, "" },//Pistol Flashlight
 			{ "acc_flashlight", "", 1000, -1, "" },
+			{ "optic_NVS", "", 20000, -1, "" },
 			{ "optic_MRD", "", 2750, -1, "" },
             { "optic_ACO_grn", "", 2000, -1, "" },
             { "optic_Holosight", "", 2000, -1, "" },
@@ -270,7 +272,9 @@ class WeaponShops {
         conditions = "call life_exercito >= 1";
         items[] = {
 			{ "Rangefinder", "", 15000, -1, "" }, //Focalizador
-			{ "NVGoggles", "", 2500, -1, "" }, //NVG
+			{ "NVGoggles_OPFOR", "", 2500, -1, "" }, //NVG
+			{ "hgun_Pistol_heavy_01_F", "", 15000, -1, ""},
+			{ "hgun_Rook40_F", "", 10000, -1, ""},
 			{ "Binocular", "", 2500, -1, "" }, //BNC
             { "ItemGPS", "", 500, -1, "" }, //GPS
 			{ "FirstAidKit", "", 250, -1, "" }, //KITMED
@@ -293,6 +297,8 @@ class WeaponShops {
 			{ "srifle_DMR_03_F", "", 250000, -1, "" }, //MKl
 			{ "arifle_SPAR_03_blk_F", "", 275000, -1, "" }, //SPAR-17
 			{ "srifle_DMR_02_camo_F", "", 390000, -1, "call life_exercito >= 4" } //MAR-10
+			
+			
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, -1, "" },
@@ -327,9 +333,12 @@ class WeaponShops {
 			{ "optic_ERCO_blk_F", "", 6500, -1, "" },
 			{ "optic_DMS", "", 12000, -1, "" },
 			{ "optic_AMS", "", 18000, -1, "" },
+			{ "optic_NVS", "", 15000, -1, "" },
 			{ "optic_LRPS", "", 50000, -1, "call life_exercito >= 6" },
 			{ "bipod_01_F_blk", "", 5000, -1, "" },
-			{ "bipod_02_F_blk", "", 5000, -1, "" }
+			{ "bipod_02_F_blk", "", 5000, -1, "" },
+			{ "acc_pointer_IR", "", 10000, -1, "" }
+			 
         };
     };
 
