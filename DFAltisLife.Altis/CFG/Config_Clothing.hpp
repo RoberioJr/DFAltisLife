@@ -216,6 +216,11 @@ class Clothing {
 			{ "H_Beret__colonel", "", 2000, "" },			
 			{ "H_Booniehat_dgtl", "", 75, "" },
             { "H_Booniehat_oli", "", 75, "" },
+			{ "H_Booniehat_mcamo", "", 75, "" },
+			{ "H_Beret_gen_F", "", 75, "" },
+			{ "H_Beret_02", "", 75, "" },
+			{ "H_Beret_Colonel", "", 75, "" },
+			{ "H_Beret_blk_POLICE", "", 75, "" },
             { "H_Beret_blk", "", 75, "" },
 			{ "H_Cap_blk_Raven", "", 75, "" },
 			{ "H_Cap_grn_BI", "", 75, "" },
@@ -224,7 +229,6 @@ class Clothing {
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
-			{ "G_Diving", "", 22500, "" },
 			{"G_Balaclava_blk", "", 11150, "" }
         };
         vests[] = {
