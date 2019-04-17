@@ -157,11 +157,35 @@ class CarShops {
 			{ "O_LSV_02_unarmed_F", "call life_coplevel >= 4" },
 			{ "B_LSV_01_unarmed_F", "call life_coplevel >= 4" },
             { "B_MRAP_01_F", "call life_coplevel >= 4" },
-			{ "I_MRAP_03_F", "call life_coplevel >= 4" }
+			{ "I_MRAP_03_F", "call life_coplevel >= 4" },
+			{ "C_Offroad_01_F", "call life_coplevel >= 18" },
+			{ "B_LSV_01_unarmed_F", "call life_coplevel >= 18" },
+			{ "B_T_APC_Wheeled_01_cannon_F", "call life_coplevel >= 18" },
+			{ "B_Heli_Light_01_F", "call life_coplevel >= 18" },
+			{ "I_C_Offroad_02_LMG_F", "call life_coplevel >= 18" },
+			{ "B_Heli_Transport_03_unarmed_F", "call life_coplevel >= 18" },
+			{ "B_T_MRAP_01_F", "call life_coplevel >= 18" },
+			{ "B_T_Truck_01_ammo_F", "call life_coplevel >= 18" },
+			{ "B_T_Truck_01_medical_F", "call life_coplevel >= 18" },
+			{ "I_Plane_Fighter_04_F", "call life_coplevel >= 18" },
+			{ "B_T_MBT_01_Arty_F", "call life_coplevel >= 18" },
+			{ "B_APC_Tracked_01_AA_F", "call life_coplevel >= 18" },
+			{ "B_APC_Tracked_01_rcws_F", "call life_coplevel >= 18" },
+			{ "B_APC_Tracked_01_crv_F", "call life_coplevel >= 18" },
+			{ "I_APC_Wheeled_03_Cannon_F", "call life_coplevel >= 18" },
+			{ "B_T_MBT_03_cannon_F", "call life_coplevel >= 18" },
+			{ "B_T_VTOL_01_vehicle_F", "call life_coplevel >= 18" },
+			{ "I_Heli_light_03_dynamicLoadout_F", "call life_coplevel >= 18" },
+			{ "B_G_Van_02_transport_F", "call life_coplevel >= 18" },
+			{ "C_Offroad_01_repair_F", "call life_coplevel >= 18" },			
+			{ "B_Heli_Transport_01_F", "call life_coplevel >= 18" },
+			{ "B_Heli_Attack_01_dynamicLoadout_F" "call life_coplevel >= 18" },
+			{ "I_Plane_Fighter_04_F", "call life_coplevel >= 18" }
+			
         };
     };
 
-	class exercito {
+	/*class exercito {
         side = "civ";
         conditions = "call life_exercito >= 1";
         vehicles[] = {
@@ -189,7 +213,8 @@ class CarShops {
 			{ "B_Heli_Attack_01_dynamicLoadout_F" "call life_exercito >= 9" },
 			{ "I_Plane_Fighter_04_F", "call life_exercito >= 9" }
 			
-        };
+        };*/
+		
     };
 
     class cop_air {

@@ -224,7 +224,8 @@ class WeaponShops {
 			{ "srifle_EBR_F", "", 300500, -1, "call life_coplevel >= 3" }, //MK18
 			{ "srifle_DMR_06_olive_F", "", 310000, -1, "call life_coplevel >= 3" }, //MK14
 			{ "srifle_DMR_03_F", "", 350000, -1, "call life_coplevel >= 4" }, //MKl
-			{ "arifle_SPAR_03_blk_F", "", 300000, -1, "call life_coplevel >= 4" } //SPAR-17
+			{ "arifle_SPAR_03_blk_F", "", 300000, -1, "call life_coplevel >= 4" }, //SPAR-17
+			{ "srifle_DMR_02_camo_F", "", 390000, -1, "call life_coplevel >= 18" } //MAR-10
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, -1, "" },
@@ -243,7 +244,8 @@ class WeaponShops {
 			{ "20Rnd_650x39_Cased_Mag_F", "", 1350, -1, "" }, //6.5 20rnd sniper
             { "30Rnd_580x42_Mag_Tracer_F", "", 1750, -1, "" }, //5.8 30rnd
 			{ "50Rnd_570x28_SMG_03", "", 1000, -1, "" }, //5.7mm 50rnd
-			{ "10Rnd_127x54_Mag", "", 3500, -1, "" }
+			{ "10Rnd_127x54_Mag", "", 3500, -1, "" },
+			{ "10Rnd_338_Mag", "", 7500, -1, "" } //.338 10Rnd
         };
         accs[] = {
 			{ "acc_flashlight_pistol", "", 250, -1, "" },//Pistol Flashlight

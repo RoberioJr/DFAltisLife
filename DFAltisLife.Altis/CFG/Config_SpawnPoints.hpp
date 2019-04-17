@@ -171,6 +171,13 @@ class CfgSpawnPoints {
                 conditions = "call life_coplevel >= 1";
 			};
 			
+			class BaseEB {
+				displayName = "Base EB";
+				spawnMarker = "spawn_eb";
+				icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+				conditions = "call life_coplevel >= 18";
+			};
+			
         };
 
         class Medic {

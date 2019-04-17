@@ -141,8 +141,8 @@ class Clothing {
 			{ "U_I_CombatUniform_shortsleeve", "Uniforme BOPE Manga Curta", 9000, "call life_coplevel >= 2" },
 			{ "U_B_CTRG_1", "Uniforme Tipo 1 Manga Longa", 9000, "call life_coplevel >= 2" },
 			{ "U_B_CTRG_3", "Uniforme Tipo 1 Manga Curta", 9000, "call life_coplevel >= 2" },
-			{ "U_B_CTRG_1", "Uniforme Padrão", 8500, "call life_coplevel >= 18" },
-			{ "U_B_CTRG_3", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" }
+			{ "U_I_CombatUniform", "Uniforme Padrão", 8500, "call life_coplevel >= 18" },
+			{ "U_I_CombatUniform_shortsleeve", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
