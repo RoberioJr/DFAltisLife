@@ -38,5 +38,5 @@ class RJ_CfgTrabalhos {
 	    {"Uranio_Area",250},
 		{"Proc_Uranio",75}
 	};
-    RJ_CapEUnifUranio[] = {"H_PilotHelmetFighter_l","U_B_PilotCoveralls"};//{'Capacete','Uniforme'}
+    RJ_CapEUnifUranio[] = {"H_PilotHelmetFighter_B","U_B_PilotCoveralls"};//{'Capacete','Uniforme'}
 };

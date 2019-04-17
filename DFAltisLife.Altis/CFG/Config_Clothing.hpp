@@ -262,7 +262,7 @@ class Clothing {
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
-			{ "H_PilotHelmetFighter_l", "Capacete AntiRadiotivo", 35000, "" }
+			{ "H_PilotHelmetFighter_B", "Capacete AntiRadiotivo", 35000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" }
