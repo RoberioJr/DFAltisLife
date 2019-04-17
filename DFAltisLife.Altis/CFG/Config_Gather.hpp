@@ -49,14 +49,6 @@ class CfgGather {
             zoneSize = 30;
         };
 
-		
-		class uranio {
-			amount = 3;
-            zones[] = { "mina_uranio" };
-            item = "";
-            zoneSize = 100;
-		};
-
 		/* DROGAS!! */
 		
 		/* HEROINA */
@@ -170,6 +162,14 @@ Example 2:
             mined[] = { "iron_unrefined" };
             zoneSize = 30;
         };
+		
+		class uranio {
+			amount = 3;
+            zones[] = { "mina_uranio" };
+            item = "pickaxe";
+			mined[] = { "uranio" };
+            zoneSize = 100;
+		};
 
         class salt_unrefined {
             amount = 2;
