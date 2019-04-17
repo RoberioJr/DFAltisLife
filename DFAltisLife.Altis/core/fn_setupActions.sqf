@@ -25,6 +25,9 @@ switch (playerSide) do {
 		
 		//Estrupar
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>COMER O CU DELE</t>",RJM_fnc_ArrombarCU,"",0,false,false,"",'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["CuArrombado",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
+	
+	    //Pegar Items
+		life_actions = life_actions + [player addAction["<t color='#FFA500'>Pegar Isso</t>",RJM_fnc_PegarItem,"",0,false,false,"",'!isNull cursorObject && cursorObject distance player < 3.5 && TypeOf cursorObject in RJ_ObjsItemsTrabalho && cursorObject GetVariable ["RJ_ItemVar",["",0,False]] select 2']];
 	};
     
     //Cops
@@ -66,5 +69,3 @@ life_actions = life_actions + [player addAction["<t color='#00FF00'>Abrir Paraqu
  
  /* Rádio */
 life_actions = life_actions + [player addAction["<t color=""#2E9AFE"">" + ("Radio") +"</t>","[1] Call RJM_fnc_Menu","",7,false,false,"",'(vehicle player != player) && (typeOf (vehicle player) in RJ_VeiculosComRadio) && (Driver (vehicle player) IsEqualTo player)']];
-
-

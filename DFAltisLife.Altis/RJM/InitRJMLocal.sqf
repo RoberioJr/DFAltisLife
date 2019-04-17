@@ -89,6 +89,9 @@
   /* Ferramentas ADM */
    //[] execVM "RJM\Scripts\MenuAdminRJ\loop.sqf";
    
+  /* Urânio Init */
+   [] Spawn RJM_fnc_CfgAreasUranio;
+   
   /* RádioRJM */
    [] execVM "RJM\Scripts\Radio\init.sqf";
    

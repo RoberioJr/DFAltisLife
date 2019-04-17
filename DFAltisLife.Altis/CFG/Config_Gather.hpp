@@ -49,6 +49,13 @@ class CfgGather {
             zoneSize = 30;
         };
 
+		
+		class uranio {
+			amount = 3;
+            zones[] = { "mina_uranio" };
+            item = "";
+            zoneSize = 100;
+		};
 
 		/* DROGAS!! */
 		

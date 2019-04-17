@@ -179,25 +179,10 @@ RJ_Colocaveis = [
 //Limite De Colocaveis
 RJ_LimiteColocaveis = 65;
 
-// [PATENTE COP, PATENTE PC, PATENTE MED, PATENTE BM]
-/*
-RJ_PatentesCFG = [
-    ["Remover","Remover","Remover","Remover"],
-    ["Recruta","Investigador","Soc.Estudante","Recruta"],
-    ["Soldado","Perito","Socorrista","Soldado"],
-    ["Cabo","Escrivão","Tec.Enfermagem","Cabo"],
-    ["3°Sargento","Delegado","Enfermeiro","3/2/1°Sargento"],
-    ["2°Sargento","","Médico","Sub/2/1°Tenente"],
-    ["1°Sargento","","Cirurgião","Capitão/Major"],
-    ["SubTenente","","Cir.Geral","T.Coronel"],
-    ["2°Tenente","","Sub.Comandante","Coronel"],
-    ["1°Tenente","","Cmd.Médico",""],
-    ["Capitão","","",""],
-    ["Major","","",""],
-    ["Ten.Cel","","",""],
-    ["Coronel","","",""]
-];*/
+//Objetos De Trabalho
+RJ_ObjsItemsTrabalho = getArray(missionConfigFile >> "RJ_CfgTrabalhos" >> "RJ_ObjetosTrabalho");
 
+// [PATENTE COP, PATENTE PC, PATENTE MED, PATENTE BM]
 RJ_PatentesCFG = [
 /*     -PM-                  -PC-                  -SAMU-               -BM-                   -Exercito-        */
     [["Recruta",1],     ["Investigador",14], ["Soc.Estudante",1],   ["Recruta",9],           ["Recruta",1]],        

@@ -5953,6 +5953,15 @@
             <Portuguese>conjunto de ferramentas</Portuguese>
             <Polish>zestaw narzędzi</Polish>
         </Key>
+		<Key ID="STR_Item_lixo">
+            <Original>Saco De Lixo</Original>
+        </Key>
+		<Key ID="STR_Item_uranio">
+            <Original>Urânio</Original>
+        </Key>
+		<Key ID="STR_Item_uraniop">
+            <Original>Urânio Processado</Original>
+        </Key>
         <Key ID="STR_Item_Pickaxe">
             <Original>Pickaxe</Original>
             <Czech>Krumpáč</Czech>
@@ -6508,6 +6517,9 @@
             <Italian>Processo Sale</Italian>
             <Portuguese>Processamento de Sal</Portuguese>
             <Polish>Warzenie soli</Polish>
+        </Key>
+		<Key ID="STR_License_uranio">
+            <Original>Processamento De Uranio</Original>
         </Key>
         <Key ID="STR_License_Cocaine">
             <Original>Cocaine Training</Original>
@@ -7132,6 +7144,9 @@
             <Italian>Processando Sale</Italian>
             <Portuguese>Refinando Sal</Portuguese>
             <Polish>Warzenie soli</Polish>
+        </Key>
+		<Key ID="STR_Process_uranio">
+            <Original>Processando Uranio</Original>
         </Key>
         <Key ID="STR_Process_Cocaine">
             <Original>Processing Coca Leaves</Original>
@@ -11729,10 +11744,13 @@
   </Package>
   <Key ID="STR_PM_yMarket">
    <Original>Mercado</Original>
-</Key>
-<Key ID="STR_Shops_yMarket">
-    <Original>Mercado DFAL</Original>
-</Key>
+	</Key>
+	<Key ID="STR_Shops_yMarket">
+		<Original>Mercado DFAL</Original>
+	</Key>
+	<Key ID="STR_Shops_uranio">
+		<Original>Comprador De Urânio</Original>
+	</Key>
 <!--
     Algemas ZipTies
 ---> 

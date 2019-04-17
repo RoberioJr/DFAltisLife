@@ -252,6 +252,29 @@ class Clothing {
         };
     };
 	
+	class uranio {
+		title = "Loja De Uniformes AntiRadiotivos";
+        conditions = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+            { "U_B_PilotCoveralls", "Uniforme AntiRadiotivo", 48000, "" }
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+			{ "H_PilotHelmetFighter_l", "Capacete AntiRadiotivo", 35000, "" }
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" }
+        };
+        vests[] = {
+            { "NONE", $STR_C_Remove_vests, 0, "" }
+        };
+        backpacks[] = {
+            { "NONE", $STR_C_Remove_backpacks, 0, "" }
+        };
+	};
+	
     class dive {
         title = "STR_Shops_C_Diving";
         conditions = "license_civ_dive";

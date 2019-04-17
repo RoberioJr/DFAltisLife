@@ -56,6 +56,14 @@ class ProcessAction {
         //ScrollText = "Refine Salt";
         NoLicenseCost = 450;
     };
+	
+	class uranio {
+		MaterialsReq[] = {{"uranio",1}};
+        MaterialsGive[] = {{"uraniop",1}};
+        Text = "STR_Process_uranio";
+        //ScrollText = "Refine Salt";
+        NoLicenseCost = 1250;
+	};
 
 	/* TABACO */
 	class cocaine {

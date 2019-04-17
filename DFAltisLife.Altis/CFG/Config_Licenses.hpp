@@ -96,8 +96,16 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class uranio {
+        variable = "uranio";
+        displayName = "STR_License_uranio";
+        price = 100000;
+        illegal = false;
+        side = "civ";
+    };
 
-   class iron {
+    class iron {
         variable = "iron";
         displayName = "STR_License_Iron";
         price = 25000;

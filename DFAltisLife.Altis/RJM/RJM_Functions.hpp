@@ -39,6 +39,14 @@ class RJM_Scripts {
 		class Falando {};
 	};		
 	
+	class Trabalhos {
+		file = "RJM\Scripts\Trabalhos";
+		class PegarItem {};
+		class SpawnLixo {};
+		class UranioInit {};
+		class CfgAreasUranio {};
+	};
+	
 	class Assaltos {
 	    file = "RJM\Scripts\Assaltos";
 		class pAssalto {};
