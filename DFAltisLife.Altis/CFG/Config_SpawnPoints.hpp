@@ -115,7 +115,7 @@ class CfgSpawnPoints {
 			//Exercito
 			class BaseEB {
 				displayName = "Base EB";
-				spawnMarker = "spawn_eb";
+				spawnMarker = "spawn_eb1";
 				icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
 				conditions = "call life_exercito >= 1";
 			};
@@ -171,7 +171,7 @@ class CfgSpawnPoints {
                 conditions = "call life_coplevel >= 1";
 			};
 			
-			class BaseEB {
+			class BaseEBCop {
 				displayName = "Base EB";
 				spawnMarker = "spawn_eb";
 				icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";

@@ -213,9 +213,9 @@ class CarShops {
 			{ "B_Heli_Attack_01_dynamicLoadout_F" "call life_exercito >= 9" },
 			{ "I_Plane_Fighter_04_F", "call life_exercito >= 9" }
 			
-        };*/
+        };
 		
-    };
+    };*/
 
     class cop_air {
         side = "cop";
