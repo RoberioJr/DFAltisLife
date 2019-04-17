@@ -23,7 +23,7 @@ if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith {"Você Não Tem 
 if (_kassa == 0) exitWith { hint "Não Tem Dinheiro No Caixa!!" };
 
 _rip = true;
-_kassa = 200000 + round(random 100000);
+_kassa = 900000 + round(random 100000);
 _shop removeAction _action;
 //_shop switchMove "AmovPercMstpSsurWnonDnon";
 

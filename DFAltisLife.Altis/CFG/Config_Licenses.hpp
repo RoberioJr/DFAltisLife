@@ -97,15 +97,7 @@ class Licenses {
         side = "civ";
     };
 
-    class sand {
-        variable = "sand";
-        displayName = "STR_License_Sand";
-        price = 20000;
-        illegal = false;
-        side = "civ";
-    };
-
-    class iron {
+   class iron {
         variable = "iron";
         displayName = "STR_License_Iron";
         price = 25000;
@@ -138,15 +130,7 @@ class Licenses {
     };
 
     //Illegal Licenses
-	class tabaco {
-        variable = "tabaco";
-        displayName = "STR_License_Tabaco";
-        price = 50000;
-        illegal = true;
-        side = "civ";
-    };
-	
-    class cocaine {
+	class cocaine {
         variable = "cocaine";
         displayName = "STR_License_Cocaine";
         price = 90000;
@@ -186,24 +170,7 @@ class Licenses {
         side = "civ";
     };
 	
-	class lolo {
-        variable = "lolo";
-        displayName = "STR_License_Lolo";
-        price = 60000;
-        illegal = true;
-        side = "civ";
-    };
-	
-	//CRACK
-	class morfina {
-        variable = "morfina";
-        displayName = "STR_License_Morfina";
-        price = 65000;
-        illegal = true;
-        side = "civ";
-    };
-
-    class rebel {
+	class rebel {
         variable = "rebel";
         displayName = "STR_License_Rebel";
         price = 1000000;
@@ -263,25 +230,6 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
-	
-	
-	class armeiro {
-        variable = "armeiro";
-        displayName = "STR_License_Armeiro";
-        price = 500000;
-        illegal = true;
-        side = "civ";
-    };
-	
-	class cano_aco {
-        variable = "cano_aco";
-        displayName = "STR_License_Cano_aco";
-        price = 30000;
-        illegal = false;
-        side = "civ";
-    };
-	
-	
 	
 	
 	

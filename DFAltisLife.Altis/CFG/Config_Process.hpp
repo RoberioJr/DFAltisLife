@@ -49,14 +49,6 @@ class ProcessAction {
         NoLicenseCost = 1120;
     };
 
-    class sand {
-        MaterialsReq[] = {{"sand",1}};
-        MaterialsGive[] = {{"glass",1}};
-        Text = "STR_Process_Sand";
-        //ScrollText = "Melt Sand into Glass";
-        NoLicenseCost = 650;
-    };
-
     class salt {
         MaterialsReq[] = {{"salt_unrefined",1}};
         MaterialsGive[] = {{"salt_refined",1}};
@@ -66,15 +58,7 @@ class ProcessAction {
     };
 
 	/* TABACO */
-	class tabaco {
-        MaterialsReq[] = {{"tabaco_unprocessed",1}};
-        MaterialsGive[] = {{"tabaco_processed",1}};
-        Text = "STR_Process_Tabaco";
-        //ScrollText = "Process Tobacco";
-        NoLicenseCost = 12500; //optional price
-    };
-	
-    class cocaine {
+	class cocaine {
         MaterialsReq[] = {{"cocaine_unprocessed",1}};
         MaterialsGive[] = {{"cocaine_processed",1}};
         Text = "STR_Process_Cocaine";
@@ -106,14 +90,6 @@ class ProcessAction {
         NoLicenseCost = 10500;
     };
 	
-	class morfina {
-        MaterialsReq[] = {{"crack_unprocessed",1}};
-        MaterialsGive[] = {{"crack_processed",1}};
-        Text = "STR_Process_Morfina";
-        //ScrollText = "Process Morfina";
-        NoLicenseCost = 10500;
-    };
-	
 	class metanfetamina {
         MaterialsReq[] = {{"metanfetamina_unprocessed",1}};
         MaterialsGive[] = {{"metanfetamina_processed",1}};
@@ -122,15 +98,7 @@ class ProcessAction {
         NoLicenseCost = 10500;
     };
 	
-	class lolo {
-        MaterialsReq[] = {{"lolo_unprocessed",1}};
-        MaterialsGive[] = {{"lolo_processed",1}};
-        Text = "STR_Process_Lolo";
-        //ScrollText = "Process opio";
-        NoLicenseCost = 10500;
-    };
-
-    class cement {
+	class cement {
         MaterialsReq[] = {{"rock",1}};
         MaterialsGive[] = {{"cement",1}};
         Text = "STR_Process_Cement";

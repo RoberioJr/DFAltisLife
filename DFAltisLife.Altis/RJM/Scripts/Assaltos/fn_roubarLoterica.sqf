@@ -20,7 +20,7 @@ if!(alive _robber) exitWith {};
 if (currentWeapon _robber isEqualTo "") exitWith {hint "Você precisa de armas para roubar essa loja!";};
 
 _rip = true;
-_kassa = 300000 + round(random 100000);
+_kassa = 800000 + round(random 100000);
 _shop removeAction _action;
 
 [1,format["000 ALERTA:\n\n A Lotérica: %1 Está Sendo Roubado Por %2",_shop,_robber, name _robber]] remoteExec ["life_fnc_broadcast",west];

@@ -20,7 +20,7 @@ if (currentWeapon _robber isEqualTo "") exitWith {hint "Você precisa de armas p
 if !(LiberadoRoubarAgencia) ExitWith {Hint 'Outra Agência Já Está Sendo Assaltada, Aguarde O Assalto Terminar!';};
 [3,900] RemoteExec ['RJM_fnc_VarAssaltoPub',2];
 
-_kassa = 300000 + ((west countSide playableUnits) * 7500);
+_kassa = 1000000 + ((west countSide playableUnits) * 7500);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 

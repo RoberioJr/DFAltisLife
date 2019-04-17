@@ -75,8 +75,8 @@ class WeaponShops {
 			{ "arifle_MX_SW_F", "", 275000, -1, "" }, //MX-SW
 			{ "arifle_MX_SW_Black_F", "", 300000, -1, "" }, //MX-SW
 			{ "LMG_03_F", "", 350000, -1, "" }, //LIM-85
-			{ "LMG_Mk200_F", "", 800000, -1, "" }, //MK200
-			//{ "LMG_Zafir_F", "", 800000, -1, "" }, //Zafir
+			{ "LMG_Mk200_F", "", 650000, -1, "" }, //MK200
+			{ "LMG_Zafir_F", "", 800000, -1, "" }, //Zafir
 			{ "arifle_AKS_F", "", 345000, -1, "" }, //AKS
             { "arifle_AKM_F", "", 490000, -1, "" }, //AKM
 			{ "arifle_AK12_F", "", 400000, -1, "" }, //AK-12
@@ -216,8 +216,8 @@ class WeaponShops {
 			{ "arifle_MXM_Black_F", "", 100000, -1, "call life_coplevel >= 1" }, //MXM
 			{ "arifle_MX_SW_Black_F", "", 110000, -1, "call life_coplevel >= 1" }, //MX-SW
 			{ "LMG_03_F", "", 205000, -1, "call life_coplevel >= 2" }, //LIM-85
-			{ "LMG_Mk200_F", "", 400000, -1, "call life_coplevel >= 3" }, //MK200
-			//{ "LMG_Zafir_F", "", 400000, -1, "call life_coplevel >= 4" }, //Zafir
+			{ "LMG_Mk200_F", "", 300000, -1, "call life_coplevel >= 3" }, //MK200
+			{ "LMG_Zafir_F", "", 500000, -1, "call life_coplevel >= 4" }, //Zafir
 			{ "arifle_AK12_F", "", 137500, -1, "call life_coplevel >= 3" }, //AK-12
 			{ "srifle_DMR_07_blk_F", "", 167500, -1, "call life_coplevel >= 3" }, //CMR
 			{ "srifle_DMR_01_F", "", 150000, -1, "call life_coplevel >= 4" }, // Rahim
@@ -296,7 +296,8 @@ class WeaponShops {
 			{ "srifle_DMR_06_olive_F", "", 210000, -1, "call life_exercito >= 3" }, //MK14
 			{ "srifle_DMR_03_F", "", 250000, -1, "" }, //MKl
 			{ "arifle_SPAR_03_blk_F", "", 275000, -1, "" }, //SPAR-17
-			{ "srifle_DMR_02_camo_F", "", 390000, -1, "call life_exercito >= 4" } //MAR-10
+			{ "srifle_DMR_02_camo_F", "", 390000, -1, "call life_exercito >= 4" }, //MAR-10
+			{ "LMG_Zafir_F", "", 500000, -1, "call life_coplevel >= 4" } //Zafir
 			
 			
         };
@@ -317,7 +318,8 @@ class WeaponShops {
             { "30Rnd_580x42_Mag_Tracer_F", "", 1750, -1, "" }, //5.8 30rnd
 			{ "50Rnd_570x28_SMG_03", "", 1000, -1, "" }, //5.7mm 50rnd
 			{ "10Rnd_127x54_Mag", "", 3500, -1, "" },
-			{ "10Rnd_338_Mag", "", 7500, -1, "" } //.338 10Rnd
+			{ "10Rnd_338_Mag", "", 7500, -1, "" }, //.338 10Rnd
+			{ "150Rnd_762x54_Box_Tracer", "", 2500, -1, "" } //7.62 150rnd Zafir
         };
         accs[] = {
 			{ "acc_flashlight_pistol", "", 250, -1, "" },//Pistol Flashlight

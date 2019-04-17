@@ -533,29 +533,6 @@ class VirtualItems {
 		description = "O sal era, até o início do século XX, um importante conservante alimentar. A tal ponto chegava sua importância, que foi até mesmo usado como forma de pagamento no período romano, sendo esta a origem da palavra 'salário'. Por este motivo as explorações de sal chegaram a ter valor estratégico, inclusive tendo sido criadas vilas fortificadas para defender as salinas.";
     };
 
-    class sand {
-        variable = "sand";
-        displayName = "STR_Item_Sand";
-        weight = 3;
-        buyPrice = -1;
-        sellPrice = -1;
-        illegal = false;
-        edible = -1;
-        icon = "icons\ico_sand.paa";
-    };
-
-    class glass {
-        variable = "glass";
-        displayName = "STR_Item_Glass";
-        weight = 2;
-        buyPrice = -1;
-        sellPrice = 1100;
-        illegal = false;
-        edible = -1;
-        icon = "icons\ico_glass.paa";
-		description = "É basicamente composto por areia, calcário, barrilha, alumina, corantes e descorantes. As matérias primas que compõem o vidro são os vitrificantes, fundentes e estabilizantes.";
-    };
-
     class diamond_uncut {
         variable = "diamondUncut";
         displayName = "STR_Item_DiamondU";
@@ -605,30 +582,6 @@ class VirtualItems {
     //Drugs
 	/* DROGAS */
 	
-	class tabaco_unprocessed {
-        variable = "tabacoUnprocessed";
-        displayName = "STR_Item_TabacoU";
-        weight = 4;
-        buyPrice = -1;
-        sellPrice = -1;
-        illegal = true;
-        edible = -1;
-        icon = "icons\tabaco.paa";
-        processedItem = "tabaco_processed";
-    };
-	
-    class tabaco_processed {
-        variable = "tabacoProcessed";
-        displayName = "STR_Item_Tabaco";
-        weight = 3;
-        buyPrice = 5000;
-        sellPrice = 3150;
-        illegal = true;
-        edible = -1;
-        icon = "icons\tabacop.paa";
-		description = "Um cigarro é um pequeno cilindro de folhas de tabaco de corte fino enroladas numa mortalha que pode ser fumado.";
-    };
-	
 	class lsd_unprocessed {
         variable = "lsdUnprocessed";
         displayName = "STR_Item_LsdU";
@@ -677,55 +630,7 @@ class VirtualItems {
 		description = "'Say my name'";
     };
 	
-	class lolo_unprocessed {
-        variable = "loloUnprocessed";
-        displayName = "STR_Item_loloU";
-        weight = 4;
-        buyPrice = -1;
-        sellPrice = -1;
-        illegal = true;
-        edible = -1;
-        icon = "icons\lolo.paa";
-        processedItem = "lolo_processed";
-    };
-
-    class lolo_processed {
-        variable = "loloProcessed";
-        displayName = "STR_Item_loloP";
-        weight = 3;
-        buyPrice = 5000;
-        sellPrice = 3200;
-        illegal = true;
-        edible = -1;
-        icon = "icons\lolop.paa";
-		description = "Cheirinho da loló ou loló é o nome popular de um entorpecente preparado clandestinamente baseado em clorofórmio e éter.";
-    };
-	
-	class crack_unprocessed {
-        variable = "crackUnprocessed";
-        displayName = "STR_Item_MorfinaU";
-        weight = 4;
-        buyPrice = -1;
-        sellPrice = -1;
-        illegal = true;
-        edible = -1;
-        icon = "icons\crack.paa";
-        processedItem = "crack_processed";
-    };
-
-    class crack_processed {
-        variable = "crackProcessed";
-        displayName = "STR_Item_MorfinaP";
-        weight = 3;
-        buyPrice = 5000;
-        sellPrice = 2900;
-        illegal = true;
-        edible = -1;
-        icon = "icons\crackp.paa";
-		description = "Crack [pronúncia: kɹæk ] é a cocaína solidificada em cristais. O nome deriva do barulho peculiar do cristal de cocaína, ao ser fumado.";
-    }; 	
-
-    class heroin_unprocessed {
+	class heroin_unprocessed {
         variable = "heroinUnprocessed";
         displayName = "STR_Item_HeroinU";
         weight = 4;
