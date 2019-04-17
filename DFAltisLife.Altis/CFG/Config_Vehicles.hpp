@@ -714,7 +714,7 @@ class LifeCfgVehicles {
     class O_Truck_03_device_F {
         vItemSpace = 900;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 2000000;
+        price = 3000000;
         textures[] = { };
     };
 
@@ -770,7 +770,7 @@ class LifeCfgVehicles {
     class B_Truck_01_box_F {
         vItemSpace = 900;
         conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
-        price = 1500000;
+        price = 2000000;
         textures[] = { 
 				{ "Diablo", "civ", {
 					"textures\veh\civ\frenteHemttCiv.paa"

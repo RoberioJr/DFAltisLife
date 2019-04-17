@@ -192,7 +192,7 @@ class VirtualItems {
 	class uranio {
 		variable = "uranio";
         displayName = "STR_Item_uranio";
-        weight = 6;
+        weight = 4;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -203,9 +203,9 @@ class VirtualItems {
 	class uraniop {
 		variable = "uraniop";
         displayName = "STR_Item_uraniop";
-        weight = 4;
+        weight =3;
         buyPrice = -1;
-        sellPrice = 6500;
+        sellPrice = 5000;
         illegal = false;
         edible = -1;
         icon = "icons\uraniop.paa";
@@ -214,9 +214,9 @@ class VirtualItems {
 	class lixo {
 		variable = "lixo";
         displayName = "STR_Item_lixo";
-        weight = 8;
+        weight = 3;
         buyPrice = -1;
-        sellPrice = 935;
+        sellPrice = 3000;
         illegal = false;
         edible = -1;
         icon = "icons\lixo.paa";
@@ -495,7 +495,7 @@ class VirtualItems {
         displayName = "STR_Item_OilP";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 1800;
+        sellPrice = 3000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_oilProcessed.paa";
@@ -518,7 +518,7 @@ class VirtualItems {
         displayName = "STR_Item_CopperIngot";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 1500;
+        sellPrice = 2500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_copper.paa";
@@ -541,7 +541,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 1400;
+        sellPrice = 1800;
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
@@ -564,7 +564,7 @@ class VirtualItems {
         displayName = "STR_Item_SaltR";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 1300;
+        sellPrice = 1500;
         illegal = false;
         edible = -1;
         icon = "icons\ico_saltProcessed.paa";
@@ -587,7 +587,7 @@ class VirtualItems {
         displayName = "STR_Item_DiamondC";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 2000;
+        sellPrice = 4000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_diamondCut.paa";
