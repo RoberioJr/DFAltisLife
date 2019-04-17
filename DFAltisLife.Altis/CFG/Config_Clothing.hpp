@@ -140,7 +140,9 @@ class Clothing {
 			{ "U_I_CombatUniform", "Uniforme Manga Longa", 9000, "call life_coplevel >= 2" },
 			{ "U_I_CombatUniform_shortsleeve", "Uniforme BOPE Manga Curta", 9000, "call life_coplevel >= 2" },
 			{ "U_B_CTRG_1", "Uniforme Tipo 1 Manga Longa", 9000, "call life_coplevel >= 2" },
-			{ "U_B_CTRG_3", "Uniforme Tipo 1 Manga Curta", 9000, "call life_coplevel >= 2" }
+			{ "U_B_CTRG_3", "Uniforme Tipo 1 Manga Curta", 9000, "call life_coplevel >= 2" },
+			{ "U_B_CTRG_1", "Uniforme Padrão", 8500, "call life_coplevel >= 18" },
+			{ "U_B_CTRG_3", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -191,7 +193,12 @@ class Clothing {
             { "B_Kitbag_cbr", "", 1800, "" },
             { "B_Bergen_sgg", "", 12500, "" },
             { "B_Carryall_cbr", "", 13500, "" },
-			{ "B_Bergen_tna_f", "", 24500, "" }
+			{ "B_Bergen_tna_f", "", 24500, "" },
+			{ "B_Kitbag_rgr", "", 1500, "call life_coplevel >= 18" },
+            { "B_AssaultPack_rgr", "", 1800, "call life_coplevel >= 18" },
+            { "B_Carryall_oli", "", 2500, "call life_coplevel >= 18" },
+			{ "B_LegStrapBag_black_F", "", 2500, "call life_coplevel >= 18" },
+			{ "B_LegStrapBag_olive_F", "", 2500, "call life_coplevel >= 18" }
         };
     };
 
