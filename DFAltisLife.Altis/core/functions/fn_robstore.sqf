@@ -15,7 +15,7 @@ if (side _robber != civilian) exitWith { hint "Voce nao pode roubar esse posto!"
 if (_robber distance _shop > 5) exitWith { hint "Voce precisa estar a menos de 5 metros do caixa para roubar!"; };
 if (vehicle player != _robber) exitWith { hint "Saia do Seu veiculo para roubar!"; };
 if (currentWeapon _robber == "") exitWith { hint "HaHa, you mongoloide men!? Vaza daqui antes que eu te quebre na porrada!"; };
-if ((west countSide playableUnits) < 3) exitWith { hint "Nao Tem Policiais Suficientes Para O Roubo!"; };
+if ((west countSide playableUnits) < 2) exitWith { hint "Nao Tem Policiais Suficientes Para O Roubo!"; };
 
 _kassa = 150000 + round(random 100000);
 _shop removeAction _action;

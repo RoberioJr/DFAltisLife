@@ -26,13 +26,13 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
-            { "hgun_Rook40_F", "", 20000, -1, "" },
-            { "hgun_Pistol_01_F", "", 25000, -1, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_02_F", "", 38000, -1, "" },
-            { "hgun_ACPC2_F", "", 47500, -1, "" },
-            { "SMG_05_F", "", 70000, -1, "" }, //Apex DLC
-            { "hgun_PDW2000_F", "", 83300, -1, "" },
-			{ "arifle_Katiba_F", "", 100000, -1, "" } //Katiba
+            { "hgun_Rook40_F", "", 25000, -1, "" },
+            { "hgun_Pistol_01_F", "", 45000, -1, "" }, //Apex DLC
+            { "hgun_Pistol_heavy_02_F", "", 75000, -1, "" },
+            { "hgun_ACPC2_F", "", 85000, -1, "" },
+            { "SMG_05_F", "", 120000, -1, "" }, //Apex DLC
+            { "hgun_PDW2000_F", "",95300, -1, "" },
+			{ "arifle_Katiba_F", "", 150000, -1, "" } //Katiba
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 500, -1, "" },
@@ -55,37 +55,37 @@ class WeaponShops {
         conditions = "license_civ_rebel";
         items[] = {
             { "Rangefinder", "", 15000, -1, "" }, //Focalizador
-			{ "NVGoggles", "", 2500, -1, "" }, //NVG
-			{ "Binocular", "", 2500, -1, "" }, //BNC
-            { "ItemGPS", "", 1000, -1, "" }, //GPS
+			{ "NVGoggles", "", 5000, -1, "" }, //NVG
+			{ "Binocular", "", 3500, -1, "" }, //BNC
+            { "ItemGPS", "", 1500, -1, "" }, //GPS
 			{ "FirstAidKit", "", 5000, -1, "" }, //KITMED
-			{ "SmokeShell", "", 3500, -1, "" }, //FUMACA BRANCA
-			{ "hgun_Pistol_heavy_01_MRD_F", "", 10500, -1, "" }, //4-Five
+			{ "SmokeShell", "", 5000, -1, "" }, //FUMACA BRANCA
+			{ "hgun_Pistol_heavy_01_MRD_F", "", 85000, -1, "" }, //4-Five
 			{ "arifle_SDAR_F", "", 200000, -1, "" }, //SDAR
-            { "arifle_TRG20_F", "", 60000, -1, "" }, //TRG-20
+            { "arifle_TRG20_F", "", 80000, -1, "" }, //TRG-20
 			{ "arifle_Mk20_F", "", 75000, -1, "" }, //MK-20
-			{ "SMG_03C_TR_khaki", "", 100000, -1, "" }, //ADR-97
+			{ "SMG_03C_TR_khaki", "", 145000, -1, "" }, //ADR-97
 			{ "arifle_CTAR_blk_F", "", 200000, -1, "" }, //CAR
-			{ "arifle_SPAR_01_blk_F", "", 185000, -1, "" }, //SPAR-16
-            { "arifle_Katiba_F", "", 50000, -1, "" }, //Katiba
-			{ "arifle_MXC_F", "", 110000, -1, "" }, //MXC
-			{ "arifle_MX_F", "", 115000, -1, "" }, //MX
-			{ "arifle_MXM_F", "", 100000, -1, "" }, //MXM
-			{ "arifle_MXM_Black_F", "", 135000, -1, "" }, //MXM
-			{ "arifle_MX_SW_F", "", 175000, -1, "" }, //MX-SW
-			{ "arifle_MX_SW_Black_F", "", 180000, -1, "" }, //MX-SW
-			{ "LMG_03_F", "", 250000, -1, "" }, //LIM-85
-			{ "LMG_Mk200_F", "", 600000, -1, "" }, //MK200
+			{ "arifle_SPAR_01_blk_F", "", 275000, -1, "" }, //SPAR-16
+            { "arifle_Katiba_F", "", 150000, -1, "" }, //Katiba
+			{ "arifle_MXC_F", "", 180000, -1, "" }, //MXC
+			{ "arifle_MX_F", "", 185000, -1, "" }, //MX
+			{ "arifle_MXM_F", "", 200000, -1, "" }, //MXM
+			{ "arifle_MXM_Black_F", "", 235000, -1, "" }, //MXM
+			{ "arifle_MX_SW_F", "", 275000, -1, "" }, //MX-SW
+			{ "arifle_MX_SW_Black_F", "", 300000, -1, "" }, //MX-SW
+			{ "LMG_03_F", "", 350000, -1, "" }, //LIM-85
+			{ "LMG_Mk200_F", "", 800000, -1, "" }, //MK200
 			//{ "LMG_Zafir_F", "", 800000, -1, "" }, //Zafir
-			{ "arifle_AKS_F", "", 245000, -1, "" }, //AKS
-            { "arifle_AKM_F", "", 290000, -1, "" }, //AKM
-			{ "arifle_AK12_F", "", 300000, -1, "" }, //AK-12
+			{ "arifle_AKS_F", "", 345000, -1, "" }, //AKS
+            { "arifle_AKM_F", "", 490000, -1, "" }, //AKM
+			{ "arifle_AK12_F", "", 400000, -1, "" }, //AK-12
 			{ "srifle_DMR_07_blk_F", "", 435000, -1, "" }, //CMR
 			{ "srifle_DMR_01_F", "", 350000, -1, "" }, //Rahim
 			{ "srifle_EBR_F", "", 500000, -1, "" }, //MK18
-			{ "srifle_DMR_06_olive_F", "", 375000, -1, "" }, //MK14
-			{ "srifle_DMR_03_F", "", 550000, -1, "" }, //MKl
-			{ "arifle_SPAR_03_blk_F", "", 450000, -1, "" }	//SPAR-17
+			{ "srifle_DMR_06_olive_F", "", 475000, -1, "" }, //MK14
+			{ "srifle_DMR_03_F", "", 650000, -1, "" }, //MKl
+			{ "arifle_SPAR_03_blk_F", "", 600000, -1, "" }	//SPAR-17
         };
         mags[] = {
             { "30Rnd_556x45_Stanag_Tracer_Red", "", 1150, -1, "" }, //5.56 30rnd TRG, SPAR-16 e MK20
@@ -215,16 +215,16 @@ class WeaponShops {
 			{ "arifle_MX_F", "", 52500, -1, "call life_coplevel >= 1" }, //MX
 			{ "arifle_MXM_Black_F", "", 100000, -1, "call life_coplevel >= 1" }, //MXM
 			{ "arifle_MX_SW_Black_F", "", 110000, -1, "call life_coplevel >= 1" }, //MX-SW
-			{ "LMG_03_F", "", 115000, -1, "call life_coplevel >= 2" }, //LIM-85
-			{ "LMG_Mk200_F", "", 225000, -1, "call life_coplevel >= 3" }, //MK200
+			{ "LMG_03_F", "", 205000, -1, "call life_coplevel >= 2" }, //LIM-85
+			{ "LMG_Mk200_F", "", 400000, -1, "call life_coplevel >= 3" }, //MK200
 			//{ "LMG_Zafir_F", "", 400000, -1, "call life_coplevel >= 4" }, //Zafir
 			{ "arifle_AK12_F", "", 137500, -1, "call life_coplevel >= 3" }, //AK-12
 			{ "srifle_DMR_07_blk_F", "", 167500, -1, "call life_coplevel >= 3" }, //CMR
 			{ "srifle_DMR_01_F", "", 150000, -1, "call life_coplevel >= 4" }, // Rahim
-			{ "srifle_EBR_F", "", 200500, -1, "call life_coplevel >= 3" }, //MK18
-			{ "srifle_DMR_06_olive_F", "", 210000, -1, "call life_coplevel >= 3" }, //MK14
-			{ "srifle_DMR_03_F", "", 250000, -1, "call life_coplevel >= 4" }, //MKl
-			{ "arifle_SPAR_03_blk_F", "", 275000, -1, "call life_coplevel >= 4" } //SPAR-17
+			{ "srifle_EBR_F", "", 300500, -1, "call life_coplevel >= 3" }, //MK18
+			{ "srifle_DMR_06_olive_F", "", 310000, -1, "call life_coplevel >= 3" }, //MK14
+			{ "srifle_DMR_03_F", "", 350000, -1, "call life_coplevel >= 4" }, //MKl
+			{ "arifle_SPAR_03_blk_F", "", 300000, -1, "call life_coplevel >= 4" } //SPAR-17
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, -1, "" },
