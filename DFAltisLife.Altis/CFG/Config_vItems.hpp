@@ -168,14 +168,14 @@ class VirtualShops {
 	class ymarket {
 		name = "STR_Shops_yMarket";
 		conditions = "";
-		items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "copper_refined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "tabaco_processed", "lsd_processed", "metanfetamina_processed", "lolo_processed", "crack_processed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw" };
+		items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "copper_refined", "diamond_cut", "diamond_uncut", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "tabaco_processed", "lsd_processed", "metanfetamina_processed", "lolo_processed", "crack_processed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "sand", "salt_refined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "uranio", "uraniop", "lixo" };
     };
 };
 
 /*
 *    CLASS:
 *        variable = Variable Name
-*        displayName = Item Name
+*        displayName = Item Name
 *        weight = Item Weight
 *        buyPrice = Item Buy Price
 *        sellPrice = Item Sell Price
