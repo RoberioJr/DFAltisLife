@@ -268,11 +268,11 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
-            { "U_B_PilotCoveralls", "Uniforme AntiRadiotivo", 48000, "" }
+            { "U_B_PilotCoveralls", "Uniforme AntiRadiotivo", 58000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
-			{ "H_PilotHelmetFighter_B", "Capacete AntiRadiotivo", 35000, "" }
+			{ "H_PilotHelmetFighter_B", "Capacete AntiRadiotivo", 42000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" }

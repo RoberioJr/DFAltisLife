@@ -123,7 +123,10 @@ class WeaponShops {
 			//{ "optic_LRPS", "", 50000, -1, "" },
 			{ "bipod_01_F_blk", "", 16500, -1, "" },
 			{ "bipod_02_F_blk", "", 16000, -1, "" },
-			{ "muzzle_snds_h_snd_F", "", 50000, -1, "" }
+			{ "muzzle_snds_h_snd_F", "", 50000, -1, "" },
+			{ "muzzle_snds_h", "", 30000, -1, "" },
+			{ "muzzle_snds_m", "", 30000, -1, "" },
+			{ "muzzle_snds_m_snd_F", "", 50000, -1, "" }
 
         };
     };
@@ -267,7 +270,10 @@ class WeaponShops {
 			//{ "optic_LRPS", "", 50000, -1, "call life_coplevel >= 7" },
 			{ "bipod_01_F_blk", "", 5000, -1, "call life_coplevel >= 1" },
 			{ "bipod_02_F_blk", "", 5000, -1, "call life_coplevel >= 1" },
-			{ "muzzle_snds_h_snd_F", "", 30000, -1, "" }
+			{ "muzzle_snds_h_snd_F", "", 30000, -1, "" },
+			{ "muzzle_snds_h", "", 30000, -1, "" },
+			{ "muzzle_snds_m", "", 30000, -1, "" },
+			{ "muzzle_snds_m_snd_F", "", 50000, -1, "" }
         };
     };
 	
