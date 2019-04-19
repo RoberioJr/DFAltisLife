@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "peach", "guava", "grape", "strawberry", "banana", "pineapple", "redgull", "cocacola", "tbacon", "chocolate", "donuts", "pizza", "ruffles", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "ossodog" };
+        items[] = { "waterBottle", "rabbit", "apple", "peach", "guava", "grape", "strawberry", "banana", "pineapple", "redgull", "cocacola", "tbacon", "chocolate", "donuts", "pizza", "ruffles", "pickaxe", "toolkit", "fuelFull", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "ossodog" };
     };
 
     class med_market {
@@ -168,7 +168,7 @@ class VirtualShops {
 	class ymarket {
 		name = "STR_Shops_yMarket";
 		conditions = "";
-		items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "copper_refined", "diamond_cut", "diamond_uncut", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "lsd_processed", "metanfetamina_processed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "salt_refined", "sheep", "sheep_raw", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "uranio", "uraniop", "lixo" };
+		items[] = {"apple", "peach", "pineapple", "banana", "strawberry", "grape", "guava", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "copper_refined", "diamond_cut", "diamond_uncut", "goldbar", "hen", "hen_raw", "heroin_processed", "lsd_processed", "metanfetamina_processed", "iron_refined", "iron_unrefined", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "ornate", "ornate_raw", "rabbit", "rabbit_raw", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "salt_refined", "tuna", "tuna_raw", "turtle_soup", "turtle_raw", "uranio", "uraniop", "lixo" };
     };
 };
 
@@ -1147,50 +1147,7 @@ class VirtualItems {
         icon = "icons\ico_chickenDrumstick.paa";
     };
 
-    class sheep_raw {
-        variable = "sheepRaw";
-        displayName = "STR_Item_SheepRaw";
-        weight = 3;
-        buyPrice = -1;
-        sellPrice = 270;
-        illegal = false;
-        edible = -1;
-        icon = "icons\ico_lambChopRaw.paa";
-    };
-
-    class sheep {
-        variable = "sheep";
-        displayName = "STR_Item_Sheep";
-        weight = 2;
-        buyPrice = -1;
-        sellPrice = 270;
-        illegal = false;
-        edible = 100;
-        icon = "icons\ico_lambChop.paa";
-    };
-
-    class goat_raw {
-        variable = "goatRaw";
-        displayName = "STR_Item_GoatRaw";
-        weight = 3;
-        buyPrice = -1;
-        sellPrice = 270;
-        illegal = false;
-        edible = -1;
-        icon = "icons\ico_muttonLegRaw.paa";
-    };
-
-    class goat {
-        variable = "goat";
-        displayName = "STR_Item_Goat";
-        weight = 2;
-        buyPrice = -1;
-        sellPrice = 270;
-        illegal = false;
-        edible = 100;
-        icon = "icons\ico_muttonLeg.paa";
-    };
-	
+    
 	class madeira {
         variable = "madeira";
         displayName = "STR_Item_Madeira";
