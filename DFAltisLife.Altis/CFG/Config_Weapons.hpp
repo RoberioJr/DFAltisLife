@@ -209,6 +209,9 @@ class WeaponShops {
 			{ "FirstAidKit", "", 250, -1, "" }, //KITMED
 			{ "SmokeShellYellow", "Gas Lacrimogeneo", 10000, -1, "" }, //FUMACA BRANCA
 			{ "hgun_P07_snds_F", $STR_W_items_StunPistol, 2500, -1, "call life_coplevel >= 1" },
+			{ "hgun_Pistol_heavy_01_F", $STR_W_items_StunPistol, 12500, -1, "call life_coplevel >= 1" },
+			{ "hgun_ACPC2_F", $STR_W_items_StunPistol, 10500, -1, "call life_coplevel >= 1" },
+			{ "hgun_Pistol_heavy_02_F", $STR_W_items_StunPistol, 15500, -1, "call life_coplevel >= 1" },
 			{ "arifle_SDAR_F", $STR_W_items_TaserRifle, 175000, -1, "call life_coplevel >= 1" },
             { "arifle_TRG20_F", "", 60000, -1, "call life_coplevel >= 1" }, //TRG-20
 			{ "arifle_Mk20_F", "", 67500, -1, "call life_coplevel >= 1" }, //MK-20
@@ -234,6 +237,9 @@ class WeaponShops {
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 125, -1, "" },
+			{ "11Rnd_45ACP_Mag", "", 125, -1, "" }, 
+			{ "6Rnd_45ACP_Cylinder", "", 125, -1, "" }, 
+			{ "9Rnd_45ACP_Mag", "", 125, -1, "" }, 
             { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, -1, "" },
             { "30Rnd_556x45_Stanag_Tracer_Red", "", 1150, -1, "" }, //5.56 30rnd TRG, SPAR-16 e MK20
             { "30Rnd_762x39_Mag_Tracer_Green_F", "", 1850, -1, "" }, //7.62 30rnd AK12 e AKM

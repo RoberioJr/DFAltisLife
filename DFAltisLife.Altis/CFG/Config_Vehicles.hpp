@@ -180,7 +180,9 @@ class CarShops {
 			{ "C_Offroad_01_repair_F", "call life_coplevel >= 18" },			
 			{ "B_Heli_Transport_01_F", "call life_coplevel >= 18" },
 			{ "B_Heli_Attack_01_dynamicLoadout_F" "call life_coplevel >= 18" },
-			{ "I_Plane_Fighter_04_F", "call life_coplevel >= 18" }
+			{ "I_Plane_Fighter_04_F", "call life_coplevel >= 18" },
+			{ "C_Offroad_02_unarmed_F", "call life_coplevel >= 18" },
+			{ "C_Van_02_transport_F", "call life_coplevel >= 18" }
 			
         };
     };
@@ -546,6 +548,9 @@ class LifeCfgVehicles {
             { "White", "civ", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
             }, "" }
+			{ "Black / White", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            }, "" },
         };
     };
 
@@ -929,7 +934,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
-    class B_Quadbike_01_F {
+
+	class C_Van_02_transport_F {
+        vItemSpace = 150;
+        conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
+        price = 100000;
+        textures[] = {
+            { "Black / White", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            }, "" },
+			
+        };
+    };
+	
+	class B_Quadbike_01_F {
         vItemSpace = 50;
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 10000;
