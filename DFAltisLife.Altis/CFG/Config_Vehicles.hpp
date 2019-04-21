@@ -547,10 +547,10 @@ class LifeCfgVehicles {
             }, "" },
             { "White", "civ", {
                 "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa"
-            }, "" }
+            }, "" },
 			{ "Black / White", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" },
+            }, "" }
         };
     };
 
@@ -942,7 +942,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {
             { "Black / White", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" },
+            }, "" }
 			
         };
     };
