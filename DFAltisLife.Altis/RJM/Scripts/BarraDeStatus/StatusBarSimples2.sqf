@@ -24,7 +24,7 @@ uiSleep 5;
  _colourDead = parseText "#000000";
  _uid = getPlayerUID player;
 while {true} do {
-	uiSleep 1.5;
+	uiSleep 2;
 	
 	if(isNull ((uiNamespace getVariable "RJMStatusBar")displayCtrl 10713)) then {
 	    diag_log "Deu Um B.O Na Barra De Status, Vou Criar Essa Porra Denovo...";
