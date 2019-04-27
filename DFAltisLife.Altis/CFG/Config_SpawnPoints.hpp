@@ -165,7 +165,7 @@ class CfgSpawnPoints {
 			}; 
 			
 			class Recrutamento {
-				displayName = "Area de Recrutamento";
+				displayName = "Academia de Polícia";
 				spawnMarker = "cop_spawn_4";
 				icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
                 conditions = "call life_coplevel >= 1";
