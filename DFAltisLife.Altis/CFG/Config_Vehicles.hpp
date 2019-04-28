@@ -1173,9 +1173,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 270000;
         textures[] = {
-            /*{ "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
-            }, "" },*/
+            { "Policia", "cop", {
+				"textures\veh\cop\humgricivil.paa"
+			}, "call life_coplevel >= 13" },
 			{ "Policia", "cop", {
 				"textures\veh\cop\mh9pm.paa"
 			}, "call life_coplevel >= 1" },
@@ -1230,7 +1230,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "BOPE", "cop", {
 				"textures\veh\bope\mh9bope.paa"
 			}, "" }
-        };
+		};
     };
 
     class C_Heli_Light_01_civil_F  {
