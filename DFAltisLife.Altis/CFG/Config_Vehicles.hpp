@@ -1174,7 +1174,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 270000;
         textures[] = {
             { "Policia", "cop", {
-				"textures\veh\cop\humgricivil.paa"
+				"textures\veh\pc\humgricivil.paa"
 			}, "call life_coplevel >= 13" },
 			{ "Policia", "cop", {
 				"textures\veh\cop\mh9pm.paa"
