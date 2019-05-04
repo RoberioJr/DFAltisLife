@@ -143,7 +143,8 @@ class Clothing {
 			{ "U_B_CTRG_3", "Uniforme Tipo 1 Manga Curta", 9000, "call life_coplevel >= 2" },
 			{ "U_B_CTRG_Soldier_2_F", "Uniforme Padrão", 8500, "call life_coplevel >= 18" },
 			{ "U_B_CTRG_Soldier_F", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" },
-			{ "U_B_CTRG_Soldier_3_F", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" }
+			{ "U_B_CTRG_Soldier_3_F", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" },
+			{ "U_B_CTRG_Soldier_urb_1_F", "Uniforme Camuflado", 15000, "call life_coplevel >= 13" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -158,7 +159,8 @@ class Clothing {
             { "H_MilCap_gen_F", "", 900, "" }, //Apex DLC
             { "H_MilCap_oucamo", "", 900, "" },
 			{ "H_CrewHelmetHeli_B", "", 15000, "" },
-			{ "H_HelmetIA", "", 15000, "call life_coplevel >= 18" }
+			{ "H_HelmetIA", "", 15000, "call life_coplevel >= 18" },
+			{ "H_HelmetB_black", "", 15000, "call life_coplevel >= 13" }
 			
         };
         goggles[] = {
@@ -187,7 +189,8 @@ class Clothing {
             { "V_TacVest_gen_F", "", 11000, "call life_coplevel >= 1" }, //Apex DLC
             { "V_PlateCarrier2_blk", "", 15000, "call life_coplevel >= 1" },
 		    { "V_PlateCarrierSpec_blk", "", 18000, "call life_coplevel >= 1" },
-			{ "V_PlateCarrier2_rgr", "", 18000, "call life_coplevel >= 18" }
+			{ "V_PlateCarrier2_rgr", "", 18000, "call life_coplevel >= 18" },
+			{ "V_Chestrig_blk", "", 18000, "call life_coplevel >= 13" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
