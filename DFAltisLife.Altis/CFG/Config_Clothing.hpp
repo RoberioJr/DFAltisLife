@@ -144,7 +144,8 @@ class Clothing {
 			{ "U_B_CTRG_Soldier_2_F", "Uniforme Padrão", 8500, "call life_coplevel >= 18" },
 			{ "U_B_CTRG_Soldier_F", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" },
 			{ "U_B_CTRG_Soldier_3_F", "Uniforme Manga Longa", 9000, "call life_coplevel >= 18" },
-			{ "U_B_CTRG_Soldier_urb_1_F", "Uniforme Camuflado", 15000, "call life_coplevel >= 13" }
+			{ "U_B_CTRG_Soldier_urb_1_F", "Uniforme Camuflado", 15000, "call life_coplevel >= 13" },
+			{ "U_B_CTRG_Soldier_urb_2_F", "Uniforme Camuflado", 15000, "call life_coplevel >= 13" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
