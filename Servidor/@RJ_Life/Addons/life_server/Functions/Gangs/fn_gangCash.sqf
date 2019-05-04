@@ -14,7 +14,7 @@
  */
 
 //gets the flag locations
-_area = [11209.121,8717.759,0] nearestObject "Flag_Red_F";
+_area = Cartel_Bandeira_1;
 
 //gets the gang names of the flag owners
 _owner = _area getVariable ["gangOwner",grpNull];
